@@ -3,11 +3,11 @@ README template. Render with: python scripts/render_readme.py
 Every measured number is a {{placeholder}} resolved from analysis/numbers.json (same syntax as paper/render.py).
 Qualitative claims that the numbers could contradict are pinned by asserts; the renderer fails if one is false.
 -->
-# Same Rule, Different Odds: When the Start System, Not the Sprinter, Crosses the 0.100 s Line
+# Same Rule, Different Odds: When the Start, Not the Sprinter, Breaks the Human Limit
 
 **SSAC27 author (anonymised for review)**. Research paper for the MIT Sloan Sports Analytics Conference 2027 (Other Sports track).
 
-This repository contains the data, code, pre-registration documents, result files and figures behind the paper's abstract (`paper/abstract.md`). Every number below is read from `analysis/numbers.json`, the single generated file that the abstract also draws on. This README is itself rendered from `README.template.md` by `scripts/render_readme.py`.
+This repository contains the data, code, pre-specified analysis plans, result files and figures behind the paper's abstract (`paper/abstract.md`). Every number below is read from `analysis/numbers.json`, the single generated file that the abstract also draws on. This README is itself rendered from `README.template.md` by `scripts/render_readme.py`.
 
 ## Summary
 
@@ -41,9 +41,9 @@ In total the analysis uses {{descriptive.n_valid|,d}} valid starts (RT 0.100-0.3
 - **Simulations.** Structural simulations generate data with no hold effect under the observed championship structure, under exchangeable championships and under a reconstruction of Haugen et al.'s design (S1-S4; `analysis/systematic.py`, `analysis/trend.py`); `analysis/fairness_sim.py` models the rate at which legitimate, gun-triggered starts are scored below 0.100 s. All simulated quantities are labelled SIMULATION in the result files.
 - **Per-championship barriers (H2).** The RT with a fitted 1-in-1,000 probability below it, estimated per championship, pooled, and adjusted for championship offsets.
 - **Fiore et al. re-run (H5).** Their published generalised-gamma model is re-evaluated by quadrature from the transcribed parameters, and the venue effects are read from their vector figure.
-- **Guard band.** A WADA-style uniform guard band (k = 1.645 times the between-championship SD) is compared with per-championship calibration (`analysis/guardband.py`).
+- **Guard band.** A WADA-inspired uniform guard band (k = 1.645 times the between-championship SD) is compared with per-championship calibration (`analysis/guardband.py`).
 - **Literature audit.** A structured search (OpenAlex, PubMed, Semantic Scholar, Google Scholar, one round of citation chasing; {{audit.screen_unique_records}} unique records screened) and coding of every included study's design against a protocol fixed before coding (`lit/audit_protocol.md`, `analysis/lit_audit.py`).
-- **Exploratory probe (not pre-registered).** After seeing the data we looked at the recent championships by start line, lane, round and day (`analysis/recent_probe.py`, published as `probe.*` keys whose descriptions all begin "EXPLORATORY"). These results are hypothesis-generating only.
+- **Exploratory probe (not pre-specified).** After seeing the data we looked at the recent championships by start line, lane, round and day (`analysis/recent_probe.py`, published as `probe.*` keys whose descriptions all begin "EXPLORATORY"). These results are hypothesis-generating only.
 
 ## 4. Key results
 
@@ -58,7 +58,7 @@ In total the analysis uses {{descriptive.n_valid|,d}} valid starts (RT 0.100-0.3
 <!-- assert: [fp_models.r_equivalent@hi] < 0.16 -->
 2. **No detectable hold effect within championships.** RT changes by {{fp_models.slope_ms_per_100ms|.2f}} ms per 100 ms of Ready Time (95% CI {{fp_models.slope_ms_per_100ms@lo|.2f}} to {{fp_models.slope_ms_per_100ms@hi|.2f}}; the minimum detectable slope at 80% power is {{fp_models.mde80_slope_ms_per_100ms|.2f}} ms per 100 ms), an r-equivalent of {{fp_models.r_equivalent|.3f}} (95% CI {{fp_models.r_equivalent@lo|.3f}} to {{fp_models.r_equivalent@hi|.3f}}) that excludes |r| = 0.16. Dropping the championship effects raises the slope to {{systematic.h1b_slope_ms_per_100ms|.2f}} ms per 100 ms (95% CI {{systematic.h1b_slope_ms_per_100ms@lo|.2f}} to {{systematic.h1b_slope_ms_per_100ms@hi|.2f}}).
 <!-- assert: [systematic.h1_verdict] == 'SUPPORTS the mechanism' -->
-3. **Pooling manufactures a Haugen-sized correlation (H1).** The naive pooled r is {{systematic.h1c_r_pooled|.2f}} (95% CI {{systematic.h1c_r_pooled@lo|.2f}} to {{systematic.h1c_r_pooled@hi|.2f}}); centred within championship it is {{systematic.h1c_r_centred|.2f}} (95% CI {{systematic.h1c_r_centred@lo|.2f}} to {{systematic.h1c_r_centred@hi|.2f}}). In a reconstruction of Haugen et al.'s design with no hold effect, |r| ≥ 0.16 arose in {{systematic.h1s3_cell5_p_absge016|pct|.0f}}% of simulated datasets (SIMULATION). Pre-registered verdict: {{systematic.h1_verdict}}.
+3. **Pooling manufactures a Haugen-sized correlation (H1).** The naive pooled r is {{systematic.h1c_r_pooled|.2f}} (95% CI {{systematic.h1c_r_pooled@lo|.2f}} to {{systematic.h1c_r_pooled@hi|.2f}}); centred within championship it is {{systematic.h1c_r_centred|.2f}} (95% CI {{systematic.h1c_r_centred@lo|.2f}} to {{systematic.h1c_r_centred@hi|.2f}}). In a reconstruction of Haugen et al.'s design with no hold effect, |r| ≥ 0.16 arose in {{systematic.h1s3_cell5_p_absge016|pct|.0f}}% of simulated datasets (SIMULATION). Pre-specified verdict: {{systematic.h1_verdict}}.
 <!-- assert: [fig.barrier_below_rule] > 0 and [fig.barrier_above_rule] > 0 -->
 4. **The human limit moves with the championship (H2, H5).** The per-championship 1-in-1,000 barrier (men, ex-Gaussian) runs from {{systematic.h2_champ_barrier_range_ms_exgauss_M@min_ms|.1f}} ms ({{systematic.h2_champ_barrier_range_ms_exgauss_M@min_champ|champ}}) to {{systematic.h2_champ_barrier_range_ms_exgauss_M@max_ms|.1f}} ms ({{systematic.h2_champ_barrier_range_ms_exgauss_M@max_champ|champ}}); {{fig.barrier_below_rule}} of {{fig.barrier_below_rule@n_champs}} championships lie below 0.100 s. Verdict: {{systematic.h2_verdict}}. Inside Fiore et al.'s own model, venue moves the barrier by {{systematic.h5_years_barrier_range_ms|.1f}} ms across the {{systematic.h5_years_barrier_range_ms@n_years}} World Championships venues (verdicts: {{systematic.h5_verdict_reproduced}} for their published values; {{systematic.h5_verdict_venue}}).
 5. **Other published effects (H3, H4, O2).** Rule-era contrasts: {{systematic.h3_verdict_sign}} (Haugen et al.'s era effect {{systematic.h3_verdict_haugen}}; Han et al.'s {{systematic.h3_verdict_han}}). Sex gap by championship: {{systematic.h4_verdict}}. RT versus 100 m time: {{systematic.o2_verdict}}.
@@ -69,15 +69,15 @@ In total the analysis uses {{descriptive.n_valid|,d}} valid starts (RT 0.100-0.3
 <!-- assert: [trend.h6_verdict] == 'PERSISTING, NOT WORSENING' -->
 8. **Not getting worse, but persisting (H6).** The spread of championship offsets in 2020-2025 relative to pre-2010 is {{trend.h6_sd_ratio_recent_pre2010|.2f}} (95% CI {{trend.h6_sd_ratio_recent_pre2010@lo|.2f}} to {{trend.h6_sd_ratio_recent_pre2010@hi|.2f}}); verdict {{trend.h6_verdict}}. Five or six championships per period cannot detect a moderate increase.
 <!-- assert: [probe.wch2025_straight_lane_gradient_ms_per_lane@lo] > 0 -->
-9. **Exploratory, not pre-registered.** The same {{probe.same_athletes_2022_to_2023_change_ms@n_athletes}} athletes were {{probe.same_athletes_2022_to_2023_change_ms|.1f}} ms (95% CI {{probe.same_athletes_2022_to_2023_change_ms@lo|.1f}} to {{probe.same_athletes_2022_to_2023_change_ms@hi|.1f}}) slower in 2023 than in 2022. At the {{descriptive.meet_effect_range_ms@slowest|champ}}, the same athletes were {{probe.wch2025_straight_minus_200m_same_athlete_ms|.1f}} ms (95% CI {{probe.wch2025_straight_minus_200m_same_athlete_ms@lo|.1f}} to {{probe.wch2025_straight_minus_200m_same_athlete_ms@hi|.1f}}) slower on the home-straight start than on the 200 m start, and on that start RT rose by {{probe.wch2025_straight_lane_gradient_ms_per_lane|.2f}} ms per lane outwards (95% CI {{probe.wch2025_straight_lane_gradient_ms_per_lane@lo|.2f}} to {{probe.wch2025_straight_lane_gradient_ms_per_lane@hi|.2f}}) over {{probe.wch2025_straight_lane_gradient_ms_per_lane@n_days|word}} days.
+9. **Exploratory, not pre-specified.** The same {{probe.same_athletes_2022_to_2023_change_ms@n_athletes}} athletes were {{probe.same_athletes_2022_to_2023_change_ms|.1f}} ms (95% CI {{probe.same_athletes_2022_to_2023_change_ms@lo|.1f}} to {{probe.same_athletes_2022_to_2023_change_ms@hi|.1f}}) slower in 2023 than in 2022. At the {{descriptive.meet_effect_range_ms@slowest|champ}}, the same athletes were {{probe.wch2025_straight_minus_200m_same_athlete_ms|.1f}} ms (95% CI {{probe.wch2025_straight_minus_200m_same_athlete_ms@lo|.1f}} to {{probe.wch2025_straight_minus_200m_same_athlete_ms@hi|.1f}}) slower on the home-straight start than on the 200 m start, and on that start RT rose by {{probe.wch2025_straight_lane_gradient_ms_per_lane|.2f}} ms per lane outwards (95% CI {{probe.wch2025_straight_lane_gradient_ms_per_lane@lo|.2f}} to {{probe.wch2025_straight_lane_gradient_ms_per_lane@hi|.2f}}) over {{probe.wch2025_straight_lane_gradient_ms_per_lane@n_days|word}} days.
 
 The full set of results, with every estimate and its interval, is in [analysis/results.md](analysis/results.md) (generated from `analysis/numbers.json`).
 
-## 5. Pre-registration and data corrections
+## 5. Pre-specification and data corrections
 
 Decision rules for the confirmatory analyses were written and committed before the corresponding quantities were computed: `analysis/prereg_systematic.md` (H1-H5, O2, with dated addenda listing every deviation), `analysis/prereg_addendum_trend.md` (H1-S4, H6), `analysis/prereg_guardband.md` (guard band) and `lit/audit_protocol.md` (literature audit). Post-hoc diagnostics are labelled as such in the result files, and the recent-championship probe is labelled exploratory throughout.
 
-**Data correction (2026-09-30).** A regular expression in `analysis/common.py` that labels false starts matched inside the note "(not a false start)", so hurdle and lane disqualifications were counted as false starts and their legal RTs left the valid set; RT 0.000 placeholders in Fiore et al.'s file were also read as measured RTs. After the fix (with regression tests in `analysis/tests/test_common_fs.py`) there are {{trend.h6_fs_near_total@n_fs}} recorded false starts ({{trend.h6_fs_near_total@n_fs_with_rt}} with a measured RT) in {{trend.h6_fs_near_total@n_starts|,d}} starts and {{descriptive.n_valid|,d}} valid starts. Every producer was rerun on the corrected data. No pre-registered verdict changed; every number that moved is listed with its old and new value in [notes/bugfix_rerun_diff.md](notes/bugfix_rerun_diff.md).
+**Data correction (2026-09-30).** A regular expression in `analysis/common.py` that labels false starts matched inside the note "(not a false start)", so hurdle and lane disqualifications were counted as false starts and their legal RTs left the valid set; RT 0.000 placeholders in Fiore et al.'s file were also read as measured RTs. After the fix (with regression tests in `analysis/tests/test_common_fs.py`) there are {{trend.h6_fs_near_total@n_fs}} recorded false starts ({{trend.h6_fs_near_total@n_fs_with_rt}} with a measured RT) in {{trend.h6_fs_near_total@n_starts|,d}} starts and {{descriptive.n_valid|,d}} valid starts. Every producer was rerun on the corrected data. No pre-specified verdict changed; every number that moved is listed with its old and new value in [notes/bugfix_rerun_diff.md](notes/bugfix_rerun_diff.md).
 
 ## 6. Limitations
 
@@ -111,7 +111,7 @@ python -m venv .venv
 
 | path | contents |
 |---|---|
-| `analysis/` | analysis code (`run_all.py` drives everything), pre-registrations (`prereg_*.md`), transcribed design inputs |
+| `analysis/` | analysis code (`run_all.py` drives everything), pre-specified analysis plans (`prereg_*.md`), transcribed design inputs |
 | `analysis/outputs/` | result JSONs and CSVs, one per producer |
 | `analysis/numbers.json` | every reported number, with source command and data versions |
 | `analysis/results.md` | all results in prose and tables (generated) |
@@ -134,8 +134,8 @@ The literature notes in `lit/` are dated working notes; numbers in them predate 
 ## 9. Citation
 
 ```
-SSAC27 author (anonymised for review). Same Rule, Different Odds: When the Start System, Not the Sprinter,
-Crosses the 0.100 s Line. MIT Sloan Sports Analytics Conference 2027, Research Paper Competition.
+SSAC27 author (anonymised for review). Same Rule, Different Odds: When the Start, Not the Sprinter,
+Breaks the Human Limit. MIT Sloan Sports Analytics Conference 2027, Research Paper Competition.
 ```
 
 A `CITATION.cff` with the same placeholder is included; it will be completed after review.

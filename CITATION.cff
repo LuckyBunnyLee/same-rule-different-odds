@@ -1,10 +1,10 @@
 cff-version: 1.2.0
 message: "If you use this code or data, please cite it as below. Author details are withheld for anonymous review."
-title: "Same Rule, Different Odds: When the Start System, Not the Sprinter, Crosses the 0.100 s Line"
+title: "Same Rule, Different Odds: When the Start, Not the Sprinter, Breaks the Human Limit"
 type: dataset
 authors:
   - name: "SSAC27 author (anonymised for review)"
-abstract: "Data, code, pre-registrations and results for a research paper submitted to the MIT Sloan Sports Analytics Conference 2027 (Other Sports track)."
+abstract: "Data, code, pre-specified analysis plans and results for a research paper submitted to the MIT Sloan Sports Analytics Conference 2027 (Other Sports track)."
 keywords:
   - sprint start
   - reaction time
