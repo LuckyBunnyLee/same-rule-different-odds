@@ -15,7 +15,7 @@ Offsets spanned 34 ms (15% of RT variance), exceeding the 21 ms gap between thos
 Pooled across championships, as many published studies do, the hold–RT correlation was r = 0.22; within championships, where offsets cancel, 0.04 (95% CI -0.04 to 0.11). A reconstructed Haugen design with no hold effect reached |r| ≥ 0.16 in 22% of simulations.
 Of 40 audited studies, 28 relied on designs exposed to championship variation, including Lipps et al.'s (2011) sex-specific limits from Beijing.
 Human-limit estimates spanned 93-124 ms across championships, beyond sampling noise and robust across distributions; in Fiore et al.'s own model, venue moved the limit 22 ms.
-Force traces show the offsets already present when athletes began pushing, not added at detection. In exploratory checks, Tokyo 2025, the slowest championship, lagged at one start line across four days, rising 2.4 ms per lane outward; cause unidentified.
+Force traces show the offsets already present when athletes began pushing, not added at detection. In exploratory checks, Tokyo 2025, the slowest championship, lagged at one start line across four days, rising 2.4 ms per lane outward; cause under test.
 Modelled odds of legitimate starts breaking 0.100 s varied 18-fold across the middle half of championships; all four recorded false starts at 0.090-0.100 s came at Eugene. A WADA-inspired 15 ms guard band would cut the worst odds 22-fold but reverse those four; only per-championship calibration equalised the odds.
 
 ## Conclusion
