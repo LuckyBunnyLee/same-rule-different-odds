@@ -441,8 +441,8 @@ def fig_confound(args):
         end_labels(ax1, ch["comp_year"])
         ax1.set_xlim(x_lo, x_hi)
         ax1.set_ylim(np.floor(min(blo.min(), fiore_ms) - 3), np.ceil(max(bhi.max(), sp["max_ms"] + 6, brosnan_ms) + 1))
-        ax1.set_ylabel("1-in-1,000 barrier, men (ms)")
-        ax1.set_xlabel(f"championships, sorted (n = {len(ch)})")
+        ax1.set_ylabel("1-in-1,000 limit, men (ms)")
+        ax1.set_xlabel(f"championships, sorted by limit (n = {len(ch)})")
         ax1.set_title("B  The limit moves with the championship", loc="left", x=-t1, fontsize=fs_title)
         ax1.legend(loc="lower right", frameon=False, handletextpad=0.2, borderaxespad=0.3, labelspacing=0.3)
 
@@ -478,7 +478,7 @@ def fig_confound(args):
         ax2.yaxis.set_major_locator(LogLocator(base=10, numticks=12))
         ax2.yaxis.set_minor_locator(NullLocator())
         ax2.set_ylabel("legitimate starts wrongly DQ'd\nper 1,000 (modelled, log)", linespacing=1.1)
-        ax2.set_xlabel(f"championships, sorted (n = {len(gc)})")
+        ax2.set_xlabel(f"championships, sorted by odds (n = {len(gc)})")
         ax2.set_title("C  Same rule, different odds", loc="left", x=-t2, fontsize=fs_title)
         ax2.legend(handles=[h_p0, h_p1, h_p2], loc="upper right", frameon=False, handletextpad=0.3,
                    borderaxespad=0.2, labelspacing=0.3, handlelength=1.5)

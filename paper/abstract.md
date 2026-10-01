@@ -3,24 +3,24 @@
 
 ## Introduction
 
-One reaction time (RT) under 0.100 s disqualifies a sprinter, as it did Devon Allen at the Eugene Worlds. The rule assumes RT is comparable across championships, as do proposed limits for men (0.094 s, Fiore et al., 2025; 0.115 s, Brosnan et al., 2017) and conflicting RT effects, from starter holds (Haugen et al., 2013; r = 0.16) to rule changes (Han et al., 2025). Milloz et al. (2021) suspected start systems and Fiore et al. found Eugene fast; this study tests whether such variation is systematic and manufactures these findings.
+One reaction time (RT) under 0.100 s disqualifies a sprinter, as it did Devon Allen at the Eugene Worlds. The rule assumes RT is comparable across championships, as do limit estimates for men (0.094 s, Fiore et al., 2025; 0.115 s, Brosnan et al., 2017) and conflicting RT effects, from starter holds (Haugen et al., 2013; r = 0.16) to rule changes (Han et al., 2025). Milloz et al. (2021) suspected start systems and Fiore et al. found Eugene fast; this study tests whether such variation manufactures these findings, across 18 championships and 40 published studies.
 
 ## Methods
 
-Data comprise 6,408 official RTs from public results of 18 global championships (1999-2025), with force traces and Seiko hold records ("Ready Time") for 232 races. Mixed models with crossed athlete and race effects estimated championship offsets; Ready Time, found to start 0.52 s after "set", was regression-calibrated against blind broadcast-audio annotation. Pre-specified tests re-analysed the data as published designs would, simulated them, fitted per-championship RT barriers, re-ran Fiore et al.'s model, tested a WADA-inspired guard band, and audited 40 published studies. Code regenerates every number.
+Data comprise 6,408 official RTs from public results of 18 global championships (1999-2025), with Seiko start records (force traces, and "Ready Time" holds for 232 races). Mixed models with crossed athlete and race effects estimated championship offsets; Ready Time, found to start 0.52 s after "set", was regression-calibrated against blind broadcast-audio annotation. Pre-specified tests re-analysed the data as published designs would, simulated them, fitted per-championship limits, re-ran Fiore et al.'s model, tested a WADA-inspired guard band, and audited 40 studies from a structured search. Code regenerates every number.
 
 ## Results
 
-Offsets spanned 34 ms (15% of RT variance), exceeding the gap between proposed limits.
+Offsets spanned 34 ms (15% of RT variance), exceeding the gap between those estimates.
 Pooled across championships, as many published studies do, the hold–RT correlation was r = 0.22; within championships, where offsets cancel, 0.04 (95% CI -0.04 to 0.11). A reconstructed Haugen design with no hold effect reached |r| ≥ 0.16 in 22% of simulations.
 Of 40 audited studies, 28 relied on designs exposed to championship variation, including Lipps et al.'s (2011) sex-specific limits from Beijing.
-Human-limit estimates spanned 93-124 ms across championships, a spread robust across distributions; venue moved Fiore et al.'s estimate 22 ms.
+Human-limit estimates spanned 93-124 ms across championships, beyond sampling noise and robust across distributions; in Fiore et al.'s own model, venue moved the limit 22 ms.
 Force traces show the offsets present when athletes began pushing, not added at detection. In exploratory checks, the slowest championship's delay sat at one start line over four days of Tokyo 2025, rising 2.4 ms per lane outward; cause unidentified.
-Modelled odds of legitimate starts breaking 0.100 s varied 18-fold across the middle half of championships; all four recorded false starts at 0.090-0.100 s came at Eugene. A WADA-inspired 15 ms guard band would cut the worst odds 22-fold but reverse those four; only per-championship calibration equalised them.
+Modelled odds of legitimate starts breaking 0.100 s varied 18-fold across the middle half of championships; all four recorded false starts at 0.090-0.100 s came at Eugene. A WADA-inspired 15 ms guard band would cut the worst odds 22-fold but reverse those four; only per-championship calibration equalised the odds.
 
 ## Conclusion
 
-Championship-level variation in start timing can manufacture effects as large as published ones and move the human limit. The fastest and slowest championships since 1999 were both in the last four years. Yet World Athletics holds its finish clock to 0.001 s while publishing no tolerance for the start measurement that disqualifies. It should test signal arrival and loudness at every block, calibrate each championship's line, and guard-band the rule meanwhile.
+Championship-level variation in official RT can manufacture effects as large as published ones and move the human limit. The fastest and slowest championships since 1999 were both in the last four years. Yet World Athletics holds its finish clock to 0.001 s while publishing no tolerance for the start measurement that disqualifies. It should test signal arrival and loudness at every block, calibrate each championship's line, and guard-band the rule meanwhile.
 
 ![Figure 1](../analysis/figures/confound.png)
 

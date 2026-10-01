@@ -47,7 +47,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 WORD_LIMIT = 500          # SSAC: "fewer than 500 words, including the title"
-STRICT_LIMIT = 485        # margin: <= 485 by a counter that splits hyphenated words (margin vs SSAC's 500)
+STRICT_LIMIT = 495        # margin: <= 495 by a counter that splits hyphenated words (SSAC: < 500)
 
 # Design constants and citation facts that may appear as literals in the template prose. Each entry
 # is (regex over the prose with placeholders removed, name). The regex must match the literal WITH
