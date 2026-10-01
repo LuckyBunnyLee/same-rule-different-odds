@@ -25,7 +25,7 @@
    "name": "calibration",
    "command": "analysis/calibration.py --seed 20260928 --boot 5000 --mc 20000 --fp-models analysis/outputs/fp_models.json --out analysis/outputs/calibration.json",
    "data": [
-    "manual_annotations.csv@sha256:fe3736ebbb0f (36 rows)",
+    "manual_annotations.csv@sha256:12db2ab09fe4 (36 rows)",
     "rt_waveform.csv@sha256:3711f9b56ca6 (277 rows)",
     "rt_athletes.csv@sha256:af44975b3e1a (4904 rows)",
     "races.csv@sha256:4f0f5097c6dc (625 rows)"
@@ -58,7 +58,7 @@
     "rt_fiore.csv@sha256:dff5cb184d1b (2805 rows)",
     "races.csv@sha256:4f0f5097c6dc (625 rows)",
     "rt_waveform.csv@sha256:3711f9b56ca6 (277 rows)",
-    "manual_annotations.csv@sha256:fe3736ebbb0f (36 rows)"
+    "manual_annotations.csv@sha256:12db2ab09fe4 (36 rows)"
    ],
    "seed": 20260928
   },
@@ -69,10 +69,10 @@
     "rt_waveform.csv@sha256:3711f9b56ca6 (277 rows)",
     "rt_athletes.csv@sha256:af44975b3e1a (4904 rows)",
     "races.csv@sha256:4f0f5097c6dc (625 rows)",
-    "manual_annotations.csv@sha256:fe3736ebbb0f (36 rows)",
+    "manual_annotations.csv@sha256:12db2ab09fe4 (36 rows)",
     "rt_fiore.csv@sha256:dff5cb184d1b (2805 rows)",
     "haugen_design.csv@sha256:d5b502e031f3 (4 rows)",
-    "foreperiods.csv@sha256:376f05038040 (105 rows)",
+    "foreperiods.csv@sha256:246a59371e43 (105 rows)",
     "fiore2025_params.csv@sha256:ef7c65a24550 (3 rows)",
     "ComparisonOfVenueEffects.pdf@sha256:1254ba381a51"
    ],
@@ -85,9 +85,9 @@
     "rt_athletes.csv@sha256:af44975b3e1a (4904 rows)",
     "rt_fiore.csv@sha256:dff5cb184d1b (2805 rows)",
     "races.csv@sha256:4f0f5097c6dc (625 rows)",
-    "manual_annotations.csv@sha256:fe3736ebbb0f (36 rows)",
+    "manual_annotations.csv@sha256:12db2ab09fe4 (36 rows)",
     "rt_waveform.csv@sha256:3711f9b56ca6 (277 rows)",
-    "foreperiods.csv@sha256:376f05038040 (105 rows)"
+    "foreperiods.csv@sha256:246a59371e43 (105 rows)"
    ],
    "seed": 20260928
   },
@@ -124,7 +124,7 @@
     "rt_fiore.csv@sha256:dff5cb184d1b (2805 rows)",
     "races.csv@sha256:4f0f5097c6dc (625 rows)",
     "rt_waveform.csv@sha256:3711f9b56ca6 (277 rows)",
-    "manual_annotations.csv@sha256:fe3736ebbb0f (36 rows)"
+    "manual_annotations.csv@sha256:12db2ab09fe4 (36 rows)"
    ],
    "seed": 20260928
   },
@@ -135,10 +135,10 @@
     "rt_waveform.csv@sha256:3711f9b56ca6 (277 rows)",
     "rt_athletes.csv@sha256:af44975b3e1a (4904 rows)",
     "races.csv@sha256:4f0f5097c6dc (625 rows)",
-    "manual_annotations.csv@sha256:fe3736ebbb0f (36 rows)",
+    "manual_annotations.csv@sha256:12db2ab09fe4 (36 rows)",
     "rt_fiore.csv@sha256:dff5cb184d1b (2805 rows)",
     "haugen_design.csv@sha256:d5b502e031f3 (4 rows)",
-    "foreperiods.csv@sha256:376f05038040 (105 rows)",
+    "foreperiods.csv@sha256:246a59371e43 (105 rows)",
     "fiore2025_params.csv@sha256:ef7c65a24550 (3 rows)",
     "ComparisonOfVenueEffects.pdf@sha256:1254ba381a51"
    ],
@@ -148,7 +148,7 @@
    "name": "measure",
    "command": null,
    "data": [
-    "numbers.json@sha256:b87a6a30d106"
+    "numbers.json@sha256:8a4d66d6c01a"
    ],
    "seed": null,
    "external": true
@@ -161,13 +161,13 @@
   "combined_rt.csv@sha256:9b83b753d122 (430 rows)",
   "extra_rt.csv@sha256:14a3c938e798 (1593 rows)",
   "fiore2025_params.csv@sha256:ef7c65a24550 (3 rows)",
-  "foreperiods.csv@sha256:376f05038040 (105 rows)",
+  "foreperiods.csv@sha256:246a59371e43 (105 rows)",
   "gun_features.csv@sha256:ce91c6cfa253 (123 rows)",
   "gun_spectra_peaks.csv@sha256:445530ab6c8d (7 rows)",
   "gun_spectra_similarity.csv@sha256:aded84d69025 (7 rows)",
   "haugen_design.csv@sha256:d5b502e031f3 (4 rows)",
-  "manual_annotations.csv@sha256:fe3736ebbb0f (36 rows)",
-  "numbers.json@sha256:b87a6a30d106",
+  "manual_annotations.csv@sha256:12db2ab09fe4 (36 rows)",
+  "numbers.json@sha256:8a4d66d6c01a",
   "races.csv@sha256:4f0f5097c6dc (625 rows)",
   "rt_athletes.csv@sha256:af44975b3e1a (4904 rows)",
   "rt_fiore.csv@sha256:dff5cb184d1b (2805 rows)",
@@ -1315,13 +1315,13 @@
    "source": "analysis/outputs/calibration.json"
   },
   "calibration.offset_mean_s": {
-   "value": 0.5232,
+   "value": 0.5214,
    "desc": "mean (audio set-onset foreperiod - Ready Time)",
    "unit": "s",
    "source": "analysis/outputs/calibration.json"
   },
   "calibration.offset_sd_within_comp_s": {
-   "value": 0.1121,
+   "value": 0.1103,
    "desc": "within-championship SD of (audio foreperiod - Ready Time)",
    "unit": "s",
    "source": "analysis/outputs/calibration.json"
@@ -1341,56 +1341,56 @@
    "source": "analysis/outputs/calibration.json"
   },
   "calibration.offset_mean_WCH2025_s": {
-   "value": 0.6099,
+   "value": 0.6072,
    "desc": "mean (audio foreperiod - Ready Time), WCH2025",
    "unit": "s",
    "n": 15,
    "source": "analysis/outputs/calibration.json"
   },
   "calibration.corr_ready_audio": {
-   "value": 0.7448,
+   "value": 0.7513,
    "desc": "Pearson r between Ready Time and audio foreperiod (pooled over championships)",
    "unit": "",
    "source": "analysis/outputs/calibration.json"
   },
   "calibration.calib_slope_b": {
-   "value": 0.8156,
+   "value": 0.8204,
    "desc": "within-championship slope of audio foreperiod on Ready Time (regression calibration factor; 1 = no attenuation); stratified bootstrap CI",
    "unit": "",
    "ci95": [
-    0.5931,
-    1.0527
+    0.6007,
+    1.0615
    ],
-   "se_ols": 0.116,
+   "se_ols": 0.1145,
    "n_boot": 5000,
    "share_boot_below_0_2": 0.0,
    "source": "analysis/outputs/calibration.json"
   },
   "calibration.calib_slope_b_voice_end": {
-   "value": 0.8847,
+   "value": 0.8909,
    "desc": "calibration slope using the end of voicing of 'Set' instead of its onset (sensitivity)",
    "unit": "",
-   "se_ols": 0.1081,
+   "se_ols": 0.1057,
    "source": "analysis/outputs/calibration.json"
   },
   "calibration.slope_corrected_ms_per_100ms": {
-   "value": 0.397,
+   "value": 0.395,
    "desc": "Ready-Time slope divided by the calibration factor b (Monte Carlo over the slope's sampling error and bootstrap b)",
    "unit": "ms per 100 ms of foreperiod",
    "ci95": [
-    -0.174,
-    1.018
+    -0.173,
+    1.01
    ],
    "share_draws_used": 1.0,
    "source": "analysis/outputs/calibration.json"
   },
   "calibration.r_corrected": {
-   "value": 0.0392,
+   "value": 0.0391,
    "desc": "r-equivalent on the foreperiod scale (r(Ready) / sqrt(b), classical error)",
    "unit": "",
    "ci95": [
-    -0.0183,
-    0.0984
+    -0.0181,
+    0.098
    ],
    "source": "analysis/outputs/calibration.json"
   },
@@ -1401,24 +1401,24 @@
    "source": "analysis/outputs/calibration.json"
   },
   "calibration.r_ci_high_at_b_low": {
-   "value": 0.113,
+   "value": 0.1123,
    "desc": "upper 95% bound of the r-equivalent if b sits at its lower 2.5% bound (conservative)",
    "unit": "",
    "source": "analysis/outputs/calibration.json"
   },
   "calibration.r_ci_low_at_b_low": {
-   "value": -0.021,
+   "value": -0.0209,
    "desc": "lower 95% bound of the r-equivalent if b sits at its lower 2.5% bound (conservative)",
    "unit": "",
    "source": "analysis/outputs/calibration.json"
   },
   "calibration.direct_audio_slope_ms_per_100ms": {
-   "value": 1.019,
+   "value": 1.009,
    "desc": "RT on broadcast-audio foreperiod directly (small sample)",
    "unit": "ms per 100 ms of foreperiod",
    "ci95": [
-    -0.392,
-    2.43
+    -0.368,
+    2.386
    ],
    "n_races": 22,
    "n_rts": 174,
@@ -3429,17 +3429,17 @@
    "source": "analysis/outputs/fairness.json"
   },
   "fairness.cal_max_fold_change_corrected": {
-   "value": 3.894,
-   "desc": "largest fold change in P(legit FS) across the 10th-90th percentile foreperiod after correcting the Ready-Time slope CI for proxy error (calibration factor b = 0.816), ex-Gaussian, sex=M (SIMULATION)",
+   "value": 3.879,
+   "desc": "largest fold change in P(legit FS) across the 10th-90th percentile foreperiod after correcting the Ready-Time slope CI for proxy error (calibration factor b = 0.82), ex-Gaussian, sex=M (SIMULATION)",
    "unit": "",
-   "b": 0.8156,
+   "b": 0.8204,
    "source": "analysis/outputs/fairness.json"
   },
   "fairness.cal_max_fold_change_corrected_b_low": {
-   "value": 4.925,
-   "desc": "largest fold change in P(legit FS) across the 10th-90th percentile foreperiod after correcting the Ready-Time slope CI for proxy error (calibration factor b = 0.593), ex-Gaussian, sex=M (SIMULATION)",
+   "value": 4.876,
+   "desc": "largest fold change in P(legit FS) across the 10th-90th percentile foreperiod after correcting the Ready-Time slope CI for proxy error (calibration factor b = 0.601), ex-Gaussian, sex=M (SIMULATION)",
    "unit": "",
-   "b": 0.5931,
+   "b": 0.6007,
    "source": "analysis/outputs/fairness.json"
   },
   "fairness.meet_iqr_fold_change": {
@@ -3580,18 +3580,18 @@
    "source": "analysis/outputs/systematic.json"
   },
   "systematic.h1c_r_pooled_fp": {
-   "value": 0.3737,
+   "value": 0.3729,
    "desc": "(c-fp, secondary) naive pooled r on the audio-calibrated foreperiod scale (Ready Time + championship calibration offset; WIC2024 uses the pooled offset)",
    "unit": "",
    "ci95": [
-    0.299,
-    0.4397
+    0.298,
+    0.4391
    ],
    "naive_ci95": [
-    0.333,
-    0.413
+    0.3321,
+    0.4122
    ],
-   "naive_p": 5.06e-60,
+   "naive_p": 9.42e-60,
    "n_starts": 1778,
    "n_races": 232,
    "source": "analysis/outputs/systematic.json"
@@ -3688,7 +3688,7 @@
    "source": "analysis/outputs/systematic.json"
   },
   "systematic.h1d_pearson_fp_3": {
-   "value": 0.9966,
+   "value": 0.9964,
    "desc": "(d) descriptive: Pearson r across championships of mean Ready Time and the athlete-adjusted RT offset, 3 championships with audio pairs, calibrated foreperiod scale; no inference",
    "unit": "",
    "n_champs": 3,
@@ -3767,13 +3767,13 @@
    "source": "analysis/outputs/systematic.json"
   },
   "systematic.h1s1_fp_beta0_r_mean": {
-   "value": 0.3145,
+   "value": 0.3142,
    "desc": "SIMULATION: mean naive pooled r, S1, true slope 0, foreperiod scale (Ready Time + championship calibration offset + within-championship calibration scatter)",
    "unit": "",
-   "sd": 0.02417,
-   "q025": 0.2668,
-   "q50": 0.3147,
-   "q975": 0.361,
+   "sd": 0.02413,
+   "q025": 0.2666,
+   "q50": 0.3144,
+   "q975": 0.3607,
    "n_sims": 10000,
    "source": "analysis/outputs/systematic.json"
   },
@@ -3793,13 +3793,13 @@
    "source": "analysis/outputs/systematic.json"
   },
   "systematic.h1s1_fp_betahat_r_mean": {
-   "value": 0.3322,
+   "value": 0.332,
    "desc": "SIMULATION: mean naive pooled r, S1, true slope = (a) estimate, foreperiod scale",
    "unit": "",
-   "sd": 0.02411,
-   "q025": 0.2851,
-   "q50": 0.3323,
-   "q975": 0.379,
+   "sd": 0.02407,
+   "q025": 0.285,
+   "q50": 0.3321,
+   "q975": 0.3788,
    "n_sims": 10000,
    "source": "analysis/outputs/systematic.json"
   },
@@ -5471,13 +5471,13 @@
    "source": "analysis/outputs/trend.json"
   },
   "trend.s4_rw_estimate": {
-   "value": 0.0392,
+   "value": 0.0391,
    "desc": "S4 input: true within-championship r at our estimate (calibration.r_corrected)",
    "unit": "",
    "source": "analysis/outputs/trend.json"
   },
   "trend.s4_rw_upper": {
-   "value": 0.113,
+   "value": 0.1123,
    "desc": "S4 input: true within-championship r at our conservative upper bound (calibration.r_ci_high_at_b_low)",
    "unit": "",
    "source": "analysis/outputs/trend.json"
@@ -5570,177 +5570,177 @@
    "source": "analysis/outputs/trend.json"
   },
   "trend.s4_p_within_estimate": {
-   "value": 9.48e-07,
+   "value": 9.349e-07,
    "desc": "SIMULATION: P(Haugen's three significant cells | WITHIN-championship analysis, r_w = our estimate), design-averaged over the 9-design grid (product of independent per-cell probabilities; mc_se only when every factor is a simulated share, None when normal-approximated factors carry approximation error instead)",
    "unit": "",
-   "r_w": 0.0392,
+   "r_w": 0.0391,
    "mc_se": null,
    "n_cells_normal_approx": 16,
    "n_cells": 27,
-   "cell5": 1.411e-06,
-   "min_over_designs": 5.413e-08,
-   "max_over_designs": 1.641e-06,
+   "cell5": 1.405e-06,
+   "min_over_designs": 5.313e-08,
+   "max_over_designs": 1.62e-06,
    "cell5_rel_mc_se": null,
    "cell5_all_cells_simulated_share": false,
    "source": "analysis/outputs/trend.json"
   },
   "trend.s4_p_pooled_estimate": {
-   "value": 0.0175,
+   "value": 0.01744,
    "desc": "SIMULATION: P(Haugen's three significant cells | POOLED analysis (S3 design), r_w = our estimate), design-averaged over the 9-design grid (joint simulated share)",
    "unit": "",
-   "r_w": 0.0392,
-   "mc_se": 0.000309,
-   "cell5": 0.0217,
-   "min_over_designs": 0.0123,
-   "max_over_designs": 0.0223,
+   "r_w": 0.0391,
+   "mc_se": 0.000308,
+   "cell5": 0.02165,
+   "min_over_designs": 0.01225,
+   "max_over_designs": 0.02225,
    "cell5_mc_se": 0.00103,
    "n_sims": 20000,
    "source": "analysis/outputs/trend.json"
   },
   "trend.s4_lr_estimate": {
-   "value": 18460.0,
+   "value": 18650.0,
    "desc": "SIMULATION: likelihood ratio P(pattern | POOLED) / P(pattern | WITHIN), r_w = our estimate, design-averaged probabilities",
    "unit": "",
-   "r_w": 0.0392,
-   "cell5": 15380.0,
-   "min_over_designs": 11060.0,
-   "max_over_designs": 286400.0,
+   "r_w": 0.0391,
+   "cell5": 15410.0,
+   "min_over_designs": 11320.0,
+   "max_over_designs": 291700.0,
    "source": "analysis/outputs/trend.json"
   },
   "trend.s4_full_p_within_estimate": {
-   "value": 8.085e-07,
+   "value": 7.976e-07,
    "desc": "SIMULATION (secondary): P(full pattern incl. women 2003-2009 not significant | WITHIN, r_w = our estimate), design-averaged",
    "unit": "",
-   "r_w": 0.0392,
+   "r_w": 0.0391,
    "source": "analysis/outputs/trend.json"
   },
   "trend.s4_full_p_pooled_estimate": {
-   "value": 0.003239,
+   "value": 0.003217,
    "desc": "SIMULATION (secondary): P(full pattern | POOLED, r_w = our estimate), design-averaged",
    "unit": "",
-   "r_w": 0.0392,
+   "r_w": 0.0391,
    "source": "analysis/outputs/trend.json"
   },
   "trend.s4_full_lr_estimate": {
-   "value": 4006.0,
+   "value": 4033.0,
    "desc": "SIMULATION (secondary): likelihood ratio for the full pattern, r_w = our estimate",
    "unit": "",
-   "r_w": 0.0392,
+   "r_w": 0.0391,
    "source": "analysis/outputs/trend.json"
   },
   "trend.s4_lenient_p_within_estimate": {
-   "value": 1.164e-06,
+   "value": 1.148e-06,
    "desc": "SIMULATION (sensitivity): P3 | WITHIN with rounding-lenient thresholds 0.155/0.165/0.155, r_w = our estimate, design-averaged",
    "unit": "",
-   "r_w": 0.0392,
+   "r_w": 0.0391,
    "source": "analysis/outputs/trend.json"
   },
   "trend.s4_lenient_p_pooled_estimate": {
-   "value": 0.0185,
+   "value": 0.01844,
    "desc": "SIMULATION (sensitivity): P3 | POOLED with rounding-lenient thresholds, r_w = our estimate, design-averaged",
    "unit": "",
-   "r_w": 0.0392,
+   "r_w": 0.0391,
    "source": "analysis/outputs/trend.json"
   },
   "trend.s4_litsd_p_within_estimate": {
-   "value": 1.322e-06,
+   "value": 1.306e-06,
    "desc": "SIMULATION (sensitivity): P3 | WITHIN, cell5 layout with S3's cell5_litsd hold SDs (0.25 / 0.16 s), r_w = our estimate",
    "unit": "",
-   "r_w": 0.0392,
+   "r_w": 0.0391,
    "source": "analysis/outputs/trend.json"
   },
   "trend.s4_litsd_p_pooled_estimate": {
-   "value": 0.0325,
+   "value": 0.03225,
    "desc": "SIMULATION (sensitivity): P3 | POOLED, cell5 layout with S3's cell5_litsd hold SDs, r_w = our estimate",
    "unit": "",
-   "r_w": 0.0392,
+   "r_w": 0.0391,
    "source": "analysis/outputs/trend.json"
   },
   "trend.s4_p_within_upper": {
-   "value": 0.002787,
+   "value": 0.002628,
    "desc": "SIMULATION: P(Haugen's three significant cells | WITHIN-championship analysis, r_w = our conservative upper bound), design-averaged over the 9-design grid (product of independent per-cell probabilities; mc_se only when every factor is a simulated share, None when normal-approximated factors carry approximation error instead)",
    "unit": "",
-   "r_w": 0.113,
-   "mc_se": 2.92e-05,
+   "r_w": 0.1123,
+   "mc_se": 2.79e-05,
    "n_cells_normal_approx": 0,
    "n_cells": 27,
-   "cell5": 0.004122,
-   "min_over_designs": 0.0007936,
-   "max_over_designs": 0.004122,
-   "cell5_rel_mc_se": 0.0281,
+   "cell5": 0.00388,
+   "min_over_designs": 0.0007523,
+   "max_over_designs": 0.00388,
+   "cell5_rel_mc_se": 0.0284,
    "cell5_all_cells_simulated_share": true,
    "source": "analysis/outputs/trend.json"
   },
   "trend.s4_p_pooled_upper": {
-   "value": 0.1164,
+   "value": 0.1146,
    "desc": "SIMULATION: P(Haugen's three significant cells | POOLED analysis (S3 design), r_w = our conservative upper bound), design-averaged over the 9-design grid (joint simulated share)",
    "unit": "",
-   "r_w": 0.113,
-   "mc_se": 0.000754,
-   "cell5": 0.1295,
-   "min_over_designs": 0.072,
-   "max_over_designs": 0.1344,
-   "cell5_mc_se": 0.00237,
+   "r_w": 0.1123,
+   "mc_se": 0.000749,
+   "cell5": 0.1279,
+   "min_over_designs": 0.0708,
+   "max_over_designs": 0.1316,
+   "cell5_mc_se": 0.00236,
    "n_sims": 20000,
    "source": "analysis/outputs/trend.json"
   },
   "trend.s4_lr_upper": {
-   "value": 41.77,
+   "value": 43.61,
    "desc": "SIMULATION: likelihood ratio P(pattern | POOLED) / P(pattern | WITHIN), r_w = our conservative upper bound, design-averaged probabilities",
    "unit": "",
-   "r_w": 0.113,
-   "cell5": 31.42,
-   "min_over_designs": 30.55,
-   "max_over_designs": 90.73,
+   "r_w": 0.1123,
+   "cell5": 32.97,
+   "min_over_designs": 32.0,
+   "max_over_designs": 94.11,
    "source": "analysis/outputs/trend.json"
   },
   "trend.s4_full_p_within_upper": {
-   "value": 0.001126,
+   "value": 0.001074,
    "desc": "SIMULATION (secondary): P(full pattern incl. women 2003-2009 not significant | WITHIN, r_w = our conservative upper bound), design-averaged",
    "unit": "",
-   "r_w": 0.113,
+   "r_w": 0.1123,
    "source": "analysis/outputs/trend.json"
   },
   "trend.s4_full_p_pooled_upper": {
-   "value": 0.01195,
+   "value": 0.01184,
    "desc": "SIMULATION (secondary): P(full pattern | POOLED, r_w = our conservative upper bound), design-averaged",
    "unit": "",
-   "r_w": 0.113,
+   "r_w": 0.1123,
    "source": "analysis/outputs/trend.json"
   },
   "trend.s4_full_lr_upper": {
-   "value": 10.61,
+   "value": 11.02,
    "desc": "SIMULATION (secondary): likelihood ratio for the full pattern, r_w = our conservative upper bound",
    "unit": "",
-   "r_w": 0.113,
+   "r_w": 0.1123,
    "source": "analysis/outputs/trend.json"
   },
   "trend.s4_lenient_p_within_upper": {
-   "value": 0.003523,
+   "value": 0.003322,
    "desc": "SIMULATION (sensitivity): P3 | WITHIN with rounding-lenient thresholds 0.155/0.165/0.155, r_w = our conservative upper bound, design-averaged",
    "unit": "",
-   "r_w": 0.113,
+   "r_w": 0.1123,
    "source": "analysis/outputs/trend.json"
   },
   "trend.s4_lenient_p_pooled_upper": {
-   "value": 0.1214,
+   "value": 0.1197,
    "desc": "SIMULATION (sensitivity): P3 | POOLED with rounding-lenient thresholds, r_w = our conservative upper bound, design-averaged",
    "unit": "",
-   "r_w": 0.113,
+   "r_w": 0.1123,
    "source": "analysis/outputs/trend.json"
   },
   "trend.s4_litsd_p_within_upper": {
-   "value": 0.00402,
+   "value": 0.003801,
    "desc": "SIMULATION (sensitivity): P3 | WITHIN, cell5 layout with S3's cell5_litsd hold SDs (0.25 / 0.16 s), r_w = our conservative upper bound",
    "unit": "",
-   "r_w": 0.113,
+   "r_w": 0.1123,
    "source": "analysis/outputs/trend.json"
   },
   "trend.s4_litsd_p_pooled_upper": {
-   "value": 0.177,
+   "value": 0.1752,
    "desc": "SIMULATION (sensitivity): P3 | POOLED, cell5 layout with S3's cell5_litsd hold SDs, r_w = our conservative upper bound",
    "unit": "",
-   "r_w": 0.113,
+   "r_w": 0.1123,
    "source": "analysis/outputs/trend.json"
   },
   "trend.s4_p_within_haugen": {
@@ -5843,20 +5843,20 @@
    "desc": "SIMULATION: smallest true within-championship r at which a WITHIN analysis gives Haugen's three significant cells with probability >= 0.05 (design-averaged; grid 0-0.30 by 0.005, linear interpolation); None = above 0.30",
    "unit": "",
    "cell5": 0.1507,
-   "r_est": 0.0392,
+   "r_est": 0.0391,
    "r_est_ci95": [
-    -0.0183,
-    0.0984
+    -0.0181,
+    0.098
    ],
-   "r_up": 0.113,
+   "r_up": 0.1123,
    "source": "analysis/outputs/trend.json"
   },
   "trend.s4_verdict": {
    "value": "WITHIN-CHAMPIONSHIP ANALYSIS STATISTICALLY IMPLAUSIBLE",
    "desc": "pre-registered S4 verdict (coordinator's rule, prereg_addendum_trend.md): IMPLAUSIBLE if P(P3 | WITHIN, r_up) < 0.01 and P(P3 | POOLED, r_up) >= 0.05 (design-averaged); NOT EXCLUDED if P(P3 | WITHIN, r_up) >= 0.01; else INCONCLUSIVE",
    "unit": "",
-   "p_within_upper": 0.002787,
-   "p_pooled_upper": 0.1164,
+   "p_within_upper": 0.002628,
+   "p_pooled_upper": 0.1146,
    "verdict_if_pooled_at_estimate": "INCONCLUSIVE (pattern improbable under both analyses)",
    "verdict_if_pooled_at_zero": "INCONCLUSIVE (pattern improbable under both analyses)",
    "cell5_verdict": "WITHIN-CHAMPIONSHIP ANALYSIS STATISTICALLY IMPLAUSIBLE",
@@ -5878,8 +5878,8 @@
    "value": "FAVOURS POOLED",
    "desc": "addendum 4 likelihood rule: FAVOURS POOLED if LR at our estimate >= 10, FAVOURS WITHIN if <= 0.1, otherwise INCONCLUSIVE",
    "unit": "",
-   "lr_estimate": 18460.0,
-   "lr_upper": 41.77,
+   "lr_estimate": 18650.0,
+   "lr_upper": 43.61,
    "source": "analysis/outputs/trend.json"
   },
   "trend.s4_verdict_inversion": {
@@ -5887,7 +5887,7 @@
    "desc": "addendum 4 inversion rule: NEEDS r_w ABOVE OUR CI if r_star > our conservative upper bound, otherwise COMPATIBLE",
    "unit": "",
    "r_star": 0.1554,
-   "r_up": 0.113,
+   "r_up": 0.1123,
    "source": "analysis/outputs/trend.json"
   },
   "trend.h6_sd_ms_pre2010": {
@@ -9375,17 +9375,17 @@
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_onset_minus_ready_bias_s": {
-   "value": 0.5232,
+   "value": 0.5214,
    "desc": "measure agent number 'real_seiko_onset_minus_ready_bias_s' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_onset_minus_ready_sd_s": {
-   "value": 0.171,
+   "value": 0.169,
    "desc": "measure agent number 'real_seiko_onset_minus_ready_sd_s' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_onset_minus_ready_mae_s": {
-   "value": 0.5232,
+   "value": 0.5214,
    "desc": "measure agent number 'real_seiko_onset_minus_ready_mae_s' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
@@ -9410,17 +9410,17 @@
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_voicingend_minus_ready_bias_s": {
-   "value": 0.1626,
+   "value": 0.1607,
    "desc": "measure agent number 'real_seiko_voicingend_minus_ready_bias_s' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_voicingend_minus_ready_sd_s": {
-   "value": 0.1599,
+   "value": 0.1574,
    "desc": "measure agent number 'real_seiko_voicingend_minus_ready_sd_s' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_voicingend_minus_ready_mae_s": {
-   "value": 0.196,
+   "value": 0.1941,
    "desc": "measure agent number 'real_seiko_voicingend_minus_ready_mae_s' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
@@ -9445,45 +9445,45 @@
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_wordend_minus_ready_bias_s": {
-   "value": 0.1212,
+   "value": 0.1194,
    "desc": "measure agent number 'real_seiko_wordend_minus_ready_bias_s' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_wordend_minus_ready_sd_s": {
-   "value": 0.1705,
+   "value": 0.1677,
    "desc": "measure agent number 'real_seiko_wordend_minus_ready_sd_s' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_onset_within_champ_sd_s": {
-   "value": 0.1066,
+   "value": 0.105,
    "desc": "measure agent number 'real_seiko_onset_within_champ_sd_s' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_voicingend_within_champ_sd_s": {
-   "value": 0.096,
+   "value": 0.0935,
    "desc": "measure agent number 'real_seiko_voicingend_within_champ_sd_s' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_corr_ready_fp_onset_r": {
-   "value": 0.7448,
+   "value": 0.7513,
    "desc": "measure agent number 'real_seiko_corr_ready_fp_onset_r' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_corr_ready_fp_onset_r_ci95": {
    "value": [
-    0.4712,
-    0.8877
+    0.4826,
+    0.8908
    ],
    "desc": "measure agent number 'real_seiko_corr_ready_fp_onset_r_ci95' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_auto_onset_minus_ready_bias_s": {
-   "value": 0.5239,
+   "value": 0.522,
    "desc": "measure agent number 'real_seiko_auto_onset_minus_ready_bias_s' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_auto_onset_minus_ready_sd_s": {
-   "value": 0.1658,
+   "value": 0.164,
    "desc": "measure agent number 'real_seiko_auto_onset_minus_ready_sd_s' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
@@ -9493,12 +9493,12 @@
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_final_onset_minus_ready_bias_s": {
-   "value": 0.5568,
+   "value": 0.5558,
    "desc": "measure agent number 'real_seiko_final_onset_minus_ready_bias_s' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_final_onset_minus_ready_sd_s": {
-   "value": 0.2253,
+   "value": 0.2247,
    "desc": "measure agent number 'real_seiko_final_onset_minus_ready_sd_s' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
@@ -9513,30 +9513,30 @@
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_final_corr_r": {
-   "value": 0.6823,
+   "value": 0.6839,
    "desc": "measure agent number 'real_seiko_final_corr_r' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_final_corr_r_ci95": {
    "value": [
-    0.4709,
-    0.8196
+    0.4732,
+    0.8206
    ],
    "desc": "measure agent number 'real_seiko_final_corr_r_ci95' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_final_ols_slope": {
-   "value": 0.6133,
+   "value": 0.6146,
    "desc": "measure agent number 'real_seiko_final_ols_slope' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_final_within_champ_sd_s": {
-   "value": 0.1831,
+   "value": 0.1829,
    "desc": "measure agent number 'real_seiko_final_within_champ_sd_s' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_final_within_champ_mad_s": {
-   "value": 0.1005,
+   "value": 0.099,
    "desc": "measure agent number 'real_seiko_final_within_champ_mad_s' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
@@ -9576,12 +9576,12 @@
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_final_WCH2025_bias_s": {
-   "value": 0.6413,
+   "value": 0.6398,
    "desc": "measure agent number 'real_seiko_final_WCH2025_bias_s' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_final_WCH2025_sd_s": {
-   "value": 0.2132,
+   "value": 0.213,
    "desc": "measure agent number 'real_seiko_final_WCH2025_sd_s' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
@@ -9591,24 +9591,24 @@
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_autoall_onset_minus_ready_bias_s": {
-   "value": 0.5544,
+   "value": 0.5533,
    "desc": "measure agent number 'real_seiko_autoall_onset_minus_ready_bias_s' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_autoall_onset_minus_ready_sd_s": {
-   "value": 0.2241,
+   "value": 0.2236,
    "desc": "measure agent number 'real_seiko_autoall_onset_minus_ready_sd_s' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_autoall_corr_r": {
-   "value": 0.6784,
+   "value": 0.6801,
    "desc": "measure agent number 'real_seiko_autoall_corr_r' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_autoall_corr_r_ci95": {
    "value": [
-    0.4652,
-    0.8172
+    0.4676,
+    0.8182
    ],
    "desc": "measure agent number 'real_seiko_autoall_corr_r_ci95' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
@@ -9682,12 +9682,12 @@
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_onset_minus_ready_WCH2025_bias_s": {
-   "value": 0.6099,
+   "value": 0.6072,
    "desc": "measure agent number 'real_seiko_onset_minus_ready_WCH2025_bias_s' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_onset_minus_ready_WCH2025_sd_s": {
-   "value": 0.1173,
+   "value": 0.115,
    "desc": "measure agent number 'real_seiko_onset_minus_ready_WCH2025_sd_s' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },
@@ -9702,7 +9702,7 @@
    "source": "analysis/measure/numbers.json"
   },
   "measure.real_seiko_voicingend_minus_ready_WCH2025_bias_s": {
-   "value": 0.2471,
+   "value": 0.2443,
    "desc": "measure agent number 'real_seiko_voicingend_minus_ready_WCH2025_bias_s' (merged verbatim)",
    "source": "analysis/measure/numbers.json"
   },

@@ -6,7 +6,7 @@
   {
    "path": "analysis/measure/manual_annotations.csv",
    "exists": true,
-   "sha256_12": "fe3736ebbb0f",
+   "sha256_12": "12db2ab09fe4",
    "rows": 36
   },
   {
@@ -40,12 +40,12 @@
    "unit": ""
   },
   "offset_mean_s": {
-   "value": 0.5232,
+   "value": 0.5214,
    "desc": "mean (audio set-onset foreperiod - Ready Time)",
    "unit": "s"
   },
   "offset_sd_within_comp_s": {
-   "value": 0.1121,
+   "value": 0.1103,
    "desc": "within-championship SD of (audio foreperiod - Ready Time)",
    "unit": "s"
   },
@@ -62,51 +62,51 @@
    "n": 4
   },
   "offset_mean_WCH2025_s": {
-   "value": 0.6099,
+   "value": 0.6072,
    "desc": "mean (audio foreperiod - Ready Time), WCH2025",
    "unit": "s",
    "n": 15
   },
   "corr_ready_audio": {
-   "value": 0.7448,
+   "value": 0.7513,
    "desc": "Pearson r between Ready Time and audio foreperiod (pooled over championships)",
    "unit": ""
   },
   "calib_slope_b": {
-   "value": 0.8156,
+   "value": 0.8204,
    "desc": "within-championship slope of audio foreperiod on Ready Time (regression calibration factor; 1 = no attenuation); stratified bootstrap CI",
    "unit": "",
    "ci95": [
-    0.5931,
-    1.0527
+    0.6007,
+    1.0615
    ],
-   "se_ols": 0.116,
+   "se_ols": 0.1145,
    "n_boot": 5000,
    "share_boot_below_0_2": 0.0
   },
   "calib_slope_b_voice_end": {
-   "value": 0.8847,
+   "value": 0.8909,
    "desc": "calibration slope using the end of voicing of 'Set' instead of its onset (sensitivity)",
    "unit": "",
-   "se_ols": 0.1081
+   "se_ols": 0.1057
   },
   "slope_corrected_ms_per_100ms": {
-   "value": 0.397,
+   "value": 0.395,
    "desc": "Ready-Time slope divided by the calibration factor b (Monte Carlo over the slope's sampling error and bootstrap b)",
    "unit": "ms per 100 ms of foreperiod",
    "ci95": [
-    -0.174,
-    1.018
+    -0.173,
+    1.01
    ],
    "share_draws_used": 1.0
   },
   "r_corrected": {
-   "value": 0.0392,
+   "value": 0.0391,
    "desc": "r-equivalent on the foreperiod scale (r(Ready) / sqrt(b), classical error)",
    "unit": "",
    "ci95": [
-    -0.0183,
-    0.0984
+    -0.0181,
+    0.098
    ]
   },
   "corrected_excludes_haugen": {
@@ -115,22 +115,22 @@
    "unit": ""
   },
   "r_ci_high_at_b_low": {
-   "value": 0.113,
+   "value": 0.1123,
    "desc": "upper 95% bound of the r-equivalent if b sits at its lower 2.5% bound (conservative)",
    "unit": ""
   },
   "r_ci_low_at_b_low": {
-   "value": -0.021,
+   "value": -0.0209,
    "desc": "lower 95% bound of the r-equivalent if b sits at its lower 2.5% bound (conservative)",
    "unit": ""
   },
   "direct_audio_slope_ms_per_100ms": {
-   "value": 1.019,
+   "value": 1.009,
    "desc": "RT on broadcast-audio foreperiod directly (small sample)",
    "unit": "ms per 100 ms of foreperiod",
    "ci95": [
-    -0.392,
-    2.43
+    -0.368,
+    2.386
    ],
    "n_races": 22,
    "n_rts": 174
@@ -259,12 +259,12 @@
     "wf_ready_time_s": 1.854
    },
    {
-    "race_id": "WCH2025-100m-W-F-H1",
+    "race_id": "WCH2025-100m-W-SF-H3",
     "comp_year": "WCH2025",
     "attempt": 1.0,
     "fp_onset_s": 2.34,
     "fp_voice_end_s": 2.005,
-    "wf_ready_time_s": 1.62
+    "wf_ready_time_s": 1.661
    },
    {
     "race_id": "WCH2025-100m-W-R1-H2",
@@ -318,15 +318,15 @@
  },
  "extra": {
   "b_boot_quantiles": {
-   "1": 0.559782,
-   "2.5": 0.593092,
-   "5": 0.632989,
-   "25": 0.750413,
-   "50": 0.827279,
-   "75": 0.904533,
-   "95": 1.01273,
-   "97.5": 1.05272,
-   "99": 1.09948
+   "1": 0.567722,
+   "2.5": 0.600701,
+   "5": 0.641224,
+   "25": 0.755732,
+   "50": 0.833915,
+   "75": 0.910055,
+   "95": 1.02111,
+   "97.5": 1.06151,
+   "99": 1.10925
   }
  }
 }

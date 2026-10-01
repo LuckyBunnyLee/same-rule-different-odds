@@ -258,27 +258,27 @@ Valid (final) start attempts with a validated Ready Time and a clean "Set": **n 
 
 | broadcast reference point | n | bias (ms) | SD (ms) | MAE (ms) | min (ms) | max (ms) | within +-20 ms | within +-40 ms |
 |---|---|---|---|---|---|---|---|---|
-| set onset (manual) | 22 | 523 | 171 | 523 | 202 | 808 | 0% | 0% |
-| end of voicing (manual) | 22 | 163 | 160 | 196 | -158 | 405 | 0% | 5% |
-| end of word incl. /t/ (manual) | 22 | 121 | 170 | 184 | -212 | 385 | 5% | 5% |
-| set onset (automated) | 22 | 524 | 166 | 524 | 186 | 828 | 0% | 0% |
-| set offset (automated) | 22 | 142 | 201 | 200 | -317 | 441 | 5% | 5% |
+| set onset (manual) | 22 | 521 | 169 | 521 | 202 | 808 | 0% | 0% |
+| end of voicing (manual) | 22 | 161 | 157 | 194 | -158 | 405 | 0% | 5% |
+| end of word incl. /t/ (manual) | 22 | 119 | 168 | 182 | -212 | 346 | 5% | 5% |
+| set onset (automated) | 22 | 522 | 164 | 522 | 186 | 828 | 0% | 0% |
+| set offset (automated) | 22 | 140 | 198 | 199 | -317 | 435 | 5% | 5% |
 
-**Final dataset** (all reviewed valid starts in foreperiods.csv with a validated Ready Time, n = 40): onset foreperiod - Ready = 557 ms mean (SD 225 ms, range 186 to 1293 ms; within +-40 ms: 0%). Within-championship residual SD 183 ms, MAD 100 ms, 50% of residuals within 100 ms. r(Ready, onset foreperiod) = 0.6823 (95% CI [0.4709, 0.8196]).
+**Final dataset** (all reviewed valid starts in foreperiods.csv with a validated Ready Time, n = 40): onset foreperiod - Ready = 556 ms mean (SD 225 ms, range 186 to 1293 ms; within +-40 ms: 0%). Within-championship residual SD 183 ms, MAD 99 ms, 50% of residuals within 100 ms. r(Ready, onset foreperiod) = 0.6839 (95% CI [0.4732, 0.8206]).
 
 | championship (final dataset) | n | onset - Ready: mean (ms) | SD (ms) | min (ms) | max (ms) |
 |---|---|---|---|---|---|
 | WCH2022 | 6 | 339 | 99 | 186 | 453 |
 | WCH2023 | 6 | 381 | 78 | 292 | 501 |
-| WCH2025 | 28 | 641 | 213 | 367 | 1293 |
+| WCH2025 | 28 | 640 | 213 | 367 | 1293 |
 
 | championship (blind manual subset) | n | onset - Ready: mean (ms) | SD (ms) | voicing end - Ready: mean (ms) |
 |---|---|---|---|---|
 | WCH2022 | 3 | 274 | 100 | -54 |
 | WCH2023 | 4 | 385 | 93 | 8 |
-| WCH2025 | 15 | 610 | 117 | 247 |
+| WCH2025 | 15 | 607 | 115 | 244 |
 
-Within-championship SD of (onset - Ready) after removing each championship's mean: 107 ms (voicing end: 96 ms). Pearson r(Ready Time, onset foreperiod) = 0.7448 (95% CI [0.4712, 0.8877]), OLS slope 0.6089.
+Within-championship SD of (onset - Ready) after removing each championship's mean: 105 ms (voicing end: 94 ms). Pearson r(Ready Time, onset foreperiod) = 0.7513 (95% CI [0.4826, 0.8908]), OLS slope 0.6142.
 
 Excluded (listed, not dropped silently):
 - WCH2025-100m-M-R1-H1 attempt 1: Set command not identifiable in broadcast audio: commentary runs over the command; Set not identifiable (HF burst 181.37 may be the /s/ but overlaps speech)

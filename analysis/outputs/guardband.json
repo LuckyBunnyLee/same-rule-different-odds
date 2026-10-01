@@ -11,7 +11,7 @@
   {
    "path": "analysis/outputs/fairness.json",
    "exists": true,
-   "sha256_12": "328a442ca39c"
+   "sha256_12": "9bcb3a81acef"
   },
   {
    "path": "data/derived/rt_athletes.csv",

@@ -50,15 +50,6 @@
  "failures": [],
  "rows": [
   {
-   "race_id": "WCH2025-100m-W-F-H1",
-   "attempt": 1,
-   "clean": 1,
-   "e_gun_ms": -0.7,
-   "e_on_ms": 25.0,
-   "e_off_ms": -57.0,
-   "qc_flag": "no_whisper_set;speech_before_set"
-  },
-  {
    "race_id": "WCH2025-100m-W-R1-H2",
    "attempt": 1,
    "clean": 1,
@@ -92,6 +83,15 @@
    "e_gun_ms": -9.4,
    "e_on_ms": -136.0,
    "e_off_ms": -256.0,
+   "qc_flag": "no_whisper_set;speech_before_set"
+  },
+  {
+   "race_id": "WCH2025-100m-W-SF-H3",
+   "attempt": 1,
+   "clean": 1,
+   "e_gun_ms": -0.7,
+   "e_on_ms": 25.0,
+   "e_off_ms": -57.0,
    "qc_flag": "no_whisper_set;speech_before_set"
   },
   {

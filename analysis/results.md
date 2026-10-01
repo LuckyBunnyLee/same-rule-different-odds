@@ -9,7 +9,7 @@ Reproduce everything: `.venv\Scripts\python.exe analysis\run_all.py`; verify eve
 Terminology: **Seiko Ready Time** = the official start-information system's 'Ready Time' (from the start waveform images). It is *not* the set-onset-to-gun foreperiod of the literature: broadcast-audio foreperiods exceed it by about half a second with scatter (section 2b). **Foreperiod** below means set onset to gun (broadcast audio) unless stated. **Hold** is the starter's set-to-gun interval in the literature sense.
 
 1. **Data.** 6,408 valid starts, 836 races, 18 championships (1999-2025); Seiko Ready Time for 232 races (1,778 valid RTs).
-2. **Ready Time vs mean RT (preliminary).** 0.32 (95% CI -0.15 to 0.80) ms per 100 ms longer Ready Time (minimum detectable 0.68); r-equivalent 0.035 (95% CI -0.016 to 0.087), which excludes |r| = 0.16 (Haugen et al. 2013). Correcting for Ready Time being a noisy proxy of the foreperiod (calibration factor 0.82 (95% CI 0.59 to 1.05), 22 audio-annotated races): r 0.039 (95% CI -0.018 to 0.098), which still excludes |r| = 0.16.
+2. **Ready Time vs mean RT (preliminary).** 0.32 (95% CI -0.15 to 0.80) ms per 100 ms longer Ready Time (minimum detectable 0.68); r-equivalent 0.035 (95% CI -0.016 to 0.087), which excludes |r| = 0.16 (Haugen et al. 2013). Correcting for Ready Time being a noisy proxy of the foreperiod (calibration factor 0.82 (95% CI 0.60 to 1.06), 22 audio-annotated races): r 0.039 (95% CI -0.018 to 0.098), which still excludes |r| = 0.16.
 3. **Shape (preliminary).** Slope below each championship's median Ready Time -0.67 (95% CI -1.50 to 0.17), above it 1.22 (95% CI 0.44 to 2.00) ms per 100 ms; lowest-AIC model: M10 piecewise at champ. median; reciprocal-PDF effect 1.22 (95% CI 0.17 to 2.27) ms per SD (predicted sign, CI excludes 0); objective hazard 1.08 (95% CI -0.05 to 2.21) ms per SD (opposite sign, CI includes 0).
 4. **Championship offsets.** Adjusted championship RT offsets span 33.9 ms (LRT chi2 = 648); championships carry 14.8% (95% CI 8.0 to 25.8) of RT variance. Not a changed detection threshold: at every championship with waveforms the detection line sits at the same point of the displayed force rise (median offset -4.2 ms), while force onsets span 35 ms (section 1); source not identified.
 5. **Simulation (SIMULATION).** Legitimate starts scored < 0.100 s: 0.284 (95% CI 0.144 to 0.482) per 1,000 (men, ex-Gaussian, average championship). Across the 10th-90th percentile Ready Time the measured slope allows at most a 3.4-fold change (3.9-fold on the foreperiod scale after proxy correction); the interquartile range of championship offsets gives 18.4-fold.
@@ -118,18 +118,18 @@ Ready Time is the official Seiko start-system interval; it is a noisy, offset pr
 ## 2b. Seiko Ready Time vs broadcast-audio foreperiod (errors-in-variables check)
 
 *Source:* `analysis/outputs/calibration.json` from `.venv\Scripts\python.exe analysis/calibration.py --seed 20260928 --boot 5000 --mc 20000 --fp-models analysis/outputs/fp_models.json --out analysis/outputs/calibration.json`  
-*Data:* manual_annotations.csv@sha256:fe3736ebbb0f (36 rows); rt_waveform.csv@sha256:3711f9b56ca6 (277 rows); rt_athletes.csv@sha256:af44975b3e1a (4904 rows); races.csv@sha256:4f0f5097c6dc (625 rows)
+*Data:* manual_annotations.csv@sha256:12db2ab09fe4 (36 rows); rt_waveform.csv@sha256:3711f9b56ca6 (277 rows); rt_athletes.csv@sha256:af44975b3e1a (4904 rows); races.csv@sha256:4f0f5097c6dc (625 rows)
 
-- **Pairs:** 22 races with a clean manual broadcast annotation of the same attempt. Audio foreperiod (set onset to gun) minus Ready Time: mean 0.523 s, within-championship SD 0.112 s; by championship WCH2022 0.274 s, WCH2023 0.385 s, WCH2025 0.610 s. Pearson r(Ready Time, audio foreperiod) = 0.74.
-- **Calibration factor** (within-championship slope of audio foreperiod on Ready Time): 0.82 (95% CI 0.59 to 1.05); with the end of voicing of 'Set' instead of its onset: 0.88. A factor below 1 means Ready Time exaggerates foreperiod differences, so RT slopes per unit of Ready Time are attenuated by that factor.
-- **Corrected effect:** 0.40 (95% CI -0.17 to 1.02) ms per 100 ms of foreperiod; r-equivalent 0.039 (95% CI -0.018 to 0.098), which still excludes |r| = 0.16. Conservative bound (calibration factor at its lower 2.5% bootstrap bound): r from -0.021 to 0.113.
-- **Direct fit on audio foreperiods** (small sample, reported separately): 1.02 (95% CI -0.39 to 2.43) ms per 100 ms (22 races, 174 RTs); too imprecise to add information.
+- **Pairs:** 22 races with a clean manual broadcast annotation of the same attempt. Audio foreperiod (set onset to gun) minus Ready Time: mean 0.521 s, within-championship SD 0.110 s; by championship WCH2022 0.274 s, WCH2023 0.385 s, WCH2025 0.607 s. Pearson r(Ready Time, audio foreperiod) = 0.75.
+- **Calibration factor** (within-championship slope of audio foreperiod on Ready Time): 0.82 (95% CI 0.60 to 1.06); with the end of voicing of 'Set' instead of its onset: 0.89. A factor below 1 means Ready Time exaggerates foreperiod differences, so RT slopes per unit of Ready Time are attenuated by that factor.
+- **Corrected effect:** 0.40 (95% CI -0.17 to 1.01) ms per 100 ms of foreperiod; r-equivalent 0.039 (95% CI -0.018 to 0.098), which still excludes |r| = 0.16. Conservative bound (calibration factor at its lower 2.5% bootstrap bound): r from -0.021 to 0.112.
+- **Direct fit on audio foreperiods** (small sample, reported separately): 1.01 (95% CI -0.37 to 2.39) ms per 100 ms (22 races, 174 RTs); too imprecise to add information.
 - Assumptions: the calibration sample is representative of the Ready-Time sample (transportability), the proxy error is non-differential for RT, and the relation is linear within a championship. The pair sample is small and grows as the measurement pipeline annotates more races; rerun analysis/run_all.py to update.
 
 ## 2c. Automated broadcast-audio foreperiod pipeline: held-out validation (measurement pipeline)
 
 *Source:* `analysis/measure/numbers.json` (measurement pipeline's generated numbers, merged verbatim; not in producers.json)  
-*Data:* numbers.json@sha256:b87a6a30d106
+*Data:* numbers.json@sha256:8a4d66d6c01a
 
 - **Held-out clean starts:** 10. Automated vs blind manual annotation: gun onset MAE 6.17 ms (within 20 ms: 83.3%); 'Set' onset MAE 33.7 ms (within 20 ms: 60.0%, within 40 ms: 70.0%); foreperiod MAE 36.2 ms (within 40 ms: 70.0%; largest error 126.6 ms).
 - These are the measurement pipeline's numbers (analysis/measure/README.md explains the pipeline); all `measure.*` keys are listed in Appendix B.
@@ -150,12 +150,12 @@ Ready Time is the official Seiko start-system interval; it is a noisy, offset pr
 ## 4. Simulation study: hold-conditional false-start risk for legitimate starts (SIMULATION)
 
 *Source:* `analysis/outputs/fairness.json` from `.venv\Scripts\python.exe analysis/fairness_sim.py --seed 20260928 --phi 0.25 --descriptive analysis/outputs/descriptive.json --fp-models analysis/outputs/fp_models.json --calibration analysis/outputs/calibration.json --out analysis/outputs/fairness.json`  
-*Data:* rt_athletes.csv@sha256:af44975b3e1a (4904 rows); rt_fiore.csv@sha256:dff5cb184d1b (2805 rows); races.csv@sha256:4f0f5097c6dc (625 rows); rt_waveform.csv@sha256:3711f9b56ca6 (277 rows); manual_annotations.csv@sha256:fe3736ebbb0f (36 rows)
+*Data:* rt_athletes.csv@sha256:af44975b3e1a (4904 rows); rt_fiore.csv@sha256:dff5cb184d1b (2805 rows); races.csv@sha256:4f0f5097c6dc (625 rows); rt_waveform.csv@sha256:3711f9b56ca6 (277 rows); manual_annotations.csv@sha256:12db2ab09fe4 (36 rows)
 
 All quantities in this section are model outputs from fitted real RT distributions plus stated scenario inputs; none is an observed foreperiod effect.
 
 - **Baseline:** at an average championship's calibration, 0.284 (95% CI 0.144 to 0.482) legitimate starts per 1,000 are scored below 0.100 s for men and 0.089 (95% CI 0.046 to 0.169) for women (ex-Gaussian); shifted lognormal 0.0504 (95% CI 0.0124 to 0.1505) (men), shifted Wald 0.0514 (95% CI 0.0105 to 0.1652) (men).
-- **Measured effect:** within the 95% CI of the Ready-Time slope, moving from the 10th to the 90th percentile Seiko Ready Time changes that probability by at most 3.41-fold (men); on the foreperiod scale after the proxy correction (section 2b) at most 3.89-fold, or 4.92-fold with the calibration factor at its lower bound.
+- **Measured effect:** within the 95% CI of the Ready-Time slope, moving from the 10th to the 90th percentile Seiko Ready Time changes that probability by at most 3.41-fold (men); on the foreperiod scale after the proxy correction (section 2b) at most 3.88-fold, or 4.88-fold with the calibration factor at its lower bound.
 - **Measured shape (sensitivity):** with the fitted piecewise slopes, the probability at the 10th and 90th percentile Ready Times is 0.59 and 0.38 times its value at the median (men), i.e. risk would be highest near the typical interval.
 - **Literature hold effects:** a Haugen-sized effect makes the risk 10.1 (95% CI 8.4 to 12.9) times higher at the 90th than at the 10th percentile hold if RT is faster after long holds, or 10.1 (95% CI 8.4 to 12.9) times higher at the 10th than at the 90th percentile if RT is slower after long holds; the hazard model calibrated to |r| = 0.16 gives 10.6 (95% CI 8.8 to 13.6)-fold; the Otsuka lab contrast would give 584 (95% CI 351 to 1,133)-fold.
 - **Championship offsets** (applied as location shifts of the fitted distribution): moving between the 25th and 75th percentile championship offsets changes the probability 18.4-fold; between the fastest- and slowest-scoring championships 4,430-fold (WCH2022: 13.83 per 1,000; WCH2025: 0.0031 per 1,000).
@@ -178,7 +178,7 @@ All quantities in this section are model outputs from fitted real RT distributio
 ## 5. Systematic (athlete-independent) variation: pre-registered analyses
 Plan, estimands and decision rules were committed before computation in `analysis/prereg_systematic.md` (addenda list every deviation). Quantities marked SIMULATION come from models fitted to the data.
 *Source:* `analysis/outputs/systematic.json` from `.venv\Scripts\python.exe analysis/systematic.py --seed 20260928 --descriptive analysis/outputs/descriptive.json --fp-models analysis/outputs/fp_models.json --calibration analysis/outputs/calibration.json --boot-r 2000 --sims 10000 --boot-h2 200 --boot-champ 100 --min-n 100 --min-races 10 --haugen-design analysis/haugen_design.csv --fiore-params analysis/fiore2025_params.csv --fiore-venue-pdf analysis/external/fiore2025/ComparisonOfVenueEffects.pdf --out analysis/outputs/systematic.json`  
-*Data:* rt_waveform.csv@sha256:3711f9b56ca6 (277 rows); rt_athletes.csv@sha256:af44975b3e1a (4904 rows); races.csv@sha256:4f0f5097c6dc (625 rows); manual_annotations.csv@sha256:fe3736ebbb0f (36 rows); rt_fiore.csv@sha256:dff5cb184d1b (2805 rows); haugen_design.csv@sha256:d5b502e031f3 (4 rows); foreperiods.csv@sha256:376f05038040 (105 rows); fiore2025_params.csv@sha256:ef7c65a24550 (3 rows); ComparisonOfVenueEffects.pdf@sha256:1254ba381a51
+*Data:* rt_waveform.csv@sha256:3711f9b56ca6 (277 rows); rt_athletes.csv@sha256:af44975b3e1a (4904 rows); races.csv@sha256:4f0f5097c6dc (625 rows); manual_annotations.csv@sha256:12db2ab09fe4 (36 rows); rt_fiore.csv@sha256:dff5cb184d1b (2805 rows); haugen_design.csv@sha256:d5b502e031f3 (4 rows); foreperiods.csv@sha256:246a59371e43 (105 rows); fiore2025_params.csv@sha256:ef7c65a24550 (3 rows); ComparisonOfVenueEffects.pdf@sha256:1254ba381a51
 
 ### H1: can championship structure make a null hold effect look like Haugen et al.'s r = 0.16?
 
@@ -186,14 +186,14 @@ Sample: 232 races, 1,778 valid RTs, 4 championships with a validated Seiko Ready
 
 - **(a) Within-championship model** (section 2, reproduced): 0.32 (95% CI -0.15 to 0.80) ms per 100 ms, r-equivalent 0.035 (95% CI -0.016 to 0.087); excludes the Haugen-sized 1.47 ms: yes.
 - **(b) Same model without championship effects:** 2.40 (95% CI 1.63 to 3.16) ms per 100 ms, r-equivalent 0.245 (95% CI 0.167 to 0.324) (race SD rises to 13.8 ms from 4.9 ms, absorbing the championship offsets).
-- **(c) Naive athlete-level Pearson r, championships pooled (Haugen-style):** r = 0.221 (95% CI 0.128 to 0.308) (race-cluster bootstrap CI; the naive Fisher CI a start-level analysis would report is [0.176, 0.265], naive p = 4.4e-21). Centred within championship: r = 0.036 (95% CI -0.036 to 0.105). Secondary: on the audio-calibrated foreperiod scale r = 0.374 (95% CI 0.299 to 0.440); men 0.200 (95% CI 0.052 to 0.333); women 0.231 (95% CI 0.117 to 0.343); 100 m only 0.273 (95% CI 0.108 to 0.445).
+- **(c) Naive athlete-level Pearson r, championships pooled (Haugen-style):** r = 0.221 (95% CI 0.128 to 0.308) (race-cluster bootstrap CI; the naive Fisher CI a start-level analysis would report is [0.176, 0.265], naive p = 4.4e-21). Centred within championship: r = 0.036 (95% CI -0.036 to 0.105). Secondary: on the audio-calibrated foreperiod scale r = 0.373 (95% CI 0.298 to 0.439); men 0.200 (95% CI 0.052 to 0.333); women 0.231 (95% CI 0.117 to 0.343); 100 m only 0.273 (95% CI 0.108 to 0.445).
 - **(d) Championship means (descriptive, no inference):** Pearson r of mean Ready Time and athlete-adjusted RT offset 0.82 over the 4 championships of the sample (Spearman 0.80); 0.26 with WIC2025 added (anomalous Ready Times; Spearman 0.80); 1.00 on the calibrated foreperiod scale (3 championships).
 
 | championship | races | mean Ready Time (s) | RT offset (ms, athlete-adjusted) | RT offset (ms, model a) | calibration offset (s) | mean foreperiod (s) |
 |---|---|---|---|---|---|---|
 | WCH2022 | 66 | 1.480 | -18.4 | -14.5 | 0.274 | 1.754 |
 | WCH2023 | 63 | 1.691 | -1.1 | 1.9 | 0.385 | 2.076 |
-| WCH2025 | 62 | 1.696 | 15.5 | 18.6 | 0.610 | 2.306 |
+| WCH2025 | 62 | 1.696 | 15.5 | 18.6 | 0.607 | 2.303 |
 | WIC2024 | 41 | 1.472 | -7.1 | -6.0 | n/a | n/a |
 | WIC2025 | 38 | 3.247 | 1.3 | n/a | n/a | n/a |
 
@@ -201,7 +201,7 @@ Sample: 232 races, 1,778 valid RTs, 4 championships with a validated Seiko Ready
 
 - S1, observed structure, true within-championship slope 0: mean r 0.178 (95% of datasets 0.132 to 0.223); P(r >= 0.16) = 0.779; P(|r| >= 0.16) = 0.779.
 - S1, true slope = the (a) estimate: mean r 0.201 (95% of datasets 0.155 to 0.246); P(r >= 0.16) = 0.963; P(|r| >= 0.16) = 0.963.
-- S1, slope 0, foreperiod scale (championship-specific Ready Time definition shift): mean r 0.315 (95% of datasets 0.267 to 0.361); P(r >= 0.16) = 1.000; P(|r| >= 0.16) = 1.000.
+- S1, slope 0, foreperiod scale (championship-specific Ready Time definition shift): mean r 0.314 (95% of datasets 0.267 to 0.361); P(r >= 0.16) = 1.000; P(|r| >= 0.16) = 1.000.
 - S1, slope 0, championship-centred r (control): mean r -0.008 (95% of datasets -0.062 to 0.046); P(r >= 0.16) = 0.000; P(|r| >= 0.16) = 0.000.
 - S1 control, slope 0 and no championship offsets: mean r -0.012 (95% of datasets -0.067 to 0.043); P(r >= 0.16) = 0.000; P(|r| >= 0.16) = 0.000.
 - S2, exchangeable championships, slope 0: mean r -0.008 (95% of datasets -0.178 to 0.162); P(r >= 0.16) = 0.026; P(|r| >= 0.16) = 0.063.
@@ -238,13 +238,13 @@ All 6,408 valid RTs; left-truncated fits; barrier = RT with fitted probability 1
 
 ## 5b. Trend analyses (pre-registered: `analysis/prereg_addendum_trend.md`)
 *Source:* `analysis/outputs/trend.json` from `.venv\Scripts\python.exe analysis/trend.py --seed 20260928 --descriptive analysis/outputs/descriptive.json --calibration analysis/outputs/calibration.json --fairness analysis/outputs/fairness.json --sims 20000 --boot 5000 --perm 10000 --out analysis/outputs/trend.json`  
-*Data:* rt_athletes.csv@sha256:af44975b3e1a (4904 rows); rt_fiore.csv@sha256:dff5cb184d1b (2805 rows); races.csv@sha256:4f0f5097c6dc (625 rows); manual_annotations.csv@sha256:fe3736ebbb0f (36 rows); rt_waveform.csv@sha256:3711f9b56ca6 (277 rows); foreperiods.csv@sha256:376f05038040 (105 rows)
+*Data:* rt_athletes.csv@sha256:af44975b3e1a (4904 rows); rt_fiore.csv@sha256:dff5cb184d1b (2805 rows); races.csv@sha256:4f0f5097c6dc (625 rows); manual_annotations.csv@sha256:12db2ab09fe4 (36 rows); rt_waveform.csv@sha256:3711f9b56ca6 (277 rows); foreperiods.csv@sha256:246a59371e43 (105 rows)
 
 ### H1-S4: which analysis makes Haugen et al.'s reported cells likely? (SIMULATION)
 
-- At the largest within-championship effect our data allow (r_w = 0.113), a within-championship analysis produces the reported pattern with probability 0.0028, a pooled analysis with probability 0.116; likelihood ratio 42 (11 when the non-significant women 2003-2009 cell is added to the pattern).
-- At our estimate (r_w = 0.039): 9.5e-07 vs 0.018 (likelihood ratio 18,460).
-- The within-championship effect that would make the pattern plausible (P >= 0.05): r = 0.155, against a conservative upper bound of 0.113 from our data.
+- At the largest within-championship effect our data allow (r_w = 0.112), a within-championship analysis produces the reported pattern with probability 0.0026, a pooled analysis with probability 0.115; likelihood ratio 44 (11 when the non-significant women 2003-2009 cell is added to the pattern).
+- At our estimate (r_w = 0.039): 9.3e-07 vs 0.017 (likelihood ratio 18,650).
+- The within-championship effect that would make the pattern plausible (P >= 0.05): r = 0.155, against a conservative upper bound of 0.112 from our data.
 
 **Verdicts:** WITHIN-CHAMPIONSHIP ANALYSIS STATISTICALLY IMPLAUSIBLE (primary rule); likelihood rule FAVOURS POOLED; inversion rule WITHIN READING NEEDS r_w ABOVE OUR CI. Stated plainly: with the pooled side evaluated at our estimate the rule reads INCONCLUSIVE (pattern improbable under both analyses), and at r_w = 0 INCONCLUSIVE (pattern improbable under both analyses). This is a statement about probabilities under a reconstructed design, not about what Haugen et al. did.
 
@@ -262,7 +262,7 @@ All 6,408 valid RTs; left-truncated fits; barrier = RT with fitted probability 1
 
 ## 5c. Guard band for the 0.100 s rule (pre-registered: `analysis/prereg_guardband.md`)
 *Source:* `analysis/outputs/guardband.json` from `.venv\Scripts\python.exe analysis/guardband.py --seed 20260928 --descriptive analysis/outputs/descriptive.json --fairness analysis/outputs/fairness.json --offset-draws 25 --out analysis/outputs/guardband.json`  
-*Data:* rt_athletes.csv@sha256:af44975b3e1a (4904 rows); rt_fiore.csv@sha256:dff5cb184d1b (2805 rows); races.csv@sha256:4f0f5097c6dc (625 rows); rt_waveform.csv@sha256:3711f9b56ca6 (277 rows); manual_annotations.csv@sha256:fe3736ebbb0f (36 rows)
+*Data:* rt_athletes.csv@sha256:af44975b3e1a (4904 rows); rt_fiore.csv@sha256:dff5cb184d1b (2805 rows); races.csv@sha256:4f0f5097c6dc (625 rows); rt_waveform.csv@sha256:3711f9b56ca6 (277 rows); manual_annotations.csv@sha256:12db2ab09fe4 (36 rows)
 
 - **Band:** u = 9.3 (95% CI 6.6 to 13.1) ms (between-championship SD of athlete-adjusted offsets) gives g = 15.2 ms at k = 1.645 (9.3 at k = 1, 18.5 at k = 2): a limit of 0.0848 s (0.085 s on the RT grid).
 - **(a) Modelled legitimate starts scored below the limit, per 1,000 (SIMULATION, men, ex-Gaussian):**
@@ -371,17 +371,17 @@ Figures are in `analysis/figures/` (PNG + PDF), each rendered by `analysis/make_
 |---|---|---|
 | `analysis/outputs/descriptive.json` | `analysis/descriptive.py --seed 20260928 --boot 1000 --fit-boot 200 --meet-boot 100 --min-starts 4 --out analysis/outputs/descriptive.json` | rt_athletes.csv@sha256:af44975b3e1a (4904 rows); rt_fiore.csv@sha256:dff5cb184d1b (2805 rows); races.csv@sha256:4f0f5097c6dc (625 rows) |
 | `analysis/outputs/fp_models.json` | `analysis/fp_models.py --seed 20260928 --fp-source seiko --exclude-fp-comps WIC2025 --boot 500 --perm 5000 --phi 0.26 --phi-pdf 0.21 --catch 0.05 --out analysis/outputs/fp_models.json` | rt_waveform.csv@sha256:3711f9b56ca6 (277 rows); rt_athletes.csv@sha256:af44975b3e1a (4904 rows); races.csv@sha256:4f0f5097c6dc (625 rows) |
-| `analysis/outputs/calibration.json` | `analysis/calibration.py --seed 20260928 --boot 5000 --mc 20000 --fp-models analysis/outputs/fp_models.json --out analysis/outputs/calibration.json` | manual_annotations.csv@sha256:fe3736ebbb0f (36 rows); rt_waveform.csv@sha256:3711f9b56ca6 (277 rows); rt_athletes.csv@sha256:af44975b3e1a (4904 rows); races.csv@sha256:4f0f5097c6dc (625 rows) |
+| `analysis/outputs/calibration.json` | `analysis/calibration.py --seed 20260928 --boot 5000 --mc 20000 --fp-models analysis/outputs/fp_models.json --out analysis/outputs/calibration.json` | manual_annotations.csv@sha256:12db2ab09fe4 (36 rows); rt_waveform.csv@sha256:3711f9b56ca6 (277 rows); rt_athletes.csv@sha256:af44975b3e1a (4904 rows); races.csv@sha256:4f0f5097c6dc (625 rows) |
 | `analysis/outputs/detector.json` | `analysis/detector_check.py --seed 20260928 --out analysis/outputs/detector.json` | rt_waveform_lanes.csv@sha256:0559f4575d94 (2493 rows) |
 | `analysis/outputs/power.json` | `analysis/power_analysis.py --seed 20260928 --sims 10000 --m 8 --r 0.16 --validate-sims 200 --descriptive analysis/outputs/descriptive.json --out analysis/outputs/power.json` | rt_athletes.csv@sha256:af44975b3e1a (4904 rows); rt_fiore.csv@sha256:dff5cb184d1b (2805 rows); races.csv@sha256:4f0f5097c6dc (625 rows) |
-| `analysis/outputs/fairness.json` | `analysis/fairness_sim.py --seed 20260928 --phi 0.25 --descriptive analysis/outputs/descriptive.json --fp-models analysis/outputs/fp_models.json --calibration analysis/outputs/calibration.json --out analysis/outputs/fairness.json` | rt_athletes.csv@sha256:af44975b3e1a (4904 rows); rt_fiore.csv@sha256:dff5cb184d1b (2805 rows); races.csv@sha256:4f0f5097c6dc (625 rows); rt_waveform.csv@sha256:3711f9b56ca6 (277 rows); manual_annotations.csv@sha256:fe3736ebbb0f (36 rows) |
-| `analysis/outputs/systematic.json` | `analysis/systematic.py --seed 20260928 --descriptive analysis/outputs/descriptive.json --fp-models analysis/outputs/fp_models.json --calibration analysis/outputs/calibration.json --boot-r 2000 --sims 10000 --boot-h2 200 --boot-champ 100 --min-n 100 --min-races 10 --haugen-design analysis/haugen_design.csv --fiore-params analysis/fiore2025_params.csv --fiore-venue-pdf analysis/external/fiore2025/ComparisonOfVenueEffects.pdf --out analysis/outputs/systematic.json` | rt_waveform.csv@sha256:3711f9b56ca6 (277 rows); rt_athletes.csv@sha256:af44975b3e1a (4904 rows); races.csv@sha256:4f0f5097c6dc (625 rows); manual_annotations.csv@sha256:fe3736ebbb0f (36 rows); rt_fiore.csv@sha256:dff5cb184d1b (2805 rows); haugen_design.csv@sha256:d5b502e031f3 (4 rows); foreperiods.csv@sha256:376f05038040 (105 rows); fiore2025_params.csv@sha256:ef7c65a24550 (3 rows); ComparisonOfVenueEffects.pdf@sha256:1254ba381a51 |
-| `analysis/outputs/trend.json` | `analysis/trend.py --seed 20260928 --descriptive analysis/outputs/descriptive.json --calibration analysis/outputs/calibration.json --fairness analysis/outputs/fairness.json --sims 20000 --boot 5000 --perm 10000 --out analysis/outputs/trend.json` | rt_athletes.csv@sha256:af44975b3e1a (4904 rows); rt_fiore.csv@sha256:dff5cb184d1b (2805 rows); races.csv@sha256:4f0f5097c6dc (625 rows); manual_annotations.csv@sha256:fe3736ebbb0f (36 rows); rt_waveform.csv@sha256:3711f9b56ca6 (277 rows); foreperiods.csv@sha256:376f05038040 (105 rows) |
+| `analysis/outputs/fairness.json` | `analysis/fairness_sim.py --seed 20260928 --phi 0.25 --descriptive analysis/outputs/descriptive.json --fp-models analysis/outputs/fp_models.json --calibration analysis/outputs/calibration.json --out analysis/outputs/fairness.json` | rt_athletes.csv@sha256:af44975b3e1a (4904 rows); rt_fiore.csv@sha256:dff5cb184d1b (2805 rows); races.csv@sha256:4f0f5097c6dc (625 rows); rt_waveform.csv@sha256:3711f9b56ca6 (277 rows); manual_annotations.csv@sha256:12db2ab09fe4 (36 rows) |
+| `analysis/outputs/systematic.json` | `analysis/systematic.py --seed 20260928 --descriptive analysis/outputs/descriptive.json --fp-models analysis/outputs/fp_models.json --calibration analysis/outputs/calibration.json --boot-r 2000 --sims 10000 --boot-h2 200 --boot-champ 100 --min-n 100 --min-races 10 --haugen-design analysis/haugen_design.csv --fiore-params analysis/fiore2025_params.csv --fiore-venue-pdf analysis/external/fiore2025/ComparisonOfVenueEffects.pdf --out analysis/outputs/systematic.json` | rt_waveform.csv@sha256:3711f9b56ca6 (277 rows); rt_athletes.csv@sha256:af44975b3e1a (4904 rows); races.csv@sha256:4f0f5097c6dc (625 rows); manual_annotations.csv@sha256:12db2ab09fe4 (36 rows); rt_fiore.csv@sha256:dff5cb184d1b (2805 rows); haugen_design.csv@sha256:d5b502e031f3 (4 rows); foreperiods.csv@sha256:246a59371e43 (105 rows); fiore2025_params.csv@sha256:ef7c65a24550 (3 rows); ComparisonOfVenueEffects.pdf@sha256:1254ba381a51 |
+| `analysis/outputs/trend.json` | `analysis/trend.py --seed 20260928 --descriptive analysis/outputs/descriptive.json --calibration analysis/outputs/calibration.json --fairness analysis/outputs/fairness.json --sims 20000 --boot 5000 --perm 10000 --out analysis/outputs/trend.json` | rt_athletes.csv@sha256:af44975b3e1a (4904 rows); rt_fiore.csv@sha256:dff5cb184d1b (2805 rows); races.csv@sha256:4f0f5097c6dc (625 rows); manual_annotations.csv@sha256:12db2ab09fe4 (36 rows); rt_waveform.csv@sha256:3711f9b56ca6 (277 rows); foreperiods.csv@sha256:246a59371e43 (105 rows) |
 | `analysis/outputs/probe.json` | `analysis/probe_numbers.py --probe analysis/outputs/recent_probe.json --out analysis/outputs/probe.json` | rt_athletes.csv@sha256:af44975b3e1a (4904 rows); rt_fiore.csv@sha256:dff5cb184d1b (2805 rows); races.csv@sha256:4f0f5097c6dc (625 rows); rt_waveform_lanes.csv@sha256:0559f4575d94 (2493 rows); extra_rt.csv@sha256:14a3c938e798 (1593 rows); combined_rt.csv@sha256:9b83b753d122 (430 rows); gun_features.csv@sha256:ce91c6cfa253 (123 rows); gun_spectra_peaks.csv@sha256:445530ab6c8d (7 rows); gun_spectra_similarity.csv@sha256:aded84d69025 (7 rows) |
 | `analysis/outputs/lit_audit.json` | `analysis/lit_audit.py --studies lit/audit_studies.csv --screening lit/audit_screening.csv --search-log lit/audit_search/search_log.json --out analysis/outputs/lit_audit.json` | audit_studies.csv@sha256:5e48a95daeec (89 rows); audit_screening.csv@sha256:ecd2a0e96514 (558 rows) |
-| `analysis/outputs/guardband.json` | `analysis/guardband.py --seed 20260928 --descriptive analysis/outputs/descriptive.json --fairness analysis/outputs/fairness.json --offset-draws 25 --out analysis/outputs/guardband.json` | rt_athletes.csv@sha256:af44975b3e1a (4904 rows); rt_fiore.csv@sha256:dff5cb184d1b (2805 rows); races.csv@sha256:4f0f5097c6dc (625 rows); rt_waveform.csv@sha256:3711f9b56ca6 (277 rows); manual_annotations.csv@sha256:fe3736ebbb0f (36 rows) |
-| `analysis/outputs/fig.json` | `analysis/fig_numbers.py --systematic analysis/outputs/systematic.json --guardband analysis/outputs/guardband.json --out analysis/outputs/fig.json` | rt_waveform.csv@sha256:3711f9b56ca6 (277 rows); rt_athletes.csv@sha256:af44975b3e1a (4904 rows); races.csv@sha256:4f0f5097c6dc (625 rows); manual_annotations.csv@sha256:fe3736ebbb0f (36 rows); rt_fiore.csv@sha256:dff5cb184d1b (2805 rows); haugen_design.csv@sha256:d5b502e031f3 (4 rows); foreperiods.csv@sha256:376f05038040 (105 rows); fiore2025_params.csv@sha256:ef7c65a24550 (3 rows); ComparisonOfVenueEffects.pdf@sha256:1254ba381a51 |
-| `analysis/measure/numbers.json` | `not registered` | numbers.json@sha256:b87a6a30d106 |
+| `analysis/outputs/guardband.json` | `analysis/guardband.py --seed 20260928 --descriptive analysis/outputs/descriptive.json --fairness analysis/outputs/fairness.json --offset-draws 25 --out analysis/outputs/guardband.json` | rt_athletes.csv@sha256:af44975b3e1a (4904 rows); rt_fiore.csv@sha256:dff5cb184d1b (2805 rows); races.csv@sha256:4f0f5097c6dc (625 rows); rt_waveform.csv@sha256:3711f9b56ca6 (277 rows); manual_annotations.csv@sha256:12db2ab09fe4 (36 rows) |
+| `analysis/outputs/fig.json` | `analysis/fig_numbers.py --systematic analysis/outputs/systematic.json --guardband analysis/outputs/guardband.json --out analysis/outputs/fig.json` | rt_waveform.csv@sha256:3711f9b56ca6 (277 rows); rt_athletes.csv@sha256:af44975b3e1a (4904 rows); races.csv@sha256:4f0f5097c6dc (625 rows); manual_annotations.csv@sha256:12db2ab09fe4 (36 rows); rt_fiore.csv@sha256:dff5cb184d1b (2805 rows); haugen_design.csv@sha256:d5b502e031f3 (4 rows); foreperiods.csv@sha256:246a59371e43 (105 rows); fiore2025_params.csv@sha256:ef7c65a24550 (3 rows); ComparisonOfVenueEffects.pdf@sha256:1254ba381a51 |
+| `analysis/measure/numbers.json` | `not registered` | numbers.json@sha256:8a4d66d6c01a |
 
 ## Appendix B: every number
 
@@ -517,20 +517,20 @@ Figures are in `analysis/figures/` (PNG + PDF), each rendered by `analysis/make_
 | `fp_models.perm_p_lt120_vs_hold` | 0.8290 |  |  | within-championship permutation test (Seiko Ready Time shuffled among races of the same championship): association of race share of RT<0.120 s with hold (two-sided, exploratory) |
 | `fp_models.or_lt120_per_100ms` | 0.9948 | 0.8998 to 1.0999 |  | odds ratio of a valid RT < 0.120 s per 100 ms longer Seiko Ready Time (GEE, race clusters) |
 | `calibration.n_pairs` | 22 |  |  | races with a clean manual broadcast foreperiod and a Seiko Ready Time for the same attempt |
-| `calibration.offset_mean_s` | 0.5232 |  | s | mean (audio set-onset foreperiod - Ready Time) |
-| `calibration.offset_sd_within_comp_s` | 0.1121 |  | s | within-championship SD of (audio foreperiod - Ready Time) |
+| `calibration.offset_mean_s` | 0.5214 |  | s | mean (audio set-onset foreperiod - Ready Time) |
+| `calibration.offset_sd_within_comp_s` | 0.1103 |  | s | within-championship SD of (audio foreperiod - Ready Time) |
 | `calibration.offset_mean_WCH2022_s` | 0.2743 |  | s | mean (audio foreperiod - Ready Time), WCH2022 |
 | `calibration.offset_mean_WCH2023_s` | 0.3847 |  | s | mean (audio foreperiod - Ready Time), WCH2023 |
-| `calibration.offset_mean_WCH2025_s` | 0.6099 |  | s | mean (audio foreperiod - Ready Time), WCH2025 |
-| `calibration.corr_ready_audio` | 0.7448 |  |  | Pearson r between Ready Time and audio foreperiod (pooled over championships) |
-| `calibration.calib_slope_b` | 0.8156 | 0.5931 to 1.0527 |  | within-championship slope of audio foreperiod on Ready Time (regression calibration factor; 1 = no attenuation); stratified bootstrap CI |
-| `calibration.calib_slope_b_voice_end` | 0.8847 |  |  | calibration slope using the end of voicing of 'Set' instead of its onset (sensitivity) |
-| `calibration.slope_corrected_ms_per_100ms` | 0.3970 | -0.1740 to 1.0180 | ms per 100 ms of foreperiod | Ready-Time slope divided by the calibration factor b (Monte Carlo over the slope's sampling error and bootstrap b) |
-| `calibration.r_corrected` | 0.0392 | -0.0183 to 0.0984 |  | r-equivalent on the foreperiod scale (r(Ready) / sqrt(b), classical error) |
+| `calibration.offset_mean_WCH2025_s` | 0.6072 |  | s | mean (audio foreperiod - Ready Time), WCH2025 |
+| `calibration.corr_ready_audio` | 0.7513 |  |  | Pearson r between Ready Time and audio foreperiod (pooled over championships) |
+| `calibration.calib_slope_b` | 0.8204 | 0.6007 to 1.0615 |  | within-championship slope of audio foreperiod on Ready Time (regression calibration factor; 1 = no attenuation); stratified bootstrap CI |
+| `calibration.calib_slope_b_voice_end` | 0.8909 |  |  | calibration slope using the end of voicing of 'Set' instead of its onset (sensitivity) |
+| `calibration.slope_corrected_ms_per_100ms` | 0.3950 | -0.1730 to 1.0100 | ms per 100 ms of foreperiod | Ready-Time slope divided by the calibration factor b (Monte Carlo over the slope's sampling error and bootstrap b) |
+| `calibration.r_corrected` | 0.0391 | -0.0181 to 0.0980 |  | r-equivalent on the foreperiod scale (r(Ready) / sqrt(b), classical error) |
 | `calibration.corrected_excludes_haugen` | yes |  |  | corrected r interval excludes /r/ = 0.16 in both directions |
-| `calibration.r_ci_high_at_b_low` | 0.1130 |  |  | upper 95% bound of the r-equivalent if b sits at its lower 2.5% bound (conservative) |
-| `calibration.r_ci_low_at_b_low` | -0.0210 |  |  | lower 95% bound of the r-equivalent if b sits at its lower 2.5% bound (conservative) |
-| `calibration.direct_audio_slope_ms_per_100ms` | 1.0190 | -0.3920 to 2.4300 | ms per 100 ms of foreperiod | RT on broadcast-audio foreperiod directly (small sample) |
+| `calibration.r_ci_high_at_b_low` | 0.1123 |  |  | upper 95% bound of the r-equivalent if b sits at its lower 2.5% bound (conservative) |
+| `calibration.r_ci_low_at_b_low` | -0.0209 |  |  | lower 95% bound of the r-equivalent if b sits at its lower 2.5% bound (conservative) |
+| `calibration.direct_audio_slope_ms_per_100ms` | 1.0090 | -0.3680 to 2.3860 | ms per 100 ms of foreperiod | RT on broadcast-audio foreperiod directly (small sample) |
 | `detector.detector_offset_median_WCH2022_ms` | -4.2000 |  | ms | median position of the Seiko RT-detection line relative to the 5%-of-peak onset of the displayed force rise, WCH2022 |
 | `detector.force_onset_median_WCH2022_ms` | 140.8000 |  | ms | median 5%-of-peak force onset after the gun on the displayed trace, WCH2022 |
 | `detector.detector_offset_median_WCH2023_ms` | -4.2000 |  | ms | median position of the Seiko RT-detection line relative to the 5%-of-peak onset of the displayed force rise, WCH2023 |
@@ -769,8 +769,8 @@ Figures are in `analysis/figures/` (PNG + PDF), each rendered by `analysis/make_
 | `fairness.cal_ratio_measured_ci_low_W` | 1.2960 |  |  | P(legit FS) at the 90th vs 10th percentile Seiko Ready Time (1.904 vs 1.298 s) with the measured slope at its measured_ci_low (-0.148 ms/100 ms), ex-Gaussian, sex=W (SIMULATION on measured inputs) |
 | `fairness.cal_ratio_measured_ci_high_W` | 0.2478 |  |  | P(legit FS) at the 90th vs 10th percentile Seiko Ready Time (1.904 vs 1.298 s) with the measured slope at its measured_ci_high (0.797 ms/100 ms), ex-Gaussian, sex=W (SIMULATION on measured inputs) |
 | `fairness.cal_max_fold_change` | 3.4140 |  |  | largest fold change in P(legit FS) between the 10th and 90th percentile Seiko Ready Time allowed by the slope's 95% CI, ex-Gaussian, sex=M (SIMULATION) |
-| `fairness.cal_max_fold_change_corrected` | 3.8940 |  |  | largest fold change in P(legit FS) across the 10th-90th percentile foreperiod after correcting the Ready-Time slope CI for proxy error (calibration factor b = 0.816), ex-Gaussian, sex=M (SIMULATION) |
-| `fairness.cal_max_fold_change_corrected_b_low` | 4.9250 |  |  | largest fold change in P(legit FS) across the 10th-90th percentile foreperiod after correcting the Ready-Time slope CI for proxy error (calibration factor b = 0.593), ex-Gaussian, sex=M (SIMULATION) |
+| `fairness.cal_max_fold_change_corrected` | 3.8790 |  |  | largest fold change in P(legit FS) across the 10th-90th percentile foreperiod after correcting the Ready-Time slope CI for proxy error (calibration factor b = 0.82), ex-Gaussian, sex=M (SIMULATION) |
+| `fairness.cal_max_fold_change_corrected_b_low` | 4.8760 |  |  | largest fold change in P(legit FS) across the 10th-90th percentile foreperiod after correcting the Ready-Time slope CI for proxy error (calibration factor b = 0.601), ex-Gaussian, sex=M (SIMULATION) |
 | `fairness.meet_iqr_fold_change` | 18.3900 |  |  | fold change in P(legit FS) between the 25th and 75th percentile championship offsets (-6.2 vs 5.3 ms), ex-Gaussian, sex=M (SIMULATION) |
 | `systematic.h1_n_races` | 232 |  |  | H1 sample: races with a validated Seiko Ready Time and >=1 valid RT (fp_models sample, WIC2025 excluded) |
 | `systematic.h1_n_rts` | 1,778 |  |  | H1 sample: valid RTs |
@@ -786,7 +786,7 @@ Figures are in `analysis/figures/` (PNG + PDF), each rendered by `analysis/make_
 | `systematic.h1b_sd_race_ms` | 13.7710 |  | ms | (b) race SD without championship effects (REML; absorbs championship offsets) |
 | `systematic.h1c_r_pooled` | 0.2208 | 0.1282 to 0.3078 |  | (c1) naive Pearson r of Ready Time and RT over all starts, pooled over championships (Haugen-style); 95% CI = race-cluster bootstrap within championship (naive Fisher CI and p in naive_ci95 / naive_p) |
 | `systematic.h1c_r_centred` | 0.0356 | -0.0357 to 0.1053 |  | (c2) the same r after centring Ready Time and RT within championship (mechanism control) |
-| `systematic.h1c_r_pooled_fp` | 0.3737 | 0.2990 to 0.4397 |  | (c-fp, secondary) naive pooled r on the audio-calibrated foreperiod scale (Ready Time + championship calibration offset; WIC2024 uses the pooled offset) |
+| `systematic.h1c_r_pooled_fp` | 0.3729 | 0.2980 to 0.4391 |  | (c-fp, secondary) naive pooled r on the audio-calibrated foreperiod scale (Ready Time + championship calibration offset; WIC2024 uses the pooled offset) |
 | `systematic.h1c_reaches_haugen` | yes |  |  | criterion R2: the (c1) race-cluster 95% CI upper bound is >= 0.16 |
 | `systematic.h1c_centred_below_haugen` | yes |  |  | mechanism check: the championship-centred r (c2) 95% CI stays below 0.16 |
 | `systematic.h1c_r_pooled_M` | 0.2002 | 0.0517 to 0.3329 |  | (c1, secondary) naive pooled r of Ready Time and RT, subset M (933 starts, 4 championships) |
@@ -796,7 +796,7 @@ Figures are in `analysis/figures/` (PNG + PDF), each rendered by `analysis/make_
 | `systematic.h1d_spearman_4` | 0.8000 |  |  | (d) descriptive: Spearman rho across championships, the 4 championships of the H1 sample |
 | `systematic.h1d_pearson_5` | 0.2610 |  |  | (d) descriptive: Pearson r across championships of mean Ready Time and the athlete-adjusted RT offset, 5 championships incl. WIC2025 (anomalous Ready Times, flagged); no inference |
 | `systematic.h1d_spearman_5` | 0.8000 |  |  | (d) descriptive: Spearman rho across championships, 5 championships incl. WIC2025 (anomalous Ready Times, flagged) |
-| `systematic.h1d_pearson_fp_3` | 0.9966 |  |  | (d) descriptive: Pearson r across championships of mean Ready Time and the athlete-adjusted RT offset, 3 championships with audio pairs, calibrated foreperiod scale; no inference |
+| `systematic.h1d_pearson_fp_3` | 0.9964 |  |  | (d) descriptive: Pearson r across championships of mean Ready Time and the athlete-adjusted RT offset, 3 championships with audio pairs, calibrated foreperiod scale; no inference |
 | `systematic.h1d_spearman_fp_3` | 1.0000 |  |  | (d) descriptive: Spearman rho across championships, 3 championships with audio pairs, calibrated foreperiod scale |
 | `systematic.h1s2_sd_champ_ms` | 9.2580 |  | ms | S2 input: championship RT-offset SD (descriptive.sd_championship_ms, 18 championships) |
 | `systematic.h1s2_sd_ready_between_s` | 0.1221 |  | s | S2 input: REML between-championship SD of race-level Ready Time (H1 sample) |
@@ -806,10 +806,10 @@ Figures are in `analysis/figures/` (PNG + PDF), each rendered by `analysis/make_
 | `systematic.h1s1_ready_betahat_r_mean` | 0.2008 |  |  | SIMULATION: mean naive pooled r, S1 observed structure, true slope = (a) estimate, Ready Time scale |
 | `systematic.h1s1_ready_betahat_p_ge016` | 0.9634 |  |  | SIMULATION: P(naive r >= 0.16), S1 observed structure, true slope = (a) estimate, Ready Time scale |
 | `systematic.h1s1_ready_betahat_p_absge016` | 0.9634 |  |  | SIMULATION: P(/naive r/ >= 0.16), S1 observed structure, true slope = (a) estimate, Ready Time scale |
-| `systematic.h1s1_fp_beta0_r_mean` | 0.3145 |  |  | SIMULATION: mean naive pooled r, S1, true slope 0, foreperiod scale (Ready Time + championship calibration offset + within-championship calibration scatter) |
+| `systematic.h1s1_fp_beta0_r_mean` | 0.3142 |  |  | SIMULATION: mean naive pooled r, S1, true slope 0, foreperiod scale (Ready Time + championship calibration offset + within-championship calibration scatter) |
 | `systematic.h1s1_fp_beta0_p_ge016` | 1.0000 |  |  | SIMULATION: P(naive r >= 0.16), S1, true slope 0, foreperiod scale (Ready Time + championship calibration offset + within-championship calibration scatter) |
 | `systematic.h1s1_fp_beta0_p_absge016` | 1.0000 |  |  | SIMULATION: P(/naive r/ >= 0.16), S1, true slope 0, foreperiod scale (Ready Time + championship calibration offset + within-championship calibration scatter) |
-| `systematic.h1s1_fp_betahat_r_mean` | 0.3322 |  |  | SIMULATION: mean naive pooled r, S1, true slope = (a) estimate, foreperiod scale |
+| `systematic.h1s1_fp_betahat_r_mean` | 0.3320 |  |  | SIMULATION: mean naive pooled r, S1, true slope = (a) estimate, foreperiod scale |
 | `systematic.h1s1_fp_betahat_p_ge016` | 1.0000 |  |  | SIMULATION: P(naive r >= 0.16), S1, true slope = (a) estimate, foreperiod scale |
 | `systematic.h1s1_fp_betahat_p_absge016` | 1.0000 |  |  | SIMULATION: P(/naive r/ >= 0.16), S1, true slope = (a) estimate, foreperiod scale |
 | `systematic.h1s1_centred_beta0_r_mean` | -0.0083 |  |  | SIMULATION: mean naive pooled r, S1, true slope 0, championship-centred r (control) |
@@ -985,8 +985,8 @@ Figures are in `analysis/figures/` (PNG + PDF), each rendered by `analysis/make_
 | `systematic.o2_diff_W` | -0.0679 | -0.1130 to -0.0150 |  | O2: pooled minus championship-centred r (paired bootstrap), sex=W |
 | `systematic.o2_verdict` | NOT CONFOUNDED BY CHAMPIONSHIP |  |  | pre-registered O2 verdict (addendum 3): /pooled - championship-centred r/ >= 0.10 with a paired CI excluding 0, per sex |
 | `trend.s4_sd_hold_between_s` | 0.2313 |  | s | S4 input (as S3): REML between-championship SD of audio foreperiods |
-| `trend.s4_rw_estimate` | 0.0392 |  |  | S4 input: true within-championship r at our estimate (calibration.r_corrected) |
-| `trend.s4_rw_upper` | 0.1130 |  |  | S4 input: true within-championship r at our conservative upper bound (calibration.r_ci_high_at_b_low) |
+| `trend.s4_rw_estimate` | 0.0391 |  |  | S4 input: true within-championship r at our estimate (calibration.r_corrected) |
+| `trend.s4_rw_upper` | 0.1123 |  |  | S4 input: true within-championship r at our conservative upper bound (calibration.r_ci_high_at_b_low) |
 | `trend.s4_p_within_zero` | 3.6e-09 |  |  | SIMULATION: P(Haugen's three significant cells / WITHIN-championship analysis, r_w = 0), design-averaged over the 9-design grid (product of independent per-cell probabilities; mc_se only when every factor is a simulated share, None when normal-approximated factors carry approximation error instead) |
 | `trend.s4_p_pooled_zero` | 0.0047 |  |  | SIMULATION: P(Haugen's three significant cells / POOLED analysis (S3 design), r_w = 0), design-averaged over the 9-design grid (joint simulated share) |
 | `trend.s4_lr_zero` | 1.3e+06 |  |  | SIMULATION: likelihood ratio P(pattern / POOLED) / P(pattern / WITHIN), r_w = 0, design-averaged probabilities |
@@ -997,26 +997,26 @@ Figures are in `analysis/figures/` (PNG + PDF), each rendered by `analysis/make_
 | `trend.s4_lenient_p_pooled_zero` | 0.0050 |  |  | SIMULATION (sensitivity): P3 / POOLED with rounding-lenient thresholds, r_w = 0, design-averaged |
 | `trend.s4_litsd_p_within_zero` | 3.4e-09 |  |  | SIMULATION (sensitivity): P3 / WITHIN, cell5 layout with S3's cell5_litsd hold SDs (0.25 / 0.16 s), r_w = 0 |
 | `trend.s4_litsd_p_pooled_zero` | 0.0097 |  |  | SIMULATION (sensitivity): P3 / POOLED, cell5 layout with S3's cell5_litsd hold SDs, r_w = 0 |
-| `trend.s4_p_within_estimate` | 9.5e-07 |  |  | SIMULATION: P(Haugen's three significant cells / WITHIN-championship analysis, r_w = our estimate), design-averaged over the 9-design grid (product of independent per-cell probabilities; mc_se only when every factor is a simulated share, None when normal-approximated factors carry approximation error instead) |
-| `trend.s4_p_pooled_estimate` | 0.0175 |  |  | SIMULATION: P(Haugen's three significant cells / POOLED analysis (S3 design), r_w = our estimate), design-averaged over the 9-design grid (joint simulated share) |
-| `trend.s4_lr_estimate` | 18,460.0000 |  |  | SIMULATION: likelihood ratio P(pattern / POOLED) / P(pattern / WITHIN), r_w = our estimate, design-averaged probabilities |
-| `trend.s4_full_p_within_estimate` | 8.1e-07 |  |  | SIMULATION (secondary): P(full pattern incl. women 2003-2009 not significant / WITHIN, r_w = our estimate), design-averaged |
+| `trend.s4_p_within_estimate` | 9.3e-07 |  |  | SIMULATION: P(Haugen's three significant cells / WITHIN-championship analysis, r_w = our estimate), design-averaged over the 9-design grid (product of independent per-cell probabilities; mc_se only when every factor is a simulated share, None when normal-approximated factors carry approximation error instead) |
+| `trend.s4_p_pooled_estimate` | 0.0174 |  |  | SIMULATION: P(Haugen's three significant cells / POOLED analysis (S3 design), r_w = our estimate), design-averaged over the 9-design grid (joint simulated share) |
+| `trend.s4_lr_estimate` | 18,650.0000 |  |  | SIMULATION: likelihood ratio P(pattern / POOLED) / P(pattern / WITHIN), r_w = our estimate, design-averaged probabilities |
+| `trend.s4_full_p_within_estimate` | 8e-07 |  |  | SIMULATION (secondary): P(full pattern incl. women 2003-2009 not significant / WITHIN, r_w = our estimate), design-averaged |
 | `trend.s4_full_p_pooled_estimate` | 0.0032 |  |  | SIMULATION (secondary): P(full pattern / POOLED, r_w = our estimate), design-averaged |
-| `trend.s4_full_lr_estimate` | 4,006.0000 |  |  | SIMULATION (secondary): likelihood ratio for the full pattern, r_w = our estimate |
-| `trend.s4_lenient_p_within_estimate` | 1.2e-06 |  |  | SIMULATION (sensitivity): P3 / WITHIN with rounding-lenient thresholds 0.155/0.165/0.155, r_w = our estimate, design-averaged |
-| `trend.s4_lenient_p_pooled_estimate` | 0.0185 |  |  | SIMULATION (sensitivity): P3 / POOLED with rounding-lenient thresholds, r_w = our estimate, design-averaged |
+| `trend.s4_full_lr_estimate` | 4,033.0000 |  |  | SIMULATION (secondary): likelihood ratio for the full pattern, r_w = our estimate |
+| `trend.s4_lenient_p_within_estimate` | 1.1e-06 |  |  | SIMULATION (sensitivity): P3 / WITHIN with rounding-lenient thresholds 0.155/0.165/0.155, r_w = our estimate, design-averaged |
+| `trend.s4_lenient_p_pooled_estimate` | 0.0184 |  |  | SIMULATION (sensitivity): P3 / POOLED with rounding-lenient thresholds, r_w = our estimate, design-averaged |
 | `trend.s4_litsd_p_within_estimate` | 1.3e-06 |  |  | SIMULATION (sensitivity): P3 / WITHIN, cell5 layout with S3's cell5_litsd hold SDs (0.25 / 0.16 s), r_w = our estimate |
-| `trend.s4_litsd_p_pooled_estimate` | 0.0325 |  |  | SIMULATION (sensitivity): P3 / POOLED, cell5 layout with S3's cell5_litsd hold SDs, r_w = our estimate |
-| `trend.s4_p_within_upper` | 0.0028 |  |  | SIMULATION: P(Haugen's three significant cells / WITHIN-championship analysis, r_w = our conservative upper bound), design-averaged over the 9-design grid (product of independent per-cell probabilities; mc_se only when every factor is a simulated share, None when normal-approximated factors carry approximation error instead) |
-| `trend.s4_p_pooled_upper` | 0.1164 |  |  | SIMULATION: P(Haugen's three significant cells / POOLED analysis (S3 design), r_w = our conservative upper bound), design-averaged over the 9-design grid (joint simulated share) |
-| `trend.s4_lr_upper` | 41.7700 |  |  | SIMULATION: likelihood ratio P(pattern / POOLED) / P(pattern / WITHIN), r_w = our conservative upper bound, design-averaged probabilities |
+| `trend.s4_litsd_p_pooled_estimate` | 0.0323 |  |  | SIMULATION (sensitivity): P3 / POOLED, cell5 layout with S3's cell5_litsd hold SDs, r_w = our estimate |
+| `trend.s4_p_within_upper` | 0.0026 |  |  | SIMULATION: P(Haugen's three significant cells / WITHIN-championship analysis, r_w = our conservative upper bound), design-averaged over the 9-design grid (product of independent per-cell probabilities; mc_se only when every factor is a simulated share, None when normal-approximated factors carry approximation error instead) |
+| `trend.s4_p_pooled_upper` | 0.1146 |  |  | SIMULATION: P(Haugen's three significant cells / POOLED analysis (S3 design), r_w = our conservative upper bound), design-averaged over the 9-design grid (joint simulated share) |
+| `trend.s4_lr_upper` | 43.6100 |  |  | SIMULATION: likelihood ratio P(pattern / POOLED) / P(pattern / WITHIN), r_w = our conservative upper bound, design-averaged probabilities |
 | `trend.s4_full_p_within_upper` | 0.0011 |  |  | SIMULATION (secondary): P(full pattern incl. women 2003-2009 not significant / WITHIN, r_w = our conservative upper bound), design-averaged |
-| `trend.s4_full_p_pooled_upper` | 0.0120 |  |  | SIMULATION (secondary): P(full pattern / POOLED, r_w = our conservative upper bound), design-averaged |
-| `trend.s4_full_lr_upper` | 10.6100 |  |  | SIMULATION (secondary): likelihood ratio for the full pattern, r_w = our conservative upper bound |
-| `trend.s4_lenient_p_within_upper` | 0.0035 |  |  | SIMULATION (sensitivity): P3 / WITHIN with rounding-lenient thresholds 0.155/0.165/0.155, r_w = our conservative upper bound, design-averaged |
-| `trend.s4_lenient_p_pooled_upper` | 0.1214 |  |  | SIMULATION (sensitivity): P3 / POOLED with rounding-lenient thresholds, r_w = our conservative upper bound, design-averaged |
-| `trend.s4_litsd_p_within_upper` | 0.0040 |  |  | SIMULATION (sensitivity): P3 / WITHIN, cell5 layout with S3's cell5_litsd hold SDs (0.25 / 0.16 s), r_w = our conservative upper bound |
-| `trend.s4_litsd_p_pooled_upper` | 0.1770 |  |  | SIMULATION (sensitivity): P3 / POOLED, cell5 layout with S3's cell5_litsd hold SDs, r_w = our conservative upper bound |
+| `trend.s4_full_p_pooled_upper` | 0.0118 |  |  | SIMULATION (secondary): P(full pattern / POOLED, r_w = our conservative upper bound), design-averaged |
+| `trend.s4_full_lr_upper` | 11.0200 |  |  | SIMULATION (secondary): likelihood ratio for the full pattern, r_w = our conservative upper bound |
+| `trend.s4_lenient_p_within_upper` | 0.0033 |  |  | SIMULATION (sensitivity): P3 / WITHIN with rounding-lenient thresholds 0.155/0.165/0.155, r_w = our conservative upper bound, design-averaged |
+| `trend.s4_lenient_p_pooled_upper` | 0.1197 |  |  | SIMULATION (sensitivity): P3 / POOLED with rounding-lenient thresholds, r_w = our conservative upper bound, design-averaged |
+| `trend.s4_litsd_p_within_upper` | 0.0038 |  |  | SIMULATION (sensitivity): P3 / WITHIN, cell5 layout with S3's cell5_litsd hold SDs (0.25 / 0.16 s), r_w = our conservative upper bound |
+| `trend.s4_litsd_p_pooled_upper` | 0.1752 |  |  | SIMULATION (sensitivity): P3 / POOLED, cell5 layout with S3's cell5_litsd hold SDs, r_w = our conservative upper bound |
 | `trend.s4_p_within_haugen` | 0.0635 |  |  | SIMULATION: P(Haugen's three significant cells / WITHIN-championship analysis, r_w = 0.16 (Haugen-sized; context only)), design-averaged over the 9-design grid (product of independent per-cell probabilities; mc_se only when every factor is a simulated share, None when normal-approximated factors carry approximation error instead) |
 | `trend.s4_p_pooled_haugen` | 0.2686 |  |  | SIMULATION: P(Haugen's three significant cells / POOLED analysis (S3 design), r_w = 0.16 (Haugen-sized; context only)), design-averaged over the 9-design grid (joint simulated share) |
 | `trend.s4_lr_haugen` | 4.2270 |  |  | SIMULATION: likelihood ratio P(pattern / POOLED) / P(pattern / WITHIN), r_w = 0.16 (Haugen-sized; context only), design-averaged probabilities |
@@ -1387,38 +1387,38 @@ Figures are in `analysis/figures/` (PNG + PDF), each rendered by `analysis/make_
 | `measure.real_seiko_n` | 22 |  |  | measurement number 'real_seiko_n' (merged verbatim) |
 | `measure.real_seiko_n_annotated_valid` | 28 |  |  | measurement number 'real_seiko_n_annotated_valid' (merged verbatim) |
 | `measure.real_seiko_n_excluded` | 6 |  |  | measurement number 'real_seiko_n_excluded' (merged verbatim) |
-| `measure.real_seiko_onset_minus_ready_bias_s` | 0.5232 |  |  | measurement number 'real_seiko_onset_minus_ready_bias_s' (merged verbatim) |
-| `measure.real_seiko_onset_minus_ready_sd_s` | 0.1710 |  |  | measurement number 'real_seiko_onset_minus_ready_sd_s' (merged verbatim) |
-| `measure.real_seiko_onset_minus_ready_mae_s` | 0.5232 |  |  | measurement number 'real_seiko_onset_minus_ready_mae_s' (merged verbatim) |
+| `measure.real_seiko_onset_minus_ready_bias_s` | 0.5214 |  |  | measurement number 'real_seiko_onset_minus_ready_bias_s' (merged verbatim) |
+| `measure.real_seiko_onset_minus_ready_sd_s` | 0.1690 |  |  | measurement number 'real_seiko_onset_minus_ready_sd_s' (merged verbatim) |
+| `measure.real_seiko_onset_minus_ready_mae_s` | 0.5214 |  |  | measurement number 'real_seiko_onset_minus_ready_mae_s' (merged verbatim) |
 | `measure.real_seiko_onset_minus_ready_min_s` | 0.2020 |  |  | measurement number 'real_seiko_onset_minus_ready_min_s' (merged verbatim) |
 | `measure.real_seiko_onset_minus_ready_max_s` | 0.8080 |  |  | measurement number 'real_seiko_onset_minus_ready_max_s' (merged verbatim) |
 | `measure.real_seiko_onset_within_20ms` | 0.0000 |  |  | measurement number 'real_seiko_onset_within_20ms' (merged verbatim) |
 | `measure.real_seiko_onset_within_40ms` | 0.0000 |  |  | measurement number 'real_seiko_onset_within_40ms' (merged verbatim) |
-| `measure.real_seiko_voicingend_minus_ready_bias_s` | 0.1626 |  |  | measurement number 'real_seiko_voicingend_minus_ready_bias_s' (merged verbatim) |
-| `measure.real_seiko_voicingend_minus_ready_sd_s` | 0.1599 |  |  | measurement number 'real_seiko_voicingend_minus_ready_sd_s' (merged verbatim) |
-| `measure.real_seiko_voicingend_minus_ready_mae_s` | 0.1960 |  |  | measurement number 'real_seiko_voicingend_minus_ready_mae_s' (merged verbatim) |
+| `measure.real_seiko_voicingend_minus_ready_bias_s` | 0.1607 |  |  | measurement number 'real_seiko_voicingend_minus_ready_bias_s' (merged verbatim) |
+| `measure.real_seiko_voicingend_minus_ready_sd_s` | 0.1574 |  |  | measurement number 'real_seiko_voicingend_minus_ready_sd_s' (merged verbatim) |
+| `measure.real_seiko_voicingend_minus_ready_mae_s` | 0.1941 |  |  | measurement number 'real_seiko_voicingend_minus_ready_mae_s' (merged verbatim) |
 | `measure.real_seiko_voicingend_minus_ready_min_s` | -0.1580 |  |  | measurement number 'real_seiko_voicingend_minus_ready_min_s' (merged verbatim) |
 | `measure.real_seiko_voicingend_minus_ready_max_s` | 0.4050 |  |  | measurement number 'real_seiko_voicingend_minus_ready_max_s' (merged verbatim) |
 | `measure.real_seiko_voicingend_within_20ms` | 0.0000 |  |  | measurement number 'real_seiko_voicingend_within_20ms' (merged verbatim) |
 | `measure.real_seiko_voicingend_within_40ms` | 0.0455 |  |  | measurement number 'real_seiko_voicingend_within_40ms' (merged verbatim) |
-| `measure.real_seiko_wordend_minus_ready_bias_s` | 0.1212 |  |  | measurement number 'real_seiko_wordend_minus_ready_bias_s' (merged verbatim) |
-| `measure.real_seiko_wordend_minus_ready_sd_s` | 0.1705 |  |  | measurement number 'real_seiko_wordend_minus_ready_sd_s' (merged verbatim) |
-| `measure.real_seiko_onset_within_champ_sd_s` | 0.1066 |  |  | measurement number 'real_seiko_onset_within_champ_sd_s' (merged verbatim) |
-| `measure.real_seiko_voicingend_within_champ_sd_s` | 0.0960 |  |  | measurement number 'real_seiko_voicingend_within_champ_sd_s' (merged verbatim) |
-| `measure.real_seiko_corr_ready_fp_onset_r` | 0.7448 |  |  | measurement number 'real_seiko_corr_ready_fp_onset_r' (merged verbatim) |
-| `measure.real_seiko_corr_ready_fp_onset_r_ci95` | [0.4712, 0.8877] |  |  | measurement number 'real_seiko_corr_ready_fp_onset_r_ci95' (merged verbatim) |
-| `measure.real_seiko_auto_onset_minus_ready_bias_s` | 0.5239 |  |  | measurement number 'real_seiko_auto_onset_minus_ready_bias_s' (merged verbatim) |
-| `measure.real_seiko_auto_onset_minus_ready_sd_s` | 0.1658 |  |  | measurement number 'real_seiko_auto_onset_minus_ready_sd_s' (merged verbatim) |
+| `measure.real_seiko_wordend_minus_ready_bias_s` | 0.1194 |  |  | measurement number 'real_seiko_wordend_minus_ready_bias_s' (merged verbatim) |
+| `measure.real_seiko_wordend_minus_ready_sd_s` | 0.1677 |  |  | measurement number 'real_seiko_wordend_minus_ready_sd_s' (merged verbatim) |
+| `measure.real_seiko_onset_within_champ_sd_s` | 0.1050 |  |  | measurement number 'real_seiko_onset_within_champ_sd_s' (merged verbatim) |
+| `measure.real_seiko_voicingend_within_champ_sd_s` | 0.0935 |  |  | measurement number 'real_seiko_voicingend_within_champ_sd_s' (merged verbatim) |
+| `measure.real_seiko_corr_ready_fp_onset_r` | 0.7513 |  |  | measurement number 'real_seiko_corr_ready_fp_onset_r' (merged verbatim) |
+| `measure.real_seiko_corr_ready_fp_onset_r_ci95` | [0.4826, 0.8908] |  |  | measurement number 'real_seiko_corr_ready_fp_onset_r_ci95' (merged verbatim) |
+| `measure.real_seiko_auto_onset_minus_ready_bias_s` | 0.5220 |  |  | measurement number 'real_seiko_auto_onset_minus_ready_bias_s' (merged verbatim) |
+| `measure.real_seiko_auto_onset_minus_ready_sd_s` | 0.1640 |  |  | measurement number 'real_seiko_auto_onset_minus_ready_sd_s' (merged verbatim) |
 | `measure.real_seiko_final_n` | 40 |  |  | measurement number 'real_seiko_final_n' (merged verbatim) |
-| `measure.real_seiko_final_onset_minus_ready_bias_s` | 0.5568 |  |  | measurement number 'real_seiko_final_onset_minus_ready_bias_s' (merged verbatim) |
-| `measure.real_seiko_final_onset_minus_ready_sd_s` | 0.2253 |  |  | measurement number 'real_seiko_final_onset_minus_ready_sd_s' (merged verbatim) |
+| `measure.real_seiko_final_onset_minus_ready_bias_s` | 0.5558 |  |  | measurement number 'real_seiko_final_onset_minus_ready_bias_s' (merged verbatim) |
+| `measure.real_seiko_final_onset_minus_ready_sd_s` | 0.2247 |  |  | measurement number 'real_seiko_final_onset_minus_ready_sd_s' (merged verbatim) |
 | `measure.real_seiko_final_onset_minus_ready_min_s` | 0.1856 |  |  | measurement number 'real_seiko_final_onset_minus_ready_min_s' (merged verbatim) |
 | `measure.real_seiko_final_onset_within_40ms` | 0.0000 |  |  | measurement number 'real_seiko_final_onset_within_40ms' (merged verbatim) |
-| `measure.real_seiko_final_corr_r` | 0.6823 |  |  | measurement number 'real_seiko_final_corr_r' (merged verbatim) |
-| `measure.real_seiko_final_corr_r_ci95` | [0.4709, 0.8196] |  |  | measurement number 'real_seiko_final_corr_r_ci95' (merged verbatim) |
-| `measure.real_seiko_final_ols_slope` | 0.6133 |  |  | measurement number 'real_seiko_final_ols_slope' (merged verbatim) |
-| `measure.real_seiko_final_within_champ_sd_s` | 0.1831 |  |  | measurement number 'real_seiko_final_within_champ_sd_s' (merged verbatim) |
-| `measure.real_seiko_final_within_champ_mad_s` | 0.1005 |  |  | measurement number 'real_seiko_final_within_champ_mad_s' (merged verbatim) |
+| `measure.real_seiko_final_corr_r` | 0.6839 |  |  | measurement number 'real_seiko_final_corr_r' (merged verbatim) |
+| `measure.real_seiko_final_corr_r_ci95` | [0.4732, 0.8206] |  |  | measurement number 'real_seiko_final_corr_r_ci95' (merged verbatim) |
+| `measure.real_seiko_final_ols_slope` | 0.6146 |  |  | measurement number 'real_seiko_final_ols_slope' (merged verbatim) |
+| `measure.real_seiko_final_within_champ_sd_s` | 0.1829 |  |  | measurement number 'real_seiko_final_within_champ_sd_s' (merged verbatim) |
+| `measure.real_seiko_final_within_champ_mad_s` | 0.0990 |  |  | measurement number 'real_seiko_final_within_champ_mad_s' (merged verbatim) |
 | `measure.real_seiko_final_WCH2022_n` | 6 |  |  | measurement number 'real_seiko_final_WCH2022_n' (merged verbatim) |
 | `measure.real_seiko_final_WCH2022_bias_s` | 0.3387 |  |  | measurement number 'real_seiko_final_WCH2022_bias_s' (merged verbatim) |
 | `measure.real_seiko_final_WCH2022_sd_s` | 0.0990 |  |  | measurement number 'real_seiko_final_WCH2022_sd_s' (merged verbatim) |
@@ -1426,13 +1426,13 @@ Figures are in `analysis/figures/` (PNG + PDF), each rendered by `analysis/make_
 | `measure.real_seiko_final_WCH2023_bias_s` | 0.3806 |  |  | measurement number 'real_seiko_final_WCH2023_bias_s' (merged verbatim) |
 | `measure.real_seiko_final_WCH2023_sd_s` | 0.0785 |  |  | measurement number 'real_seiko_final_WCH2023_sd_s' (merged verbatim) |
 | `measure.real_seiko_final_WCH2025_n` | 28 |  |  | measurement number 'real_seiko_final_WCH2025_n' (merged verbatim) |
-| `measure.real_seiko_final_WCH2025_bias_s` | 0.6413 |  |  | measurement number 'real_seiko_final_WCH2025_bias_s' (merged verbatim) |
-| `measure.real_seiko_final_WCH2025_sd_s` | 0.2132 |  |  | measurement number 'real_seiko_final_WCH2025_sd_s' (merged verbatim) |
+| `measure.real_seiko_final_WCH2025_bias_s` | 0.6398 |  |  | measurement number 'real_seiko_final_WCH2025_bias_s' (merged verbatim) |
+| `measure.real_seiko_final_WCH2025_sd_s` | 0.2130 |  |  | measurement number 'real_seiko_final_WCH2025_sd_s' (merged verbatim) |
 | `measure.real_seiko_autoall_n` | 40 |  |  | measurement number 'real_seiko_autoall_n' (merged verbatim) |
-| `measure.real_seiko_autoall_onset_minus_ready_bias_s` | 0.5544 |  |  | measurement number 'real_seiko_autoall_onset_minus_ready_bias_s' (merged verbatim) |
-| `measure.real_seiko_autoall_onset_minus_ready_sd_s` | 0.2241 |  |  | measurement number 'real_seiko_autoall_onset_minus_ready_sd_s' (merged verbatim) |
-| `measure.real_seiko_autoall_corr_r` | 0.6784 |  |  | measurement number 'real_seiko_autoall_corr_r' (merged verbatim) |
-| `measure.real_seiko_autoall_corr_r_ci95` | [0.4652, 0.8172] |  |  | measurement number 'real_seiko_autoall_corr_r_ci95' (merged verbatim) |
+| `measure.real_seiko_autoall_onset_minus_ready_bias_s` | 0.5533 |  |  | measurement number 'real_seiko_autoall_onset_minus_ready_bias_s' (merged verbatim) |
+| `measure.real_seiko_autoall_onset_minus_ready_sd_s` | 0.2236 |  |  | measurement number 'real_seiko_autoall_onset_minus_ready_sd_s' (merged verbatim) |
+| `measure.real_seiko_autoall_corr_r` | 0.6801 |  |  | measurement number 'real_seiko_autoall_corr_r' (merged verbatim) |
+| `measure.real_seiko_autoall_corr_r_ci95` | [0.4676, 0.8182] |  |  | measurement number 'real_seiko_autoall_corr_r_ci95' (merged verbatim) |
 | `measure.real_seiko_autoqcok_n` | 19 |  |  | measurement number 'real_seiko_autoqcok_n' (merged verbatim) |
 | `measure.real_seiko_autoqcok_onset_minus_ready_bias_s` | 0.4906 |  |  | measurement number 'real_seiko_autoqcok_onset_minus_ready_bias_s' (merged verbatim) |
 | `measure.real_seiko_autoqcok_onset_minus_ready_sd_s` | 0.1174 |  |  | measurement number 'real_seiko_autoqcok_onset_minus_ready_sd_s' (merged verbatim) |
@@ -1446,11 +1446,11 @@ Figures are in `analysis/figures/` (PNG + PDF), each rendered by `analysis/make_
 | `measure.real_seiko_onset_minus_ready_WCH2023_bias_s` | 0.3847 |  |  | measurement number 'real_seiko_onset_minus_ready_WCH2023_bias_s' (merged verbatim) |
 | `measure.real_seiko_onset_minus_ready_WCH2023_sd_s` | 0.0934 |  |  | measurement number 'real_seiko_onset_minus_ready_WCH2023_sd_s' (merged verbatim) |
 | `measure.real_seiko_onset_minus_ready_WCH2025_n` | 15 |  |  | measurement number 'real_seiko_onset_minus_ready_WCH2025_n' (merged verbatim) |
-| `measure.real_seiko_onset_minus_ready_WCH2025_bias_s` | 0.6099 |  |  | measurement number 'real_seiko_onset_minus_ready_WCH2025_bias_s' (merged verbatim) |
-| `measure.real_seiko_onset_minus_ready_WCH2025_sd_s` | 0.1173 |  |  | measurement number 'real_seiko_onset_minus_ready_WCH2025_sd_s' (merged verbatim) |
+| `measure.real_seiko_onset_minus_ready_WCH2025_bias_s` | 0.6072 |  |  | measurement number 'real_seiko_onset_minus_ready_WCH2025_bias_s' (merged verbatim) |
+| `measure.real_seiko_onset_minus_ready_WCH2025_sd_s` | 0.1150 |  |  | measurement number 'real_seiko_onset_minus_ready_WCH2025_sd_s' (merged verbatim) |
 | `measure.real_seiko_voicingend_minus_ready_WCH2022_bias_s` | -0.0543 |  |  | measurement number 'real_seiko_voicingend_minus_ready_WCH2022_bias_s' (merged verbatim) |
 | `measure.real_seiko_voicingend_minus_ready_WCH2023_bias_s` | 0.0085 |  |  | measurement number 'real_seiko_voicingend_minus_ready_WCH2023_bias_s' (merged verbatim) |
-| `measure.real_seiko_voicingend_minus_ready_WCH2025_bias_s` | 0.2471 |  |  | measurement number 'real_seiko_voicingend_minus_ready_WCH2025_bias_s' (merged verbatim) |
+| `measure.real_seiko_voicingend_minus_ready_WCH2025_bias_s` | 0.2443 |  |  | measurement number 'real_seiko_voicingend_minus_ready_WCH2025_bias_s' (merged verbatim) |
 | `measure.real_auto_vs_manual_dev_n_clean` | 18 |  |  | measurement number 'real_auto_vs_manual_dev_n_clean' (merged verbatim) |
 | `measure.real_auto_vs_manual_dev_gun_onset_n` | 22 |  |  | measurement number 'real_auto_vs_manual_dev_gun_onset_n' (merged verbatim) |
 | `measure.real_auto_vs_manual_dev_gun_onset_bias_ms` | 0.2700 |  |  | measurement number 'real_auto_vs_manual_dev_gun_onset_bias_ms' (merged verbatim) |

@@ -16,7 +16,7 @@
   {
    "path": "analysis/outputs/calibration.json",
    "exists": true,
-   "sha256_12": "afa8c76360e6"
+   "sha256_12": "20e1ec2a0ae4"
   }
  ],
  "numbers": {
@@ -1340,16 +1340,16 @@
    "unit": ""
   },
   "cal_max_fold_change_corrected": {
-   "value": 3.894,
-   "desc": "largest fold change in P(legit FS) across the 10th-90th percentile foreperiod after correcting the Ready-Time slope CI for proxy error (calibration factor b = 0.816), ex-Gaussian, sex=M (SIMULATION)",
+   "value": 3.879,
+   "desc": "largest fold change in P(legit FS) across the 10th-90th percentile foreperiod after correcting the Ready-Time slope CI for proxy error (calibration factor b = 0.82), ex-Gaussian, sex=M (SIMULATION)",
    "unit": "",
-   "b": 0.8156
+   "b": 0.8204
   },
   "cal_max_fold_change_corrected_b_low": {
-   "value": 4.925,
-   "desc": "largest fold change in P(legit FS) across the 10th-90th percentile foreperiod after correcting the Ready-Time slope CI for proxy error (calibration factor b = 0.593), ex-Gaussian, sex=M (SIMULATION)",
+   "value": 4.876,
+   "desc": "largest fold change in P(legit FS) across the 10th-90th percentile foreperiod after correcting the Ready-Time slope CI for proxy error (calibration factor b = 0.601), ex-Gaussian, sex=M (SIMULATION)",
    "unit": "",
-   "b": 0.5931
+   "b": 0.6007
   },
   "meet_iqr_fold_change": {
    "value": 18.39,

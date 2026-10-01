@@ -23,7 +23,7 @@ S21,pC_d8t87A9A,WCH2022-100m-M-F-H1,,not_a_start,,,,,,0,measure-agent,2026-09-29
 S22,8lkzDBDUzD0,WCH2022-100mH-W-F-H1,1.0,valid,180.784,181.08,181.08,182.407,0.01,1,measure-agent,2026-09-29,clean,dev,0
 S23,4cUfAmsTnLo,WCH2022-110mH-M-F-H1,1.0,recalled,248.055,248.42,248.45,250.047,0.015,1,measure-agent,2026-09-29,recalled attempt (false start); gradual /s/,dev,0
 S24,4cUfAmsTnLo,WCH2022-110mH-M-F-H1,2.0,valid,548.09,548.45,548.48,550.146,0.02,1,measure-agent,2026-09-29,gradual /s/ from ~548.07; gun onset slightly gradual (550.144-550.150),dev,0
-H01,2McuUM2729o,WCH2025-100m-W-F-H1,1.0,valid,2595.215,2595.55,2595.55,2597.555,0.015,1,measure-agent,2026-09-29,commentary ends ~2595.20 just before the /s/; /s/ distinct in 3-10 kHz,heldout,0
+H01,2McuUM2729o,WCH2025-100m-W-SF-H3,1.0,valid,2595.215,2595.55,2595.55,2597.555,0.015,1,measure-agent,2026-09-29,commentary ends ~2595.20 just before the /s/; /s/ distinct in 3-10 kHz,heldout,0
 H02,2McuUM2729o,WCH2025-100m-W-R1-H2,1.0,valid,364.305,364.62,364.62,366.494,0.005,1,measure-agent,2026-09-29,"gun two-step: first arrival 366.494 (~20 dB), main step 366.518; first arrival read as onset",heldout,0
 H03,2McuUM2729o,WCH2025-100m-W-R1-H5,1.0,valid,,,,1135.24,,0,measure-agent,2026-09-29,"commentary overlaps the command; Set not identifiable; gun two-step (1135.240 first arrival, main 1135.261)",heldout,0
 H04,2McuUM2729o,WCH2025-100m-W-SF-H1,1.0,recalled,2006.19,2006.3,2006.3,2008.709,0.04,1,measure-agent,2026-09-29,"weak isolated Set; /s/ not visible, voiced onset read; gradual gun pre-rise from ~2008.695",heldout,1

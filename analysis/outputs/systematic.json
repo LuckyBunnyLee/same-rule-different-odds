@@ -29,7 +29,7 @@
   {
    "path": "analysis/outputs/calibration.json",
    "exists": true,
-   "sha256_12": "afa8c76360e6"
+   "sha256_12": "20e1ec2a0ae4"
   },
   {
    "path": "analysis/outputs/descriptive.json",
@@ -45,7 +45,7 @@
   {
    "path": "data/derived/foreperiods.csv",
    "exists": true,
-   "sha256_12": "376f05038040",
+   "sha256_12": "246a59371e43",
    "rows": 105
   },
   {
@@ -185,18 +185,18 @@
    "n_races": 232
   },
   "h1c_r_pooled_fp": {
-   "value": 0.3737,
+   "value": 0.3729,
    "desc": "(c-fp, secondary) naive pooled r on the audio-calibrated foreperiod scale (Ready Time + championship calibration offset; WIC2024 uses the pooled offset)",
    "unit": "",
    "ci95": [
-    0.299,
-    0.4397
+    0.298,
+    0.4391
    ],
    "naive_ci95": [
-    0.333,
-    0.413
+    0.3321,
+    0.4122
    ],
-   "naive_p": 5.06e-60,
+   "naive_p": 9.42e-60,
    "n_starts": 1778,
    "n_races": 232
   },
@@ -283,7 +283,7 @@
    "n_champs": 5
   },
   "h1d_pearson_fp_3": {
-   "value": 0.9966,
+   "value": 0.9964,
    "desc": "(d) descriptive: Pearson r across championships of mean Ready Time and the athlete-adjusted RT offset, 3 championships with audio pairs, calibrated foreperiod scale; no inference",
    "unit": "",
    "n_champs": 3
@@ -352,13 +352,13 @@
    "n_sims": 10000
   },
   "h1s1_fp_beta0_r_mean": {
-   "value": 0.3145,
+   "value": 0.3142,
    "desc": "SIMULATION: mean naive pooled r, S1, true slope 0, foreperiod scale (Ready Time + championship calibration offset + within-championship calibration scatter)",
    "unit": "",
-   "sd": 0.02417,
-   "q025": 0.2668,
-   "q50": 0.3147,
-   "q975": 0.361,
+   "sd": 0.02413,
+   "q025": 0.2666,
+   "q50": 0.3144,
+   "q975": 0.3607,
    "n_sims": 10000
   },
   "h1s1_fp_beta0_p_ge016": {
@@ -375,13 +375,13 @@
    "n_sims": 10000
   },
   "h1s1_fp_betahat_r_mean": {
-   "value": 0.3322,
+   "value": 0.332,
    "desc": "SIMULATION: mean naive pooled r, S1, true slope = (a) estimate, foreperiod scale",
    "unit": "",
-   "sd": 0.02411,
-   "q025": 0.2851,
-   "q50": 0.3323,
-   "q975": 0.379,
+   "sd": 0.02407,
+   "q025": 0.285,
+   "q50": 0.3321,
+   "q975": 0.3788,
    "n_sims": 10000
   },
   "h1s1_fp_betahat_p_ge016": {
@@ -1933,8 +1933,8 @@
     "median_ready_s": 1.6775,
     "offset_ms_descriptive": 15.4805,
     "offset_ms_model_a": 18.5864,
-    "calib_offset_s": 0.6099,
-    "mean_fp_s": 2.3059
+    "calib_offset_s": 0.6072,
+    "mean_fp_s": 2.3032
    },
    {
     "comp_year": "WIC2024",
@@ -1989,11 +1989,11 @@
    {
     "key": "h1s1_fp_beta0",
     "label": "S1, true slope 0, foreperiod scale (Ready Time + championship calibration offset + within-championship calibration scatter)",
-    "mean": 0.314512,
-    "sd": 0.024174,
-    "q025": 0.26682,
-    "q50": 0.314684,
-    "q975": 0.360999,
+    "mean": 0.314235,
+    "sd": 0.0241305,
+    "q025": 0.266569,
+    "q50": 0.314443,
+    "q975": 0.360653,
     "p_ge": 1.0,
     "p_absge": 1.0,
     "mc_se_p_ge": 0.0,
@@ -2002,11 +2002,11 @@
    {
     "key": "h1s1_fp_betahat",
     "label": "S1, true slope = (a) estimate, foreperiod scale",
-    "mean": 0.332201,
-    "sd": 0.0241108,
-    "q025": 0.285051,
-    "q50": 0.332318,
-    "q975": 0.379044,
+    "mean": 0.331983,
+    "sd": 0.0240658,
+    "q025": 0.284974,
+    "q50": 0.332075,
+    "q975": 0.378765,
     "p_ge": 1.0,
     "p_absge": 1.0,
     "mc_se_p_ge": 0.0,
@@ -3901,7 +3901,7 @@
     "key": "h1s1_fp_beta0",
     "lo": 0.23,
     "hi": 0.24,
-    "count": 6
+    "count": 7
    },
    {
     "key": "h1s1_fp_beta0",
@@ -3919,79 +3919,79 @@
     "key": "h1s1_fp_beta0",
     "lo": 0.26,
     "hi": 0.27,
-    "count": 180
+    "count": 183
    },
    {
     "key": "h1s1_fp_beta0",
     "lo": 0.27,
     "hi": 0.28,
-    "count": 446
+    "count": 457
    },
    {
     "key": "h1s1_fp_beta0",
     "lo": 0.28,
     "hi": 0.29,
-    "count": 752
+    "count": 757
    },
    {
     "key": "h1s1_fp_beta0",
     "lo": 0.29,
     "hi": 0.3,
-    "count": 1202
+    "count": 1217
    },
    {
     "key": "h1s1_fp_beta0",
     "lo": 0.3,
     "hi": 0.31,
-    "count": 1525
+    "count": 1526
    },
    {
     "key": "h1s1_fp_beta0",
     "lo": 0.31,
     "hi": 0.32,
-    "count": 1588
+    "count": 1602
    },
    {
     "key": "h1s1_fp_beta0",
     "lo": 0.32,
     "hi": 0.33,
-    "count": 1506
+    "count": 1499
    },
    {
     "key": "h1s1_fp_beta0",
     "lo": 0.33,
     "hi": 0.34,
-    "count": 1183
+    "count": 1167
    },
    {
     "key": "h1s1_fp_beta0",
     "lo": 0.34,
     "hi": 0.35,
-    "count": 788
+    "count": 781
    },
    {
     "key": "h1s1_fp_beta0",
     "lo": 0.35,
     "hi": 0.36,
-    "count": 403
+    "count": 395
    },
    {
     "key": "h1s1_fp_beta0",
     "lo": 0.36,
     "hi": 0.37,
-    "count": 180
+    "count": 171
    },
    {
     "key": "h1s1_fp_beta0",
     "lo": 0.37,
     "hi": 0.38,
-    "count": 63
+    "count": 64
    },
    {
     "key": "h1s1_fp_beta0",
     "lo": 0.38,
     "hi": 0.39,
-    "count": 25
+    "count": 21
    },
    {
     "key": "h1s1_fp_beta0",
@@ -4645,67 +4645,67 @@
     "key": "h1s1_fp_betahat",
     "lo": 0.27,
     "hi": 0.28,
-    "count": 105
+    "count": 109
    },
    {
     "key": "h1s1_fp_betahat",
     "lo": 0.28,
     "hi": 0.29,
-    "count": 248
+    "count": 252
    },
    {
     "key": "h1s1_fp_betahat",
     "lo": 0.29,
     "hi": 0.3,
-    "count": 464
+    "count": 465
    },
    {
     "key": "h1s1_fp_betahat",
     "lo": 0.3,
     "hi": 0.31,
-    "count": 923
+    "count": 930
    },
    {
     "key": "h1s1_fp_betahat",
     "lo": 0.31,
     "hi": 0.32,
-    "count": 1293
+    "count": 1308
    },
    {
     "key": "h1s1_fp_betahat",
     "lo": 0.32,
     "hi": 0.33,
-    "count": 1526
+    "count": 1531
    },
    {
     "key": "h1s1_fp_betahat",
     "lo": 0.33,
     "hi": 0.34,
-    "count": 1635
+    "count": 1641
    },
    {
     "key": "h1s1_fp_betahat",
     "lo": 0.34,
     "hi": 0.35,
-    "count": 1446
+    "count": 1428
    },
    {
     "key": "h1s1_fp_betahat",
     "lo": 0.35,
     "hi": 0.36,
-    "count": 1022
+    "count": 1016
    },
    {
     "key": "h1s1_fp_betahat",
     "lo": 0.36,
     "hi": 0.37,
-    "count": 699
+    "count": 696
    },
    {
     "key": "h1s1_fp_betahat",
     "lo": 0.37,
     "hi": 0.38,
-    "count": 360
+    "count": 348
    },
    {
     "key": "h1s1_fp_betahat",
@@ -4717,13 +4717,13 @@
     "key": "h1s1_fp_betahat",
     "lo": 0.39,
     "hi": 0.4,
-    "count": 53
+    "count": 51
    },
    {
     "key": "h1s1_fp_betahat",
     "lo": 0.4,
     "hi": 0.41,
-    "count": 9
+    "count": 8
    },
    {
     "key": "h1s1_fp_betahat",
@@ -14037,11 +14037,11 @@
     "source": "own pairs"
    },
    "WCH2025": {
-    "delta_s": 0.6099,
+    "delta_s": 0.6072,
     "source": "own pairs"
    },
    "WIC2024": {
-    "delta_s": 0.5232,
+    "delta_s": 0.5214,
     "source": "pooled offset (no pairs)"
    }
   },
@@ -14061,10 +14061,10 @@
     "calibration_delta_s": {
      "WCH2022": 0.2743,
      "WCH2023": 0.3847,
-     "WCH2025": 0.6099,
-     "WIC2024": 0.5232
+     "WCH2025": 0.6072,
+     "WIC2024": 0.5214
     },
-    "sd_cal_s": 0.1121,
+    "sd_cal_s": 0.1103,
     "championship_fe_beta0_ms": {
      "C(comp_year)[T.WCH2023]": 17.2229,
      "C(comp_year)[T.WCH2025]": 33.8265,
