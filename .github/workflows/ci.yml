@@ -11,6 +11,10 @@ on:
 # (Haswell kernel, x86-64-v3), and Python is the exact version in requirements.txt.
 env:
   PYTHONHASHSEED: "0"
+  # One BLAS thread: multithreaded OpenBLAS crashed (access violation) on the 4-core runner; outputs are identical.
+  OPENBLAS_NUM_THREADS: "1"
+  OMP_NUM_THREADS: "1"
+  MKL_NUM_THREADS: "1"
   OPENBLAS_CORETYPE: Haswell
   NPY_DISABLE_CPU_FEATURES: X86_V4
 
