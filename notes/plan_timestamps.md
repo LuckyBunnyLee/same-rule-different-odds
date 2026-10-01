@@ -14,3 +14,12 @@ dates are later; the original commits are listed here (Pacific Daylight Time, UT
 The data had been explored before these plans were written (the championship offsets were known), so these are
 pre-specified analyses of existing data, not a pre-registration with a registry. Deviations are listed in the dated
 addenda inside each plan; the recent-championship probe (`probe.*`) was not pre-specified and is labelled exploratory.
+
+## History commitment
+
+The original working repository stays private during anonymous review, because every commit carries the author's
+name. Its full history (63 commits from 2026-09-29 to 2026-10-01, ending at commit 12c17e0) is packed in a git bundle
+with SHA-256 `f8b06f044c7f970b409df89748cc944a53ac4562203c4579f322c961cef60df5` (55,710,959 bytes). After review the
+bundle will be deposited or provided on request, so anyone can check that it matches this hash and that each plan above
+was committed before its first result. Publishing the hash fixes the history as of this commit; the times inside it are
+the ones git recorded.
