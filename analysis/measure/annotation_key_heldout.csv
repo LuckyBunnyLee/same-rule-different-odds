@@ -1,0 +1,13 @@
+sheet_id,race_id,attempt,attempt_status
+H01,WCH2025-100m-W-F-H1,1,valid
+H02,WCH2025-100m-W-R1-H2,1,valid
+H03,WCH2025-100m-W-R1-H5,1,valid
+H04,WCH2025-100m-W-SF-H1,1,recalled
+H05,WCH2025-100m-W-SF-H1,2,valid
+H06,WCH2025-100mH-W-R1-H1,1,valid
+H07,WCH2025-100mH-W-R1-H2,1,valid
+H08,WCH2025-100mH-W-R1-H6,1,valid
+H09,WCH2025-100mH-W-SF-H1,1,recalled
+H10,WCH2025-100mH-W-SF-H1,2,valid
+H11,WCH2025-100mH-W-SF-H2,1,valid
+H12,WCH2025-110mH-M-R1-H5,1,valid

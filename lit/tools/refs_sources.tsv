@@ -1,0 +1,112 @@
+# key	doi	note (verification tag as used in lit/*.md)	print_year_override (optional)
+Haugen2013	10.1080/02640414.2012.746724	V-ABS (closed access; PubMed abstract)
+HaugenBuchheit2016	10.1007/s40279-015-0446-0	V-FT (author accepted manuscript)	2016
+Tonnessen2013	10.1519/JSC.0b013e31826520c3	V-ABS
+Otsuka2017	10.3389/fpsyg.2017.00810	V-FT (PMC5435752)
+Dalmaijer2015	10.3389/fpsyg.2015.01618	V-FT (PMC4623299)
+Dalmaijer2016	10.3389/fpsyg.2016.00119	V-FT (PMC4746233)
+Fiore2025	10.1080/00031305.2025.2515869	V-FT on arXiv:2506.11460 v1; published version not checked for changes
+Brosnan2017	10.1080/02640414.2016.1201213	V-ABS	2017
+Han2025IJPAS	10.1080/24748668.2025.2579341	V-ABS
+Collet1999	10.2466/pms.1999.88.1.65	V-ABS
+Mitasik2020	10.2478/afepuc-2020-0017	V-FT (sports search pass)
+Ntolaptsis2021	10.2478/afepuc-2021-0007	V-FT (sports search pass)
+Bezodis2019	10.1007/s40279-019-01138-1	V-FT (PMC6684547, sports search pass)
+MeroKomi1990	10.1007/BF00236697	V-ABS
+PainHibbs2007	10.1080/02640410600718004	V-FT (Loughborough accepted manuscript, sports search pass)
+Milloz2020ISBS	10.34961/6110	V-FT (UL repository, sports search pass)
+Milloz2021	10.1007/s40279-020-01350-4	V-ABS (paywalled)	2021
+Brown2008Go	10.1249/MSS.0b013e31816770e1	V-FT (author PDF)
+Lipps2011	10.1371/journal.pone.0026141	V-FT (PMC3198384)
+MirshamsShahshahani2018	10.1371/journal.pone.0198633	V-FT (PMC6021049)
+Willwacher2013	10.1016/j.proeng.2013.07.073	V-ABS
+Yokokura2000	10.9746/sicetr1965.36.159	V-ABS (J-STAGE English abstract)
+Markowski2023	10.1371/journal.pone.0281138	V-FT (sports search pass)
+Papic2019	10.1080/14763141.2017.1409260	V-ABS	2019
+Crowe2019	10.1177/1747021819854044	V-ABS (repository copy blocked)
+Crowe2021	10.1177/1747021821995452	V-FT (PMC8261779, datasets search pass)
+Yarrow2026	10.31234/osf.io/69xvk_v1	V-ABS (PsyArXiv preprint, CC BY 4.0)
+Yarrow2025Data	10.25383/city.30715439	V-FT (Figshare record and files, datasets search pass)
+Kathirvel2011	10.5120/1729-2340	metadata only
+HuangCox2010	10.21437/interspeech.2010-428	metadata only
+Yan2014Tennis	10.1016/j.imavis.2014.08.004	metadata only
+Bain2023WhisperX	10.21437/interspeech.2023-78	metadata only
+McAuliffe2017MFA	10.21437/interspeech.2017-1386	metadata only
+Bello2005Onset	10.1109/tsa.2005.851998	metadata only
+McFee2015librosa	10.25080/majora-7b98e3ed-003	metadata only
+BlandAltman1986	10.1016/S0140-6736(86)90837-8	metadata only
+KooLi2016	10.1016/j.jcm.2016.02.012	metadata only
+Woodrow1914Measurement	10.1037/h0093087	S
+Karlin1959Reaction	10.1037/h0049152	S
+Drazin1961Effects	10.1037/h0046860	S
+Niemi1981Foreperiod	10.1037/0033-2909.89.1.133	S (metadata verified)
+Los2014Outlines	10.3389/fpsyg.2014.01058	V-FT (PMC4168672)
+Bausenhart2026Prepared	10.3389/fpsyg.2026.1768431	V-FT (publisher PDF)
+HoushmandChatroudi2024Nonlinearity	10.1038/s41598-024-53347-y	V-FT (PMC10837441)
+Fukushi2004Independence	10.1080/02640410310001641601	V-ABS
+Elithorn1955Central	10.1080/17470215508416684	V-ABS
+Naatanen1970Diminishing	10.1016/0001-6918(70)90035-1	S
+Naatanen1971Nonaging	10.1016/0001-6918(71)90040-0	S
+Nickerson1969Response	10.1037/h0026889	S
+Trillenberg2000Cnv	10.1016/S1388-2457(00)00274-1	V-ABS (digitized means via fMTP OSF supplement)
+Janssen2005Representation	10.1038/nn1386	V-FT (submitted version, KU Leuven Lirias)
+Cui2009Readygo	10.1371/journal.pbio.1000167	V-ABS
+Coull2009Neural	10.1371/journal.pbio.1000166	V-ABS
+Coull2016Differential	10.1016/j.neuroimage.2016.07.036	V-ABS
+Nobre2007Hazards	10.1016/j.conb.2007.07.006	V-ABS
+NobreVanEde2018Anticipated	10.1038/nrn.2017.141	V-ABS	2018
+Herbst2018Tracking	10.1523/ENEURO.0017-18.2018	V-ABS (data files V-FT, datasets search pass)
+Schoffelen2005Neuronal	10.1126/science.1107027	V-ABS
+Tsunoda2008Reaction	10.1016/j.neulet.2007.12.063	V-ABS
+Oswal2007Time	10.1152/jn.01238.2006	V-ABS
+Grabenhorst2019Anticipation	10.1038/s41467-019-13849-0	V-FT (PMC6925136)
+Grabenhorst2021Two	10.1073/pnas.2019342118	V-ABS (methods V-FT* via fetch tool)
+Grabenhorst2025Neural	10.1038/s41467-025-57813-7	V-ABS
+Grabenhorst2026Anticipation	10.1073/pnas.2518982123	V-FT (PMC12799109)
+Grabenhorst2026Data	10.17617/3.MEAGMS	V-FT (Edmond record, CC0 1.0)
+Grabenhorst2021Data	10.17617/3.YC3SGA	V-FT (Edmond record, CC BY-SA 4.0)
+Visalli2019Bayesian	10.1016/j.neuroimage.2019.116097	V-ABS
+Visalli2021Electroencephalographic	10.1016/j.neuroimage.2021.117867	V-ABS (OSF data V-FT, datasets search pass)
+Visalli2023Plike	10.1007/s00221-023-06656-z	V-ABS
+Huang2025Human	10.1371/journal.pbio.3003459	V-ABS
+Han2022Revisiting	10.3758/s13414-022-02476-5	V-FT (PMC8989257, cognitive-science search pass)
+Han2022Change	10.5334/joc.235	V-FT (PMC9400609)
+Welhaf2026Agerelated	10.3389/fpsyg.2026.1734451	V-FT (cognitive-science search pass)
+Steinborn2008Sequential	10.1016/j.actpsy.2008.08.005	S
+Steinborn2009Dynamic	10.1016/j.actpsy.2009.06.002	V-ABS
+Los2001Intentional	10.1037/0096-1523.27.2.370	V-ABS
+Los2001Foreperiod	10.1016/S0001-6918(00)00029-9	V-ABS
+Los2017Hazard	10.1037/xhp0000279	V-ABS
+Mattiesing2017Timing	10.3758/s13423-017-1270-3	V-ABS
+Salet2022Fmtp	10.1037/rev0000356	V-ABS article; V-FT OSF supplement eu7sd
+Vallesi2007Developmental	10.1037/0096-1523.33.6.1377	V-ABS
+Vallesi2007Role	10.1093/cercor/bhj163	V-ABS	2007
+Los2021Warning	10.1016/j.cogpsych.2021.101378	V-ABS
+Ollman1972Deadline	10.1016/0010-0285(72)90010-2	S
+Kornblum1973Simple	10.3758/BF03207243	S (metadata verified)
+Hsu2005Measuring	10.1348/000711005X62774	V-ABS
+Tiefenau2006Correcting	10.1016/j.brainres.2006.09.004	V-ABS
+Tucker2009Variable	10.1093/sleep/32.10.1393	V-ABS (details V-FT* via fetch tool)
+Leow2018Triggering	10.1016/j.neuroscience.2018.10.008	V-FT (QUT accepted manuscript)
+Boulinguez2008Warning	10.1152/jn.01198.2007	V-ABS
+Basner2011Maximizing	10.1093/sleep/34.5.581	V-ABS (definition V-FT* via fetch tool)
+Whelan2008Effective	10.1007/BF03395630	S
+Mattes1997Response	10.3758/BF03205523	V-ABS (design V-FT via Bausenhart & Ulrich 2026)
+VanderLubbe2004Being	10.1016/j.actpsy.2004.03.003	V-ABS
+VallsSole1999Patterned	10.1111/j.1469-7793.1999.0931u.x	V-ABS (numbers V-FT* via fetch tool)
+Carlsen2004Prepared	10.3200/JMBR.36.3.253-264	V-ABS
+Cressman2006Temporal	10.1007/s00221-006-0459-x	V-ABS
+Carlsen2010Motor	10.1016/j.brainres.2010.01.076	V-FT (PMC2839417)
+Carlsen2011Considerations	10.1016/j.neubiorev.2010.04.009	V-ABS
+Carlsen2026StartReact	10.1111/apha.70235	V-ABS
+Sadler2022StartReact	10.1016/j.bbr.2022.113839	V-ABS (OSF data V-FT, datasets search pass)
+Ille2013Attentional	10.1080/02640414.2013.797097	V-ABS
+Kovacs2018Thinking	10.3390/sports6040120	V-ABS
+Wang2013Temporal	10.1080/00222895.2012.740522	V-ABS
+Nuri2013Reaction	10.1080/17461391.2012.738712	V-ABS	2013
+Langner2010Mental	10.1016/j.actpsy.2009.10.001	V-ABS
+Vallesi2009Temporal	10.1016/j.neuropsychologia.2009.06.013	V-ABS
+Breska2017Neural	10.1371/journal.pbio.2001665	V-ABS
+Capizzi2026Unifying	10.3758/s13428-025-02908-8	V-ABS (OSF listing V-FT, datasets search pass)
+Massar2020Dissociable	10.1016/j.cognition.2020.104242	metadata only (dataset lead)
+MirshamsShahshahani2018Data	10.7302/Z20V8B11	V-ABS (DataCite metadata; files not opened)

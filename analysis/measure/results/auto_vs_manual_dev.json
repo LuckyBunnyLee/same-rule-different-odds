@@ -1,0 +1,251 @@
+{
+ "split": "dev",
+ "description": "automated minus manual (ms), real broadcast audio",
+ "n_starts_matched": 22,
+ "n_clean": 18,
+ "gun_onset": {
+  "n": 22,
+  "bias_ms": 0.27,
+  "mae_ms": 0.74,
+  "median_ms": 0.05,
+  "sd_ms": 0.97,
+  "max_abs_ms": 2.9,
+  "within_10ms": 1.0,
+  "within_20ms": 1.0,
+  "within_40ms": 1.0
+ },
+ "set_onset_clean": {
+  "n": 18,
+  "bias_ms": -0.22,
+  "mae_ms": 18.33,
+  "median_ms": -3.25,
+  "sd_ms": 29.03,
+  "max_abs_ms": 93.0,
+  "within_10ms": 0.4444,
+  "within_20ms": 0.6111,
+  "within_40ms": 0.8889
+ },
+ "fp_onset_clean": {
+  "n": 18,
+  "bias_ms": 0.59,
+  "mae_ms": 18.73,
+  "median_ms": 5.4,
+  "sd_ms": 29.16,
+  "max_abs_ms": 93.6,
+  "within_10ms": 0.4444,
+  "within_20ms": 0.6111,
+  "within_40ms": 0.8889
+ },
+ "set_offset_vs_voicing_end_clean": {
+  "n": 18,
+  "bias_ms": 30.94,
+  "mae_ms": 60.61,
+  "median_ms": 12.5,
+  "sd_ms": 72.78,
+  "max_abs_ms": 168.0,
+  "within_10ms": 0.1667,
+  "within_20ms": 0.2222,
+  "within_40ms": 0.4444
+ },
+ "failures": [],
+ "rows": [
+  {
+   "race_id": "WCH2022-100m-W-F-H1",
+   "attempt": 1,
+   "clean": 1,
+   "e_gun_ms": 0.1,
+   "e_on_ms": -31.0,
+   "e_off_ms": 62.0,
+   "qc_flag": "no_whisper_set;set_estimators_disagree"
+  },
+  {
+   "race_id": "WCH2022-100mH-W-F-H1",
+   "attempt": 1,
+   "clean": 1,
+   "e_gun_ms": -0.6,
+   "e_on_ms": -45.5,
+   "e_off_ms": 83.0,
+   "qc_flag": "no_whisper_set;set_estimators_disagree;speech_in_hold"
+  },
+  {
+   "race_id": "WCH2022-110mH-M-F-H1",
+   "attempt": 1,
+   "clean": 1,
+   "e_gun_ms": 0.5,
+   "e_on_ms": 12.0,
+   "e_off_ms": 168.0,
+   "qc_flag": "ok"
+  },
+  {
+   "race_id": "WCH2022-110mH-M-F-H1",
+   "attempt": 2,
+   "clean": 1,
+   "e_gun_ms": 1.6,
+   "e_on_ms": 18.0,
+   "e_off_ms": 161.0,
+   "qc_flag": "no_whisper_set;set_estimators_disagree"
+  },
+  {
+   "race_id": "WCH2023-100m-M-F-H1",
+   "attempt": 1,
+   "clean": 1,
+   "e_gun_ms": -0.4,
+   "e_on_ms": -6.5,
+   "e_off_ms": -16.0,
+   "qc_flag": "ok"
+  },
+  {
+   "race_id": "WCH2023-100m-W-F-H1",
+   "attempt": 1,
+   "clean": 1,
+   "e_gun_ms": 0.9,
+   "e_on_ms": 0.0,
+   "e_off_ms": -4.0,
+   "qc_flag": "ok"
+  },
+  {
+   "race_id": "WCH2023-100mH-W-F-H1",
+   "attempt": 1,
+   "clean": 1,
+   "e_gun_ms": 0.0,
+   "e_on_ms": -21.0,
+   "e_off_ms": -2.0,
+   "qc_flag": "ok"
+  },
+  {
+   "race_id": "WCH2023-110mH-M-F-H1",
+   "attempt": 1,
+   "clean": 1,
+   "e_gun_ms": 2.9,
+   "e_on_ms": -2.5,
+   "e_off_ms": 63.0,
+   "qc_flag": "speech_in_hold"
+  },
+  {
+   "race_id": "WCH2025-100m-M-F-H1",
+   "attempt": 1,
+   "clean": 0,
+   "e_gun_ms": -0.8,
+   "e_on_ms": null,
+   "e_off_ms": null,
+   "qc_flag": "no_whisper_set;set_estimators_disagree;speech_before_set"
+  },
+  {
+   "race_id": "WCH2025-100m-M-F-H1",
+   "attempt": 2,
+   "clean": 1,
+   "e_gun_ms": -0.6,
+   "e_on_ms": 93.0,
+   "e_off_ms": -36.0,
+   "qc_flag": "set_estimators_disagree;speech_before_set"
+  },
+  {
+   "race_id": "WCH2025-100m-M-R1-H1",
+   "attempt": 1,
+   "clean": 0,
+   "e_gun_ms": 1.1,
+   "e_on_ms": null,
+   "e_off_ms": null,
+   "qc_flag": "no_whisper_set;set_estimators_disagree;speech_before_set"
+  },
+  {
+   "race_id": "WCH2025-100m-M-R1-H2",
+   "attempt": 1,
+   "clean": 1,
+   "e_gun_ms": 1.4,
+   "e_on_ms": -4.0,
+   "e_off_ms": 27.0,
+   "qc_flag": "ok"
+  },
+  {
+   "race_id": "WCH2025-100m-M-R1-H3",
+   "attempt": 1,
+   "clean": 0,
+   "e_gun_ms": -0.3,
+   "e_on_ms": null,
+   "e_off_ms": null,
+   "qc_flag": "no_whisper_set;set_estimators_disagree;speech_before_set;speech_in_hold"
+  },
+  {
+   "race_id": "WCH2025-100m-M-R1-H4",
+   "attempt": 1,
+   "clean": 1,
+   "e_gun_ms": 1.4,
+   "e_on_ms": -22.5,
+   "e_off_ms": 70.0,
+   "qc_flag": "ok"
+  },
+  {
+   "race_id": "WCH2025-100m-M-R1-H5",
+   "attempt": 1,
+   "clean": 1,
+   "e_gun_ms": -1.2,
+   "e_on_ms": 2.0,
+   "e_off_ms": 95.0,
+   "qc_flag": "ok"
+  },
+  {
+   "race_id": "WCH2025-100m-M-R1-H6",
+   "attempt": 1,
+   "clean": 1,
+   "e_gun_ms": -0.2,
+   "e_on_ms": 10.5,
+   "e_off_ms": -10.0,
+   "qc_flag": "no_whisper_set"
+  },
+  {
+   "race_id": "WCH2025-100m-M-R1-H6",
+   "attempt": 2,
+   "clean": 1,
+   "e_gun_ms": 0.3,
+   "e_on_ms": -8.5,
+   "e_off_ms": 95.0,
+   "qc_flag": "speech_in_hold"
+  },
+  {
+   "race_id": "WCH2025-100m-M-R1-H7",
+   "attempt": 1,
+   "clean": 0,
+   "e_gun_ms": -0.8,
+   "e_on_ms": null,
+   "e_off_ms": null,
+   "qc_flag": "no_whisper_set;set_estimators_disagree;speech_before_set"
+  },
+  {
+   "race_id": "WCH2025-100m-M-SF-H1",
+   "attempt": 1,
+   "clean": 1,
+   "e_gun_ms": -0.3,
+   "e_on_ms": 5.0,
+   "e_off_ms": -96.0,
+   "qc_flag": "no_whisper_set;set_estimators_disagree"
+  },
+  {
+   "race_id": "WCH2025-100m-M-SF-H2",
+   "attempt": 1,
+   "clean": 1,
+   "e_gun_ms": 0.5,
+   "e_on_ms": -5.0,
+   "e_off_ms": -24.0,
+   "qc_flag": "ok"
+  },
+  {
+   "race_id": "WCH2025-100m-M-SF-H3",
+   "attempt": 1,
+   "clean": 1,
+   "e_gun_ms": 0.0,
+   "e_on_ms": 22.5,
+   "e_off_ms": -49.0,
+   "qc_flag": "no_whisper_set;set_estimators_disagree"
+  },
+  {
+   "race_id": "WCH2025-100m-M-SF-H3",
+   "attempt": 2,
+   "clean": 1,
+   "e_gun_ms": 0.4,
+   "e_on_ms": -20.5,
+   "e_off_ms": -30.0,
+   "qc_flag": "no_whisper_set;set_estimators_disagree"
+  }
+ ]
+}

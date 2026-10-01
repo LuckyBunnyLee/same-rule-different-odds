@@ -1,0 +1,37 @@
+sheet_id,video_id,race_id,attempt,attempt_status,t_set_on,t_voicing_end,t_word_end,t_gun,set_on_read_unc_s,clean,annotator,annotated_at,notes,split,vowel_onset_only
+S01,i8spi5W5Wyc,WCH2025-100m-M-R1-H1,1.0,valid,,,,183.547,,0,measure-agent,2026-09-29,commentary runs over the command; Set not identifiable (HF burst 181.37 may be the /s/ but overlaps speech),dev,0
+S02,i8spi5W5Wyc,WCH2025-100m-M-R1-H2,1.0,valid,506.86,507.18,507.2,508.842,0.005,1,measure-agent,2026-09-29,sharp /s/; vowel 507.02-507.18; energy back to floor ~507.30,dev,0
+S03,i8spi5W5Wyc,WCH2025-100m-M-R1-H3,1.0,valid,,,,922.687,,0,measure-agent,2026-09-29,two fricative+vowel groups (920.40 and 920.55); which one is Set is ambiguous,dev,0
+S04,i8spi5W5Wyc,WCH2025-100m-M-R1-H4,1.0,valid,1169.27,1169.58,1169.63,1171.55,0.005,1,measure-agent,2026-09-29,clean,dev,0
+S05,i8spi5W5Wyc,WCH2025-100m-M-R1-H5,1.0,valid,1588.907,1589.25,1589.28,1591.079,0.005,1,measure-agent,2026-09-29,clean,dev,0
+S06,i8spi5W5Wyc,WCH2025-100m-M-R1-H6,1.0,recalled,1820.36,1820.74,1820.74,1822.442,0.01,1,measure-agent,2026-09-29,recalled attempt (Seiko attempt 2 is the valid start); Set spoken in two parts,dev,0
+S07,i8spi5W5Wyc,WCH2025-100m-M-R1-H6,2.0,valid,2009.104,2009.45,2009.47,2011.545,0.005,1,measure-agent,2026-09-29,clean,dev,0
+S08,i8spi5W5Wyc,WCH2025-100m-M-R1-H7,1.0,valid,,,,2213.075,,0,measure-agent,2026-09-29,harmonic burst 2211.50-2211.76 without /s/ onset; commentary nearby; Set ambiguous,dev,0
+S09,i8spi5W5Wyc,WCH2025-100m-M-SF-H1,1.0,valid,2468.57,2469.0,2469.13,2470.682,0.02,1,measure-agent,2026-09-29,gradual /s/ rise 2468.56-2468.69; /t/ release ~2469.11,dev,0
+S10,i8spi5W5Wyc,WCH2025-100m-M-SF-H2,1.0,valid,2741.78,2742.2,2742.21,2743.897,0.015,1,measure-agent,2026-09-29,gradual /s/ rise,dev,0
+S11,i8spi5W5Wyc,WCH2025-100m-M-SF-H3,1.0,recalled,3042.57,3042.86,3042.86,3044.859,0.04,1,measure-agent,2026-09-29,recalled attempt; weak /s/ (~8 dB above floor) before vowel onset 3042.655,dev,0
+S12,i8spi5W5Wyc,WCH2025-100m-M-SF-H3,2.0,valid,3185.24,3185.58,3185.8,3187.937,0.015,1,measure-agent,2026-09-29,gradual /s/ from ~3185.225; late burst 3185.75-3185.80 read as /t/ release,dev,0
+S13,i8spi5W5Wyc,WCH2025-100m-M-F-H1,1.0,recalled,,,,3551.141,,0,measure-agent,2026-09-29,recalled attempt; commentary overlaps; Set ambiguous,dev,0
+S14,i8spi5W5Wyc,WCH2025-100m-M-F-H1,2.0,valid,3663.925,3664.28,3664.3,3666.325,0.01,1,measure-agent,2026-09-29,/s/ starts after a ~40 ms gap following commentary,dev,0
+S15,3-YOXm6_yVI,WCH2023-100m-W-F-H1,1.0,valid,320.297,320.68,320.8,322.426,0.005,1,measure-agent,2026-09-29,clean; /t/ release 320.78,dev,0
+S16,u0wI4FtyOtE,WCH2023-100m-M-F-H1,1.0,valid,262.154,262.58,262.66,264.125,0.005,1,measure-agent,2026-09-29,clean; long /s/; /t/ release ~262.645,dev,0
+S17,pvwL10FELHw,WCH2023-100mH-W-F-H1,1.0,valid,288.65,289.0,289.02,290.635,0.005,1,measure-agent,2026-09-29,clean,dev,0
+S18,pVKEBJPFssc,WCH2023-110mH-M-F-H1,1.0,valid,296.134,296.48,296.64,298.317,0.005,1,measure-agent,2026-09-29,clean; /t/ release ~296.61,dev,0
+S19,3553F-6Q044,WCH2022-100m-W-F-H1,1.0,valid,172.89,173.22,173.22,174.623,0.015,1,measure-agent,2026-09-29,gradual /s/; possible /t/ at 173.39 not counted,dev,0
+S20,pC_d8t87A9A,WCH2022-100m-M-F-H1,,not_a_start,,,,,,0,measure-agent,2026-09-29,detector candidate 257.46 is commentary (no gun),dev,0
+S21,pC_d8t87A9A,WCH2022-100m-M-F-H1,,not_a_start,,,,,,0,measure-agent,2026-09-29,detector candidate 726.66 is commentary (no gun),dev,0
+S22,8lkzDBDUzD0,WCH2022-100mH-W-F-H1,1.0,valid,180.784,181.08,181.08,182.407,0.01,1,measure-agent,2026-09-29,clean,dev,0
+S23,4cUfAmsTnLo,WCH2022-110mH-M-F-H1,1.0,recalled,248.055,248.42,248.45,250.047,0.015,1,measure-agent,2026-09-29,recalled attempt (false start); gradual /s/,dev,0
+S24,4cUfAmsTnLo,WCH2022-110mH-M-F-H1,2.0,valid,548.09,548.45,548.48,550.146,0.02,1,measure-agent,2026-09-29,gradual /s/ from ~548.07; gun onset slightly gradual (550.144-550.150),dev,0
+H01,2McuUM2729o,WCH2025-100m-W-F-H1,1.0,valid,2595.215,2595.55,2595.55,2597.555,0.015,1,measure-agent,2026-09-29,commentary ends ~2595.20 just before the /s/; /s/ distinct in 3-10 kHz,heldout,0
+H02,2McuUM2729o,WCH2025-100m-W-R1-H2,1.0,valid,364.305,364.62,364.62,366.494,0.005,1,measure-agent,2026-09-29,"gun two-step: first arrival 366.494 (~20 dB), main step 366.518; first arrival read as onset",heldout,0
+H03,2McuUM2729o,WCH2025-100m-W-R1-H5,1.0,valid,,,,1135.24,,0,measure-agent,2026-09-29,"commentary overlaps the command; Set not identifiable; gun two-step (1135.240 first arrival, main 1135.261)",heldout,0
+H04,2McuUM2729o,WCH2025-100m-W-SF-H1,1.0,recalled,2006.19,2006.3,2006.3,2008.709,0.04,1,measure-agent,2026-09-29,"weak isolated Set; /s/ not visible, voiced onset read; gradual gun pre-rise from ~2008.695",heldout,1
+H05,2McuUM2729o,WCH2025-100m-W-SF-H1,2.0,valid,2117.487,2117.71,2117.71,2119.39,0.015,1,measure-agent,2026-09-29,commentary ends ~2117.45; /s/ rises from ~2117.485; gun rise gradual 2119.38-2119.395,heldout,0
+H06,a2R6qxmIfYU,WCH2025-100mH-W-R1-H1,1.0,valid,,,,135.704,,0,measure-agent,2026-09-29,continuous commentary; Set not identifiable,heldout,0
+H07,a2R6qxmIfYU,WCH2025-100mH-W-R1-H2,1.0,valid,431.775,432.1,432.1,434.346,0.01,1,measure-agent,2026-09-29,weak short /s/ (~18 dB) before vowel at 431.885,heldout,0
+H08,a2R6qxmIfYU,WCH2025-100mH-W-R1-H6,1.0,valid,1661.648,1662.08,1662.08,1663.822,0.005,1,measure-agent,2026-09-29,clean,heldout,0
+H09,a2R6qxmIfYU,WCH2025-100mH-W-SF-H1,1.0,recalled,2030.786,2031.25,2031.25,2033.19,0.005,1,measure-agent,2026-09-29,clean; recalled attempt,heldout,0
+H10,a2R6qxmIfYU,WCH2025-100mH-W-SF-H1,2.0,valid,2136.155,2136.47,2136.47,2138.317,0.005,1,measure-agent,2026-09-29,clean,heldout,0
+H11,a2R6qxmIfYU,WCH2025-100mH-W-SF-H2,1.0,valid,2383.56,2383.95,2383.95,2385.466,0.015,1,measure-agent,2026-09-29,gradual /s/ rise 2383.555-2383.65,heldout,0
+H12,dWV-SNRwbZY,WCH2025-110mH-M-R1-H5,1.0,valid,1109.253,1109.72,1109.72,1111.682,0.005,1,measure-agent,2026-09-29,"gun staggered: 0.15-1 kHz first arrival 1111.682, 1-3 kHz 1111.690, 3-10 kHz step 1111.697; first arrival read as onset",heldout,0

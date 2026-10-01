@@ -1,0 +1,96 @@
+level,check,race_id,lane,athlete,value,detail
+athlete,missing_rt,OG2020-100m-M-F-H1,4,Zharnel HUGHES,,status DQ; nan
+athlete,missing_rt,OG2020-100m-M-PR-H2,6,Aveni MIGUEL,,status DQ; nan
+athlete,missing_rt,OG2020-100m-M-R1-H5,2,Divine ODUDURU,,status DQ; nan
+athlete,missing_rt,OG2020-100m-M-R1-H6,2,Kokoutse Fabrice DABLA,,status DQ; nan
+athlete,missing_rt,OG2020-100m-M-SF-H1,3,Reece PRESCOD,,status DQ; nan
+athlete,missing_rt,OG2020-100mH-W-R1-H4,2,Teresa ERRANDONEA,,status OK; nan
+athlete,missing_rt,OG2020-100mH-W-R1-H4,3,Christina CLEMONS,,status OK; nan
+athlete,missing_rt,OG2020-100mH-W-R1-H4,4,Luca KOZÁK,,status OK; nan
+athlete,missing_rt,OG2020-100mH-W-R1-H4,5,Elisa Maria DI LAZZARO,,status OK; nan
+athlete,missing_rt,OG2020-100mH-W-R1-H4,7,Pedrya SEYMOUR,,status OK; nan
+athlete,missing_rt,OG2020-100mH-W-R1-H4,8,Ketiley BATISTA,,status OK; nan
+athlete,missing_rt,OG2020-100mH-W-R1-H4,9,Britany ANDERSON,,status OK; nan
+athlete,missing_rt,OG2024-100m-M-PR-H2,3,Steven SABINO,,status DQ; nan
+athlete,missing_rt,OG2024-100m-M-R1-H8,7,Aaron BROWN,,status DQ; nan
+athlete,missing_rt,WCH2015-100m-M-PR-H2,3,Berenger Aymard Bosse,,status FS; official PDF: 162.7
+athlete,missing_rt,WCH2015-100m-M-R1-H2,5,Anaso Jobodwana,,status FS; official PDF: 162.7
+athlete,missing_rt,WCH2015-100m-W-R1-H2,8,Charlotte Wingfield,,status FS; official PDF: 162.7
+athlete,missing_rt,WCH2015-100m-W-R1-H4,7,Jamile Samuel,,status FS; official PDF: 162.7
+athlete,missing_rt,WCH2015-200m-M-R1-H3,4,Usain Bolt,,status OK; nan
+athlete,missing_rt,WCH2015-200m-M-R1-H4,7,Mohammad Hossein Abareghi,,status DQ; nan
+athlete,missing_rt,WCH2017-100m-M-PR-H3,,Paul Ma'Unikeni,,status OK; nan
+athlete,missing_rt,WCH2017-200m-W-SF-H2,9,Rosangela Santos,,status FS; official PDF: 162.7
+athlete,missing_rt,WCH2019-200m-W-R1-H2,7,Ivet Lalova-Collio,,status OK; nan
+athlete,missing_rt,WCH2022-200m-M-R1-H4,8,Marcos SANTOS,,status DQ; nan
+athlete,missing_rt,WCH2023-100m-W-R1-H2,8,Yunisleydis DE LA C. GARCÍA,,status FS; official PDF: TR16.8
+athlete,missing_rt,WCH2023-100m-W-R1-H5,8,Imani LANSIQUOT,,status FS; official PDF: TR*
+athlete,missing_rt,WCH2023-200m-M-R1-H7,2,Ryan ZEZE,,status FS; official PDF: TR*
+athlete,missing_rt,WIC2025-60mH-M-R1-H1,8,Demario PRINCE,,status OK; nan
+athlete,rt_outside_0.08_0.40,OG2024-100m-M-R1-H1,4,Jeremiah AZU,0.073,FS
+athlete,rt_outside_0.08_0.40,OG2024-110mH-M-RP-H2,2,David YEFREMOV,-0.209,FS
+athlete,rt_outside_0.08_0.40,WCH2015-100mH-W-SF-H2,4,Kendra Harrison,0.071,FS
+athlete,rt_outside_0.08_0.40,WCH2015-110mH-M-R1-H1,8,Alexander John,0.053,FS
+athlete,rt_outside_0.08_0.40,WCH2015-110mH-M-R1-H2,3,Ronnie Ash,-0.024,FS
+athlete,rt_outside_0.08_0.40,WCH2015-110mH-M-R1-H2,6,Petr Svoboda,-0.048,FS
+athlete,rt_outside_0.08_0.40,WCH2015-200m-M-R1-H7,7,Alex Quiñónez,-0.234,FS
+athlete,rt_outside_0.08_0.40,WCH2017-100m-M-R1-H4,7,Mosito Lehata,-0.051,FS
+athlete,rt_outside_0.08_0.40,WCH2017-100m-M-R1-H5,9,Thando Roto,0.053,FS
+athlete,rt_outside_0.08_0.40,WCH2017-100m-W-R1-H5,5,Tatjana Pinto,-0.137,FS
+athlete,rt_outside_0.08_0.40,WCH2019-100mH-W-R1-H2,3,Brianna McNeal,-0.036,FS
+athlete,rt_outside_0.08_0.40,WCH2019-110mH-M-R1-H3,7,Jeffrey Julmis,-0.217,FS
+athlete,rt_outside_0.08_0.40,WCH2023-100m-M-R1-H5,6,Favour Oghene Tejiri ASHE,-0.379,FS
+athlete,rt_outside_0.08_0.40,WCH2023-100m-M-SF-H2,4,Akani SIMBINE,0.078,FS
+athlete,rt_outside_0.08_0.40,WCH2023-110mH-M-SF-H1,4,Louis François MENDY,0.063,FS
+athlete,rt_outside_0.08_0.40,WCH2025-100m-M-F-H1,8,Letsile TEBOGO,-0.317,FS
+athlete,rt_outside_0.08_0.40,WCH2025-100mH-W-SF-H1,9,Lotta HARALA,-0.361,FS
+athlete,rt_outside_0.08_0.40,WCH2025-200m-W-F-H1,1,Anthonique STRACHAN,-0.339,FS
+athlete,rt_outside_0.08_0.40,WIC2024-60mH-M-SF-H3,3,Shenglong ZHU,0.046,FS
+athlete,source_disagreement,OG2020-100m-W-PR-H1,7,Kimia YOUSOFI,,startlist matched by bib/name (WA competitorId differs)
+athlete,source_disagreement,OG2020-100m-W-R1-H5,6,Nzubechi Grace NWOKOCHA,,startlist matched by bib/name (WA competitorId differs)
+athlete,source_disagreement,OG2020-100m-W-SF-H3,9,Nzubechi Grace NWOKOCHA,,startlist matched by bib/name (WA competitorId differs)
+athlete,source_disagreement,OG2020-200m-W-R1-H1,8,Nzubechi Grace NWOKOCHA,,startlist matched by bib/name (WA competitorId differs)
+athlete,source_disagreement,OG2020-200m-W-SF-H3,9,Nzubechi Grace NWOKOCHA,,startlist matched by bib/name (WA competitorId differs)
+athlete,source_disagreement,WCH2015-200m-W-R1-H3,4,Blessing Okagbare-Ighoteguonor,,PDF name at this lane: Blessing OKAGBARE
+athlete,source_disagreement,WCH2017-100m-M-PR-H2,7,Dylan Sicobo,,PDF name at this lane: Dyland SICOBO
+athlete,source_disagreement,WCH2017-100m-M-R1-H4,7,Mosito Lehata,,"false start (official PDF: DQ 162.7, Fn F1); RT belongs to the aborted start, not the final valid start; site RT -0.050 replaced by official PDF RT -0.051"
+athlete,source_disagreement,WCH2017-100m-W-R1-H3,8,Blessing Okagbare-Ighoteguonor,,PDF name at this lane: Blessing OKAGBARE-IGHOTEGUONO
+athlete,source_disagreement,WCH2017-100m-W-R1-H4,5,Narcisa Landazuri,,PDF name at this lane: Narcisa LANDÁZURI
+athlete,source_disagreement,WCH2017-100m-W-R1-H5,5,Tatjana Pinto,,"false start (official PDF: DQ 162.7, Fn F1); RT belongs to the aborted start, not the final valid start; site RT -0.130 replaced by official PDF RT -0.137"
+athlete,source_disagreement,WCH2017-100m-W-SF-H3,5,Blessing Okagbare-Ighoteguonor,,PDF name at this lane: Blessing OKAGBARE-IGHOTEGUONO
+athlete,source_disagreement,WCH2017-100mH-W-R1-H1,2,Isabelle Pedersen,,startlist matched by bib/name (WA competitorId differs)
+athlete,source_disagreement,WCH2017-100mH-W-SF-H3,5,Isabelle Pedersen,,startlist matched by bib/name (WA competitorId differs)
+athlete,source_disagreement,WCH2019-100mH-W-R1-H2,3,Brianna McNeal,,"false start (official PDF: DQ 162.8, Fn F1); RT belongs to the aborted start, not the final valid start; site RT -0.030 replaced by official PDF RT -0.036"
+athlete,source_disagreement,WCH2019-110mH-M-R1-H3,7,Jeffrey Julmis,,"false start (official PDF: DQ 162.8, Fn F1); RT belongs to the aborted start, not the final valid start; site RT -0.210 replaced by official PDF RT -0.217"
+athlete,source_disagreement,WCH2019-110mH-M-SF-H1,7,Ronald Levy,,DQ on WA site but ranked 13.60 in the official PDF (post-race DQ/annulment; the start itself was legal)
+athlete,source_disagreement,WCH2022-100m-W-R1-H3,8,Crystal EMMANUEL-AHYE,,PDF name at this lane: Crystal EMMANUEL
+athlete,source_disagreement,WCH2022-100m-W-R1-H4,2,Géraldine DI TIZIO-FREY,,PDF name at this lane: Géraldine FREY
+athlete,source_disagreement,WCH2022-100m-W-R1-H4,6,Carina HORN,,DQ on WA site but ranked 11.29 in the official PDF (post-race DQ/annulment; the start itself was legal)
+athlete,source_disagreement,WCH2022-100m-W-R1-H4,7,Marie-Josée TA LOU-SMITH,,PDF name at this lane: Marie-Josée TA LOU
+athlete,source_disagreement,WCH2022-100m-W-R1-H6,3,Zarinae Jones SAPONG,,PDF name at this lane: Zarinae SAPONG
+athlete,source_disagreement,WCH2022-100m-W-R1-H6,8,Edidiong ODIONG,,PDF name at this lane: Edidiong Ofinome ODIONG
+athlete,source_disagreement,WCH2022-100m-W-R1-H7,5,Melissa JEFFERSON-WOODEN,,PDF name at this lane: Melissa JEFFERSON
+athlete,source_disagreement,WCH2022-100m-W-R1-H7,6,Bree RIZZO,,PDF name at this lane: Bree MASTERS
+athlete,source_disagreement,WCH2022-100m-W-SF-H1,8,Nzubechi Grace NWOKOCHA,,startlist matched by bib/name (WA competitorId differs)
+athlete,source_disagreement,WCH2022-200m-M-R1-H2,7,Shainer REGINFO MONTOYA,,PDF name at this lane: Shainer RENGIFO MONTOYA
+athlete,source_disagreement,WCH2022-200m-M-R1-H4,7,Mouhamadou FALL,,DQ on WA site but ranked 20.83 in the official PDF (post-race DQ/annulment; the start itself was legal)
+athlete,source_disagreement,WCH2022-200m-W-R1-H5,4,Nzubechi Grace NWOKOCHA,,startlist matched by bib/name (WA competitorId differs)
+athlete,source_disagreement,WCH2022-200m-W-SF-H2,8,Nzubechi Grace NWOKOCHA,,startlist matched by bib/name (WA competitorId differs)
+athlete,source_disagreement,WCH2023-100m-M-R1-H5,3,Mouhamadou FALL,,DQ on WA site but ranked 10.19 in the official PDF (post-race DQ/annulment; the start itself was legal)
+athlete,source_disagreement,WCH2025-110mH-M-R1-H1,5,Thiago Resende ORNELAS DOS SANTOS,,PDF name at this lane: Thiago Resende ORNELAS DOS SANT
+athlete,source_disagreement,WCH2025-110mH-M-SF-H1,2,Thiago Resende ORNELAS DOS SANTOS,,PDF name at this lane: Thiago Resende ORNELAS DOS SANT
+athlete,source_disagreement,WIC2024-60m-W-R1-H1,2,Anais Valentina HERNÁNDEZ ALEGRÍA,,PDF name at this lane: Anais Valentina HERNÁNDEZ ALEGRÍ
+athlete,source_disagreement,WIC2024-60mH-W-R1-H5,2,Caroline DE MELO TOMAZ,,DQ on WA site but ranked 8.46 in the official PDF (post-race DQ/annulment; the start itself was legal)
+athlete,source_disagreement,WIC2025-60mH-M-R1-H3,3,Yaqoub ALYOUHA,,site RT 0.150 replaced by official PDF RT 0.161
+race,extra_attempt_without_fs,WCH2022-200m-M-R1-H2,,,2.0,aborted start(s) with no false-start DQ or card (recall / unfair start)
+race,extra_attempt_without_fs,WCH2023-100m-M-PR-H3,,,2.0,"aborted start(s), no false-start DQ; card(s): Y Melique GARCIA (lane 9): Y BIB 2421 (Melique GARCIA) - Disturbing the start"
+race,extra_attempt_without_fs,WCH2023-100m-W-SF-H3,,,2.0,"aborted start(s), no false-start DQ; card(s): Y Julien ALFRED (lane 5): Y BIB 1104 (Julien ALFRED) - Disturbing the start"
+race,extra_attempt_without_fs,WCH2023-200m-M-R1-H5,,,2.0,"aborted start(s), no false-start DQ; card(s): Y Ramil GULIYEV (lane 9): Y BIB 2931 (Ramil GULIYEV) - Disturbing the start"
+race,extra_attempt_without_fs,WCH2025-100m-M-R1-H6,,,2.0,aborted start(s) with no false-start DQ or card (recall / unfair start)
+race,extra_attempt_without_fs,WCH2025-100m-M-SF-H3,,,2.0,"aborted start(s), no false-start DQ; card(s): Y Andre DE GRASSE (lane 3): Y BIB 2152 (Andre DE GRASSE) - Improper conduct, disturbing the start / 不適切行為。スタート妨害。"
+race,extra_attempt_without_fs,WCH2025-100m-W-SF-H1,,,2.0,aborted start(s) with no false-start DQ or card (recall / unfair start)
+race,extra_attempt_without_fs,WCH2025-200m-M-R1-H3,,,2.0,aborted start(s) with no false-start DQ or card (recall / unfair start)
+race,extra_attempt_without_fs,WIC2024-60mH-M-R1-H3,,,2.0,"aborted start(s), no false-start DQ; card(s): Y Konstantinos DOUVALIDIS (lane 7): Y BIB 222 (Konstantinos DOUVALIDIS) - Improper conduct, disturbing the start"
+race,extra_attempt_without_fs,WIC2025-60m-M-R1-H1,,,2.0,aborted start(s) with no false-start DQ or card (recall / unfair start)
+race,lanes_lt_5,WCH2017-200m-M-R1-H8,,,1.0,
+race,lanes_lt_5,WCH2022-100mH-W-R1-H7,,,1.0,

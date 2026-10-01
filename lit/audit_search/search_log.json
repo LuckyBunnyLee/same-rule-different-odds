@@ -1,0 +1,231 @@
+{
+ "openalex": {
+  "source": "openalex",
+  "query": "(\"reaction time\" OR \"reaction times\" OR \"response time\" OR \"start reaction\") AND (sprint OR sprints OR sprinter OR sprinters OR sprinting OR \"false start\" OR \"false starts\" OR \"starting block\" OR \"starting blocks\" OR \"block start\" OR hurdle OR hurdles OR hurdler OR hurdlers) AND (championship OR championships OR olympic OR olympics OR \"World Championships\" OR \"world indoor\" OR IAAF OR \"World Athletics\")",
+  "filter": "title_and_abstract.search:(\"reaction time\" OR \"reaction times\" OR \"response time\" OR \"start reaction\") AND (sprint OR sprints OR sprinter OR sprinters OR sprinting OR \"false start\" OR \"false starts\" OR \"starting block\" OR \"starting blocks\" OR \"block start\" OR hurdle OR hurdles OR hurdler OR hurdlers) AND (championship OR championships OR olympic OR olympics OR \"World Championships\" OR \"world indoor\" OR IAAF OR \"World Athletics\"),publication_year:1990-2026",
+  "url": "https://api.openalex.org/works?filter=title_and_abstract.search%3A%28%22reaction+time%22+OR+%22reaction+times%22+OR+%22response+time%22+OR+%22start+reaction%22%29+AND+%28sprint+OR+sprints+OR+sprinter+OR+sprinters+OR+sprinting+OR+%22false+start%22+OR+%22false+starts%22+OR+%22starting+block%22+OR+%22starting+blocks%22+OR+%22block+start%22+OR+hurdle+OR+hurdles+OR+hurdler+OR+hurdlers%29+AND+%28championship+OR+championships+OR+olympic+OR+olympics+OR+%22World+Championships%22+OR+%22world+indoor%22+OR+IAAF+OR+%22World+Athletics%22%29%2Cpublication_year%3A1990-2026&per-page=200&cursor=%2A&select=id%2Cdoi%2Cdisplay_name%2Ctitle%2Cpublication_year%2Cprimary_location%2Ctype%2Clanguage%2Copen_access%2Ccited_by_count%2Cabstract_inverted_index%2Cauthorships%2Creferenced_works",
+  "retrieved": "2026-10-01T00:14:01Z",
+  "reported_count": 97,
+  "n_records_saved": 97,
+  "seconds": 1.4
+ },
+ "pubmed": {
+  "source": "pubmed",
+  "query": "(\"reaction time\"[tiab] OR \"reaction times\"[tiab] OR \"response time\"[tiab] OR \"start reaction\"[tiab]) AND (sprint*[tiab] OR \"false start\"[tiab] OR \"false starts\"[tiab] OR \"starting block\"[tiab] OR \"starting blocks\"[tiab] OR \"block start\"[tiab] OR hurdle*[tiab]) AND (championship*[tiab] OR olympic*[tiab] OR \"world championships\"[tiab] OR \"world indoor\"[tiab] OR IAAF[tiab] OR \"world athletics\"[tiab]) AND 1990:2026[dp]",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22reaction+time%22%5Btiab%5D+OR+%22reaction+times%22%5Btiab%5D+OR+%22response+time%22%5Btiab%5D+OR+%22start+reaction%22%5Btiab%5D%29+AND+%28sprint%2A%5Btiab%5D+OR+%22false+start%22%5Btiab%5D+OR+%22false+starts%22%5Btiab%5D+OR+%22starting+block%22%5Btiab%5D+OR+%22starting+blocks%22%5Btiab%5D+OR+%22block+start%22%5Btiab%5D+OR+hurdle%2A%5Btiab%5D%29+AND+%28championship%2A%5Btiab%5D+OR+olympic%2A%5Btiab%5D+OR+%22world+championships%22%5Btiab%5D+OR+%22world+indoor%22%5Btiab%5D+OR+IAAF%5Btiab%5D+OR+%22world+athletics%22%5Btiab%5D%29+AND+1990%3A2026%5Bdp%5D&retmax=5000&retmode=json",
+  "retrieved": "2026-10-01T00:14:44Z",
+  "reported_count": 11,
+  "n_records_saved": 11,
+  "seconds": 1.6
+ },
+ "s2": {
+  "source": "semantic_scholar",
+  "query": "(\"reaction time\" | \"reaction times\" | \"response time\" | \"start reaction\") + (sprint* | \"false start\" | \"false starts\" | \"starting block\" | \"starting blocks\" | \"block start\" | hurdle*) + (championship* | olympic* | \"World Championships\" | \"world indoor\" | IAAF | \"World Athletics\")",
+  "url": "https://api.semanticscholar.org/graph/v1/paper/search/bulk?query=%28%22reaction+time%22+%7C+%22reaction+times%22+%7C+%22response+time%22+%7C+%22start+reaction%22%29+%2B+%28sprint%2A+%7C+%22false+start%22+%7C+%22false+starts%22+%7C+%22starting+block%22+%7C+%22starting+blocks%22+%7C+%22block+start%22+%7C+hurdle%2A%29+%2B+%28championship%2A+%7C+olympic%2A+%7C+%22World+Championships%22+%7C+%22world+indoor%22+%7C+IAAF+%7C+%22World+Athletics%22%29&year=1990-2026&fields=title%2Cyear%2CexternalIds%2Cabstract%2Cvenue%2CpublicationTypes%2CcitationCount%2Cauthors",
+  "retrieved": "2026-10-01T00:15:39Z",
+  "reported_count": 79,
+  "error": null,
+  "n_records_saved": 79,
+  "seconds": 0.7
+ },
+ "gs": {
+  "source": "google_scholar",
+  "query": "(\"reaction time\" OR \"response time\") (sprint OR sprinter OR sprinters OR \"false start\" OR \"starting blocks\") (championships OR Olympic OR IAAF OR \"World Athletics\")",
+  "url": "https://scholar.google.com/scholar?q=%28%22reaction+time%22+OR+%22response+time%22%29+%28sprint+OR+sprinter+OR+sprinters+OR+%22false+start%22+OR+%22starting+blocks%22%29+%28championships+OR+Olympic+OR+IAAF+OR+%22World+Athletics%22%29&hl=en&as_ylo=1990&as_yhi=2026&start=0",
+  "retrieved": "2026-10-01T00:15:38Z",
+  "reported_count": 6980,
+  "pages_fetched": 10,
+  "stopped": null,
+  "n_records_saved": 100,
+  "seconds": 94.7
+ },
+ "chase": {
+  "source": "citation_chasing",
+  "retrieved": "2026-10-01T00:14:45Z",
+  "seeds": [
+   {
+    "seed": "Haugen2013",
+    "doi": "10.1080/02640414.2012.746724",
+    "resolved": true,
+    "openalex_id": "W1998969938",
+    "n_backward": 14,
+    "n_references_listed": 14,
+    "n_forward": 19,
+    "forward_reported": 19
+   },
+   {
+    "seed": "Tonnessen2013",
+    "doi": "10.1519/jsc.0b013e31826520c3",
+    "resolved": true,
+    "openalex_id": "W2028475104",
+    "n_backward": 18,
+    "n_references_listed": 20,
+    "n_forward": 88,
+    "forward_reported": 88
+   },
+   {
+    "seed": "Brosnan2017",
+    "doi": "10.1080/02640414.2016.1201213",
+    "resolved": true,
+    "openalex_id": "W2462670145",
+    "n_backward": 12,
+    "n_references_listed": 12,
+    "n_forward": 24,
+    "forward_reported": 24
+   },
+   {
+    "seed": "Lipps2011",
+    "doi": "10.1371/journal.pone.0026141",
+    "resolved": true,
+    "openalex_id": "W2002132470",
+    "n_backward": 14,
+    "n_references_listed": 14,
+    "n_forward": 53,
+    "forward_reported": 53
+   },
+   {
+    "seed": "MirshamsShahshahani2018",
+    "doi": "10.1371/journal.pone.0198633",
+    "resolved": true,
+    "openalex_id": "W2809706102",
+    "n_backward": 9,
+    "n_references_listed": 9,
+    "n_forward": 2,
+    "forward_reported": 2
+   },
+   {
+    "seed": "Fiore2025",
+    "doi": "10.1080/00031305.2025.2515869",
+    "resolved": true,
+    "openalex_id": "W4411017383",
+    "n_backward": 21,
+    "n_references_listed": 21,
+    "n_forward": 0,
+    "forward_reported": 0
+   },
+   {
+    "seed": "Han2025",
+    "doi": "10.1080/24748668.2025.2579341",
+    "resolved": true,
+    "openalex_id": "W4415769072",
+    "n_backward": 36,
+    "n_references_listed": 36,
+    "n_forward": 0,
+    "forward_reported": 0
+   },
+   {
+    "seed": "Collet1999",
+    "doi": "10.2466/pms.1999.88.1.65",
+    "resolved": true,
+    "openalex_id": "W2161646666",
+    "n_backward": 13,
+    "n_references_listed": 13,
+    "n_forward": 47,
+    "forward_reported": 47
+   },
+   {
+    "seed": "Mitasik2020",
+    "doi": "10.2478/afepuc-2020-0017",
+    "resolved": true,
+    "openalex_id": "W3109393771",
+    "n_backward": 12,
+    "n_references_listed": 12,
+    "n_forward": 4,
+    "forward_reported": 4
+   },
+   {
+    "seed": "Mitasik2021",
+    "doi": "10.2478/afepuc-2021-0017",
+    "resolved": true,
+    "openalex_id": "W3210857217",
+    "n_backward": 13,
+    "n_references_listed": 13,
+    "n_forward": 0,
+    "forward_reported": 0
+   },
+   {
+    "seed": "Mitasik2022",
+    "doi": "10.2478/afepuc-2022-0007",
+    "resolved": true,
+    "openalex_id": "W4280532819",
+    "n_backward": 14,
+    "n_references_listed": 14,
+    "n_forward": 0,
+    "forward_reported": 0
+   },
+   {
+    "seed": "Ntolaptsis2021",
+    "doi": "10.2478/afepuc-2021-0007",
+    "resolved": true,
+    "openalex_id": "W3160814719",
+    "n_backward": 33,
+    "n_references_listed": 34,
+    "n_forward": 1,
+    "forward_reported": 1
+   },
+   {
+    "seed": "Brown2008",
+    "doi": "10.1249/mss.0b013e31816770e1",
+    "resolved": true,
+    "openalex_id": "W2097996283",
+    "n_backward": 31,
+    "n_references_listed": 31,
+    "n_forward": 47,
+    "forward_reported": 47
+   },
+   {
+    "seed": "Pilianidis2012IJPAS",
+    "doi": "10.1080/24748668.2012.11868587",
+    "resolved": true,
+    "openalex_id": "W2770355579",
+    "n_backward": 2,
+    "n_references_listed": 2,
+    "n_forward": 15,
+    "forward_reported": 15
+   },
+   {
+    "seed": "Matic2023",
+    "doi": "10.31382/eqol.230602",
+    "resolved": true,
+    "openalex_id": "W4381433715",
+    "n_backward": 19,
+    "n_references_listed": 19,
+    "n_forward": 2,
+    "forward_reported": 2
+   },
+   {
+    "seed": "Mukai2020",
+    "doi": "10.1109/kst48564.2020.9059442",
+    "resolved": true,
+    "openalex_id": "W3015257359",
+    "n_backward": 16,
+    "n_references_listed": 18,
+    "n_forward": 0,
+    "forward_reported": 0
+   },
+   {
+    "seed": "Zhang2021",
+    "doi": "10.1155/2021/6633326",
+    "resolved": true,
+    "openalex_id": "W3127506428",
+    "n_backward": 15,
+    "n_references_listed": 15,
+    "n_forward": 7,
+    "forward_reported": 7
+   },
+   {
+    "seed": "Milloz2021_review",
+    "doi": "10.1007/s40279-020-01350-4",
+    "resolved": true,
+    "openalex_id": "W3096419051",
+    "n_backward": 73,
+    "n_references_listed": 80,
+    "n_forward": 13,
+    "forward_reported": 13
+   }
+  ],
+  "reported_count": 445,
+  "n_records_saved": 445,
+  "seconds": 36.3
+ }
+}

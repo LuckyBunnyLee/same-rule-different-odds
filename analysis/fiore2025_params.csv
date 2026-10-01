@@ -1,0 +1,4 @@
+set,primary,n,beta0,gamma0,nu,tau_v,tau_h,pub_p_lt080,pub_p_lt090,pub_p_lt100,pub_barrier_1e2_s,pub_barrier_1e3_s,pub_barrier_1e4_s,source
+men_incl2022,yes,776,-1.910,-2.200,-1.178,0.058,0.320,6.84e-5,4.95e-4,2.76e-3,0.108,0.094,0.082,manuscript.tex Table 2 row 'Including 2022' (l.636); Table 3 l.703; Table 4 l.753; n from supp.tex l.151
+men_excl2022,no,,-1.910,-2.200,-1.177,0.043,0.326,5.31e-5,3.53e-4,1.94e-3,0.111,0.096,0.083,manuscript.tex Table 2 row 'Excluding 2022' (l.635); Table 3 l.702; Table 4 l.752
+women,no,732,-1.921,-2.071,-3.691,0.057,0.111,1e-7,1.12e-5,5.46e-4,0.111,0.102,0.095,supp.tex women's table (l.150); tail probabilities l.179; barriers l.204

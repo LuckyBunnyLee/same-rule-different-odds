@@ -1,0 +1,29 @@
+{
+ "snr_edges": [
+  -99,
+  12,
+  20,
+  30,
+  999
+ ],
+ "set_on": [
+  0.06,
+  0.1257,
+  0.0521,
+  0.0131
+ ],
+ "set_off": [
+  0.08,
+  0.1498,
+  0.1402,
+  0.1258
+ ],
+ "n_per_bin": [
+  4,
+  41,
+  56,
+  46
+ ],
+ "gun": 0.001,
+ "source": "SYNTHETIC benchmark calibration (simulated clips): 68th pct |error| by measured set SNR"
+}

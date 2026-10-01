@@ -1,0 +1,126 @@
+record_id,decision,reason,study_id,access_reached,note,title_check
+doi:10.2466/pms.1999.88.1.65,include,INC,Collet1999,abstract (PubMed),,Strategic Aspects of Reaction Time in World-Class Sprinters
+doi:10.1249/mss.0b013e31816770e1,include,INC,Brown2008,"full text (author PDF, per lit/review.md)",Athens 2004 lane analysis; the lab arm is context,"""Go"" Signal Intensity Influences the Sprint Start"
+doi:10.1080/24748668.2008.11868436,include,INC,Delalija2008,abstract (OpenAlex),,Reaction time and sprint results in athletics
+t:reactiontimetrendsinthesprintandhurdleeventsatthe2-8a0a81,include,INC,BabicDelalija2009sex,"full text (WA NSA download, per lit/systematic_forensics.md)",,Reaction Time Trends in the Sprint and Hurdle Events at the 2004 Olympic Games: Difference
+t:reactiontimetrendsinthewomenssprintandhurdleevents-65c129,include,INC,BabicDelalija2009women,abstract (OpenAlex),,Reaction Time Trends in the Women’ s Sprint and Hurdle Events at the 2004 Olympic Games
+doi:10.1371/journal.pone.0026141,include,INC,Lipps2011,full text (PMC),,On the Implications of a Sex Difference in the Reaction Times of Sprinters at the Beijing 
+t:startreactiontimeandperformancetimeinwomenssprinta-4b57cd,include,INC,Pilianidis2011,abstract (OpenAlex),,Start reaction time and performance time in women’s sprint at the world championships in a
+doi:10.1080/24748668.2012.11868587,include,INC,Pilianidis2012WCH,abstract (OpenAlex),abstract says World Indoor but lists outdoor WCH 1997-2009,Start reaction time and performance at the sprint events in World Athletic Championships
+t:startreactiontimeandperformanceatthesprinteventsin-aae0ce,include,INC,Pilianidis2012OG,abstract (OpenAlex record with Croatian title; Kinesiology),,Start reaction time and performance at the sprint events in the Olympic Games
+doi:10.1080/02640414.2012.746724,include,INC,Haugen2013,abstract (PubMed); design reconstruction lit/systematic_forensics.md s1,,The effect of different starting procedures on sprinters’ reaction time
+doi:10.1519/jsc.0b013e31826520c3,include,INC,Tonnessen2013,abstract (PubMed); design via Pushkar et al. 2014 (full text),,Reaction Time Aspects of Elite Sprinters in Athletic World Championships
+t:differencesinthetimeofstartreactionandachievedresu-ccee06,include,INC,Pavlovic2013,abstract (OpenAlex),record without the UDC suffix kept,Differences in the time of start reaction and achieved results in the sprint disciplines i
+t:reactiontimeandperformanceintheshortsprints-2a466c,include,INC,Paradisis2013,search-engine snippet of the full text (Google Scholar),abstract not reachable,Reaction Time and Performance in the Short Sprints
+t:differencesintimeofstartreactioninthesprintdiscipl-e66e1e,include,INC,Pavlovic2014,abstract (OpenAlex),,DIFFERENCES IN TIME OF START REACTION IN THE SPRINT DISCIPLINES IN THE FINALS OF THE OLYMP
+doi:10.5937/gfsfv1521043j,include,INC,Juhas2015,abstract (OpenAlex),,Comparative analysis of reaction time of elite sprinters at the world championships in 201
+t:differencesintimeofstartreactionandachievedresulti-506bac,include,INC,Pavlovic2015,abstract (journal landing page),,Differences in time of start reaction and achieved result in the sprint disciplines in the
+doi:10.1080/02640414.2016.1201213,include,INC,Brosnan2017,abstract (PubMed); method lines secondary (lit/systematic_forensics.md s2),,Effects of false-start disqualification rules on response-times of elite-standard sprinter
+doi:10.1371/journal.pone.0198633,include,INC,Mirshams2018,full text (PMC),,On the apparent decrease in Olympic sprinter reaction times
+doi:10.14198/jhse.2018.133.03,include,INC,LopezdelAmo2018,abstract (OpenAlex),,Analysis of the start to the first hurdle in 110 m hurdles at the IAAF World Athletics Cha
+doi:10.11114/jets.v6i12a.3931,include,INC,Gurses2018,abstract (OpenAlex),years 2010-2018 per Milloz et al. 2021 [S],The Relationship Between Reaction Time and 60 m Performance in Elite Athletes
+t:hasthefalsestartdetectingmachineaffectedthereactio-5a7787,include,INC,Radhamani2019,abstract (OpenAlex),school championships,Has the false start detecting machine affected the reaction time and performance of sprint
+doi:10.2478/afepuc-2020-0017,include,INC,Mitasik2020a,"full text (OA, per lit/systematic_forensics.md)",,Changes in the Start Reaction Times in the 200 m Run at the World Championships After the 
+t:changesinthestartreactiontimesofmaleandfemalesprin-b8772d,include,INC,Mitasik2020b,"abstract (OpenAlex record doi:10.7752/jpes.2020.s3302, which lacks a title)",,Changes in the start reaction times of male and female sprinters in world athletic champio
+doi:10.1109/kst48564.2020.9059442,include,INC,Mukai2020,abstract (OpenAlex),,Deciding when to start in 100-m sprints at Athletic World Championships
+doi:10.2478/afepuc-2021-0007,include,INC,Ntolaptsis2021,"full text (OA, per lit/systematic_forensics.md)",,"Relationship Between Reaction Time, Medal Winning and Performance in the 60 m Hurdle Indoo"
+doi:10.2478/afepuc-2021-0017,include,INC,Mitasik2021,abstract (OpenAlex),,Intraindividual Evaluation of Reaction Time at the Women’s World Athletics Championships 1
+doi:10.2478/afepuc-2022-0007,include,INC,Mitasik2022,abstract (OpenAlex),,Intraindividual Evaluation of Reaction Time At the Men’s World Athletics Championships 199
+doi:10.18276/cej.2021.2-05,include,INC,Pavlovic2021,"full text (OA, per lit/systematic_forensics.md)",,The importance of Reaction Time in Athletics: Influence on the Results of Sprint Runs of W
+doi:10.1155/2021/6633326,include,INC,Zhang2021,abstract (OpenAlex),,Correlation Analysis of Sprint Performance and Reaction Time Based on Double Logarithm Mod
+t:performanceofathletesbasedonmathematicalstatistics-a67941,include,INC,Wang2022,"full text (journal PDF, icj-e.org)",International Core Journal of Engineering 8(1):412-421,Performance of Athletes based on Mathematical Statistics--A Case Study of the Short Distan
+doi:10.31382/eqol.230602,include,INC,Matic2023a,abstract (OpenAlex),,Relationship between reaction time and performance in the 60 m hurdles at the 2022 World I
+doi:10.31382/eqol.231206,include,INC,Matic2023b,abstract (OpenAlex),,Sprint race distance affects reaction time in male and female sprinters at the 2022 World 
+doi:10.15314/tsed.1292928,include,INC,Satilmis2023,abstract (OpenAlex),,"Examination of the Relationship Between the Reaction Time, Competition Result With the Com"
+doi:10.17309/tmfv.2023.5.06,include,INC,Biswas2023,abstract (OpenAlex),,Relation between Start Reaction Time and Performance Time among Women Finalist Sprinters i
+doi:10.1080/00031305.2025.2515869,include,INC,Fiore2025,full text (arXiv v1; repo manuscript.tex); published abstract (OpenAlex),,On Devon Allen’s Disqualification at the 2022 World Track and Field Championships
+doi:10.1080/24748668.2025.2579341,include,INC,Han2025,abstract (OpenAlex),,The long-term effects of Current false Start rules on reaction time and athletic performan
+doi:10.24193/subbeag.70.sp.iss.2.54,include,INC,Tomozei2025,abstract (OpenAlex),,THE INFLUENCE OF AGE AND REACTION TIME ON SPRINT PERFORMANCE: AN ANALYTICAL STUDY ACROSS T
+t:hasthenewfalsestartruleaffectedthereactiontimeofel-a2d859,include,INC,Ditroilo2004,search-engine snippet; German abstract via BISp per lit/notes/lit_notes_sports.md,,Has the new false start rule affected the reaction time of elite sprinters ?
+t:sprintersatthe1996olympicgamesinatlantadidnotheart-630647,include,INC,JulinDapena2003,secondary only (title via the Milloz 2021 reference list; content via Brown 2008 and Pain & Hibbs 2007),,Sprinters at the 1996 Olympic Games in Atlanta did not hear the starter's gun through the 
+t:martinandbuoncristiani1995reactiontimeolympicfinal-64e954,include,INC,MartinBuoncristiani1995,secondary only (Milloz 2021 reference list: New Stud Athl 1995;10:67-9; content via Milloz 2021 and the Paradisis 2004/2006 abstracts),"repo placeholder title; true title ""Influence of reaction time on athletic performance""",Martin and Buoncristiani 1995 reaction time Olympic finals
+t:physicalfitnessandperformancegosignalintensityinfl-b09db0,exclude,E-DUP,,,Semantic Scholar variant record of Brown et al. 2008,Physical Fitness and Performance ‘ ‘ Go ’ ’ Signal Intensity Influences the Sprint Start
+t:reactiontimeandsprintresultinathletics-c9a39b,exclude,E-DUP,,abstract,"same 250 women, events and competitive levels as Babic & Delalija 2009 NSA 24(1):49-57 (earlier version)",Reaction time and sprint result in athletics
+t:ongenderdifferencesinthereactiontimesofsprintersat-f23374,exclude,E-DUP,,search snippet,ASB 2009 conference version of Lipps et al. 2011 (same data and finding),ON GENDER DIFFERENCES IN THE REACTION TIMES OF SPRINTERS AT THE 2008 BEIJING OLYMPICS
+t:vrijemestartnereakcijeirezultattrcanjausprinterski-4189c7,exclude,E-DUP,,abstract,Croatian-title record of Pilianidis et al. 2012 (Kinesiology; English article; its English abstract was used for coding),VRIJEME STARTNE REAKCIJE I REZULTAT TRČANJA U SPRINTERSKIM DISCIPLINAMA NA OLIMPIJSKIM IGR
+t:differencesinthetimeofstartreactionandachievedresu-92c8c6,exclude,E-DUP,,,duplicate record of Pavlovic et al. 2013,DIFFERENCES IN THE TIME OF START REACTION AND ACHIEVED RESULTS IN THE SPRINT DISCIPLINES I
+doi:10.31382/eqol.231207,exclude,E-DUP,,,duplicate record of Matic et al. 2023b,https://www.eqoljournal.com/sprint-race-distance-affects-reaction-time-in-male-and-female-
+t:andreactiontimeonsprintperformanceananalyticalstud-b6d8c4,exclude,E-DUP,,,truncated Google Scholar record of Tomozei et al. 2025,AND REACTION TIME ON SPRINT PERFORMANCE: AN ANALYTICAL STUDY ACROSS THE LAST FIVE EDITIONS
+t:sprintstartregulationinathleticsacriticalreviewmmi-45536e,exclude,E-DUP,,,duplicate record of Milloz et al. 2021,Sprint Start Regulation in Athletics: A Critical Review: M. Milloz et al.
+t:examinationoftherelationshipbetweenthereactiontime-bac50a,exclude,E-DUP,,,Google Scholar record of Satilmis et al. 2023,"Examination of the Relationship Between the Reaction Time , Competition Result With the Co"
+doi:10.7752/jpes.2020.s3302,exclude,E-DUP,,abstract,untitled OpenAlex record of Mitasik et al. 2020b (J Phys Educ Sport 20 Suppl 3); its abstract was used for coding,
+doi:10.20693/jspeconf.48.0_498,exclude,E-TYPE,G_Nozaki1997,"full text (J-STAGE scan, per lit/novelty-final-check.md)",JSPE congress abstract,Problems in false-start judging: differences between false-start devices with different de
+doi:10.20693/jspeconf.52.0_514,exclude,E-TYPE,G_Nozaki2001,"full text (J-STAGE scan, per lit/novelty-final-check.md)",JSPE congress abstract,Nozaki Yokokura Kajiwara 2001 JSPE 52nd congress abstract (Seville 1999 vs Sydney 2000 RT)
+doi:10.20693/jspeconf.53.0_516,exclude,E-TYPE,G_Nozaki2002,per lit/novelty-final-check.md (read by forks),JSPE congress abstract,Nozaki Yokokura Kajiwara Ito 2002 JSPE 53rd congress abstract (Sydney 2000 vs Edmonton 200
+doi:10.20693/jspeconf.54.0_542,exclude,E-TYPE,G_Nozaki2003,"full text (J-STAGE page image, per lit/policy_mechanism.md)",JSPE congress abstract,Nozaki Yokokura Kajiwara Ito 2003 JSPE 54th congress abstract (Olympic vs World Championsh
+doi:10.20693/jspeconf.51.0_438,exclude,E-TYPE,G_NozakiYokokura2000,"full text (page image, per lit/novelty-final-check.md)",JSPE congress abstract; Seville 1999 waveforms reviewed for false-start rulings,Nozaki Yokokura 2000 JSPE 51st congress abstract (Seville 1999 Seiko block-force waveforms
+t:nozakikaneko1994jspe45thcongressabstracttokyo1991h-ed320d,exclude,E-TYPE,,per lit/novelty-final-check.md,"JSPE congress abstract; hand-timed holds only, no RT analysis (not coded)",Nozaki Kaneko 1994 JSPE 45th congress abstract (Tokyo 1991 hand-timed holds)
+t:yokokurafuwakajiwarakuragano100mfinalreactiontimes-b19739,exclude,E-TYPE,G_Yokokura2013,"full text (Meisei repository, per lit/novelty-final-check.md)",departmental bulletin,Yokokura Fuwa Kajiwara Kuragano 100 m final reaction times at World Championships 1999-201
+t:effectoffalsestartrulechangeonstartreactiontimeofw-484c39,exclude,E-TYPE,G_Yokokura2011,search-engine snippet (proceedings PDF on academia.edu),conference proceedings (Cairo); peer review not verified,Effect of False Start Rule Change on Start Reaction Time of World Championships in Athleti
+doi:10.1097/00005768-200405001-01487,exclude,E-TYPE,G_Paradisis2004,abstract (MSSE supplement),ACSM conference abstract,Correlation of Reaction Time and Performance in 60 and 200m Sprint Running
+doi:10.1249/00005768-200605001-03037,exclude,E-TYPE,G_Paradisis2006,abstract (MSSE supplement),ACSM conference abstract,Correlation of Reaction Time and Performance in 100 m Sprint Running
+t:relationshipbetweenreactiontimesprintraceresultand-a3949f,exclude,E-TYPE,G_Babic2008,abstract (World Congress of Performance Analysis of Sport VIII proceedings),conference proceedings; peer review not verified,"Relationship between reaction time, sprint race result and age for male sprinters at 2004 "
+t:comparativestudyonreactiontimeofolympicsmalesprint-4df164,exclude,E-TYPE,G_Ghosh2017,search-engine snippet (Google Books),edited-book chapter,COMPARATIVE STUDY ON REACTION TIME OF OLYMPICS MALE SPRINTERS
+t:theloudgunstartingsystemcurrentlyusedattheolympicg-1b46a1,exclude,E-TYPE,G_Dapena2005,"secondary (lit/policy_mechanism.md s3.2, fork-read Wayback copy)",web report,"THE ""LOUD GUN"" STARTING SYSTEM CURRENTLY USED AT THE OLYMPIC GAMES DOES NOT WORK PROPERLY"
+doi:10.1038/news.2008.917,exclude,E-TYPE,,,Nature news item on Brown et al. 2008 (not coded),Olympic starter's gun 'unfair'
+doi:10.1016/j.proeng.2010.04.188,exclude,E-TYPE,,,conference abstract collection (not coded),"Poster Session II, July 14th 2010 — Abstracts"
+doi:10.51267/icehhm2021bp12,exclude,E-TYPE,,abstract,"conference proceedings; app-based data, not official championship RTs (not coded)",IMPACT OF THE SARS-COV-2 PANDEMIC ON ATHLETIC PERFORMANCE IN THE 100-METER RACE
+t:biomechanicalanalysisofthesprintandhurdleseventsat-80cf91,exclude,E-DESC,,"full text (NSA 26(1/2):19-53, PDF)",RT tabulated per finalist and used for split times; no RT comparison or test,Biomechanical analysis of the sprint and hurdles events at the 2009 IAAF World Championshi
+doi:10.48129/kjs.v49i1.10170,exclude,E-DESC,,abstract (OpenAlex),model of six record races; the sex remark on RT is untested,Mathematical model of the influence of the time of start reaction in 100 m sprint run
+t:breakthroughpointsofrecreatingworldrecordofmens100-3aa405,exclude,E-LANG,,"abstract (English, OpenAlex)",Chinese-language journal (Wuhan Institute of PE); WCH 1991/1997 parameters,Breakthrough points of recreating world record of men's 100 meter run
+t:longitudinalmonitoringofsportsefficiencyinmens110m-8e27a1,exclude,E-LANG,,abstract (English),Czech diploma thesis; WCH 1983-2005 110 mH finalists incl. RT,Longitudinal Monitoring of Sports Efficiency in Menś 110 m Hurdles Running in the Top Worl
+t:acomparativestudyonsprintersstartreactiontimeinthe-cdab44,exclude,E-LANG,,abstract (English),Chinese-language journal; Beijing 2008 RT by event and level,A Comparative Study on Sprinters' Start Reaction Time in the 29th Olympic Games
+t:researchonthedifferentstartreactiontimeofthemalean-da2d89,exclude,E-LANG,,abstract (English),Chinese-language journal; Asian Games 2010 sex difference and a proposed 25 kg threshold for women,Research on the Different Start Reaction Time of the Male and Female Athletes in the 100m 
+t:exploringthepossibilityofliuxiangswinninginthe2012-2a814c,exclude,E-LANG,,abstract (English),Chinese-language journal,Exploring the Possibility of Liu Xiang's Winning in the 2012 London Olympic Games——An illu
+t:researchonthefeaturesofprestartbackkicktimepressur-01cab3,exclude,E-LANG,,abstract (English),Chinese-language journal; Asian Games 2010 block-force curves,Research on the Features of Pre-start Back Kick Time-pressure Curve of Sprint——Based on th
+t:effectofnofalseruleonthestartreactiontimeofelitesp-4b1463,exclude,E-LANG,,abstract (English),Chinese-language journal; Berlin 2009 vs Daegu 2011 rule contrast (would be class E),Effect of no false rule on the start reaction time of elite sprinters
+doi:10.7251/ssh1401005p,exclude,E-LANG,,abstract (Serbian/English),Serbian-language article; London 2012 finalists,Razlike u vremenu startne reakcije i postignutom rezultatu u sprinterskim disciplinama u f
+t:thestudyontherelationshipbetweeneliteathletesstart-9abb89,exclude,E-LANG,,search-engine snippet,Chinese-language journal (Chengdu Sport University); four World Indoor Championships,The Study on the Relationship between Elite Athletes' Start Reaction Time and Sport Perfor
+t:czechandworldelitemanwomen100msprintstructurecompa-6e2678,exclude,E-LANG,,abstract (English),"Czech thesis; WCH, Diamond League and Czech championships",Czech and world elite man/women 100 m sprint structure comparison
+t:100metersprintrunningeventanalysisandprogrammingof-d45dc0,exclude,E-LANG,,abstract (Finnish),Finnish thesis; event analysis and coaching,100-meter sprint running : event analysis and programming of training and coaching
+doi:10.20868/upm.thesis.39691,exclude,E-LANG,,abstract,Spanish thesis; lab RT of deaf and hearing sprinters,Evaluación del tiempo de reacción en velocistas con y sin discapacidad auditiva: aplicacio
+t:sprinterskotrcanjedjecepredskolskeimlaeskolskedobi-6ee644,exclude,E-LANG,,,Croatian article on children (off-topic),Sprintersko trčanje djece predškolske i mlađe školske dobi
+t:relationshipbetweenauditoryreactiontimeandrunningt-16b575,exclude,E-NA,,search-engine snippet,venue and design not established; snippet mentions IAAF WCH 2003-2009 data,RELATIONSHIP BETWEEN AUDITORY REACTION TIME AND RUNNING TIME OF SPRINTERS OF OBAFEMI AWOLO
+t:munozperezandlagofuentesreactiontimeworldchampions-6c33c5,exclude,E-NA,,,named in lit/novelty-final-check.md only; record not found,Munoz-Perez and Lago-Fuentes reaction time World Championships 2013-2019
+t:comparativestudyofathletesreactiontimeandperforman-8b873e,exclude,E-NA,,title only (Semantic Scholar),no abstract or venue; Semantic Scholar rate-limited,Comparative Study of Athletes Reaction Time and Performance at the Sprint Events in World 
+t:comparativeanalysisofthestartreactiontimesinsprint-bae390,exclude,E-NA,,abstract truncated before results,Romanian national competitions (Alge StartJudge); venue not identified,COMPARATIVE ANALYSIS OF THE START REACTION TIMES IN SPRINT OR HURDLES EVENTS IN VARIOUS AG
+t:studyregardingtherelationbetweentheaccumulationofp-b0520a,exclude,E-NA,,search-engine snippet,Gymnasium (Bacau) 2012; journal site timed out; design not established,Study regarding the relation between the accumulation of psycho-motor experience in the pr
+t:analysisofthewomens100mhurdlesworldexcellentathlet-893abd,exclude,E-NA,,abstract (English),venue not identified (probably Chinese-language); WCH 1997/2009 hurdles finals,Analysis of the Women's 100 m Hurdles World Excellent Athletes Run Technical Characteristi
+doi:10.4127/jbe.2018.0136,exclude,E-NA,,title only,no abstract; RT content unknown,Race pattern of Men’s 110-M Hurdles: Time analysis of Olympic Hurdle Performnce
+doi:10.1007/s40279-020-01350-4,exclude,E-REV,,full text (PDF in github.com/ofiore/Thesis),review; used as a chasing hub,Sprint Start Regulation in Athletics: A Critical Review
+doi:10.1007/s40279-019-01138-1,exclude,E-REV,,,review,The Biomechanics of the Track and Field Sprint Start: A Narrative Review
+doi:10.1260/1747-9541.6.3.479,exclude,E-REV,,,review,The Science of Speed: Determinants of Performance in the 100 m Sprint
+doi:10.2165/00007256-199723010-00002,exclude,E-REV,,,review,Biomechanics of the Sprint Start
+doi:10.2165/00007256-199213060-00002,exclude,E-REV,,,review,Biomechanics of Sprint Running
+doi:10.1007/s40279-015-0446-0,exclude,E-REV,,,review,Sprint Running Performance Monitoring: Methodological and Practical Considerations
+doi:10.1186/s40798-019-0221-0,exclude,E-REV,,,review,The Training and Development of Elite Sprint Performance: an Integration of Scientific and
+doi:10.3390/ijerph19074074,exclude,E-REV,,,review,Biomechanical Performance Factors in the Track and Field Sprint Start: A Systematic Review
+doi:10.1177/17479541231200526,exclude,E-REV,,,review,Determinant biomechanical variables for each sprint phase performance in track and field: 
+doi:10.1007/bf00236697,exclude,E-LAB,,abstract,Mero & Komi 1990,Reaction time and electromyographic activity during a sprint start
+doi:10.1080/02640410600718004,exclude,E-LAB,,full text (per lit/review.md),Pain & Hibbs 2007,Sprint starts and the minimum auditory reaction time
+doi:10.3389/fpsyg.2017.00810,exclude,E-LAB,,full text (PMC),Otsuka et al. 2017; field arm measured broadcast holds only,Timing of Gun Fire Influences Sprinters’ Multiple Joint Reaction Times of Whole Body in Bl
+doi:10.1016/j.proeng.2013.07.073,exclude,E-LAB,,abstract,Willwacher et al. 2013 (start robot),A Novel Method for the Evaluation and Certification of false Start Apparatus in Sprint Run
+doi:10.34961/6110,exclude,E-LAB,,full text (per lit/notes),Milloz et al. 2020 ISBS,Contribution of new start information system prototype to the false start detection in ath
+doi:10.1080/14763141.2019.1657932,exclude,E-LAB,,abstract,Crotty et al.,Sprint start performance: the potential influence of triceps surae electromechanical delay
+t:visualdetectionofresponsetimeinathleticsagoldstand-d35d41,exclude,E-LAB,,search snippet,Milloz et al. 2022 ISBS,VISUAL DETECTION OF RESPONSE TIME IN ATHLETICS: A “GOLD STANDARD”?
+doi:10.34961/4261,exclude,E-LAB,,,Limerick thesis/lab,A comparison of hand force and starting block-based response times in the sprint start
+doi:10.34961/4245,exclude,E-LAB,,,Limerick lab,A method comparison study of accelarometer based block response times in sprinting
+doi:10.34961/6117,exclude,E-LAB,,,Limerick lab,A method comparison of block based accelerometers and force sensors for determination of r
+doi:10.34961/4242,exclude,E-LAB,,,Limerick thesis,Influence of triceps surae electromechanical delay on movement responses in the sprint sta
+doi:10.1016/j.psychsport.2025.103038,exclude,E-LAB,,abstract,"Steele et al. 2025; lab and field tests, not official championship RTs",“It's not Fair!”: Multisensory reaction time differences between D/deaf and hearing popula
+t:identifyingreactiontimesinsprintstartsacomparisono-28d9ef,exclude,E-LAB,,,onset algorithms,Identifying reaction times in sprint starts: a comparison of wavelet analysis and custom a
+doi:10.9746/sicetr1965.36.159,exclude,E-LAB,,abstract,Yokokura 2000; detector design,A New Detection of a Start Action in the Track and Field
+doi:10.1111/j.1469-8986.1976.tb00091.x,exclude,E-LAB,,,simulated races,Reaction Time and Heart Rate Between the GET SET and GO of Simulated Races
+doi:10.1123/jsep.2014-0029,exclude,E-LAB,,,,The Effect of Ego Depletion on Sprint Start Reaction Time
+doi:10.3389/fpsyg.2015.01207,exclude,E-LAB,,,,The influence of ego depletion on sprint start performance in athletes without track and f
+doi:10.3390/sports6040120,exclude,E-LAB,,,,Thinking Outside the Block: External Focus of Attention Improves Reaction Times and Moveme
+doi:10.5220/0006898300270033,exclude,E-LAB,,,,Imagery Improves Reaction Time in Elite Sprinters
+doi:10.11648/j.ajss.20190703.16,exclude,E-LAB,,,,Reaction Time and Spatiotemporal Variables as Markers of Sprint Start Performance
+t:biofeedbackreactiontimetrainingtowardolympicgold-24add2,exclude,E-LAB,,,,Biofeedback reaction - time training: Toward Olympic gold
+t:ashorttermneuralactivationprogramanditseffectonimp-37fe23,exclude,E-LAB,,,,"A short-term neural activation program and its effect on improving reaction time , block c"
+doi:10.1177/17479541211072729,exclude,E-LAB,,,,Development of a novel biofeedback system for the sprint start
+t:exploringmovementrelatedcorticalpotentialsreaction-2ba965,exclude,E-LAB,,,,"Exploring movement-related cortical potentials, reaction time and force production during "
+t:dolongerlegswinracesexaminingtheroleoflimblengthex-4c2795,exclude,E-LAB,,,,"Do longer legs win races?: Examining the role of limb length, explosive power and reaction"
+t:thedevelopmentofmicrocontrollerbasedreactiontimeme-c2c147,exclude,E-LAB,,,,The Development of Microcontroller-based Reaction Time Measuring Instrument for Sprinter
+doi:10.1016/s0987-7053(89)80051-6,exclude,E-LAB,,,,Reactivite Corticale Au Cours d'Epreuves De Temps De Reaction Chez Les Springers
+doi:10.5281/zenodo.1468335,exclude,E-LAB,,,,Influence Of Psycho-Physiological Indicators On The Result Of Running On 200 M For High-Qu

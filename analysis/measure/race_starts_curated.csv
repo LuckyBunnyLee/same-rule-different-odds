@@ -1,0 +1,106 @@
+video_id,race_id,attempt,attempt_status,t_gun_hint,source,evidence
+i8spi5W5Wyc,WCH2025-100m-M-R1-H1,1.0,valid,183.55,manual_annotation_sheet_S01,manual annotation sheet; race by commentary order + Seiko attempt numbers
+i8spi5W5Wyc,WCH2025-100m-M-R1-H2,1.0,valid,508.84,manual_annotation_sheet_S02,manual annotation sheet; race by commentary order + Seiko attempt numbers
+i8spi5W5Wyc,WCH2025-100m-M-R1-H3,1.0,valid,922.69,manual_annotation_sheet_S03,manual annotation sheet; race by commentary order + Seiko attempt numbers
+i8spi5W5Wyc,WCH2025-100m-M-R1-H4,1.0,valid,1171.55,manual_annotation_sheet_S04,manual annotation sheet; race by commentary order + Seiko attempt numbers
+i8spi5W5Wyc,WCH2025-100m-M-R1-H5,1.0,valid,1591.08,manual_annotation_sheet_S05,manual annotation sheet; race by commentary order + Seiko attempt numbers
+i8spi5W5Wyc,WCH2025-100m-M-R1-H6,1.0,recalled,1822.44,manual_annotation_sheet_S06,manual annotation sheet; race by commentary order + Seiko attempt numbers
+i8spi5W5Wyc,WCH2025-100m-M-R1-H6,2.0,valid,2011.54,manual_annotation_sheet_S07,manual annotation sheet; race by commentary order + Seiko attempt numbers
+i8spi5W5Wyc,WCH2025-100m-M-R1-H7,1.0,valid,2213.07,manual_annotation_sheet_S08,manual annotation sheet; race by commentary order + Seiko attempt numbers
+i8spi5W5Wyc,WCH2025-100m-M-SF-H1,1.0,valid,2470.68,manual_annotation_sheet_S09,manual annotation sheet; race by commentary order + Seiko attempt numbers
+i8spi5W5Wyc,WCH2025-100m-M-SF-H2,1.0,valid,2743.9,manual_annotation_sheet_S10,manual annotation sheet; race by commentary order + Seiko attempt numbers
+i8spi5W5Wyc,WCH2025-100m-M-SF-H3,1.0,recalled,3044.86,manual_annotation_sheet_S11,manual annotation sheet; race by commentary order + Seiko attempt numbers
+i8spi5W5Wyc,WCH2025-100m-M-SF-H3,2.0,valid,3187.94,manual_annotation_sheet_S12,manual annotation sheet; race by commentary order + Seiko attempt numbers
+i8spi5W5Wyc,WCH2025-100m-M-F-H1,1.0,recalled,3551.14,manual_annotation_sheet_S13,manual annotation sheet; race by commentary order + Seiko attempt numbers
+i8spi5W5Wyc,WCH2025-100m-M-F-H1,2.0,valid,3666.32,manual_annotation_sheet_S14,manual annotation sheet; race by commentary order + Seiko attempt numbers
+3-YOXm6_yVI,WCH2023-100m-W-F-H1,1.0,valid,322.43,manual_annotation_sheet_S15,manual annotation sheet; race by commentary order + Seiko attempt numbers
+u0wI4FtyOtE,WCH2023-100m-M-F-H1,1.0,valid,264.12,manual_annotation_sheet_S16,manual annotation sheet; race by commentary order + Seiko attempt numbers
+pvwL10FELHw,WCH2023-100mH-W-F-H1,1.0,valid,290.64,manual_annotation_sheet_S17,manual annotation sheet; race by commentary order + Seiko attempt numbers
+pVKEBJPFssc,WCH2023-110mH-M-F-H1,1.0,valid,298.32,manual_annotation_sheet_S18,manual annotation sheet; race by commentary order + Seiko attempt numbers
+3553F-6Q044,WCH2022-100m-W-F-H1,1.0,valid,174.62,manual_annotation_sheet_S19,manual annotation sheet; race by commentary order + Seiko attempt numbers
+8lkzDBDUzD0,WCH2022-100mH-W-F-H1,1.0,valid,182.41,manual_annotation_sheet_S22,manual annotation sheet; race by commentary order + Seiko attempt numbers
+4cUfAmsTnLo,WCH2022-110mH-M-F-H1,1.0,recalled,250.05,manual_annotation_sheet_S23,manual annotation sheet; race by commentary order + Seiko attempt numbers
+4cUfAmsTnLo,WCH2022-110mH-M-F-H1,2.0,valid,550.15,manual_annotation_sheet_S24,manual annotation sheet; race by commentary order + Seiko attempt numbers
+2McuUM2729o,WCH2025-100m-W-R1-H1,1.0,valid,139.295,proposal,top-ranked candidate; order in compilation; start-list names in commentary
+2McuUM2729o,WCH2025-100m-W-R1-H2,1.0,valid,366.5,proposal,top-ranked candidate; order in compilation; start-list names in commentary
+2McuUM2729o,WCH2025-100m-W-R1-H3,1.0,valid,614.63,proposal,top-ranked candidate; order in compilation; start-list names in commentary
+2McuUM2729o,WCH2025-100m-W-R1-H5,1.0,valid,1135.245,proposal,top-ranked candidate; order in compilation; start-list names in commentary
+2McuUM2729o,WCH2025-100m-W-R1-H6,1.0,valid,1423.815,proposal,top-ranked candidate; order in compilation; start-list names in commentary
+2McuUM2729o,WCH2025-100m-W-R1-H7,1.0,valid,1665.4,proposal,top-ranked candidate; order in compilation; start-list names in commentary
+2McuUM2729o,WCH2025-100m-W-SF-H1,1.0,recalled,2008.705,proposal,commentary: recalled start ('was there a movement?'); Seiko attempt 2
+2McuUM2729o,WCH2025-100m-W-SF-H1,2.0,valid,2119.39,proposal,commentary: 'back into the blocks... away this time'; lanes named
+2McuUM2729o,WCH2025-100m-W-SF-H2,1.0,valid,2355.185,proposal,commentary lane-by-lane intro matches SF-H2 start list
+2McuUM2729o,WCH2025-100m-W-F-H1,1.0,valid,2597.555,proposal,top-ranked candidate; final
+a2R6qxmIfYU,WCH2025-100mH-W-R1-H1,1.0,valid,135.69,proposal,top-ranked candidate; order in compilation; start-list names in commentary
+a2R6qxmIfYU,WCH2025-100mH-W-R1-H2,1.0,valid,434.35,proposal,top-ranked candidate; order in compilation; start-list names in commentary
+a2R6qxmIfYU,WCH2025-100mH-W-R1-H3,1.0,valid,854.995,proposal,top-ranked candidate; order in compilation; start-list names in commentary
+a2R6qxmIfYU,WCH2025-100mH-W-R1-H4,1.0,valid,1133.19,proposal,top-ranked candidate; order in compilation; start-list names in commentary
+a2R6qxmIfYU,WCH2025-100mH-W-R1-H5,1.0,valid,1389.27,proposal,top-ranked candidate; order in compilation; start-list names in commentary
+a2R6qxmIfYU,WCH2025-100mH-W-R1-H6,1.0,valid,1663.81,proposal,top-ranked candidate; order in compilation; start-list names in commentary
+a2R6qxmIfYU,WCH2025-100mH-W-SF-H1,1.0,recalled,2033.15,proposal,commentary: false start/disqualification; Seiko attempt 2
+a2R6qxmIfYU,WCH2025-100mH-W-SF-H1,2.0,valid,2138.32,proposal,commentary: 'back into the blocks... empty lane nine (Harala DQ)'
+a2R6qxmIfYU,WCH2025-100mH-W-SF-H2,1.0,valid,2385.465,proposal,top-ranked candidate; order; names
+a2R6qxmIfYU,WCH2025-100mH-W-SF-H3,1.0,valid,2621.12,proposal,commentary: 'the final semi-final'
+a2R6qxmIfYU,WCH2025-100mH-W-F-H1,1.0,valid,2899.275,proposal,top-ranked candidate; final
+dWV-SNRwbZY,WCH2025-110mH-M-R1-H1,1.0,valid,131.86,proposal,9 top-ranked candidates = 9 races; order and start-list names agree
+dWV-SNRwbZY,WCH2025-110mH-M-R1-H2,1.0,valid,399.055,proposal,9 top-ranked candidates = 9 races; order and start-list names agree
+dWV-SNRwbZY,WCH2025-110mH-M-R1-H3,1.0,valid,634.18,proposal,9 top-ranked candidates = 9 races; order and start-list names agree
+dWV-SNRwbZY,WCH2025-110mH-M-R1-H4,1.0,valid,882.435,proposal,9 top-ranked candidates = 9 races; order and start-list names agree
+dWV-SNRwbZY,WCH2025-110mH-M-R1-H5,1.0,valid,1111.695,proposal,9 top-ranked candidates = 9 races; order and start-list names agree
+dWV-SNRwbZY,WCH2025-110mH-M-SF-H1,1.0,valid,1434.885,proposal,9 top-ranked candidates = 9 races; order and start-list names agree
+dWV-SNRwbZY,WCH2025-110mH-M-SF-H2,1.0,valid,1716.625,proposal,9 top-ranked candidates = 9 races; order and start-list names agree
+dWV-SNRwbZY,WCH2025-110mH-M-SF-H3,1.0,valid,2009.94,proposal,9 top-ranked candidates = 9 races; order and start-list names agree
+dWV-SNRwbZY,WCH2025-110mH-M-F-H1,1.0,valid,2350.79,proposal,9 top-ranked candidates = 9 races; order and start-list names agree
+HH0KCEeVrkY,WCH2019-100m-M-SF-H1,1.0,valid,410.68,proposal,top-ranked candidates with crowd surge (race_loud>12 dB); order in upload and start-list names in commentary agree
+HH0KCEeVrkY,WCH2019-100m-M-SF-H2,1.0,valid,807.455,proposal,top-ranked candidates with crowd surge (race_loud>12 dB); order in upload and start-list names in commentary agree
+HH0KCEeVrkY,WCH2019-100m-M-SF-H3,1.0,valid,1282.89,proposal,top-ranked candidates with crowd surge (race_loud>12 dB); order in upload and start-list names in commentary agree
+ozD0PqkTYek,WCH2019-100m-W-SF-H1,1.0,valid,143.335,proposal,top-ranked candidates with crowd surge (race_loud>12 dB); order in upload and start-list names in commentary agree
+ozD0PqkTYek,WCH2019-100m-W-SF-H2,1.0,valid,477.175,proposal,top-ranked candidates with crowd surge (race_loud>12 dB); order in upload and start-list names in commentary agree
+ozD0PqkTYek,WCH2019-100m-W-SF-H3,1.0,valid,843.405,proposal,top-ranked candidates with crowd surge (race_loud>12 dB); order in upload and start-list names in commentary agree
+_FaNl21VoJw,WCH2019-100mH-W-SF-H1,1.0,valid,131.05,proposal,top-ranked candidates with crowd surge (race_loud>12 dB); order in upload and start-list names in commentary agree
+_FaNl21VoJw,WCH2019-100mH-W-SF-H2,1.0,valid,420.76,proposal,top-ranked candidates with crowd surge (race_loud>12 dB); order in upload and start-list names in commentary agree
+_FaNl21VoJw,WCH2019-100mH-W-SF-H3,1.0,valid,678.72,proposal,top-ranked candidates with crowd surge (race_loud>12 dB); order in upload and start-list names in commentary agree
+VXmgO6sXQ0g,WCH2019-110mH-M-SF-H1,1.0,recalled,137.51,proposal,"commentary: false start in this semi (athlete reinstated, hip numbers back on)"
+VXmgO6sXQ0g,WCH2019-110mH-M-SF-H1,2.0,valid,302.59,proposal,"commentary: restart, 'Holloway won it'"
+VXmgO6sXQ0g,WCH2019-110mH-M-SF-H2,1.0,valid,656.83,proposal,top-ranked candidates with crowd surge (race_loud>12 dB); order in upload and start-list names in commentary agree
+VXmgO6sXQ0g,WCH2019-110mH-M-SF-H3,1.0,valid,946.365,proposal,top-ranked candidates with crowd surge (race_loud>12 dB); order in upload and start-list names in commentary agree
+sdr8LRvAtwI,WCH2019-100m-W-F-H1,1.0,valid,569.88,proposal,single-race upload; top-ranked candidate with crowd surge
+hMDALOHv1fE,WCH2019-100m-M-F-H1,1.0,valid,285.685,proposal,single-race upload; top-ranked candidate with crowd surge
+qtibu_VJb9Y,WCH2019-100mH-W-F-H1,1.0,valid,255.25,proposal,single-race upload; top-ranked candidate with crowd surge
+pPyQosEYwwE,WCH2019-110mH-M-F-H1,1.0,valid,265.705,proposal,single-race upload; top-ranked candidate with crowd surge
+3S6M0g1VqDc,OG2024-100m-M-R1-H8,1.0,valid,33.905,proposal,"single-race clip; race from title athletes + start list; top-ranked candidate (score>=40, crowd surge)"
+owSs5f5bKHo,OG2024-100m-M-R1-H4,1.0,valid,157.28,proposal,"single-race clip; race from title athletes + start list; top-ranked candidate (score>=40, crowd surge)"
+lr9NwcQnbqQ,OG2024-100m-M-R1-H3,1.0,valid,155.39,proposal,"single-race clip; race from title athletes + start list; top-ranked candidate (score>=40, crowd surge)"
+3b_XDgqQMbo,OG2024-100m-M-SF-H1,1.0,valid,187.145,proposal,"single-race clip; race from title athletes + start list; top-ranked candidate (score>=40, crowd surge)"
+7vs7-kFCp-Q,OG2024-100m-M-SF-H3,1.0,valid,193.52,proposal,"single-race clip; race from title athletes + start list; top-ranked candidate (score>=40, crowd surge)"
+QVJNE9CqlHo,OG2024-100m-W-SF-H2,1.0,valid,110.01,proposal,"single-race clip; race from title athletes + start list; top-ranked candidate (score>=40, crowd surge)"
+EW196wLnBfw,OG2024-100m-W-R1-H8,1.0,valid,181.72,proposal,"single-race clip; race from title athletes + start list; top-ranked candidate (score>=40, crowd surge)"
+Sry4ZZ5hQvE,OG2024-100m-W-R1-H4,1.0,valid,170.95,proposal,"single-race clip; race from title athletes + start list; top-ranked candidate (score>=40, crowd surge)"
+WoVmhi6Abys,OG2024-100mH-W-R1-H2,1.0,valid,219.455,proposal,"single-race clip; race from title athletes + start list; top-ranked candidate (score>=40, crowd surge)"
+vGY3Ccjh6dA,OG2024-100mH-W-R1-H3,1.0,valid,142.545,proposal,"single-race clip; race from title athletes + start list; top-ranked candidate (score>=40, crowd surge)"
+NtRUqhX24ys,OG2024-100mH-W-SF-H2,1.0,valid,309.885,proposal,"single-race clip; race from title athletes + start list; top-ranked candidate (score>=40, crowd surge)"
+pTxLVsxXA4Q,OG2024-100mH-W-SF-H3,1.0,valid,176.48,proposal,"single-race clip; race from title athletes + start list; top-ranked candidate (score>=40, crowd surge)"
+uULOjWF5dVM,OG2024-110mH-M-SF-H2,1.0,valid,238.635,proposal,"single-race clip; race from title athletes + start list; top-ranked candidate (score>=40, crowd surge)"
+dW4GWNAN8Tk,OG2020-110mH-M-SF-H1,1.0,valid,235.36,proposal,"single-race clip; race from title athletes + start list; top-ranked candidate (score>=40, crowd surge)"
+WWNE_TwZ8-Q,OG2020-110mH-M-SF-H2,1.0,valid,168.745,proposal,"single-race clip; race from title athletes + start list; top-ranked candidate (score>=40, crowd surge)"
+7Xnr805bm4E,OG2024-100m-M-F-H1,1.0,valid,408.37,proposal,"single-race clip; race from title athletes + start list; top-ranked candidate (score>=40, crowd surge)"
+6a2oHdxxJ-I,OG2024-110mH-M-F-H1,1.0,valid,248.51,proposal,"single-race clip; race from title athletes + start list; top-ranked candidate (score>=40, crowd surge)"
+tNsTVJX3oUY,OG2024-100mH-W-F-H1,1.0,valid,64.405,proposal,"single-race clip; race from title athletes + start list; top-ranked candidate (score>=40, crowd surge)"
+LdNWS1b0F0U,OG2024-100m-M-SF-H2,1.0,valid,203.095,proposal,single-race clip; race from title athletes + start list; MODERATE: top candidate score 35-45 or weak crowd surge
+DqrVX1FyW6U,OG2024-100m-W-SF-H1,1.0,valid,173.87,proposal,single-race clip; race from title athletes + start list; MODERATE: top candidate score 35-45 or weak crowd surge
+lmpJMcO9VjE,OG2024-100mH-W-R1-H1,1.0,valid,142.17,proposal,single-race clip; race from title athletes + start list; MODERATE: top candidate score 35-45 or weak crowd surge
+rXChjH2hzFk,OG2020-100m-M-SF-H1,1.0,recalled,493.23,proposal,official Olympic replay; starter commands audible; recall shot ~0.9 s after gun; results: Prescod DQ (false start) in SF1
+rXChjH2hzFk,OG2020-100m-M-SF-H1,2.0,valid,839.08,proposal,official Olympic replay; restart after the SF1 false start; 'On your mark' at 830 s in transcript
+rXChjH2hzFk,OG2020-100m-M-SF-H2,1.0,valid,1309.115,proposal,official Olympic replay; order of semis
+rXChjH2hzFk,OG2020-100m-M-SF-H3,1.0,valid,1747.07,proposal,official Olympic replay; order of semis
+SDxS1AB2PUQ,WCH2022-100mH-W-R1-H2,1.0,valid,54.095,proposal,NBC Sports single-race clip; race from title athlete + start list; top-ranked candidate with crowd surge
+I0sZ6srUnN4,WCH2022-110mH-M-R1-H2,1.0,valid,69.42,proposal,NBC Sports single-race clip; race from title athlete + start list; top-ranked candidate with crowd surge
+L9rcMeWQBgQ,WCH2022-110mH-M-R1-H3,1.0,valid,94.67,proposal,NBC Sports single-race clip; race from title athlete + start list; top-ranked candidate with crowd surge; MODERATE score (39)
+k-rqO4ufy8o,WCH2022-100mH-W-SF-H1,1.0,valid,121.645,proposal,NBC Sports single-race clip; race from title athlete + start list; top-ranked candidate with crowd surge
+ryCzpIN37dc,WCH2023-100mH-W-R1-H5,1.0,valid,263.94,proposal,NBC Sports single-race clip; race from title athlete + start list; top-ranked candidate with crowd surge
+FgipHHwzKrg,WCH2023-100mH-W-R1-H3,1.0,valid,164.69,proposal,NBC Sports single-race clip; race from title athlete + start list; top-ranked candidate with crowd surge (Kendra Harrison won R1-H3)
+nMmKgT46FUc,OG2020-100m-W-SF-H1,1.0,valid,426.885,proposal,official Olympic replay; order of semis; 'On your mark' heard at 387.6 s
+nMmKgT46FUc,OG2020-100m-W-SF-H2,1.0,valid,957.925,proposal,official Olympic replay; order of semis
+nMmKgT46FUc,OG2020-100m-W-SF-H3,1.0,valid,1400.46,proposal,official Olympic replay; order of semis
+zMFb8Y2QLPc,OG2020-100m-M-F-H1,1.0,recalled,349.2,proposal,official Olympic replay; WEAK: gun jump ~9 dB; false start (Hughes DQ); commentary 'well and truly a break' follows
+zMFb8Y2QLPc,OG2020-100m-M-F-H1,2.0,valid,457.56,proposal,official Olympic replay; WEAK: gun jump ~11 dB; commentary 'this time they're away' at 458 s

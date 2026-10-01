@@ -1,0 +1,11 @@
+{
+ "url": "https://raw.githubusercontent.com/ofiore/Thesis/3cf1db7adebb493f3a5c2e957a1b09cf0986a7cd/Data/rxntime.csv",
+ "final_url": "https://raw.githubusercontent.com/ofiore/Thesis/3cf1db7adebb493f3a5c2e957a1b09cf0986a7cd/Data/rxntime.csv",
+ "status": 200,
+ "bytes": 98636,
+ "sha256": "5b8d3144a5771e90019ff8283fc4f884ac70577d30193bdcb1047d69f0a607cf",
+ "content_type": "text/plain; charset=utf-8",
+ "retrieved_at": "2026-09-29T06:23:23Z",
+ "cache_path": "data/raw/fiore/rxntime.csv",
+ "gzip": false
+}

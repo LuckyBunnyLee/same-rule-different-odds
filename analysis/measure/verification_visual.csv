@@ -1,0 +1,72 @@
+race_id,attempt,video_id,contact_idx,verdict,t_set_on,t_gun,notes,reviewer,reviewed_at,blind,vowel_onset_only
+WCH2025-100m-W-R1-H1,1,2McuUM2729o,0,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2025-100m-W-R1-H3,1,2McuUM2729o,1,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2025-100m-W-R1-H6,1,2McuUM2729o,2,ok,,,weak Set,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2025-100m-W-R1-H7,1,2McuUM2729o,3,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2025-100m-W-SF-H2,1,2McuUM2729o,4,unidentifiable,,,commentary over the command,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2025-100mH-W-R1-H3,1,a2R6qxmIfYU,5,unidentifiable,,,commentary over the command,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2025-100mH-W-R1-H4,1,a2R6qxmIfYU,6,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2025-100mH-W-R1-H5,1,a2R6qxmIfYU,7,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2025-100mH-W-SF-H3,1,a2R6qxmIfYU,8,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2025-100mH-W-F-H1,1,a2R6qxmIfYU,9,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2025-110mH-M-R1-H1,1,dWV-SNRwbZY,10,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2025-110mH-M-R1-H2,1,dWV-SNRwbZY,11,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2025-110mH-M-R1-H3,1,dWV-SNRwbZY,12,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2025-110mH-M-R1-H4,1,dWV-SNRwbZY,13,unidentifiable,,,commentary before and after the marked burst,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2025-110mH-M-SF-H1,1,dWV-SNRwbZY,14,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2025-110mH-M-SF-H2,1,dWV-SNRwbZY,15,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2025-110mH-M-SF-H3,1,dWV-SNRwbZY,16,unidentifiable,,,commentary over the command,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2025-110mH-M-F-H1,1,dWV-SNRwbZY,17,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2019-100m-M-SF-H1,1,HH0KCEeVrkY,18,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2019-100m-M-SF-H2,1,HH0KCEeVrkY,19,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2019-100m-M-SF-H3,1,HH0KCEeVrkY,20,unidentifiable,,,commentary over the command; auto foreperiod 3.27 s implausible,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2019-100m-W-SF-H1,1,ozD0PqkTYek,21,ok,,,weak Set,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2019-100m-W-SF-H2,1,ozD0PqkTYek,22,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2019-100m-W-SF-H3,1,ozD0PqkTYek,23,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2019-100mH-W-SF-H1,1,_FaNl21VoJw,24,ok,,,tonal camera noise in HF band,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2019-100mH-W-SF-H2,1,_FaNl21VoJw,25,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2019-100mH-W-SF-H3,1,_FaNl21VoJw,26,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2019-110mH-M-SF-H1,1,VXmgO6sXQ0g,27,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2019-110mH-M-SF-H1,2,VXmgO6sXQ0g,28,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2019-110mH-M-SF-H2,1,VXmgO6sXQ0g,29,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2019-110mH-M-SF-H3,1,VXmgO6sXQ0g,30,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2019-100m-W-F-H1,1,sdr8LRvAtwI,31,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2019-100m-M-F-H1,1,hMDALOHv1fE,32,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2019-100mH-W-F-H1,1,qtibu_VJb9Y,33,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2019-110mH-M-F-H1,1,pPyQosEYwwE,34,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+OG2024-100m-M-R1-H8,1,3S6M0g1VqDc,35,unidentifiable,,,continuous commentary (SportsMax),measure-agent,2026-09-29,no (automated marks visible),0
+OG2024-100m-M-R1-H4,1,owSs5f5bKHo,36,ok,,,no visible /s/: vowel onset marked (weak_s_onset),measure-agent,2026-09-29,no (automated marks visible),1
+OG2024-100m-M-R1-H3,1,lr9NwcQnbqQ,37,unidentifiable,,,"weak Set; mark between faint /s/ and vowel, cannot confirm within 40 ms",measure-agent,2026-09-29,no (automated marks visible),0
+OG2024-100m-M-SF-H1,1,3b_XDgqQMbo,38,unidentifiable,,,continuous commentary (SportsMax),measure-agent,2026-09-29,no (automated marks visible),0
+OG2024-100m-M-SF-H3,1,7vs7-kFCp-Q,39,unidentifiable,,,continuous commentary (SportsMax),measure-agent,2026-09-29,no (automated marks visible),0
+OG2024-100m-W-SF-H2,1,QVJNE9CqlHo,40,unidentifiable,,,continuous commentary (SportsMax),measure-agent,2026-09-29,no (automated marks visible),0
+OG2024-100m-W-R1-H8,1,EW196wLnBfw,41,unidentifiable,,,commentary ends just after marked burst,measure-agent,2026-09-29,no (automated marks visible),0
+OG2024-100m-W-R1-H4,1,Sry4ZZ5hQvE,42,unidentifiable,,,commentary over the command,measure-agent,2026-09-29,no (automated marks visible),0
+OG2024-100mH-W-R1-H2,1,WoVmhi6Abys,43,ok,,,weak Set,measure-agent,2026-09-29,no (automated marks visible),0
+OG2024-100mH-W-R1-H3,1,vGY3Ccjh6dA,44,ok,,,weak Set,measure-agent,2026-09-29,no (automated marks visible),0
+OG2024-100mH-W-SF-H2,1,NtRUqhX24ys,45,ok,,,weak Set,measure-agent,2026-09-29,no (automated marks visible),0
+OG2024-100mH-W-SF-H3,1,pTxLVsxXA4Q,46,unidentifiable,,,continuous commentary (SportsMax),measure-agent,2026-09-29,no (automated marks visible),0
+OG2024-110mH-M-SF-H2,1,uULOjWF5dVM,47,ok,,,weak Set,measure-agent,2026-09-29,no (automated marks visible),0
+OG2020-110mH-M-SF-H1,1,dW4GWNAN8Tk,48,ok,,,weak /s/,measure-agent,2026-09-29,no (automated marks visible),0
+OG2020-110mH-M-SF-H2,1,WWNE_TwZ8-Q,49,ok,,,weak /s/; commentary before,measure-agent,2026-09-29,no (automated marks visible),0
+OG2024-100m-M-F-H1,1,7Xnr805bm4E,50,ok,,,gradual /s/,measure-agent,2026-09-29,no (automated marks visible),0
+OG2024-110mH-M-F-H1,1,6a2oHdxxJ-I,51,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+OG2024-100mH-W-F-H1,1,tNsTVJX3oUY,52,ok,,,weak Set,measure-agent,2026-09-29,no (automated marks visible),0
+OG2024-100m-M-SF-H2,1,LdNWS1b0F0U,53,unidentifiable,,,continuous commentary (SportsMax),measure-agent,2026-09-29,no (automated marks visible),0
+OG2024-100m-W-SF-H1,1,DqrVX1FyW6U,54,unidentifiable,,,continuous commentary (SportsMax),measure-agent,2026-09-29,no (automated marks visible),0
+OG2024-100mH-W-R1-H1,1,lmpJMcO9VjE,55,unidentifiable,,,commentary over the command,measure-agent,2026-09-29,no (automated marks visible),0
+OG2020-100m-M-SF-H1,1,rXChjH2hzFk,56,ok,,,weak /s/,measure-agent,2026-09-29,no (automated marks visible),0
+OG2020-100m-M-SF-H1,2,rXChjH2hzFk,57,ok,,,weak /s/,measure-agent,2026-09-29,no (automated marks visible),0
+OG2020-100m-M-SF-H2,1,rXChjH2hzFk,58,ok,,,weak /s/,measure-agent,2026-09-29,no (automated marks visible),0
+OG2020-100m-M-SF-H3,1,rXChjH2hzFk,59,ok,,,weak /s/,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2022-100mH-W-R1-H2,1,SDxS1AB2PUQ,60,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2022-110mH-M-R1-H2,1,I0sZ6srUnN4,61,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2022-110mH-M-R1-H3,1,L9rcMeWQBgQ,62,unidentifiable,,,commentary before the marked burst; auto FP inconsistent with same-championship Seiko offset,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2022-100mH-W-SF-H1,1,k-rqO4ufy8o,63,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2023-100mH-W-R1-H5,1,ryCzpIN37dc,64,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+WCH2023-100mH-W-R1-H3,1,FgipHHwzKrg,65,ok,,,,measure-agent,2026-09-29,no (automated marks visible),0
+OG2020-100m-W-SF-H1,1,nMmKgT46FUc,66,corrected,425.125,426.899,"auto mark after the vowel onset; no visible /s/, vowel onset 425.125 read on zoom sheet; gun 426.899",measure-agent,2026-09-29,no (automated marks visible),1
+OG2020-100m-W-SF-H2,1,nMmKgT46FUc,67,ok,,,weak /s/,measure-agent,2026-09-29,no (automated marks visible),0
+OG2020-100m-W-SF-H3,1,nMmKgT46FUc,68,ok,,,no visible /s/: vowel onset marked (weak_s_onset),measure-agent,2026-09-29,no (automated marks visible),1
+OG2020-100m-M-F-H1,1,zMFb8Y2QLPc,69,unidentifiable,,,heavy tonal noise; Set not visible,measure-agent,2026-09-29,no (automated marks visible),0
+OG2020-100m-M-F-H1,2,zMFb8Y2QLPc,70,unidentifiable,,,heavy tonal noise; Set not visible,measure-agent,2026-09-29,no (automated marks visible),0

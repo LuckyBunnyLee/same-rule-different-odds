@@ -1,0 +1,14 @@
+# lit/ generated-artifact manifest (regenerated last, 2026-09-29 02:07 PDT). Run from repo root.
+# Each command below was re-run and reproduced its output byte-for-byte (sha256 listed).
+# refs.bib: DOI BibTeX is cached in lit/tools/cache/, so the build is offline-reproducible.
+.venv/Scripts/python.exe lit/tools/build_refs.py                                            -> lit/refs.bib
+.venv/Scripts/python.exe lit/planning/gg_tail_planning.py > lit/planning/gg_tail_planning.out.txt
+.venv/Scripts/python.exe lit/planning/power_planning.py   > lit/planning/power_planning.out.txt
+.venv/Scripts/python.exe lit/planning/fp_model_shapes.py 2>/dev/null > lit/planning/fp_model_shapes.out.txt
+# sha256
+0ce8487c432c9c890d4ee6d34d4b0e430f8bdabc0d0e13e68b02d58013ef52d8 *lit/refs.bib
+bea75d742fff8d7c0b7986500642eb0dd8dea31d14e613c01a7ab0a38154c9ab *lit/planning/fp_model_shapes.out.txt
+bd174cc8fb6de088190ce39a0933dcb4d5a8d96bc1c26f65fa22e7c6612f0866 *lit/planning/gg_tail_planning.out.txt
+3e2bef3b726082e6ff483adb4a781aeec61259f8dec6988cba37609737e9b22f *lit/planning/power_planning.out.txt
+# Hand-written (not generated): lit/review.md, lit/definitions.md, lit/novelty.md, lit/datasets.md,
+# lit/tools/refs_sources.tsv, lit/tools/refs_manual.bib. Search-pass source notes (verbatim quotes): lit/notes/*.md

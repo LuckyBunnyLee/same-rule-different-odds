@@ -1,0 +1,3 @@
+# scratch: TTS wavs, benchmark clips, whole-file transcripts (contain broadcast commentary text), logs
+work/
+__pycache__/

@@ -1,0 +1,4 @@
+# Keep every file byte-for-byte as committed on every platform. Input files are identified by their sha256 in the
+# result JSONs, and scripts/verify_producers.py compares regenerated outputs byte-for-byte, so no line-ending
+# conversion may happen on checkout.
+* -text

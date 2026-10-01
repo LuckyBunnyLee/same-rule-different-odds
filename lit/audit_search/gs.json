@@ -1,0 +1,912 @@
+{
+ "redistribution_note": "Abstract and snippet texts returned by the search service are not redistributed (publisher copyright); bibliographic metadata only. Re-run lit/tools/audit_search.py to re-fetch them.",
+ "source": "google_scholar",
+ "query": "(\"reaction time\" OR \"response time\") (sprint OR sprinter OR sprinters OR \"false start\" OR \"starting blocks\") (championships OR Olympic OR IAAF OR \"World Athletics\")",
+ "url": "https://scholar.google.com/scholar?q=%28%22reaction+time%22+OR+%22response+time%22%29+%28sprint+OR+sprinter+OR+sprinters+OR+%22false+start%22+OR+%22starting+blocks%22%29+%28championships+OR+Olympic+OR+IAAF+OR+%22World+Athletics%22%29&hl=en&as_ylo=1990&as_yhi=2026&start=0",
+ "retrieved": "2026-10-01T00:15:38Z",
+ "reported_count": 6980,
+ "pages_fetched": 10,
+ "stopped": null,
+ "records": [
+  {
+   "gs_rank": 1,
+   "title": "Reaction time aspects of elite sprinters in athletic world championships",
+   "link": "https://journals.lww.com/nsca-jscr/fulltext/2013/04000/Reaction_Time_Aspects_of_Elite_Sprinters_in.3.aspx",
+   "meta": "E Tønnessen , T Haugen … - The Journal of Strength & …, 2013 - journals.lww.com",
+   "year": 2013,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 2,
+   "title": "Strategic aspects of reaction time in world-class sprinters",
+   "link": "https://journals.sagepub.com/doi/abs/10.2466/pms.1999.88.1.65",
+   "meta": "C Collet - Perceptual and motor skills, 1999 - journals.sagepub.com",
+   "year": 1999,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 3,
+   "title": "Sprint starts and the minimum auditory reaction time",
+   "link": "https://www.tandfonline.com/doi/abs/10.1080/02640410600718004",
+   "meta": "MTG Pain , A Hibbs - Journal of sports sciences, 2007 - Taylor & Francis",
+   "year": 2007,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 4,
+   "title": "On the implications of a sex difference in the reaction times of sprinters at the Beijing Olympics",
+   "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0026141",
+   "meta": "DB Lipps , AT Galecki , JA Ashton-Miller - PloS one, 2011 - journals.plos.org",
+   "year": 2011,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 5,
+   "title": "[PDF] Start reaction time and performance at the sprint events in the Olympic Games",
+   "link": "https://www.researchgate.net/profile/Pilianidis-Theophilos/publication/297499998_Start_reaction_time_and_performance_at_the_sprint_events_in_the_olympic_games/links/571631aa08ae5925760c825e/Start-reaction-time-and-performance-at-the-sprint-events-in-the-olympic-games.pdf",
+   "meta": "T Pilianidis, A Kasabalis, N Mantzouranis … - Kinesiology, 2012 - researchgate.net",
+   "year": 2012,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 6,
+   "title": "[PDF] The importance of reaction time in athletics: Influence on the results of sprint runs of World Championships finalists",
+   "link": "https://wnus.usz.edu.pl/cejssm/file/article/view/19093.pdf",
+   "meta": "R Pavlović - Central European Journal of Sport Sciences and …, 2021 - wnus.usz.edu.pl",
+   "year": 2021,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 7,
+   "title": "Sprint Start Regulation in Athletics: A Critical Review: M. Milloz et al.",
+   "link": "https://link.springer.com/article/10.1007/s40279-020-01350-4",
+   "meta": "M Milloz , K Hayes, AJ Harrison - Sports Medicine, 2021 - Springer",
+   "year": 2021,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 8,
+   "title": "Effects of false - start disqualification rules on response-times of elite-standard sprinters",
+   "link": "https://www.tandfonline.com/doi/abs/10.1080/02640414.2016.1201213",
+   "meta": "KC Brosnan, K Hayes, AJ Harrison - Journal of Sports Sciences, 2017 - Taylor & Francis",
+   "year": 2017,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 9,
+   "title": "The effect of different starting procedures on sprinters ' reaction time",
+   "link": "https://www.tandfonline.com/doi/abs/10.1080/02640414.2012.746724",
+   "meta": "TA Haugen , S Shalfawi , E Tønnessen - Journal of Sports Sciences, 2013 - Taylor & Francis",
+   "year": 2013,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 10,
+   "title": "Start reaction time and performance at the sprint events in World Athletic Championships",
+   "link": "https://www.tandfonline.com/doi/abs/10.1080/24748668.2012.11868587",
+   "meta": "TH Pilianidis, N Mantzouranis … - International Journal of …, 2012 - Taylor & Francis",
+   "year": 2012,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 11,
+   "title": "The long-term effects of Current false Start rules on reaction time and athletic performance",
+   "link": "https://www.tandfonline.com/doi/abs/10.1080/24748668.2025.2579341",
+   "meta": "L Han, C Zhou, H Zhang - International Journal of Performance …, 2026 - Taylor & Francis",
+   "year": 2026,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 12,
+   "title": "Reaction time and sprint results in athletics",
+   "link": "https://www.tandfonline.com/doi/abs/10.1080/24748668.2008.11868436",
+   "meta": "A Delalija, V Babić - … Journal of performance analysis in sport, 2008 - Taylor & Francis",
+   "year": 2008,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 13,
+   "title": "[PDF] Changes in the start reaction times of male and female sprinters in world athletic championships",
+   "link": "https://efsupit.ro/images/stories/iulie2020/Art%20302.pdf",
+   "meta": "P Mitašík, M Vavák, L Doležajová, A Lednický… - Journal of Physical …, 2020 - efsupit.ro",
+   "year": 2020,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 14,
+   "title": "[PDF] Start reaction time and performance time in women's sprint at the world championships in athletics",
+   "link": "http://www.wbc.poznan.pl/Content/189093/PDF/10_Pilianidis%20REV.pdf",
+   "meta": "T PILIANIDIS, N MANTZOURANIS - Studies in Physical Culture and …, 2011 - wbc.poznan.pl",
+   "year": 2011,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 15,
+   "title": "On the apparent decrease in Olympic sprinter reaction times",
+   "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0198633",
+   "meta": "P Mirshams Shahshahani , DB Lipps , AT Galecki … - Plos one, 2018 - journals.plos.org",
+   "year": 2018,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 16,
+   "title": "[PDF] Reaction time and performance in the short sprints",
+   "link": "https://www.researchgate.net/profile/Giorgos-Paradisis/publication/256932739_Association_of_reaction_time_and_performance_in_60_and_100_m/links/0c9605241353159ae3000000/Association-of-reaction-time-and-performance-in-60-and-100-m.pdf",
+   "meta": "GP Paradisis - New Studies in Athletics, 2013 - researchgate.net",
+   "year": 2013,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 17,
+   "title": "Relation between Start Reaction Time and Performance Time among Women Finalist Sprinters in the Olympic Games 2000 to 2020",
+   "link": "https://www.tmfv.com.ua/journal/article/view/2318",
+   "meta": "A Biswas, N Bandyopadhyay - Physical Education Theory and …, 2023 - tmfv.com.ua",
+   "year": 2023,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 18,
+   "title": "The Relationship between Reaction Time and 60M Performance in Elite Athletes.",
+   "link": "https://eric.ed.gov/?id=EJ1202018",
+   "meta": "VV Gürses , O Kamis - Journal of Education and Training Studies, 2018 - ERIC",
+   "year": 2018,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 19,
+   "title": "[PDF] Relationship Between Reaction Time , Medal Winning and Performance in the 60 m Hurdle Indoor Event Before and After the Change of False Start Rule",
+   "link": "https://reference-global.com/download/article/10.2478/afepuc-2021-0007.pdf",
+   "meta": "K Ntolaptsis… - Acta Facultatis …, 2021 - reference-global.com",
+   "year": 2021,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 20,
+   "title": "[PDF] Reaction time on swimming block start in competitors swimmers on World Swimming Championship",
+   "link": "https://www.efsupit.ro/images/stories/februarie2019/Art56.pdf",
+   "meta": "JKF Da Silva, PS Dos Santos, SOVB Favaro… - Journal of Physical …, 2019 - efsupit.ro",
+   "year": 2019,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 21,
+   "title": "[PDF] Changes in the start reaction times in the 200 m run at the world championships after the tightening of false start rule",
+   "link": "https://reference-global.com/download/article/10.2478/afepuc-2020-0017.pdf",
+   "meta": "P Mitašík, L Doležajová, A Lednický… - Acta Facultatis …, 2020 - reference-global.com",
+   "year": 2020,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 22,
+   "title": "Differences in time of start reaction and achieved result in the sprint disciplines in the finals of the Olympic Games in London and the World Championship in Moscow",
+   "link": "http://www.sportspa.ftos.untz.ba/index.php/sportspa/article/view/135",
+   "meta": "R Pavlović - Sport Scientific And Practical Aspects, 2015 - sportspa.ftos.untz.ba",
+   "year": 2015,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 23,
+   "title": "[PDF] … Performance of Athletes based on Mathematical Statistics--A Case Study of the Short Distance Events at the Five World Athletics Chazmpionships from 2011 to …",
+   "link": "http://www.icj-e.org/download/ICJE-8-1-412-421.pdf",
+   "meta": "Y Wang, H Shi, C Li, Y Pan, J Cai - International Core Journal of …, 2022 - icj-e.org",
+   "year": 2022,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 24,
+   "title": "[PDF] Has the new false start rule affected the reaction time of elite sprinters ?",
+   "link": "https://www.researchgate.net/profile/Massimiliano-Ditroilo/publication/236169257_Has_the_new_false_start_rule_affected_the_reaction_time_of_elite_sprinters/links/0deec516c4f042976d000000/Has-the-new-false-start-rule-affected-the-reaction-time-of-elite-sprinters.pdf",
+   "meta": "M Ditroilo , A Kilding - New Studies in Athletics, 2004 - researchgate.net",
+   "year": 2004,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 25,
+   "title": "[PDF] Intraindividual Evaluation of Reaction Time at the Women's World Athletics Championships 1999–2019",
+   "link": "https://reference-global.com/download/article/10.2478/afepuc-2021-0017.pdf",
+   "meta": "P Mitašík, L Doležajová… - Acta Facultatis …, 2021 - reference-global.com",
+   "year": 2021,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 26,
+   "title": "[PDF] Effect of False Start Rule Change on Start Reaction Time of World Championships in Athletics",
+   "link": "https://www.academia.edu/download/30237343/proceedings_for_cairo.pdf#page=75",
+   "meta": "S YOKOKURA, Y KAJIWARA, S ONO… - Sport & Exercise for …, 2011 - academia.edu",
+   "year": 2011,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 27,
+   "title": "[PDF] Differences in time of start reaction in the sprint disciplines in the finals of the Olympic games (Athens, 2004-London, 2012)",
+   "link": "https://www.researchgate.net/profile/Ratko-Pavlovic-2/publication/275522844_DIFFERENCES_IN_TIME_OF_START_REACTION_IN_THE_SPRINT_DISCIPLINES_IN_THE_FINALS_OF_THE_OLYMPIC_GAMES_ATHENS_2004_-_LONDON_2012/links/553eaa6b0cf20184050f8b05/DIFFERENCES-IN-TIME-OF-START-REACTION-IN-THE-SPRINT-DISCIPLINES-IN-THE-FINALS-OF-THE-OLYMPIC-GAMES-ATHENS-2004-LONDON-2012.pdf",
+   "meta": "R Pavlović , D Bonacin, D Bonacin - Acta Kinesiologica, 2014 - researchgate.net",
+   "year": 2014,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 28,
+   "title": "… AND REACTION TIME ON SPRINT PERFORMANCE: AN ANALYTICAL STUDY ACROSS THE LAST FIVE EDITIONS OF WORLD ATHLETICS CHAMPIONSHIPS .",
+   "link": "https://openurl.ebsco.com/contentitem/gcd:192670386?sid=ebsco:plink:crawler-gcd&id=ebsco:gcd:192670386&crl=c&jrnl=14534223",
+   "meta": "RA TOMOZEI, F HURDUC… - … Babes-Bolyai, Educatio …, 2025 - openurl.ebsco.com",
+   "year": 2025,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 29,
+   "title": "Sprint performance times related to block time in Olympic swimmers.",
+   "link": "https://openurl.ebsco.com/contentitem/gcd:31527890?sid=ebsco:plink:crawler-gcd&id=ebsco:gcd:31527890&crl=c&jrnl=07475993",
+   "meta": "DA Tanner - Journal of swimming research, 2001 - openurl.ebsco.com",
+   "year": 2001,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 30,
+   "title": "Analysis of reaction time , split time and final time records of swimming athletes in the Olympic Games on 2008-2021",
+   "link": "https://www.tmfv.com.ua/journal/article/view/2048",
+   "meta": "BA Pramono , YS Mustar , S Sumartiningsih … - … Education Theory and …, 2023 - tmfv.com.ua",
+   "year": 2023,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 31,
+   "title": "The difference is in the start: impact of timing and start procedure on sprint running performance",
+   "link": "https://journals.lww.com/nsca-jscr/fulltext/2012/02000/The_Difference_Is_in_the_Start__Impact_of_Timing.21.aspx",
+   "meta": "TA Haugen , E Tønnessen , SK Seiler - The Journal of Strength & …, 2012 - journals.lww.com",
+   "year": 2012,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 32,
+   "title": "The Study on the Relationship between Elite Athletes' Start Reaction Time and Sport Performance in Indoor Short Distance Running",
+   "link": "http://cdtyxb.cdsu.edu.cn/cdtyxyxb/en/article/id/1062",
+   "meta": "ZHU Dapeng, LI Ailing - Journal of Chengdu Sport University, 2019 - cdtyxb.cdsu.edu.cn",
+   "year": 2019,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 33,
+   "title": "Correlation analysis of sprint performance and reaction time based on double logarithm model",
+   "link": "https://onlinelibrary.wiley.com/doi/abs/10.1155/2021/6633326",
+   "meta": "J Zhang, XY Lin, S Zhang - Complexity, 2021 - Wiley Online Library",
+   "year": 2021,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 34,
+   "title": "[PDF] Intraindividual Evaluation of Reaction Time At the Men's World Athletics Championships 1999-2019",
+   "link": "https://reference-global.com/download/article/10.2478/afepuc-2022-0007.pdf",
+   "meta": "P Mitašík, L Doležajová… - Acta Facultatis …, 2022 - reference-global.com",
+   "year": 2022,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 35,
+   "title": "VISUAL DETECTION OF RESPONSE TIME IN ATHLETICS: A “GOLD STANDARD”?",
+   "link": "https://commons.nmu.edu/isbs/vol40/iss1/110/",
+   "meta": "M Milloz , J Holmes, E Crotty… - ISBS Proceedings …, 2022 - commons.nmu.edu",
+   "year": 2022,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 36,
+   "title": "[PDF] Analysis of the performance of finalist swimming athletes in Olympic games: Reaction time , partial time, speed, and final time",
+   "link": "https://efsupit.ro/images/stories/martie2020/Art%2080.pdf",
+   "meta": "JKF Da Silva, AAN Enes , BB Sotomaior … - Journal of Physical …, 2020 - efsupit.ro",
+   "year": 2020,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 37,
+   "title": "[PDF] Sprint race distance affects reaction time in male and female sprinters at the 2022 World Indoor Athletics Championships",
+   "link": "https://www.researchgate.net/profile/Milan-Matic-3/publication/376496626_Sprint_race_distance_affects_reaction_time_in_male_and_female_sprinters_at_the_2022_World_Indoor_Athletics_Championships/links/674b65f3a7fbc259f1a1c93e/Sprint-race-distance-affects-reaction-time-in-male-and-female-sprinters-at-the-2022-World-Indoor-Athletics-Championships.pdf#page=49",
+   "meta": "M Matić , V Mrdaković , M Marković - Exercise and Quality of Life, 2023 - researchgate.net",
+   "year": 2023,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 38,
+   "title": "The effect of ego depletion on sprint start reaction time",
+   "link": "https://journals.humankinetics.com/view/journals/jsep/36/5/article-p506.xml",
+   "meta": "C Englert , A Bertrams - Journal of Sport and Exercise …, 2014 - journals.humankinetics.com",
+   "year": 2014,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 39,
+   "title": "A comparison of hand force and starting block-based response times in the sprint start",
+   "link": "https://commons.nmu.edu/isbs/vol36/iss1/219/",
+   "meta": "AJ Harrison , K Hayes - ISBS Proceedings Archive, 2018 - commons.nmu.edu",
+   "year": 2018,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 40,
+   "title": "Reaction time and electromyographic activity during a sprint start",
+   "link": "https://link.springer.com/article/10.1007/BF00236697",
+   "meta": "A Mero, PV Komi - European Journal of Applied Physiology and …, 1990 - Springer",
+   "year": 1990,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 41,
+   "title": "[PDF] A short-term neural activation program and its effect on improving reaction time , block clearance, and early acceleration among sprint runners in Kirkuk",
+   "link": "https://www.researchgate.net/profile/Mueen-Obaid-2/publication/399620956_A_short-term_neural_activation_program_and_its_effect_on_improving_reaction_time_block_clearance_and_early_acceleration_among_sprint_runners_in_Kirkuk/links/69a771de940e2d5e03ccc1fe/A-short-term-neural-activation-program-and-its-effect-on-improving-reaction-time-block-clearance-and-early-acceleration-among-sprint-runners-in-Kirkuk.pdf",
+   "meta": "MA Obaid - researchgate.net",
+   "year": null,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 42,
+   "title": "[PDF] On gender differences in the reaction times of sprinters at the 2008 Beijing Olympics",
+   "link": "https://www.researchgate.net/profile/James-Ashton-Miller/publication/268261660_ON_GENDER_DIFFERENCES_IN_THE_REACTION_TIMES_OF_SPRINTERS_AT_THE_2008_BEIJING_OLYMPICS/links/54f6ff370cf210398e903082/ON-GENDER-DIFFERENCES-IN-THE-REACTION-TIMES-OF-SPRINTERS-AT-THE-2008-BEIJING-OLYMPICS.pdf",
+   "meta": "DB Lipps , JT Eckner, JK Richardson … - American Society of …, 2009 - researchgate.net",
+   "year": 2009,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 43,
+   "title": "Prestart psychophysiological profile of a 200-m canoe athlete: A comparison of best and worst reaction times",
+   "link": "https://biofeedback.kglmeridian.com/view/journals/biof/43/2/article-p73.xml",
+   "meta": "S Christie, P Werthner - Biofeedback, 2015 - biofeedback.kglmeridian.com",
+   "year": 2015,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 44,
+   "title": "[PDF] Exploring movement-related cortical potentials, reaction time and force production during the sprint block start of expert and novice sprinters : A case series",
+   "link": "https://scholar.sun.ac.za/server/api/core/bitstreams/3c343291-5ac7-4fde-810b-05bcbb0679ac/content",
+   "meta": "M Botha - 2023 - scholar.sun.ac.za",
+   "year": 2023,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 45,
+   "title": "[C] A method comparison study of accelarometer based block response times in sprinting",
+   "link": null,
+   "meta": "J Holmes, K Hayes, AJ Harrison - 2018 - International Society of …",
+   "year": 2018,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 46,
+   "title": "Preliminary Design and Construction of Reaction Time Platform for Swimming Start Block‏‎",
+   "link": "https://jast.uma.ac.ir/article_1450.html",
+   "meta": "M Barghamadi , H Sheikhalizade … - Journal of Advanced …, 2021 - jast.uma.ac.ir",
+   "year": 2021,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 47,
+   "title": "Deciding when to start in 100-m sprints at Athletic World Championships",
+   "link": "https://ieeexplore.ieee.org/abstract/document/9059442/",
+   "meta": "K Mukai , R Onagawa , T Tanaka … - … on Knowledge and …, 2020 - ieeexplore.ieee.org",
+   "year": 2020,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 48,
+   "title": "Biofeedback reaction - time training: Toward Olympic gold",
+   "link": "https://biofeedback.kglmeridian.com/view/journals/biof/39/1/article-p7.xml",
+   "meta": "RH Harvey , MK Beauchamp , M Saab… - …, 2011 - biofeedback.kglmeridian.com",
+   "year": 2011,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 49,
+   "title": "Improvement in sprint start performance by modulating an initial loading location on the starting blocks",
+   "link": "https://www.tandfonline.com/doi/abs/10.1080/02640414.2020.1787698",
+   "meta": "R Nagahara, S Gleadhill , Y Ohshima - Journal of Sports Sciences, 2020 - Taylor & Francis",
+   "year": 2020,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 50,
+   "title": "[HTML] Analysis of the start to the first hurdle in 110 m hurdles at the IAAF World Athletics Championships Beijing 2015",
+   "link": "https://www.academia.edu/download/75991928/d8f009a169aa284c67a9054eb38761e04495.pdf",
+   "meta": "JLL del Amo, MC Rodríguez, DW Hill … - Journal of Human Sport …, 2018 - academia.edu",
+   "year": 2018,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 51,
+   "title": "The science of speed: Determinants of performance in the 100 m sprint",
+   "link": "https://journals.sagepub.com/doi/abs/10.1260/1747-9541.6.3.479",
+   "meta": "AS Majumdar, RA Robergs - International Journal of Sports …, 2011 - journals.sagepub.com",
+   "year": 2011,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 52,
+   "title": "[PDF] Biomechanical analysis of the sprint and hurdles events at the 2009 IAAF World Championships in Athletics",
+   "link": "http://www.meathathletics.ie/devathletes/pdf/Biomechanics%20of%20Sprints.pdf",
+   "meta": "R Graubner, E Nixdorf - Positions, 2009 - meathathletics.ie",
+   "year": 2009,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 53,
+   "title": "Starting block performance in sprinters : a statistical method for identifying discriminative parameters of the performance and an analysis of the effect of providing …",
+   "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3880880/",
+   "meta": "S Fortier, FA Basset , GA Mbourou… - Journal of sports …, 2005 - pmc.ncbi.nlm.nih.gov",
+   "year": 2005,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 54,
+   "title": "Mathematical model of the influence of the time of start reaction in 100 m sprint run",
+   "link": "https://journals.ku.edu.kw/kjs/index.php/KJS/article/view/10170",
+   "meta": "N Janjić, D Kapor , D Doder , L Doder… - Kuwait Journal of …, 2022 - journals.ku.edu.kw",
+   "year": 2022,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 55,
+   "title": "Timing of gun fire influences sprinters ' multiple joint reaction times of whole body in block start",
+   "link": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2017.00810/full",
+   "meta": "M Otsuka , T Kurihara , T Isaka - Frontiers in Psychology, 2017 - frontiersin.org",
+   "year": 2017,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 56,
+   "title": "Sprint start performance: the potential influence of triceps surae electromechanical delay",
+   "link": "https://www.tandfonline.com/doi/abs/10.1080/14763141.2019.1657932",
+   "meta": "ED Crotty, K Hayes, AJ Harrison - Sports Biomechanics, 2022 - Taylor & Francis",
+   "year": 2022,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 57,
+   "title": "Comparison of anthropometric characteristics and sprint start performance between elite adolescent and adult sprint athletes",
+   "link": "https://www.tandfonline.com/doi/abs/10.1080/17461391.2010.536580",
+   "meta": "D Aerenhouts , C Delecluse, F Hagman… - European Journal of …, 2012 - Taylor & Francis",
+   "year": 2012,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 58,
+   "title": "COMPARATIVE STUDY ON REACTION TIME OF OLYMPICS MALE SPRINTERS",
+   "link": "https://books.google.com/books?hl=en&lr=&id=kh1fEAAAQBAJ&oi=fnd&pg=PA419&dq=(%22reaction+time%22+OR+%22response+time%22)+(sprint+OR+sprinter+OR+sprinters+OR+%22false+start%22+OR+%22starting+blocks%22)+(championships+OR+Olympic+OR+IAAF+OR+%22World+Athletics%22)&ots=mNaW0aKhq6&sig=7ctbEDcgCV49pgk36lm5rSanMDk",
+   "meta": "D Ghosh, K Chatterjee - EXIGENCY OF EXISTENCE: A QUEST, 2017 - books.google.com",
+   "year": 2017,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 59,
+   "title": "[PDF] Imagery improves reaction time in elite sprinters",
+   "link": "https://pdfs.semanticscholar.org/f130/79b19e6f14cb2b9e32f02bceece282fe4681.pdf",
+   "meta": "MT Iftikhar , CJ Mallett … - … Congress on Sport …, 2018 - pdfs.semanticscholar.org",
+   "year": 2018,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 60,
+   "title": "[C] The influence of sprint block start elements on initial velocity of 100 metre race",
+   "link": null,
+   "meta": "R Terczyński - Central European Journal of …, 2014 - … Szczeciński. Wydawnictwo Naukowe …",
+   "year": 2014,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 61,
+   "title": "Start and turn performances of elite sprinters at the 2016 European Championships in swimming",
+   "link": "https://www.tandfonline.com/doi/abs/10.1080/14763141.2018.1435713",
+   "meta": "JE Morais , DA Marinho, R Arellano … - Sports …, 2019 - Taylor & Francis",
+   "year": 2019,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 62,
+   "title": "[HTML] Biomechanical performance factors in the track and field sprint start: a systematic review",
+   "link": "https://www.mdpi.com/1660-4601/19/7/4074",
+   "meta": "MJ Valamatos , JM Abrantes, F Carnide … - International Journal of …, 2022 - mdpi.com",
+   "year": 2022,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 63,
+   "title": "A novel method for the evaluation and certification of false start apparatus in sprint running",
+   "link": "https://www.sciencedirect.com/science/article/pii/S1877705813011247",
+   "meta": "S Willwacher , MK Feldker, S Zohren, V Herrmann… - Procedia …, 2013 - Elsevier",
+   "year": 2013,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 64,
+   "title": "\" Go\" signal intensity influences the sprint start",
+   "link": "https://www.ovid.com/jnls/acsm-msse/abstract/10.1249/mss.0b013e31816770e1~go-signal-intensity-influences-the-sprint-start",
+   "meta": "AM Brown, ZR Kenwell, BKV Maraj… - Medicine & Science in …, 2008 - ovid.com",
+   "year": 2008,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 65,
+   "title": "[PDF] RELATIONSHIP BETWEEN AUDITORY REACTION TIME AND RUNNING TIME OF SPRINTERS OF OBAFEMI AWOLOWO UNIVERSITY ATHLETICS TEAM",
+   "link": "https://www.researchgate.net/profile/Moshood-Mamudu/publication/355445252_RELATIONSHIP_BETWEEN_AUDITORY_REACTION_TIME_AND_RUNNING_TIME_OF_SPRINTERS_OF_OBAFEMI_AWOLOWO_UNIVERSITY_ATHLETICS_TEAM/links/617136e7c10b387664c94fb3/RELATIONSHIP-BETWEEN-AUDITORY-REACTION-TIME-AND-RUNNING-TIME-OF-SPRINTERS-OF-OBAFEMI-AWOLOWO-UNIVERSITY-ATHLETICS-TEAM.pdf?_sg%5B0%5D=started_experiment_milestone&origin=journalDetail&_rtd=e30%3D",
+   "meta": "MM Mamudu , SA Adeyanju - researchgate.net",
+   "year": null,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 66,
+   "title": "Coordination aspects of an effective sprint start",
+   "link": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2018.01138/full",
+   "meta": "Z Borysiuk, Z Waśkiewicz , K Piechota , P Pakosz … - Frontiers in …, 2018 - frontiersin.org",
+   "year": 2018,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 67,
+   "title": "[HTML] Master swimmers' start reaction time : a trainable skill for health and performance",
+   "link": "https://www.sportsmedicinejournal.com/archivio/4594/articoli/46018/",
+   "meta": "C Bratta, L Leggiero, C Galvani… - Medicina dello …, 2025 - sportsmedicinejournal.com",
+   "year": 2025,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 68,
+   "title": "Kinematic and kinetic comparisons of elite and well-trained sprinters during sprint start",
+   "link": "https://journals.lww.com/nsca-jscr/fulltext/2010/04000/kinematic_and_kinetic_comparisons_of_elite_and.2.aspx",
+   "meta": "J Slawinski, A Bonnefoy, JM Levêque… - The Journal of …, 2010 - journals.lww.com",
+   "year": 2010,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 69,
+   "title": "Do longer legs win races?: Examining the role of limb length, explosive power and reaction time in sprinting",
+   "link": "https://dialnet.unirioja.es/servlet/articulo?codigo=10794751",
+   "meta": "MK Marwat , SZ Khan , S Hussain… - … en educación física …, 2026 - dialnet.unirioja.es",
+   "year": 2026,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 70,
+   "title": "The effect of auditory stimulus training on swimming start reaction time",
+   "link": "https://www.tandfonline.com/doi/abs/10.1080/14763141.2017.1409260",
+   "meta": "C Papic , P Sinclair , C Fornusek, R Sanders - Sports biomechanics, 2019 - Taylor & Francis",
+   "year": 2019,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 71,
+   "title": "[HTML] Thinking outside the block: External focus of attention improves reaction times and movement preparation times in collegiate track sprinters",
+   "link": "https://www.mdpi.com/2075-4663/6/4/120",
+   "meta": "AJ Kovacs , GF Miles, HS Baweja - Sports, 2018 - mdpi.com",
+   "year": 2018,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 72,
+   "title": "Start smart: Biomechanical differences and training implications of three sprint start techniques",
+   "link": "https://journals.sagepub.com/doi/abs/10.1177/17479541251398765",
+   "meta": "JZ Lin , BX Huang, TM Hsu… - International Journal of …, 2025 - journals.sagepub.com",
+   "year": 2025,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 73,
+   "title": "Sprint start kinematics during competition in elite and world-class male and female sprinters",
+   "link": "https://www.tandfonline.com/doi/abs/10.1080/02640414.2016.1221519",
+   "meta": "S Ciacci , F Merni, S Bartolomei … - Journal of sports …, 2017 - Taylor & Francis",
+   "year": 2017,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 74,
+   "title": "[PDF] Reaction time and spatiotemporal variables as markers of sprint start performance",
+   "link": "https://www.researchgate.net/profile/Ioannis-Kesoglou-2/publication/335834913_Reaction_Time_and_Spatiotemporal_Variables_as_Markers_of_Sprint_Start_Performance/links/5f8d399e92851c14bcd2a622/Reaction-Time-and-Spatiotemporal-Variables-as-Markers-of-Sprint-Start-Performance.pdf?_sg%5B0%5D=started_experiment_milestone&origin=journalDetail&_rtd=e30%3D",
+   "meta": "I Kesoglou, A Smirniotou - Am J Sports Sci, 2019 - researchgate.net",
+   "year": 2019,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 75,
+   "title": "[PDF] Analysis of the start to the first hurdle in 110m hurdles at the IAAF World Athletics Championships Beijing 2015",
+   "link": "https://idus.us.es/bitstreams/03c3433c-0547-4a55-8ee5-125703d58ea1/download",
+   "meta": "C Rodríguez Fernández , JL López del Amo, DW Hill … - 2018 - idus.us.es",
+   "year": 2018,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 76,
+   "title": "The biomechanical model of the sprint start and block acceleration.",
+   "link": "https://openurl.ebsco.com/contentitem/gcd:23639314?sid=ebsco:plink:crawler-gcd&id=ebsco:gcd:23639314&crl=c&jrnl=1451740X",
+   "meta": "M Čoh, K Tomažin, S Štuhec - Facta Universitatis: Series …, 2006 - openurl.ebsco.com",
+   "year": 2006,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 77,
+   "title": "The influence of ego depletion on sprint start performance in athletes without track and field experience",
+   "link": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2015.01207/full",
+   "meta": "C Englert , BN Persaud, RRD Oudejans … - Frontiers in …, 2015 - frontiersin.org",
+   "year": 2015,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 78,
+   "title": "The comparison of sprint reaction time and anaerobic power of young football players, volleyball players and wrestlers",
+   "link": "https://search.proquest.com/openview/6b0aefeabd6c77b236cee18e6c85f0ce/1?pq-origsite=gscholar&cbl=666319",
+   "meta": "Y Aksoy , SA Agaoglu - Kinesiologia Slovenica, 2017 - search.proquest.com",
+   "year": 2017,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 79,
+   "title": "Examination of the Relationship Between the Reaction Time , Competition Result With the Competition Hour in the World Indoor Championships (2006-2022): 60 …",
+   "link": "https://dergipark.org.tr/en/pub/tsed/article/1292928?issue_id=79549",
+   "meta": "N Satılmış , B Taşdemir , I Bayraktar … - Turkish Journal of Sport …, 2023 - dergipark.org.tr",
+   "year": 2023,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 80,
+   "title": "Sprint running performance monitoring: methodological and practical considerations",
+   "link": "https://link.springer.com/article/10.1007/s40279-015-0446-0",
+   "meta": "T Haugen , M Buchheit - Sports medicine, 2016 - Springer",
+   "year": 2016,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 81,
+   "title": "[C] Correlation of reaction time and performance in 60 and 200m sprint running",
+   "link": null,
+   "meta": "G Paradisis , E Zacharogiannis , S Tziortzis - Medicine & Science in Sports & …, 2004 - LWW",
+   "year": 2004,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 82,
+   "title": "Relationship between final performance and block times with the traditional and the new starting platforms with a back plate in international swimming championship …",
+   "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3873660/",
+   "meta": "A Garcia-Hermoso , Y Escalante… - Journal of Sports …, 2013 - pmc.ncbi.nlm.nih.gov",
+   "year": 2013,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 83,
+   "title": "The effect of the start and finish in the 50 m and 100 m freestyle performance in elite male swimmers",
+   "link": "https://www.tandfonline.com/doi/abs/10.1080/24748668.2021.1969514",
+   "meta": "DA Marinho, TM Barbosa , HP Neiva … - … Analysis in Sport, 2021 - Taylor & Francis",
+   "year": 2021,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 84,
+   "title": "[HTML] Comparative study of the sprint start biomechanics of men's 100 m athletes of different levels",
+   "link": "https://www.mdpi.com/2076-3417/14/10/4083",
+   "meta": "Z Li, Y Peng, Q Li - Applied Sciences, 2024 - mdpi.com",
+   "year": 2024,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 85,
+   "title": "Sprint start kinetics of amputee and non-amputee sprinters",
+   "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0166219",
+   "meta": "S Willwacher , V Herrmann, K Heinrich, J Funken … - PloS one, 2016 - journals.plos.org",
+   "year": 2016,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 86,
+   "title": "Comparison of the start, turn and finish performance of elite swimmers in 100 m and 200 m races",
+   "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7196746/",
+   "meta": "DA Marinho, TM Barbosa , HP Neiva … - Journal of sports …, 2020 - pmc.ncbi.nlm.nih.gov",
+   "year": 2020,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 87,
+   "title": "[C] Thinking outside the block: External focus of attention shortens reaction times in collegiate track sprinters",
+   "link": null,
+   "meta": "G Miles - 2018",
+   "year": 2018,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 88,
+   "title": "[PDF] Kinematic and kinetic parameters of the sprint start and start acceleration model of top sprinters",
+   "link": "https://www.researchgate.net/profile/Ales-Dolenec/publication/267241048_Kinematic_and_kinetic_parameters_of_sprint_start_and_start_acceleration_model_of_top_sprinters/links/5489eeaf0cf225bf669c7700/Kinematic-and-kinetic-parameters-of-sprint-start-and-start-acceleration-model-of-top-sprinters.pdf",
+   "meta": "M Čoh, B Jošt, B Škof, K Tomažin, A Dolenec - Gymnica, 1998 - researchgate.net",
+   "year": 1998,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 89,
+   "title": "[PDF] The Development of Microcontroller-based Reaction Time Measuring Instrument for Sprinter",
+   "link": "https://www.scitepress.org/Papers/2017/70655/70655.pdf",
+   "meta": "B Septiandi, R Saputra, A Rusdiana - Proceedings ofthe 2nd …, 2018 - scitepress.org",
+   "year": 2018,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 90,
+   "title": "The relationship between emotional intelligence, reaction time , aerobic capacity and performance in female track and field athletes at the Universities of Tehran",
+   "link": "https://journals.sagepub.com/doi/abs/10.3233/WOR-182790",
+   "meta": "M Maghsoudipour, H Shabani, MG Najafabadi … - Work, 2018 - journals.sagepub.com",
+   "year": 2018,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 91,
+   "title": "Biomechanical structure of sprint start and effect of biological feedback methods on sprint start performance",
+   "link": "https://dergipark.org.tr/en/pub/tsed/issue/21501/230601",
+   "meta": "İ Ozsu - Turkish Journal of Sport and Exercise, 2014 - dergipark.org.tr",
+   "year": 2014,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 92,
+   "title": "[PDF] Identifying reaction times in sprint starts: a comparison of wavelet analysis and custom algorithms",
+   "link": "https://iacss.org/wp-content/uploads/2024/09/IJCSS-Volume2_Edition2.pdf#page=129",
+   "meta": "MTG Pain - International Journal of Computer Science in Sport, 2003 - iacss.org",
+   "year": 2003,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 93,
+   "title": "Feasibility of volitional reaction time tests in athletes: A systematic review",
+   "link": "https://journals.humankinetics.com/view/journals/mcj/26/2/article-p291.xml",
+   "meta": "D Janicijevic , A Garcia-Ramos - Motor control, 2022 - journals.humankinetics.com",
+   "year": 2022,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 94,
+   "title": "Relationship between reaction time , sprint race result and age for male sprinters at 2004 Olimpic Games in Athens",
+   "link": "https://www.croris.hr/crosbi/publikacija/prilog-skup/542742",
+   "meta": "V Babić , T Mitrović, A Delija - World Congress of Performance Analysis of …, 2008 - croris.hr",
+   "year": 2008,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 95,
+   "title": "Study regarding the relation between the accumulation of psycho-motor experience in the practice of sprint events, and the value of the start reaction time",
+   "link": "https://gymnasium.ub.ro/journal/article/view/251",
+   "meta": "DI Alexe - Gymnasium, 2012 - gymnasium.ub.ro",
+   "year": 2012,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 96,
+   "title": "World-class male sprinters and high hurdlers have similar start and initial acceleration techniques",
+   "link": "https://www.frontiersin.org/journals/sports-and-active-living/articles/10.3389/fspor.2019.00023/full",
+   "meta": "IN Bezodis , A Brazil… - Frontiers in Sports and …, 2019 - frontiersin.org",
+   "year": 2019,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 97,
+   "title": "[C] Neuromuscular performance of the plantar flexors in sprinters and the contribution to the sprint start response time sequence",
+   "link": null,
+   "meta": "ED Crotty - 2022",
+   "year": 2022,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 98,
+   "title": "[PDF] Reaction time trends in the sprint and hurdle events at the 2004 Olympic Games: Differences between male and female athletes",
+   "link": "https://www.researchgate.net/profile/Vesna-Babic/publication/259980863_Reaction_Time_Trends_in_the_Sprint_and_Hurdle_Events_at_the_2004_Olympic_Games_Differences_Between_Male_and_Female_Athletes/links/02e7e52ee882a31241000000/Reaction-Time-Trends-in-the-Sprint-and-Hurdle-Events-at-the-2004-Olympic-Games-Differences-Between-Male-and-Female-Athletes.pdf",
+   "meta": "V Babiç , A Delalija - New Studies in Athletics, 2009 - researchgate.net",
+   "year": 2009,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 99,
+   "title": "A new detection of a start action in the track and field",
+   "link": "https://www.jstage.jst.go.jp/article/sicetr1965/36/2/36_2_159/_article/-char/ja/",
+   "meta": "S YOKOKURA - Transactions of the Society of Instrument and …, 2000 - jstage.jst.go.jp",
+   "year": 2000,
+   "abstract": "",
+   "doi": null
+  },
+  {
+   "gs_rank": 100,
+   "title": "The effect of the start reaction speed exercise on the increase in acceleration in students of the 2025/2026 academic year",
+   "link": "https://jurnal.peneliti.net/index.php/IJEIT/article/view/14829",
+   "meta": "J Syaranamual, IM Latar - International Journal of Education …, 2026 - jurnal.peneliti.net",
+   "year": 2026,
+   "abstract": "",
+   "doi": null
+  }
+ ]
+}

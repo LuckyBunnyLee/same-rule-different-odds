@@ -1,0 +1,17 @@
+median-ish mu=148.1 ms, sigma=0.1108
+conditional P(<0.100) at h=v=0: 5.216425729697066e-05
+marginal P(<0.100) = 2.78e-03 (1 in 360); Fiore reports 2.76e-3 (1 in 362)
+shift location by -10 ms -> marginal P=8.55e-03, ratio=3.08
+shift location by -5 ms -> marginal P=4.84e-03, ratio=1.74
+shift location by -3 ms -> marginal P=3.87e-03, ratio=1.39
+shift location by +3 ms -> marginal P=2.01e-03, ratio=0.72
+shift location by +5 ms -> marginal P=1.62e-03, ratio=0.58
+shift location by +10 ms -> marginal P=9.61e-04, ratio=0.35
+shift log-sigma by -0.2 -> marginal P=9.56e-04, ratio=0.34
+shift log-sigma by -0.1 -> marginal P=1.66e-03, ratio=0.60
+shift log-sigma by +0.1 -> marginal P=4.48e-03, ratio=1.61
+shift log-sigma by +0.2 -> marginal P=6.94e-03, ratio=2.50
+heat-effect quantile 0.1: P(<0.100)=7.21e-06
+heat-effect quantile 0.5: P(<0.100)=4.35e-04
+heat-effect quantile 0.9: P(<0.100)=7.65e-03
+heat-effect quantile 0.975: P(<0.100)=2.13e-02

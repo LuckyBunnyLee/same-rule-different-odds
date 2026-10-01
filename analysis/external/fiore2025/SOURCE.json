@@ -1,0 +1,32 @@
+{
+ "repository": "https://github.com/ofiore/Thesis",
+ "commit": "85d9a60b68741f308cd1670e2e425c1f4a640341",
+ "retrieved_utc": "2026-09-30T17:35:42Z",
+ "note": "Fiore, Schifano & Yan 2025 (Am Stat 79(4):500-507). The source repository has no licence file, so none of these files is redistributed here: scripts/fetch_third_party.py downloads them from this commit and checks each sha256 below. source_extract.txt (the manuscript lines whose parameters are transcribed in analysis/fiore2025_params.csv) is regenerated locally by the same script.",
+ "files": {
+  "Manuscript/manuscript.tex": {
+   "url": "https://raw.githubusercontent.com/ofiore/Thesis/85d9a60b68741f308cd1670e2e425c1f4a640341/Manuscript/manuscript.tex",
+   "bytes": 39719,
+   "sha256": "a118f617ec47860008f6f0d9af44aa57b3be67556089d576c803bd446120949c",
+   "copied_here": false
+  },
+  "Manuscript/supp.tex": {
+   "url": "https://raw.githubusercontent.com/ofiore/Thesis/85d9a60b68741f308cd1670e2e425c1f4a640341/Manuscript/supp.tex",
+   "bytes": 10900,
+   "sha256": "22c85d394a3ed1e257b059e8611dc3bc0de72cb61f359eb019b3bbcbe5729897",
+   "copied_here": false
+  },
+  "Code/ReactionBarrierAnalysis.Rmd": {
+   "url": "https://raw.githubusercontent.com/ofiore/Thesis/85d9a60b68741f308cd1670e2e425c1f4a640341/Code/ReactionBarrierAnalysis.Rmd",
+   "bytes": 19333,
+   "sha256": "3b6216e07af5cfa0bdd1a37c65e661f0a5a24724f5c0d73c4c062bc25826599f",
+   "copied_here": false
+  },
+  "Manuscript/ComparisonOfVenueEffects.pdf": {
+   "url": "https://raw.githubusercontent.com/ofiore/Thesis/85d9a60b68741f308cd1670e2e425c1f4a640341/Manuscript/ComparisonOfVenueEffects.pdf",
+   "bytes": 6562,
+   "sha256": "1254ba381a51418ee3cdad7c47e975f8daa0de871ca82a6e4135a3a97d2273f2",
+   "copied_here": false
+  }
+ }
+}
