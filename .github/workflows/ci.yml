@@ -11,12 +11,10 @@ on:
 # (Haswell kernel, x86-64-v3), and Python is the exact version in requirements.txt.
 env:
   PYTHONHASHSEED: "0"
-  # One BLAS thread: multithreaded OpenBLAS crashed (access violation) on the 4-core runner; outputs are identical.
+  # One BLAS thread everywhere: multithreaded OpenBLAS crashed (access violation) on hosted runners.
   OPENBLAS_NUM_THREADS: "1"
   OMP_NUM_THREADS: "1"
   MKL_NUM_THREADS: "1"
-  OPENBLAS_CORETYPE: Haswell
-  NPY_DISABLE_CPU_FEATURES: X86_V4
 
 jobs:
   tests:
@@ -34,9 +32,15 @@ jobs:
         run: python -m pip install -r requirements.txt
       - name: Fetch third-party inputs (pinned commit, sha256-checked; not redistributed)
         run: python scripts/fetch_third_party.py
-      - name: Unit tests
+      - name: Runner CPU and BLAS (diagnostics)
+        run: python -c "import platform, numpy; print(platform.processor()); numpy.show_config()"
+      - name: Unit tests (CPU kernels auto-detected; tests do not need byte-identical output)
         run: python -m pytest analysis/tests analysis/measure/tests -q -p no:cacheprovider
       - name: Re-run five producers and compare byte for byte
+        # Kernels pinned to those of the machine that produced the committed outputs (Haswell kernel, x86-64-v3).
+        env:
+          OPENBLAS_CORETYPE: Haswell
+          NPY_DISABLE_CPU_FEATURES: X86_V4
         run: python scripts/verify_producers.py producers.json --only analysis/outputs/fig.json analysis/outputs/probe.json analysis/outputs/lit_audit.json analysis/numbers.json analysis/results.md
 
   mock:
@@ -53,6 +57,9 @@ jobs:
       - name: Install pinned dependencies
         run: python -m pip install -r requirements.txt
       - name: Mock pipeline
+        env:
+          OPENBLAS_CORETYPE: Haswell
+          NPY_DISABLE_CPU_FEATURES: X86_V4
         run: python analysis/run_all.py --mock
       - name: Mock data regenerates byte for byte
         run: git diff --exit-code -- analysis/mock/data
