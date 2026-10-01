@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+# Windows only, by design: every committed output was produced on Windows 11, the checks below are byte-exact, and the
+# analysis scripts write text with the platform's line ending (CRLF here), so a Linux re-run differs by construction.
+# The OpenBLAS kernel and NumPy's SIMD level are pinned to those of the machine that produced the outputs
+# (Haswell kernel, x86-64-v3), and Python is the exact version in requirements.txt.
+env:
+  PYTHONHASHSEED: "0"
+  OPENBLAS_CORETYPE: Haswell
+  NPY_DISABLE_CPU_FEATURES: X86_V4
+
+jobs:
+  tests:
+    name: Unit tests and byte-for-byte producer checks
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - name: Install pinned dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Fetch third-party inputs (pinned commit, sha256-checked; not redistributed)
+        run: python scripts/fetch_third_party.py
+      - name: Unit tests
+        run: python -m pytest analysis/tests analysis/measure/tests -q -p no:cacheprovider
+      - name: Re-run five producers and compare byte for byte
+        run: python scripts/verify_producers.py producers.json --only analysis/outputs/fig.json analysis/outputs/probe.json analysis/outputs/lit_audit.json analysis/numbers.json analysis/results.md
+
+  mock:
+    name: Mock pipeline (no network, no raw data)
+    runs-on: windows-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - name: Install pinned dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Mock pipeline
+        run: python analysis/run_all.py --mock
+      - name: Mock data regenerates byte for byte
+        run: git diff --exit-code -- analysis/mock/data
