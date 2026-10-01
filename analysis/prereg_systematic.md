@@ -369,3 +369,13 @@ on the corrected data. **No verdict changed** (H1 SUPPORTS the mechanism, observ
 SAMPLING CAN FLIP THE SIGN, Haugen EXCEEDS and Han WITHIN same-rule noise; H4 CHAMPIONSHIP-DEPENDENT; H5 NOT
 REPRODUCED for the excluding-2022 row only, VENUE MATERIAL; O2 NOT CONFOUNDED). The numbers behind them moved slightly;
 every change is listed in `notes/bugfix_rerun_diff.md`.
+
+### Addendum 6 (2026-10-01): correction to the Brosnan et al. (2017) reference value
+
+The reference gap above used 0.119 s for Brosnan et al. (2017). Their revised thresholds are 115 ms for men and
+119 ms for women, so 0.119 s is the women's value, while every H2 comparison here is for men (Fiore et al.'s 0.094 s
+is also the men's 1e-3 barrier). The men's gap is 21 ms (0.094 to 0.115 s), not 25 ms. No verdict changes: the H2
+rule uses the absolute 10 ms materiality criterion (C1, C2), not the gap. `systematic.py` keeps the registered
+constant (THRESH_BROSNAN_S = 0.119), so its descriptive `share_of_gap` fields are relative to 25 ms; against the
+men's 21 ms they would be about 1.19 times larger. The abstract and Figure 1B now use the men's value
+(`fig.fit_brosnan_115ms`, which replaces `fig.fit_brosnan_119ms`).

@@ -1,6 +1,6 @@
 """Numbers shown in the confound figure (analysis/make_figures.py --fig confound), keys 'fig.*'.
 
-fit_* : for each fixed line (the 0.100 s rule; 0.094 s, Fiore et al. 2025; 0.119 s, Brosnan et al. 2017, upper), the
+fit_* : for each fixed line (the 0.100 s rule; 0.094 s, Fiore et al. 2025; 0.115 s, Brosnan et al. 2017, men), the
         number of championships whose 95% CI of the 1-in-1,000 barrier contains it (men, ex-Gaussian, race-cluster
         bootstrap; systematic.json table h2_per_championship). Kept as registered numbers; no longer drawn.
 barrier_below_rule / barrier_above_rule : panel B colours the championships by these.
@@ -25,7 +25,7 @@ from common import num, write_result
 
 LINES_MS = {"rule_100ms": (100.0, "the 0.100 s rule"),
             "fiore_094ms": (94.0, "0.094 s (Fiore et al. 2025)"),
-            "brosnan_119ms": (119.0, "0.119 s (Brosnan et al. 2017, upper)")}
+            "brosnan_115ms": (115.0, "0.115 s (Brosnan et al. 2017, men)")}
 
 
 def barrier_table(sysj: dict) -> pd.DataFrame:

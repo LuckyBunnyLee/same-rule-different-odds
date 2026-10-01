@@ -19,7 +19,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "analysis" / "outputs"
-LINES = {"rule_100ms": 100.0, "fiore_094ms": 94.0, "brosnan_119ms": 119.0}
+LINES = {"rule_100ms": 100.0, "fiore_094ms": 94.0, "brosnan_115ms": 115.0}
 
 
 def recount(sysj: dict) -> dict:

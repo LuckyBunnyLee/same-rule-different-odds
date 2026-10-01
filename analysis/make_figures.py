@@ -335,7 +335,7 @@ def fig_confound(args):
     B  The limit moves with the championship: each championship's 1-in-1,000 barrier (men, ex-Gaussian, bootstrap
        95% CIs; systematic.json table h2_per_championship), sorted and coloured by whether it lies below the 0.100 s
        rule (checked against fig.barrier_below_rule); the band between the published proposals 0.094 s (Fiore et al.
-       2025) and 0.119 s (Brosnan et al. 2017, upper) shaded, its edges named; the bold 0.100 s rule; a bracket for
+       2025) and 0.115 s (Brosnan et al. 2017, men) shaded, its edges named; the bold 0.100 s rule; a bracket for
        the championship spread (systematic.h2_champ_barrier_range_ms_exgauss_M).
     C  Same rule, different odds: the modelled rate of legitimate starts wrongly disqualified per 1,000 at each
        championship under the current rule (guardband.json table championships, P0, with CIs; log axis), the uniform
@@ -343,13 +343,13 @@ def fig_confound(args):
        false starts no longer flagged (guard.b_p1_n_unflagged of guard.b_n_fs_with_rt).
     B and C label only Eugene 2022 (ringed, one accent colour in both) and the championship at the other end.
     Segoe UI (DejaVu Sans if missing); exact size (no tight bbox); a one-line footnote states how B and C differ.
-    Only literature constants are typed (0.16; 0.094, 0.100, 0.119 s); every other plotted or printed number comes
+    Only literature constants are typed (0.16; 0.094, 0.100, 0.115 s); every other plotted or printed number comes
     from systematic.json, guardband.json or fig.json."""
     import matplotlib.pyplot as plt
     from matplotlib.ticker import LogLocator, NullLocator
     sj, gj, fj = load(args.systematic), load(args.guardband), load(args.fignums)
     n, gn, fn = sj["numbers"], gj["numbers"], fj["numbers"]
-    haugen_r, fiore_ms, rule_ms, brosnan_ms = 0.16, 94.0, 100.0, 119.0
+    haugen_r, fiore_ms, rule_ms, brosnan_ms = 0.16, 94.0, 100.0, 115.0
     blue, orange, aqua, accent = _mute(PAL["blue"]), _mute(PAL["orange"]), _mute(PAL["aqua"]), PAL["violet"]
     band = "#ecebe6"
     fs, fs_title = 6.2, 7.8
@@ -417,7 +417,7 @@ def fig_confound(args):
         ax1.axhspan(fiore_ms, brosnan_ms, color=band, lw=0, zorder=0)
         for yv in (fiore_ms, brosnan_ms):
             ax1.axhline(yv, color=MUTED, lw=0.7, ls=(0, (3, 2)), zorder=1)
-        ax1.text(-0.6, brosnan_ms + 0.9, "0.119 s Brosnan et al. 2017", ha="left", va="bottom", fontsize=fs,
+        ax1.text(-0.6, brosnan_ms + 0.9, "0.115 s Brosnan et al. 2017", ha="left", va="bottom", fontsize=fs,
                  color=INK2)
         ax1.text(x_hi - 0.25, fiore_ms - 0.9, "0.094 s Fiore et al. 2025", ha="right", va="top", fontsize=fs,
                  color=INK2)

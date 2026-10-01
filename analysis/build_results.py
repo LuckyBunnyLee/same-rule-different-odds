@@ -897,7 +897,7 @@ def fig_text():
                                f"rule ({g('fig.barrier_below_rule')} of {g('fig.fit_rule_100ms', 'n_champs')} below), "
                                f"spanning {f(g('systematic.h2_champ_barrier_range_ms_exgauss_M', 'min_ms'), 0)}-"
                                f"{f(g('systematic.h2_champ_barrier_range_ms_exgauss_M', 'max_ms'), 0)} ms, against the "
-                               f"shaded band between the published proposals 0.094 s (Fiore et al. 2025) and 0.119 s "
+                               f"shaded band between the published proposals 0.094 s (Fiore et al. 2025) and 0.115 s "
                                f"(Brosnan et al. 2017); (C) the modelled rate of legitimate starts wrongly disqualified per "
                                f"1,000 at each championship (log scale; SIMULATION) under the current rule, a uniform guard "
                                f"band and per-championship calibration, with the guard band's cost "
@@ -907,7 +907,7 @@ def fig_text():
                                f"Compact layout (7.0 x 3.2 in): B and C label only Eugene 2022 (WCH2022, ringed) and the "
                                f"championship at the far end. Registered but not drawn: championships "
                                f"whose barrier CI contains 0.100 s: {g('fig.fit_rule_100ms')}; 0.094 s: "
-                               f"{g('fig.fit_fiore_094ms')}; 0.119 s: {g('fig.fit_brosnan_119ms')}; none: {g('fig.fit_none')}."),
+                               f"{g('fig.fit_fiore_094ms')}; 0.115 s: {g('fig.fit_brosnan_115ms')}; none: {g('fig.fit_none')}."),
     ]
 
 

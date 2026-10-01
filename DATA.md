@@ -126,6 +126,8 @@ case a script fetches the file from its source and verifies it.
 | `lit/audit_studies.csv` | 89 | coded finding | ours | literature audit |
 | `lit/audit_screening.csv` | 558 | screened record | ours (metadata from search services) | literature audit |
 
+`races.csv` has one row for each of the 625 races scraped from World Athletics. The RT analyses also use races that appear only in Fiore et al.'s file (`rt_fiore.csv`, rebuilt by `scripts/fetch_third_party.py`), which has no race pages, so they span 836 races with at least one valid start (`descriptive.n_races`).
+
 Column definitions for the RT tables are in `data/README.md`; the measurement tables are described in
 `analysis/measure/README.md`.
 

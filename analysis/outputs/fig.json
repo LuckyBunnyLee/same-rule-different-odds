@@ -42,21 +42,25 @@
    ],
    "line_ms": 94.0
   },
-  "fit_brosnan_119ms": {
-   "value": 4,
-   "desc": "confound figure panel B: championships whose 95% CI of the 1-in-1,000 barrier (men, ex-Gaussian) contains 0.119 s (Brosnan et al. 2017, upper)",
+  "fit_brosnan_115ms": {
+   "value": 8,
+   "desc": "confound figure panel B: championships whose 95% CI of the 1-in-1,000 barrier (men, ex-Gaussian) contains 0.115 s (Brosnan et al. 2017, men)",
    "unit": "",
    "n_champs": 18,
    "champs": [
+    "WCH2025",
     "WCH2003",
+    "OG2024",
+    "WCH2005",
+    "WIC2025",
+    "WCH2023",
     "WCH2007",
-    "WCH2011",
-    "WCH2013"
+    "WCH2011"
    ],
-   "line_ms": 119.0
+   "line_ms": 115.0
   },
   "fit_none": {
-   "value": 9,
+   "value": 5,
    "desc": "confound figure panel B: championships whose barrier CI contains none of the three lines",
    "unit": "",
    "n_champs": 18,
@@ -65,11 +69,7 @@
     "WCH2009",
     "WCH2015",
     "OG2020",
-    "WCH2025",
-    "OG2024",
-    "WCH2005",
-    "WIC2025",
-    "WCH2023"
+    "WCH2013"
    ]
   },
   "barrier_below_rule": {
@@ -129,7 +129,7 @@
   "lines_ms": {
    "rule_100ms": 100.0,
    "fiore_094ms": 94.0,
-   "brosnan_119ms": 119.0
+   "brosnan_115ms": 115.0
   }
  }
 }

@@ -12,7 +12,7 @@ Wording rules: "championship-level" (not "athlete-independent"); cause unidentif
 
 ## Introduction
 
-One reaction time (RT) under 0.100 s disqualifies a sprinter, as it did Devon Allen at the Eugene Worlds. The rule assumes RT is comparable across championships, as do human-limit estimates (0.094 s, Fiore et al., 2025; 0.119 s, Brosnan et al., 2017) and conflicting RT effects, from starter holds (Haugen et al., 2013; r = 0.16) to rule changes (Han et al., 2025). Milloz et al. (2021) suspected start systems; this study tests whether championship variation manufactures such findings.
+One reaction time (RT) under 0.100 s disqualifies a sprinter, as it did Devon Allen at the Eugene Worlds. The rule assumes RT is comparable across championships, as do proposed limits for men (0.094 s, Fiore et al., 2025; 0.115 s, Brosnan et al., 2017) and conflicting RT effects, from starter holds (Haugen et al., 2013; r = 0.16) to rule changes (Han et al., 2025). Milloz et al. (2021) suspected start systems and Fiore et al. found Eugene fast; this study tests whether such variation is systematic and manufactures these findings.
 
 ## Methods
 
@@ -20,7 +20,7 @@ Data comprise {{descriptive.n_valid|,d}} official RTs from public results of {{d
 
 ## Results
 
-<!-- assert: [descriptive.meet_effect_range_ms] > (119 - 94) -->
+<!-- assert: [descriptive.meet_effect_range_ms] > (115 - 94) -->
 <!-- assert: [descriptive.meet_effect_range_ms@fastest] == 'WCH2022' and [descriptive.meet_effect_range_ms@slowest] == 'WCH2025' -->
 <!-- assert: int([descriptive.meet_effect_range_ms@fastest][-4:]) >= [descriptive.year_max] - 3 and int([descriptive.meet_effect_range_ms@slowest][-4:]) >= [descriptive.year_max] - 3 -->
 <!-- assert: [calibration.offset_mean_s] > 0 -->
@@ -34,9 +34,9 @@ Of {{audit.n_studies}} audited studies, {{audit.k_vulnerable_studies}} relied on
 <!-- assert: [systematic.h2_champ_barrier_range_ms_slognorm_M] > 25 and [systematic.h2_champ_barrier_range_ms_swald_M] > 25 and [systematic.h2_champ_barrier_range_ms_exgauss_M] > 25 -->
 Human-limit estimates spanned {{systematic.h2_champ_barrier_range_ms_exgauss_M@min_ms|.0f}}-{{systematic.h2_champ_barrier_range_ms_exgauss_M@max_ms|.0f}} ms across championships, a spread robust across distributions; venue moved Fiore et al.'s estimate {{systematic.h5_years_barrier_range_ms|.0f}} ms.
 <!-- assert: [detector.detector_median_range_ms] == 0 and [detector.force_onset_median_range_ms] > 0.5 * [descriptive.meet_effect_range_ms] -->
-<!-- assert: [probe.wch2022_faster_rounds] == [probe.wch2022_faster_rounds@n_rounds] and [probe.wch2022_faster_start_types] == [probe.wch2022_faster_start_types@n_start_types] and [probe.wch2022_days_faster_than_every_2023_day] == [probe.wch2022_days_faster_than_every_2023_day@n_days] -->
+<!-- assert: [probe.wch2025_straight_minus_200m_same_athlete_ms@lo] > 0 -->
 <!-- assert: [probe.wch2025_straight_lane_gradient_ms_per_lane@lo] > 0 and [probe.wch2025_straight_lane_gradient_ms_per_lane@n_days] == 4 and [descriptive.meet_effect_range_ms@slowest] == 'WCH2025' -->
-Force traces place offsets before detection. The same {{probe.same_athletes_2022_to_2023_change_ms@n_athletes}} athletes reacted {{probe.same_athletes_2022_to_2023_change_ms|.0f}} ms faster at Eugene than a year later, and exploratory checks placed the slowest offset at one start line over four days, rising {{probe.wch2025_straight_lane_gradient_ms_per_lane|.1f}} ms per lane; cause unidentified.
+Force traces show the offsets present when athletes began pushing, not added at detection. In exploratory checks, the slowest championship's delay sat at one start line over four days of Tokyo {{descriptive.meet_effect_range_ms@slowest|year}}, rising {{probe.wch2025_straight_lane_gradient_ms_per_lane|.1f}} ms per lane outward; cause unidentified.
 <!-- assert: [trend.h6_fs_near_top_champ_count] == [trend.h6_fs_near_total] and [descriptive.meet_effect_range_ms@fastest] == 'WCH2022' -->
 <!-- assert: [guard.b_p1_n_unflagged] == [descriptive.fs_near_threshold_090_100] and [guard.a_p2_fold_max_median] == 1.0 and [guard.a_p1_fold_max_median] > [guard.a_p0_fold_max_median] -->
 Modelled odds of legitimate starts breaking 0.100 s varied {{fairness.meet_iqr_fold_change|.0f}}-fold across the middle half of championships; all {{trend.h6_fs_near_total|word}} recorded false starts at 0.090-0.100 s came at Eugene. A WADA-inspired {{guard.g_ms|.0f}} ms guard band would cut the worst odds {{guard.a_p1_cut_max|.0f}}-fold but reverse those {{guard.b_p1_n_unflagged|word}}; only per-championship calibration equalised them.
