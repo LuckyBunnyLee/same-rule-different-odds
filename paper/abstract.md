@@ -3,7 +3,7 @@
 
 ## Introduction
 
-One reaction time (RT) under 0.100 s disqualifies a sprinter, as it did Devon Allen at the Eugene Worlds. The rule assumes RT is comparable across championships, as do limit estimates for men (0.094 s, Fiore et al., 2025; 0.115 s, Brosnan et al., 2017) and conflicting RT effects, from starter holds (Haugen et al., 2013; r = 0.16) to rule changes (Han et al., 2025). Milloz et al. (2021) suspected start systems and Fiore et al. found Eugene fast; this study tests whether such variation manufactures these findings, across 18 championships and 40 published studies.
+One reaction time (RT) under 0.100 s disqualifies a sprinter, as it did Devon Allen at the Eugene Worlds. The rule assumes RT is comparable across championships, as do limit estimates for men (0.094 s, Fiore et al., 2025; 0.115 s, Brosnan et al., 2017) and conflicting RT effects, from starter holds (Haugen et al., 2013; r = 0.16) to rule changes (Han et al., 2025). Milloz et al. (2021) suspected start systems and Fiore et al. found Eugene fast; this study tests whether such variation manufactures published limits and effects, across 18 championships and 40 studies.
 
 ## Methods
 
@@ -11,11 +11,11 @@ Data comprise 6,408 official RTs from public results of 18 global championships 
 
 ## Results
 
-Offsets spanned 34 ms (15% of RT variance), exceeding the gap between those estimates.
+Offsets spanned 34 ms (15% of RT variance), exceeding the 21 ms gap between those estimates.
 Pooled across championships, as many published studies do, the hold–RT correlation was r = 0.22; within championships, where offsets cancel, 0.04 (95% CI -0.04 to 0.11). A reconstructed Haugen design with no hold effect reached |r| ≥ 0.16 in 22% of simulations.
 Of 40 audited studies, 28 relied on designs exposed to championship variation, including Lipps et al.'s (2011) sex-specific limits from Beijing.
 Human-limit estimates spanned 93-124 ms across championships, beyond sampling noise and robust across distributions; in Fiore et al.'s own model, venue moved the limit 22 ms.
-Force traces show the offsets present when athletes began pushing, not added at detection. In exploratory checks, the slowest championship's delay sat at one start line over four days of Tokyo 2025, rising 2.4 ms per lane outward; cause unidentified.
+Force traces show the offsets already present when athletes began pushing, not added at detection. In exploratory checks, Tokyo 2025, the slowest championship, lagged at one start line across four days, rising 2.4 ms per lane outward; cause unidentified.
 Modelled odds of legitimate starts breaking 0.100 s varied 18-fold across the middle half of championships; all four recorded false starts at 0.090-0.100 s came at Eugene. A WADA-inspired 15 ms guard band would cut the worst odds 22-fold but reverse those four; only per-championship calibration equalised the odds.
 
 ## Conclusion

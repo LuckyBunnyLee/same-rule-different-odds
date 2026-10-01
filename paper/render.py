@@ -47,7 +47,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 WORD_LIMIT = 500          # SSAC: "fewer than 500 words, including the title"
-STRICT_LIMIT = 495        # margin: <= 495 by a counter that splits hyphenated words (SSAC: < 500)
+STRICT_LIMIT = 499        # margin: SSAC requires < 500; this keeps it true even for a counter that splits hyphens
 
 # Design constants and citation facts that may appear as literals in the template prose. Each entry
 # is (regex over the prose with placeholders removed, name). The regex must match the literal WITH
@@ -72,6 +72,7 @@ ALLOWED_LITERALS = [
     (r"1-in-1,000", "tail probability defining the barrier, as in Fiore et al. 2025 (design constant)"),
     (r"0\.094 s", "Fiore et al. 2025 re-estimated threshold, men, 1e-3 tail (literature input, lit/review.md)"),
     (r"0\.115 s", "Brosnan et al. 2017 revised threshold for men (women: 119 ms) (literature input, lit/review.md)"),
+    (r"21 ms gap", "0.115 s minus 0.094 s: the two men's limit estimates cited in the introduction (asserted)"),
     (r"Figure [12]", "figure number"),
     (r"(?:60|100|110|200) m\b", "event distance"),
 ]
