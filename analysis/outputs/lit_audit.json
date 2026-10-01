@@ -1,0 +1,1276 @@
+{
+ "name": "audit",
+ "mock": false,
+ "seed": null,
+ "inputs": [
+  {
+   "path": "lit/audit_studies.csv",
+   "exists": true,
+   "sha256_12": "5e48a95daeec",
+   "rows": 89
+  },
+  {
+   "path": "lit/audit_screening.csv",
+   "exists": true,
+   "sha256_12": "ecd2a0e96514",
+   "rows": 558
+  },
+  {
+   "path": "lit/audit_search/search_log.json",
+   "exists": true,
+   "sha256_12": "e6635d5100ad"
+  }
+ ],
+ "numbers": {
+  "n_studies": {
+   "value": 40,
+   "desc": "included studies analysing official championship RTs (primary set)",
+   "unit": "studies"
+  },
+  "k_vulnerable_studies": {
+   "value": 28,
+   "desc": "studies with >= 1 vulnerable finding (P, S, E or venue-averaging M)",
+   "unit": "studies"
+  },
+  "share_vulnerable_studies": {
+   "value": 0.7,
+   "desc": "K / N",
+   "unit": "share"
+  },
+  "pct_vulnerable_studies": {
+   "value": 70,
+   "desc": "K / N in whole percent",
+   "unit": "%"
+  },
+  "n_findings": {
+   "value": 76,
+   "desc": "coded findings in the primary set",
+   "unit": "findings"
+  },
+  "k_vulnerable_findings": {
+   "value": 50,
+   "desc": "vulnerable findings in the primary set",
+   "unit": "findings"
+  },
+  "share_vulnerable_findings": {
+   "value": 0.657895,
+   "desc": "vulnerable / all coded findings",
+   "unit": "share"
+  },
+  "pct_vulnerable_findings": {
+   "value": 66,
+   "desc": "vulnerable / all findings, whole percent",
+   "unit": "%"
+  },
+  "findings_class_P": {
+   "value": 24,
+   "desc": "findings coded class P",
+   "unit": "findings"
+  },
+  "studies_class_P": {
+   "value": 14,
+   "desc": "studies with >= 1 class-P finding",
+   "unit": "studies"
+  },
+  "findings_class_S": {
+   "value": 12,
+   "desc": "findings coded class S",
+   "unit": "findings"
+  },
+  "studies_class_S": {
+   "value": 7,
+   "desc": "studies with >= 1 class-S finding",
+   "unit": "studies"
+  },
+  "findings_class_E": {
+   "value": 12,
+   "desc": "findings coded class E",
+   "unit": "findings"
+  },
+  "studies_class_E": {
+   "value": 12,
+   "desc": "studies with >= 1 class-E finding",
+   "unit": "studies"
+  },
+  "findings_class_M": {
+   "value": 12,
+   "desc": "findings coded class M",
+   "unit": "findings"
+  },
+  "studies_class_M": {
+   "value": 8,
+   "desc": "studies with >= 1 class-M finding",
+   "unit": "studies"
+  },
+  "findings_class_W": {
+   "value": 7,
+   "desc": "findings coded class W",
+   "unit": "findings"
+  },
+  "studies_class_W": {
+   "value": 5,
+   "desc": "studies with >= 1 class-W finding",
+   "unit": "studies"
+  },
+  "findings_class_U": {
+   "value": 9,
+   "desc": "findings coded class U",
+   "unit": "findings"
+  },
+  "studies_class_U": {
+   "value": 7,
+   "desc": "studies with >= 1 class-U finding",
+   "unit": "studies"
+  },
+  "findings_class_M_avg": {
+   "value": 2,
+   "desc": "class-M findings whose conclusion averages over venues",
+   "unit": "findings"
+  },
+  "findings_rule_era_class_E": {
+   "value": 10,
+   "desc": "rule-era findings coded E (era contrast, championships nested in eras); equals findings_rule_era when every one is E",
+   "unit": "findings"
+  },
+  "findings_hold_foreperiod": {
+   "value": 2,
+   "desc": "findings of effect type hold_foreperiod",
+   "unit": "findings"
+  },
+  "vulnerable_findings_hold_foreperiod": {
+   "value": 2,
+   "desc": "vulnerable findings of effect type hold_foreperiod",
+   "unit": "findings"
+  },
+  "studies_hold_foreperiod": {
+   "value": 1,
+   "desc": "studies with a hold_foreperiod finding",
+   "unit": "studies"
+  },
+  "vulnerable_studies_hold_foreperiod": {
+   "value": 1,
+   "desc": "studies with a vulnerable hold_foreperiod finding",
+   "unit": "studies"
+  },
+  "findings_rule_era": {
+   "value": 10,
+   "desc": "findings of effect type rule_era",
+   "unit": "findings"
+  },
+  "vulnerable_findings_rule_era": {
+   "value": 10,
+   "desc": "vulnerable findings of effect type rule_era",
+   "unit": "findings"
+  },
+  "studies_rule_era": {
+   "value": 10,
+   "desc": "studies with a rule_era finding",
+   "unit": "studies"
+  },
+  "vulnerable_studies_rule_era": {
+   "value": 10,
+   "desc": "studies with a vulnerable rule_era finding",
+   "unit": "studies"
+  },
+  "findings_sex": {
+   "value": 15,
+   "desc": "findings of effect type sex",
+   "unit": "findings"
+  },
+  "vulnerable_findings_sex": {
+   "value": 7,
+   "desc": "vulnerable findings of effect type sex",
+   "unit": "findings"
+  },
+  "studies_sex": {
+   "value": 15,
+   "desc": "studies with a sex finding",
+   "unit": "studies"
+  },
+  "vulnerable_studies_sex": {
+   "value": 7,
+   "desc": "studies with a vulnerable sex finding",
+   "unit": "studies"
+  },
+  "findings_threshold_limit": {
+   "value": 3,
+   "desc": "findings of effect type threshold_limit",
+   "unit": "findings"
+  },
+  "vulnerable_findings_threshold_limit": {
+   "value": 3,
+   "desc": "vulnerable findings of effect type threshold_limit",
+   "unit": "findings"
+  },
+  "studies_threshold_limit": {
+   "value": 3,
+   "desc": "studies with a threshold_limit finding",
+   "unit": "studies"
+  },
+  "vulnerable_studies_threshold_limit": {
+   "value": 3,
+   "desc": "studies with a vulnerable threshold_limit finding",
+   "unit": "studies"
+  },
+  "findings_lane": {
+   "value": 3,
+   "desc": "findings of effect type lane",
+   "unit": "findings"
+  },
+  "vulnerable_findings_lane": {
+   "value": 1,
+   "desc": "vulnerable findings of effect type lane",
+   "unit": "findings"
+  },
+  "studies_lane": {
+   "value": 3,
+   "desc": "studies with a lane finding",
+   "unit": "studies"
+  },
+  "vulnerable_studies_lane": {
+   "value": 1,
+   "desc": "studies with a vulnerable lane finding",
+   "unit": "studies"
+  },
+  "findings_round": {
+   "value": 8,
+   "desc": "findings of effect type round",
+   "unit": "findings"
+  },
+  "vulnerable_findings_round": {
+   "value": 6,
+   "desc": "vulnerable findings of effect type round",
+   "unit": "findings"
+  },
+  "studies_round": {
+   "value": 8,
+   "desc": "studies with a round finding",
+   "unit": "studies"
+  },
+  "vulnerable_studies_round": {
+   "value": 6,
+   "desc": "studies with a vulnerable round finding",
+   "unit": "studies"
+  },
+  "findings_performance_correlation": {
+   "value": 15,
+   "desc": "findings of effect type performance_correlation",
+   "unit": "findings"
+  },
+  "vulnerable_findings_performance_correlation": {
+   "value": 12,
+   "desc": "vulnerable findings of effect type performance_correlation",
+   "unit": "findings"
+  },
+  "studies_performance_correlation": {
+   "value": 15,
+   "desc": "studies with a performance_correlation finding",
+   "unit": "studies"
+  },
+  "vulnerable_studies_performance_correlation": {
+   "value": 12,
+   "desc": "studies with a vulnerable performance_correlation finding",
+   "unit": "studies"
+  },
+  "findings_other": {
+   "value": 20,
+   "desc": "findings of effect type other",
+   "unit": "findings"
+  },
+  "vulnerable_findings_other": {
+   "value": 9,
+   "desc": "vulnerable findings of effect type other",
+   "unit": "findings"
+  },
+  "studies_other": {
+   "value": 19,
+   "desc": "studies with a other finding",
+   "unit": "studies"
+  },
+  "vulnerable_studies_other": {
+   "value": 9,
+   "desc": "studies with a vulnerable other finding",
+   "unit": "studies"
+  },
+  "n_conflict_groups": {
+   "value": 6,
+   "desc": "effect types on which >= 2 included studies disagree (opposite sign, significant vs null, or raise vs keep/lower 0.100 s)",
+   "unit": "groups",
+   "groups": [
+    "lane",
+    "performance_correlation",
+    "round",
+    "rule_era",
+    "sex",
+    "threshold_limit"
+   ]
+  },
+  "findings_in_conflict_groups": {
+   "value": 52,
+   "desc": "findings in conflict groups",
+   "unit": "findings"
+  },
+  "vulnerable_findings_in_conflict_groups": {
+   "value": 38,
+   "desc": "vulnerable findings in conflict groups",
+   "unit": "findings"
+  },
+  "studies_in_conflict_groups": {
+   "value": 36,
+   "desc": "studies with a finding in a conflict group",
+   "unit": "studies"
+  },
+  "vulnerable_studies_in_conflict_groups": {
+   "value": 26,
+   "desc": "studies with a vulnerable finding in a conflict group",
+   "unit": "studies"
+  },
+  "conflict_lane_studies": {
+   "value": 3,
+   "desc": "studies in the lane conflict group",
+   "unit": "studies"
+  },
+  "conflict_lane_vulnerable_studies": {
+   "value": 1,
+   "desc": "studies with a vulnerable finding in the lane group",
+   "unit": "studies"
+  },
+  "conflict_performance_correlation_studies": {
+   "value": 14,
+   "desc": "studies in the performance_correlation conflict group",
+   "unit": "studies"
+  },
+  "conflict_performance_correlation_vulnerable_studies": {
+   "value": 12,
+   "desc": "studies with a vulnerable finding in the performance_correlation group",
+   "unit": "studies"
+  },
+  "conflict_round_studies": {
+   "value": 7,
+   "desc": "studies in the round conflict group",
+   "unit": "studies"
+  },
+  "conflict_round_vulnerable_studies": {
+   "value": 5,
+   "desc": "studies with a vulnerable finding in the round group",
+   "unit": "studies"
+  },
+  "conflict_rule_era_studies": {
+   "value": 10,
+   "desc": "studies in the rule_era conflict group",
+   "unit": "studies"
+  },
+  "conflict_rule_era_vulnerable_studies": {
+   "value": 10,
+   "desc": "studies with a vulnerable finding in the rule_era group",
+   "unit": "studies"
+  },
+  "conflict_sex_studies": {
+   "value": 15,
+   "desc": "studies in the sex conflict group",
+   "unit": "studies"
+  },
+  "conflict_sex_vulnerable_studies": {
+   "value": 7,
+   "desc": "studies with a vulnerable finding in the sex group",
+   "unit": "studies"
+  },
+  "conflict_threshold_limit_studies": {
+   "value": 3,
+   "desc": "studies in the threshold_limit conflict group",
+   "unit": "studies"
+  },
+  "conflict_threshold_limit_vulnerable_studies": {
+   "value": 3,
+   "desc": "studies with a vulnerable finding in the threshold_limit group",
+   "unit": "studies"
+  },
+  "k_strict_studies": {
+   "value": 22,
+   "desc": "studies with >= 1 vulnerable finding whose conclusion depends on a between-championship contrast",
+   "unit": "studies"
+  },
+  "share_strict_studies": {
+   "value": 0.55,
+   "desc": "strict K / N",
+   "unit": "share"
+  },
+  "k_strict_findings": {
+   "value": 29,
+   "desc": "vulnerable findings that depend on a between-championship contrast",
+   "unit": "findings"
+  },
+  "k_u_as_vulnerable_studies": {
+   "value": 34,
+   "desc": "upper bound: class U also counted vulnerable",
+   "unit": "studies"
+  },
+  "share_u_as_vulnerable_studies": {
+   "value": 0.85,
+   "desc": "upper-bound K / N",
+   "unit": "share"
+  },
+  "k_u_as_vulnerable_findings": {
+   "value": 59,
+   "desc": "upper bound on vulnerable findings",
+   "unit": "findings"
+  },
+  "n_verified_only_studies": {
+   "value": 37,
+   "desc": "studies with >= 1 finding whose design coding rests on full text or abstract",
+   "unit": "studies"
+  },
+  "k_verified_only_studies": {
+   "value": 28,
+   "desc": "vulnerable studies counting only findings whose design coding rests on full text or abstract",
+   "unit": "studies"
+  },
+  "share_verified_only_studies": {
+   "value": 0.756757,
+   "desc": "verified-only K / N",
+   "unit": "share"
+  },
+  "n_grey_added_studies": {
+   "value": 52,
+   "desc": "primary plus coded grey-literature (E-TYPE) studies",
+   "unit": "studies"
+  },
+  "k_grey_added_studies": {
+   "value": 35,
+   "desc": "vulnerable studies with grey literature added",
+   "unit": "studies"
+  },
+  "share_grey_added_studies": {
+   "value": 0.673077,
+   "desc": "grey-added K / N",
+   "unit": "share"
+  },
+  "n_studies_reporting_champ_difference": {
+   "value": 9,
+   "desc": "primary studies that themselves report an RT difference between championships",
+   "unit": "studies"
+  },
+  "n_studies_single_championship": {
+   "value": 10,
+   "desc": "primary studies using one championship",
+   "unit": "studies"
+  },
+  "studies_best_tag_V_FT": {
+   "value": 9,
+   "desc": "primary studies whose best source is V-FT",
+   "unit": "studies"
+  },
+  "studies_best_tag_V_ABS": {
+   "value": 28,
+   "desc": "primary studies whose best source is V-ABS",
+   "unit": "studies"
+  },
+  "studies_best_tag_S": {
+   "value": 3,
+   "desc": "primary studies whose best source is S",
+   "unit": "studies"
+  },
+  "studies_best_tag_U": {
+   "value": 0,
+   "desc": "primary studies whose best source is U",
+   "unit": "studies"
+  },
+  "studies_closed_access": {
+   "value": 9,
+   "desc": "primary studies behind a paywall (coded from abstracts or secondary sources unless a copy was found)",
+   "unit": "studies"
+  },
+  "search_openalex_reported": {
+   "value": 97,
+   "desc": "hits reported by openalex",
+   "unit": "records"
+  },
+  "search_openalex_saved": {
+   "value": 97,
+   "desc": "records saved from openalex",
+   "unit": "records"
+  },
+  "search_pubmed_reported": {
+   "value": 11,
+   "desc": "hits reported by pubmed",
+   "unit": "records"
+  },
+  "search_pubmed_saved": {
+   "value": 11,
+   "desc": "records saved from pubmed",
+   "unit": "records"
+  },
+  "search_s2_reported": {
+   "value": 79,
+   "desc": "hits reported by s2",
+   "unit": "records"
+  },
+  "search_s2_saved": {
+   "value": 79,
+   "desc": "records saved from s2",
+   "unit": "records"
+  },
+  "search_gs_reported": {
+   "value": 6980,
+   "desc": "hits reported by gs",
+   "unit": "records"
+  },
+  "search_gs_saved": {
+   "value": 100,
+   "desc": "records saved from gs",
+   "unit": "records"
+  },
+  "search_chase_reported": {
+   "value": 445,
+   "desc": "hits reported by chase",
+   "unit": "records"
+  },
+  "search_chase_saved": {
+   "value": 445,
+   "desc": "records saved from chase",
+   "unit": "records"
+  },
+  "screen_records_before_dedupe": {
+   "value": 773,
+   "desc": "records before de-duplication (search + repo list)",
+   "unit": "records"
+  },
+  "screen_unique_records": {
+   "value": 558,
+   "desc": "unique records screened",
+   "unit": "records"
+  },
+  "screen_exclude_E_DESC": {
+   "value": 2,
+   "desc": "screening: exclude (E-DESC)",
+   "unit": "records"
+  },
+  "screen_exclude_E_DUP": {
+   "value": 10,
+   "desc": "screening: exclude (E-DUP)",
+   "unit": "records"
+  },
+  "screen_exclude_E_LAB": {
+   "value": 28,
+   "desc": "screening: exclude (E-LAB)",
+   "unit": "records"
+  },
+  "screen_exclude_E_LANG": {
+   "value": 13,
+   "desc": "screening: exclude (E-LANG)",
+   "unit": "records"
+  },
+  "screen_exclude_E_NA": {
+   "value": 7,
+   "desc": "screening: exclude (E-NA)",
+   "unit": "records"
+  },
+  "screen_exclude_E_OFF": {
+   "value": 203,
+   "desc": "screening: exclude (E-OFF)",
+   "unit": "records"
+  },
+  "screen_exclude_E_OFF_auto": {
+   "value": 193,
+   "desc": "screening: exclude (E-OFF-auto)",
+   "unit": "records"
+  },
+  "screen_exclude_E_REV": {
+   "value": 9,
+   "desc": "screening: exclude (E-REV)",
+   "unit": "records"
+  },
+  "screen_exclude_E_SPORT": {
+   "value": 37,
+   "desc": "screening: exclude (E-SPORT)",
+   "unit": "records"
+  },
+  "screen_exclude_E_TYPE": {
+   "value": 16,
+   "desc": "screening: exclude (E-TYPE)",
+   "unit": "records"
+  },
+  "screen_include_INC": {
+   "value": 40,
+   "desc": "screening: include (INC)",
+   "unit": "records"
+  }
+ },
+ "tables": {
+  "studies": [
+   {
+    "study_id": "Collet1999",
+    "year": "1999",
+    "citation": "Collet C. Strategic aspects of reaction time in world-class sprinters. Percept Mot Skills 1999;88:65-75",
+    "n_findings": 3,
+    "classes": "EU",
+    "effects": "other;round",
+    "vulnerable": true,
+    "strict": true,
+    "best_tag": "V-ABS",
+    "access": "closed"
+   },
+   {
+    "study_id": "Brown2008",
+    "year": "2008",
+    "citation": "Brown AM, Kenwell ZR, Maraj BKV, Collins DF. 'Go' signal intensity influences the sprint start. Med Sci Sports Exerc 2008;40:1142-8",
+    "n_findings": 1,
+    "classes": "S",
+    "effects": "lane",
+    "vulnerable": true,
+    "strict": false,
+    "best_tag": "V-FT",
+    "access": "closed (author copy online)"
+   },
+   {
+    "study_id": "Delalija2008",
+    "year": "2008",
+    "citation": "Delalija A, Babic V. Reaction time and sprint results in athletics. Int J Perform Anal Sport 2008;8(2)",
+    "n_findings": 2,
+    "classes": "S",
+    "effects": "other;performance_correlation",
+    "vulnerable": true,
+    "strict": false,
+    "best_tag": "V-ABS",
+    "access": "unknown"
+   },
+   {
+    "study_id": "BabicDelalija2009sex",
+    "year": "2009",
+    "citation": "Babic V, Delalija A. Reaction time trends in the sprint and hurdle events at the 2004 Olympic Games: differences between male and female athletes. New Stud Athl 2009;24(1):59-68",
+    "n_findings": 2,
+    "classes": "S",
+    "effects": "round;sex",
+    "vulnerable": true,
+    "strict": false,
+    "best_tag": "V-FT",
+    "access": "OA"
+   },
+   {
+    "study_id": "BabicDelalija2009women",
+    "year": "2009",
+    "citation": "Babic V, Delalija A. Reaction time trends in the women's sprint and hurdle events at the 2004 Olympic Games. New Stud Athl 2009;24(1):49-57",
+    "n_findings": 2,
+    "classes": "S",
+    "effects": "other;round",
+    "vulnerable": true,
+    "strict": false,
+    "best_tag": "V-ABS",
+    "access": "OA"
+   },
+   {
+    "study_id": "Lipps2011",
+    "year": "2011",
+    "citation": "Lipps DB, Galecki AT, Ashton-Miller JA. On the implications of a sex difference in the reaction times of sprinters at the Beijing Olympics. PLoS One 2011;6:e26141",
+    "n_findings": 3,
+    "classes": "SW",
+    "effects": "lane;sex;threshold_limit",
+    "vulnerable": true,
+    "strict": true,
+    "best_tag": "V-FT",
+    "access": "OA"
+   },
+   {
+    "study_id": "Pilianidis2011",
+    "year": "2011",
+    "citation": "Pilianidis T, Mantzouranis N. Start reaction time and performance time in women's sprint at the world championships in athletics. Stud Phys Cult Tour 2011;18:271-5",
+    "n_findings": 2,
+    "classes": "MP",
+    "effects": "other;performance_correlation",
+    "vulnerable": true,
+    "strict": true,
+    "best_tag": "V-ABS",
+    "access": "OA"
+   },
+   {
+    "study_id": "Pilianidis2012WCH",
+    "year": "2012",
+    "citation": "Pilianidis T, Mantzouranis N, Kasabalis A. Start reaction time and performance at the sprint events in World Athletic Championships. Int J Perform Anal Sport 2012;12(1)",
+    "n_findings": 1,
+    "classes": "E",
+    "effects": "rule_era",
+    "vulnerable": true,
+    "strict": true,
+    "best_tag": "V-ABS",
+    "access": "closed"
+   },
+   {
+    "study_id": "Pilianidis2012OG",
+    "year": "2012",
+    "citation": "Pilianidis T, Kasabalis A, Mantzouranis N, Mavvidis A. Start reaction time and performance at the sprint events in the Olympic Games. Kinesiology 2012;44(1):67-72",
+    "n_findings": 3,
+    "classes": "EMP",
+    "effects": "other;performance_correlation;sex",
+    "vulnerable": true,
+    "strict": true,
+    "best_tag": "V-ABS",
+    "access": "OA"
+   },
+   {
+    "study_id": "Haugen2013",
+    "year": "2013",
+    "citation": "Haugen TA, Shalfawi S, Tonnessen E. The effect of different starting procedures on sprinters' reaction time. J Sports Sci 2013;31:699-705",
+    "n_findings": 3,
+    "classes": "EP",
+    "effects": "hold_foreperiod;rule_era",
+    "vulnerable": true,
+    "strict": true,
+    "best_tag": "V-ABS",
+    "access": "closed"
+   },
+   {
+    "study_id": "Tonnessen2013",
+    "year": "2013",
+    "citation": "Tonnessen E, Haugen T, Shalfawi SAI. Reaction time aspects of elite sprinters in athletic world championships. J Strength Cond Res 2013;27:885-92",
+    "n_findings": 4,
+    "classes": "P",
+    "effects": "other;performance_correlation;round;sex",
+    "vulnerable": true,
+    "strict": true,
+    "best_tag": "V-ABS",
+    "access": "closed"
+   },
+   {
+    "study_id": "Pavlovic2013",
+    "year": "2013",
+    "citation": "Pavlovic R, Rakovic A, Idrizovic K, Mihajlovic I. Differences in the time of start reaction and achieved results in the sprint disciplines in the finals of the World Championship in Moscow. Facta Univ Ser Phys Educ Sport 2013",
+    "n_findings": 2,
+    "classes": "W",
+    "effects": "other;sex",
+    "vulnerable": false,
+    "strict": false,
+    "best_tag": "V-ABS",
+    "access": "OA"
+   },
+   {
+    "study_id": "Paradisis2013",
+    "year": "2013",
+    "citation": "Paradisis GP. Reaction time and performance in the short sprints. New Stud Athl 2013;28(1/2):95-103",
+    "n_findings": 1,
+    "classes": "U",
+    "effects": "performance_correlation",
+    "vulnerable": false,
+    "strict": false,
+    "best_tag": "S",
+    "access": "unknown"
+   },
+   {
+    "study_id": "Pavlovic2014",
+    "year": "2014",
+    "citation": "Pavlovic R, Bonacin D, Bonacin D. Differences in time of start reaction in the sprint disciplines in the finals of the Olympic Games (Athens 2004 - London 2012). Acta Kinesiol 2014;8:53-61",
+    "n_findings": 2,
+    "classes": "M",
+    "effects": "other;sex",
+    "vulnerable": false,
+    "strict": false,
+    "best_tag": "V-ABS",
+    "access": "OA"
+   },
+   {
+    "study_id": "Juhas2015",
+    "year": "2015",
+    "citation": "Juhas I, Matic M, Jankovic N. Comparative analysis of reaction time of elite sprinters at the world championships in 2013 and 2015. Godisnjak Fak Sporta Fiz Vasp 2015;21:43",
+    "n_findings": 2,
+    "classes": "MU",
+    "effects": "other;sex",
+    "vulnerable": false,
+    "strict": false,
+    "best_tag": "V-ABS",
+    "access": "OA"
+   },
+   {
+    "study_id": "Pavlovic2015",
+    "year": "2015",
+    "citation": "Pavlovic R. Differences in time of start reaction and achieved result in the sprint disciplines in the finals of the Olympic Games in London and the World Championship in Moscow. Sport Sci Pract Aspects 2015;12(1)",
+    "n_findings": 1,
+    "classes": "M",
+    "effects": "other",
+    "vulnerable": false,
+    "strict": false,
+    "best_tag": "V-ABS",
+    "access": "OA"
+   },
+   {
+    "study_id": "Brosnan2017",
+    "year": "2017",
+    "citation": "Brosnan KC, Hayes K, Harrison AJ. Effects of false-start disqualification rules on response-times of elite-standard sprinters. J Sports Sci 2017;35:929-35",
+    "n_findings": 3,
+    "classes": "EP",
+    "effects": "rule_era;sex;threshold_limit",
+    "vulnerable": true,
+    "strict": true,
+    "best_tag": "V-ABS",
+    "access": "closed"
+   },
+   {
+    "study_id": "Mirshams2018",
+    "year": "2018",
+    "citation": "Mirshams Shahshahani P, Lipps DB, Galecki AT, Ashton-Miller JA. On the apparent decrease in Olympic sprinter reaction times. PLoS One 2018;13:e0198633",
+    "n_findings": 2,
+    "classes": "M",
+    "effects": "other;sex",
+    "vulnerable": false,
+    "strict": false,
+    "best_tag": "V-FT",
+    "access": "OA"
+   },
+   {
+    "study_id": "LopezdelAmo2018",
+    "year": "2018",
+    "citation": "Lopez del Amo JL, Rodriguez MC, Hill DW, Gonzalez JE. Analysis of the start to the first hurdle in 110 m hurdles at the IAAF World Athletics Championships Beijing 2015. J Hum Sport Exerc 2018;13(3)",
+    "n_findings": 1,
+    "classes": "S",
+    "effects": "performance_correlation",
+    "vulnerable": true,
+    "strict": false,
+    "best_tag": "V-ABS",
+    "access": "OA"
+   },
+   {
+    "study_id": "Gurses2018",
+    "year": "2018",
+    "citation": "Gurses VV, Kamis O. The relationship between reaction time and 60 m performance in elite athletes. J Educ Train Stud 2018;6(12a):64-9",
+    "n_findings": 2,
+    "classes": "P",
+    "effects": "performance_correlation;sex",
+    "vulnerable": true,
+    "strict": true,
+    "best_tag": "V-ABS",
+    "access": "OA"
+   },
+   {
+    "study_id": "Radhamani2019",
+    "year": "2019",
+    "citation": "Radhamani AMKN, Narayanan AK, et al. Has the false start detecting machine affected the reaction time and performance of sprinters. Int J Phys Educ Sports Health 2019",
+    "n_findings": 1,
+    "classes": "U",
+    "effects": "other",
+    "vulnerable": false,
+    "strict": false,
+    "best_tag": "V-ABS",
+    "access": "OA"
+   },
+   {
+    "study_id": "Mitasik2020a",
+    "year": "2020",
+    "citation": "Mitasik P, Dolezajova L, Lednicky A, Vegh D. Changes in the start reaction times in the 200 m run at the World Championships after the tightening of false start rules. Acta Fac Educ Phys Univ Comenianae 2020;60(2):207-16",
+    "n_findings": 2,
+    "classes": "EP",
+    "effects": "round;rule_era",
+    "vulnerable": true,
+    "strict": true,
+    "best_tag": "V-FT",
+    "access": "OA"
+   },
+   {
+    "study_id": "Mitasik2020b",
+    "year": "2020",
+    "citation": "Mitasik P, Vavak M, Dolezajova L, Lednicky A, Vegh D. Changes in the start reaction times of male and female sprinters in world athletic championships. J Phys Educ Sport 2020;20(Suppl 3):art. 302",
+    "n_findings": 2,
+    "classes": "EP",
+    "effects": "round;rule_era",
+    "vulnerable": true,
+    "strict": true,
+    "best_tag": "V-ABS",
+    "access": "OA"
+   },
+   {
+    "study_id": "Mukai2020",
+    "year": "2020",
+    "citation": "Mukai K, Onagawa R, Tanaka T, Watanabe K, Kudo K. Deciding when to start in 100-m sprints at Athletic World Championships. KST 2020 (IEEE)",
+    "n_findings": 1,
+    "classes": "U",
+    "effects": "round",
+    "vulnerable": false,
+    "strict": false,
+    "best_tag": "V-ABS",
+    "access": "closed"
+   },
+   {
+    "study_id": "Ntolaptsis2021",
+    "year": "2021",
+    "citation": "Ntolaptsis K, Panoutsakopoulos V. Relationship between reaction time, medal winning and performance in the 60 m hurdle indoor event before and after the last false start rule modification. Acta Fac Educ Phys Univ Comenianae 2021;61(1):72-85",
+    "n_findings": 3,
+    "classes": "EP",
+    "effects": "other;performance_correlation;rule_era",
+    "vulnerable": true,
+    "strict": true,
+    "best_tag": "V-FT",
+    "access": "OA"
+   },
+   {
+    "study_id": "Mitasik2021",
+    "year": "2021",
+    "citation": "Mitasik P, Dolezajova L, Lednicky A. Intraindividual evaluation of reaction time at the women's World Athletics Championships 1999-2019. Acta Fac Educ Phys Univ Comenianae 2021",
+    "n_findings": 1,
+    "classes": "E",
+    "effects": "rule_era",
+    "vulnerable": true,
+    "strict": true,
+    "best_tag": "V-ABS",
+    "access": "OA"
+   },
+   {
+    "study_id": "Mitasik2022",
+    "year": "2022",
+    "citation": "Mitasik P, Dolezajova L, Lednicky A. Intraindividual evaluation of reaction time at the men's World Athletics Championships 1999-2019. Acta Fac Educ Phys Univ Comenianae 2022;62(1):72-82",
+    "n_findings": 1,
+    "classes": "E",
+    "effects": "rule_era",
+    "vulnerable": true,
+    "strict": true,
+    "best_tag": "V-ABS",
+    "access": "OA"
+   },
+   {
+    "study_id": "Pavlovic2021",
+    "year": "2021",
+    "citation": "Pavlovic R. The importance of reaction time in athletics: influence on the results of sprint runs of World Championships finalists. Cent Eur J Sport Sci Med 2021;34(2)",
+    "n_findings": 1,
+    "classes": "P",
+    "effects": "performance_correlation",
+    "vulnerable": true,
+    "strict": true,
+    "best_tag": "V-FT",
+    "access": "OA"
+   },
+   {
+    "study_id": "Zhang2021",
+    "year": "2021",
+    "citation": "Zhang J, Lin X, Zhang S. Correlation analysis of sprint performance and reaction time based on double logarithm model. Complexity 2021:6633326",
+    "n_findings": 2,
+    "classes": "MU",
+    "effects": "other;performance_correlation",
+    "vulnerable": false,
+    "strict": false,
+    "best_tag": "V-ABS",
+    "access": "OA"
+   },
+   {
+    "study_id": "Wang2022",
+    "year": "2022",
+    "citation": "Wang Y, Shi H, Li C, Pan Y, Cai J. Study on the relationship between starting reaction and athletic performance of athletes based on mathematical statistics: the short distance events at the five World Athletics Championships from 2011 to 2019. Int Core J Eng 2022;8(1):412-21",
+    "n_findings": 3,
+    "classes": "P",
+    "effects": "performance_correlation;round;sex",
+    "vulnerable": true,
+    "strict": true,
+    "best_tag": "V-FT",
+    "access": "OA"
+   },
+   {
+    "study_id": "Matic2023a",
+    "year": "2023",
+    "citation": "Matic M, Mrdakovic V. Relationship between reaction time and performance in the 60 m hurdles at the 2022 World Indoor Championships. Exerc Qual Life 2023",
+    "n_findings": 3,
+    "classes": "SW",
+    "effects": "other;performance_correlation;sex",
+    "vulnerable": true,
+    "strict": false,
+    "best_tag": "V-ABS",
+    "access": "OA"
+   },
+   {
+    "study_id": "Matic2023b",
+    "year": "2023",
+    "citation": "Matic M, Mrdakovic V, Markovic M. Sprint race distance affects reaction time in male and female sprinters at the 2022 World Indoor Athletics Championships. Exerc Qual Life 2023",
+    "n_findings": 2,
+    "classes": "W",
+    "effects": "other;sex",
+    "vulnerable": false,
+    "strict": false,
+    "best_tag": "V-ABS",
+    "access": "OA"
+   },
+   {
+    "study_id": "Satilmis2023",
+    "year": "2023",
+    "citation": "Satilmis N, Tasdemir B, Bayraktar I, Bayrakdar A. Examination of the relationship between the reaction time, competition result with the competition hour in the World Indoor Championships (2006-2022). Turk J Sport Exerc 2023",
+    "n_findings": 1,
+    "classes": "P",
+    "effects": "other",
+    "vulnerable": true,
+    "strict": true,
+    "best_tag": "V-ABS",
+    "access": "OA"
+   },
+   {
+    "study_id": "Biswas2023",
+    "year": "2023",
+    "citation": "Biswas A, Bandyopadhyay N. Relation between start reaction time and performance time among women finalist sprinters in the Olympic Games 2000 to 2020. Phys Educ Theory Methodol 2023;23(5)",
+    "n_findings": 1,
+    "classes": "P",
+    "effects": "performance_correlation",
+    "vulnerable": true,
+    "strict": true,
+    "best_tag": "V-ABS",
+    "access": "OA"
+   },
+   {
+    "study_id": "Fiore2025",
+    "year": "2025",
+    "citation": "Fiore O, Schifano ED, Yan J. On Devon Allen's disqualification at the 2022 World Track and Field Championships. Am Stat 2025;79(4):500-7",
+    "n_findings": 3,
+    "classes": "M",
+    "effects": "other;sex;threshold_limit",
+    "vulnerable": true,
+    "strict": true,
+    "best_tag": "V-FT",
+    "access": "closed (OA preprint arXiv 2506.11460)"
+   },
+   {
+    "study_id": "Han2025",
+    "year": "2025",
+    "citation": "Han L, Zhou C, Zhang H. The long-term effects of current false start rules on reaction time and athletic performance. Int J Perform Anal Sport 2025;26(4):900-19",
+    "n_findings": 1,
+    "classes": "E",
+    "effects": "rule_era",
+    "vulnerable": true,
+    "strict": true,
+    "best_tag": "V-ABS",
+    "access": "closed"
+   },
+   {
+    "study_id": "Tomozei2025",
+    "year": "2025",
+    "citation": "Tomozei R-A, Hurduc F, Dumitru I-M. The influence of age and reaction time on sprint performance across the last five editions of World Athletics Championships. Stud Univ Babes-Bolyai Educ Artis Gymn 2025;70(SI2):287-98",
+    "n_findings": 2,
+    "classes": "P",
+    "effects": "other;performance_correlation",
+    "vulnerable": true,
+    "strict": true,
+    "best_tag": "V-ABS",
+    "access": "OA"
+   },
+   {
+    "study_id": "Ditroilo2004",
+    "year": "2004",
+    "citation": "Ditroilo M, Kilding A. Has the new false start rule affected the reaction time of elite sprinters? New Stud Athl 2004;19(1):13-19",
+    "n_findings": 1,
+    "classes": "E",
+    "effects": "rule_era",
+    "vulnerable": true,
+    "strict": true,
+    "best_tag": "V-ABS",
+    "access": "unknown"
+   },
+   {
+    "study_id": "JulinDapena2003",
+    "year": "2003",
+    "citation": "Julin AL, Dapena J. Sprinters at the 1996 Olympic Games in Atlanta did not hear the starter's gun through the loudspeakers on the starting blocks. New Stud Athl 2003;18:23-27",
+    "n_findings": 1,
+    "classes": "W",
+    "effects": "lane",
+    "vulnerable": false,
+    "strict": false,
+    "best_tag": "S",
+    "access": "unknown"
+   },
+   {
+    "study_id": "MartinBuoncristiani1995",
+    "year": "1995",
+    "citation": "Martin DE, Buoncristiani JF. Influence of reaction time on athletic performance. New Stud Athl 1995;10:67-69",
+    "n_findings": 2,
+    "classes": "U",
+    "effects": "performance_correlation;sex",
+    "vulnerable": false,
+    "strict": false,
+    "best_tag": "S",
+    "access": "unknown"
+   }
+  ],
+  "conflict_groups": [
+   {
+    "group": "lane",
+    "studies": 3,
+    "findings": 3,
+    "vulnerable_findings": 1,
+    "directions": "absent: Lipps2011; present: Brown2008, JulinDapena2003"
+   },
+   {
+    "group": "performance_correlation",
+    "studies": 14,
+    "findings": 14,
+    "vulnerable_findings": 12,
+    "directions": "mixed: Biswas2023, Delalija2008, Matic2023a, Pavlovic2021; none: Pilianidis2011; positive: Gurses2018, LopezdelAmo2018, MartinBuoncristiani1995, Ntolaptsis2021, Pilianidis2012OG, Tomozei2025, Tonnessen2013, Wang2022, Zhang2021"
+   },
+   {
+    "group": "round",
+    "studies": 7,
+    "findings": 7,
+    "vulnerable_findings": 5,
+    "directions": "finals_fastest: Collet1999, Tonnessen2013, Wang2022; finals_slower: Mitasik2020a; mixed: BabicDelalija2009women; none: BabicDelalija2009sex; semis_fastest: Mukai2020"
+   },
+   {
+    "group": "rule_era",
+    "studies": 10,
+    "findings": 10,
+    "vulnerable_findings": 10,
+    "directions": "faster: Han2025; none: Ditroilo2004, Mitasik2020a, Mitasik2021, Mitasik2022, Ntolaptsis2021; slower: Brosnan2017, Haugen2013, Mitasik2020b, Pilianidis2012WCH"
+   },
+   {
+    "group": "sex",
+    "studies": 15,
+    "findings": 15,
+    "vulnerable_findings": 7,
+    "directions": "absent: Juhas2015, MartinBuoncristiani1995, Matic2023a, Matic2023b, Mirshams2018, Pavlovic2013; mixed: Pavlovic2014; present: BabicDelalija2009sex, Brosnan2017, Fiore2025, Gurses2018, Lipps2011, Pilianidis2012OG, Tonnessen2013, Wang2022"
+   },
+   {
+    "group": "threshold_limit",
+    "studies": 3,
+    "findings": 3,
+    "vulnerable_findings": 3,
+    "directions": "keep_or_raise: Brosnan2017, Lipps2011; lower: Fiore2025"
+   }
+  ],
+  "class_by_effect": [
+   {
+    "effect_type": "hold_foreperiod",
+    "P": 2,
+    "S": 0,
+    "E": 0,
+    "M": 0,
+    "W": 0,
+    "U": 0
+   },
+   {
+    "effect_type": "rule_era",
+    "P": 0,
+    "S": 0,
+    "E": 10,
+    "M": 0,
+    "W": 0,
+    "U": 0
+   },
+   {
+    "effect_type": "sex",
+    "P": 4,
+    "S": 2,
+    "E": 0,
+    "M": 4,
+    "W": 3,
+    "U": 2
+   },
+   {
+    "effect_type": "threshold_limit",
+    "P": 1,
+    "S": 1,
+    "E": 0,
+    "M": 1,
+    "W": 0,
+    "U": 0
+   },
+   {
+    "effect_type": "lane",
+    "P": 0,
+    "S": 1,
+    "E": 0,
+    "M": 0,
+    "W": 2,
+    "U": 0
+   },
+   {
+    "effect_type": "round",
+    "P": 4,
+    "S": 2,
+    "E": 0,
+    "M": 0,
+    "W": 0,
+    "U": 2
+   },
+   {
+    "effect_type": "performance_correlation",
+    "P": 9,
+    "S": 3,
+    "E": 0,
+    "M": 1,
+    "W": 0,
+    "U": 2
+   },
+   {
+    "effect_type": "other",
+    "P": 4,
+    "S": 3,
+    "E": 2,
+    "M": 6,
+    "W": 2,
+    "U": 3
+   }
+  ],
+  "grey_studies": [
+   {
+    "study_id": "G_Nozaki1997",
+    "classes": "E",
+    "vulnerable": true
+   },
+   {
+    "study_id": "G_Nozaki2001",
+    "classes": "E",
+    "vulnerable": true
+   },
+   {
+    "study_id": "G_Nozaki2002",
+    "classes": "E",
+    "vulnerable": true
+   },
+   {
+    "study_id": "G_Nozaki2003",
+    "classes": "E",
+    "vulnerable": true
+   },
+   {
+    "study_id": "G_NozakiYokokura2000",
+    "classes": "W",
+    "vulnerable": false
+   },
+   {
+    "study_id": "G_Yokokura2013",
+    "classes": "E",
+    "vulnerable": true
+   },
+   {
+    "study_id": "G_Yokokura2011",
+    "classes": "E",
+    "vulnerable": true
+   },
+   {
+    "study_id": "G_Paradisis2004",
+    "classes": "M",
+    "vulnerable": false
+   },
+   {
+    "study_id": "G_Paradisis2006",
+    "classes": "MP",
+    "vulnerable": true
+   },
+   {
+    "study_id": "G_Babic2008",
+    "classes": "U",
+    "vulnerable": false
+   },
+   {
+    "study_id": "G_Ghosh2017",
+    "classes": "U",
+    "vulnerable": false
+   },
+   {
+    "study_id": "G_Dapena2005",
+    "classes": "U",
+    "vulnerable": false
+   }
+  ]
+ },
+ "extra": {
+  "vulnerable_rule": "vulnerable = design class P, S or E, or M with m_averages_venues = yes; W, M (not averaging) and U are not vulnerable in the primary count",
+  "protocol": "lit/audit_protocol.md",
+  "classes": {
+   "P": "pooled >= 2 championships, no championship/venue term",
+   "S": "single championship, conclusion generalised",
+   "E": "era/period or other championship-level factor contrast, championships nested in its levels",
+   "M": "championship/venue modelled (M_avg: conclusion averages over venues)",
+   "W": "within-championship comparison only, conclusion restricted",
+   "U": "unclear"
+  },
+  "caveat": "Counts classify designs, not the truth of findings; the search is not exhaustive and is English-dominant; closed full texts were coded from abstracts or secondary sources."
+ }
+}

@@ -1,0 +1,177 @@
+{
+ "name": "detector",
+ "mock": false,
+ "seed": 20260928,
+ "inputs": [
+  {
+   "path": "data/derived/rt_waveform_lanes.csv",
+   "exists": true,
+   "sha256_12": "0559f4575d94",
+   "rows": 2493
+  }
+ ],
+ "numbers": {
+  "detector_offset_median_WCH2022_ms": {
+   "value": -4.2,
+   "desc": "median position of the Seiko RT-detection line relative to the 5%-of-peak onset of the displayed force rise, WCH2022",
+   "unit": "ms",
+   "n_lanes": 488,
+   "iqr": [
+    -4.2,
+    -4.2
+   ],
+   "share_at_mode": 0.7213
+  },
+  "force_onset_median_WCH2022_ms": {
+   "value": 140.8,
+   "desc": "median 5%-of-peak force onset after the gun on the displayed trace, WCH2022",
+   "unit": "ms"
+  },
+  "detector_offset_median_WCH2023_ms": {
+   "value": -4.2,
+   "desc": "median position of the Seiko RT-detection line relative to the 5%-of-peak onset of the displayed force rise, WCH2023",
+   "unit": "ms",
+   "n_lanes": 509,
+   "iqr": [
+    -4.2,
+    -4.2
+   ],
+   "share_at_mode": 0.723
+  },
+  "force_onset_median_WCH2023_ms": {
+   "value": 157.5,
+   "desc": "median 5%-of-peak force onset after the gun on the displayed trace, WCH2023",
+   "unit": "ms"
+  },
+  "detector_offset_median_WCH2025_ms": {
+   "value": -4.2,
+   "desc": "median position of the Seiko RT-detection line relative to the 5%-of-peak onset of the displayed force rise, WCH2025",
+   "unit": "ms",
+   "n_lanes": 514,
+   "iqr": [
+    -4.2,
+    -4.2
+   ],
+   "share_at_mode": 0.7646
+  },
+  "force_onset_median_WCH2025_ms": {
+   "value": 175.8,
+   "desc": "median 5%-of-peak force onset after the gun on the displayed trace, WCH2025",
+   "unit": "ms"
+  },
+  "detector_offset_median_WIC2024_ms": {
+   "value": -4.2,
+   "desc": "median position of the Seiko RT-detection line relative to the 5%-of-peak onset of the displayed force rise, WIC2024",
+   "unit": "ms",
+   "n_lanes": 310,
+   "iqr": [
+    -4.2,
+    -2.5
+   ],
+   "share_at_mode": 0.6903
+  },
+  "force_onset_median_WIC2024_ms": {
+   "value": 148.3,
+   "desc": "median 5%-of-peak force onset after the gun on the displayed trace, WIC2024",
+   "unit": "ms"
+  },
+  "detector_offset_median_WIC2025_ms": {
+   "value": -4.2,
+   "desc": "median position of the Seiko RT-detection line relative to the 5%-of-peak onset of the displayed force rise, WIC2025",
+   "unit": "ms",
+   "n_lanes": 287,
+   "iqr": [
+    -4.2,
+    -2.5
+   ],
+   "share_at_mode": 0.6446
+  },
+  "force_onset_median_WIC2025_ms": {
+   "value": 155.8,
+   "desc": "median 5%-of-peak force onset after the gun on the displayed trace, WIC2025",
+   "unit": "ms"
+  },
+  "detector_mode_ms": {
+   "value": -4.2,
+   "desc": "modal detection-line offset over all lanes",
+   "unit": "ms"
+  },
+  "detector_share_at_mode_all": {
+   "value": 0.7173,
+   "desc": "share of all lanes whose detection line sits within 0.5 ms of the modal offset",
+   "unit": "",
+   "n_lanes": 2108
+  },
+  "detector_offset_kw_p": {
+   "value": 9.36e-14,
+   "desc": "Kruskal-Wallis test: detection-line offset differs between championships",
+   "unit": "",
+   "H": 67.08
+  },
+  "force_onset_kw_p": {
+   "value": 5.14e-127,
+   "desc": "Kruskal-Wallis test: force onset after the gun differs between championships",
+   "unit": "",
+   "H": 593.0
+  },
+  "detector_median_range_ms": {
+   "value": 0.0,
+   "desc": "range of the per-championship median detection-line offsets",
+   "unit": "ms"
+  },
+  "force_onset_median_range_ms": {
+   "value": 35.0,
+   "desc": "range of the per-championship median force onsets after the gun",
+   "unit": "ms"
+  }
+ },
+ "tables": {
+  "by_comp": [
+   {
+    "comp_year": "WCH2022",
+    "n_lanes": 488,
+    "median_ms": -4.2,
+    "q25_ms": -4.2,
+    "q75_ms": -4.2,
+    "share_at_mode": 0.721311,
+    "force_onset_median_ms": 140.8
+   },
+   {
+    "comp_year": "WCH2023",
+    "n_lanes": 509,
+    "median_ms": -4.2,
+    "q25_ms": -4.2,
+    "q75_ms": -4.2,
+    "share_at_mode": 0.722986,
+    "force_onset_median_ms": 157.5
+   },
+   {
+    "comp_year": "WCH2025",
+    "n_lanes": 514,
+    "median_ms": -4.2,
+    "q25_ms": -4.2,
+    "q75_ms": -4.2,
+    "share_at_mode": 0.764591,
+    "force_onset_median_ms": 175.8
+   },
+   {
+    "comp_year": "WIC2024",
+    "n_lanes": 310,
+    "median_ms": -4.2,
+    "q25_ms": -4.2,
+    "q75_ms": -2.5,
+    "share_at_mode": 0.690323,
+    "force_onset_median_ms": 148.35
+   },
+   {
+    "comp_year": "WIC2025",
+    "n_lanes": 287,
+    "median_ms": -4.2,
+    "q25_ms": -4.2,
+    "q75_ms": -2.5,
+    "share_at_mode": 0.644599,
+    "force_onset_median_ms": 155.8
+   }
+  ]
+ }
+}

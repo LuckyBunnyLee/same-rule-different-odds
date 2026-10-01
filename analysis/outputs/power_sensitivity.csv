@@ -1,0 +1,6 @@
+scenario,n_races_80,icc
+"baseline (normal residuals, 8 per race, exact FP)",68,0.1
+FP measurement error SD 0.03 s (SD_FP 0.22 s),69,0.1
+FP measurement error SD 0.06 s (SD_FP 0.22 s),74,0.1
+ex-Gaussian residuals (tau/sigma = 1),68,0.1
+cluster sizes 6-9 (mean 7.7),69,0.1

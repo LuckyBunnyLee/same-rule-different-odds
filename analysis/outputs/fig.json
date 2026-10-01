@@ -1,0 +1,135 @@
+{
+ "name": "fig",
+ "mock": false,
+ "seed": null,
+ "inputs": [
+  {
+   "path": "analysis/outputs/systematic.json",
+   "exists": true,
+   "sha256_12": "1f4f12f278e9"
+  },
+  {
+   "path": "analysis/outputs/guardband.json",
+   "exists": true,
+   "sha256_12": "a8d730819865"
+  }
+ ],
+ "numbers": {
+  "fit_rule_100ms": {
+   "value": 4,
+   "desc": "confound figure panel B: championships whose 95% CI of the 1-in-1,000 barrier (men, ex-Gaussian) contains the 0.100 s rule",
+   "unit": "",
+   "n_champs": 18,
+   "champs": [
+    "WCH1999",
+    "WCH2017",
+    "WIC2024",
+    "WCH2019"
+   ],
+   "line_ms": 100.0
+  },
+  "fit_fiore_094ms": {
+   "value": 5,
+   "desc": "confound figure panel B: championships whose 95% CI of the 1-in-1,000 barrier (men, ex-Gaussian) contains 0.094 s (Fiore et al. 2025)",
+   "unit": "",
+   "n_champs": 18,
+   "champs": [
+    "WCH2022",
+    "WCH1999",
+    "WCH2017",
+    "WIC2024",
+    "WCH2019"
+   ],
+   "line_ms": 94.0
+  },
+  "fit_brosnan_119ms": {
+   "value": 4,
+   "desc": "confound figure panel B: championships whose 95% CI of the 1-in-1,000 barrier (men, ex-Gaussian) contains 0.119 s (Brosnan et al. 2017, upper)",
+   "unit": "",
+   "n_champs": 18,
+   "champs": [
+    "WCH2003",
+    "WCH2007",
+    "WCH2011",
+    "WCH2013"
+   ],
+   "line_ms": 119.0
+  },
+  "fit_none": {
+   "value": 9,
+   "desc": "confound figure panel B: championships whose barrier CI contains none of the three lines",
+   "unit": "",
+   "n_champs": 18,
+   "champs": [
+    "WCH2001",
+    "WCH2009",
+    "WCH2015",
+    "OG2020",
+    "WCH2025",
+    "OG2024",
+    "WCH2005",
+    "WIC2025",
+    "WCH2023"
+   ]
+  },
+  "barrier_below_rule": {
+   "value": 5,
+   "desc": "confound figure panel B: championships whose barrier lies below 0.100 s (the rule flags more than 1 in 1,000 legitimate starts there)",
+   "unit": "",
+   "n_champs": 18,
+   "champs": [
+    "WCH2022",
+    "WCH1999",
+    "WCH2017",
+    "WIC2024",
+    "WCH2019"
+   ]
+  },
+  "barrier_above_rule": {
+   "value": 13,
+   "desc": "confound figure panel B: championships whose barrier lies at or above 0.100 s",
+   "unit": "",
+   "n_champs": 18,
+   "champs": [
+    "WCH2001",
+    "WCH2009",
+    "WCH2015",
+    "OG2020",
+    "WCH2025",
+    "WCH2003",
+    "OG2024",
+    "WCH2005",
+    "WIC2025",
+    "WCH2023",
+    "WCH2007",
+    "WCH2011",
+    "WCH2013"
+   ]
+  },
+  "p1_unflagged_rt_min_s": {
+   "value": 0.093,
+   "desc": "guard band cost (caption; not drawn): shortest RT among the recorded false starts a uniform guard band (P1) would no longer flag",
+   "unit": "s",
+   "n_unflagged": 4,
+   "unflagged_champs": [
+    "WCH2022"
+   ]
+  },
+  "p1_unflagged_rt_max_s": {
+   "value": 0.099,
+   "desc": "guard band cost (caption; not drawn): longest RT among the recorded false starts a uniform guard band (P1) would no longer flag",
+   "unit": "s",
+   "n_unflagged": 4,
+   "unflagged_champs": [
+    "WCH2022"
+   ]
+  }
+ },
+ "extra": {
+  "lines_ms": {
+   "rule_100ms": 100.0,
+   "fiore_094ms": 94.0,
+   "brosnan_119ms": 119.0
+  }
+ }
+}

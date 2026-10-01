@@ -1,0 +1,195 @@
+{
+ "name": "probe",
+ "mock": false,
+ "seed": 20260930,
+ "inputs": [
+  {
+   "path": "data/derived/rt_athletes.csv",
+   "exists": true,
+   "sha256_12": "af44975b3e1a",
+   "rows": 4904
+  },
+  {
+   "path": "data/derived/rt_fiore.csv",
+   "exists": true,
+   "sha256_12": "dff5cb184d1b",
+   "rows": 2805
+  },
+  {
+   "path": "data/derived/races.csv",
+   "exists": true,
+   "sha256_12": "4f0f5097c6dc",
+   "rows": 625
+  },
+  {
+   "path": "data/derived/rt_waveform_lanes.csv",
+   "exists": true,
+   "sha256_12": "0559f4575d94",
+   "rows": 2493
+  },
+  {
+   "path": "analysis/probe/extra_rt.csv",
+   "exists": true,
+   "sha256_12": "14a3c938e798",
+   "rows": 1593
+  },
+  {
+   "path": "analysis/probe/combined_rt.csv",
+   "exists": true,
+   "sha256_12": "9b83b753d122",
+   "rows": 430
+  },
+  {
+   "path": "analysis/probe/gun_features.csv",
+   "exists": true,
+   "sha256_12": "ce91c6cfa253",
+   "rows": 123
+  },
+  {
+   "path": "analysis/probe/gun_spectra_peaks.csv",
+   "exists": true,
+   "sha256_12": "445530ab6c8d",
+   "rows": 7
+  },
+  {
+   "path": "analysis/probe/gun_spectra_similarity.csv",
+   "exists": true,
+   "sha256_12": "aded84d69025",
+   "rows": 7
+  }
+ ],
+ "numbers": {
+  "wch2025_straight_minus_200m_same_athlete_ms": {
+   "value": 22.2,
+   "desc": "EXPLORATORY (not pre-registered): the same athletes' RT on the home-straight start minus their RT on the 200 m start at WCH2025 (sign-flipped from the probe's 200 m minus straight; positive = straight start slower)",
+   "unit": "ms",
+   "ci95": [
+    15.2,
+    29.0
+   ],
+   "n_athletes": 24
+  },
+  "straight_minus_200m_same_athlete_other_min_ms": {
+   "value": -9.2,
+   "desc": "EXPLORATORY (not pre-registered): smallest same-athlete straight-minus-200 m difference among the other 7 championships with such athletes",
+   "unit": "ms",
+   "ci95": [
+    -14.9,
+    -3.1
+   ],
+   "champ": "WCH2015",
+   "n_athletes": 31,
+   "n_other_champs": 7
+  },
+  "straight_minus_200m_same_athlete_other_max_ms": {
+   "value": 4.5,
+   "desc": "EXPLORATORY (not pre-registered): largest same-athlete straight-minus-200 m difference among the other 7 championships with such athletes",
+   "unit": "ms",
+   "ci95": [
+    -0.4,
+    10.1
+   ],
+   "champ": "WCH2023",
+   "n_athletes": 21,
+   "n_other_champs": 7
+  },
+  "wch2025_straight_lane_gradient_ms_per_lane": {
+   "value": 2.36,
+   "desc": "EXPLORATORY (not pre-registered): RT gradient across lanes on the home-straight start at WCH2025 (outer lanes slower), within race",
+   "unit": "ms per lane",
+   "ci95": [
+    1.56,
+    3.13
+   ],
+   "n_starts": 351,
+   "first_day": "2025-09-13",
+   "last_day": "2025-09-16",
+   "first_day_of_month": 13,
+   "last_day_of_month": 16,
+   "n_days": 4,
+   "next_largest": 2.13,
+   "next_largest_cell": "WCH2017|200m"
+  },
+  "wch2025_outer_minus_inner_lanes_ms": {
+   "value": 12.2,
+   "desc": "EXPLORATORY (not pre-registered): WCH2025 home-straight start: lanes 7-9 minus lanes 1-5, athlete-adjusted RT",
+   "unit": "ms",
+   "ci95": [
+    8.1,
+    16.6
+   ],
+   "n_outer": 128,
+   "n_inner": 180
+  },
+  "wch2022_to_2023_median_minus_p5_shift_ms": {
+   "value": -2.1,
+   "desc": "EXPLORATORY (not pre-registered): WCH2022 to WCH2023: change of the athlete-adjusted median RT minus change of its 5th percentile (0 = the whole distribution shifted uniformly)",
+   "unit": "ms",
+   "ci95": [
+    -5.2,
+    1.7
+   ],
+   "p5_change_ms": 19.6,
+   "median_change_ms": 17.6,
+   "p95_change_ms": 12.2
+  },
+  "wch2022_faster_rounds": {
+   "value": 3,
+   "desc": "EXPLORATORY (not pre-registered): rounds (first round, semi-final, final) in which WCH2023 minus WCH2022 is positive with a CI excluding 0, i.e. WCH2022 faster",
+   "unit": "",
+   "n_rounds": 3,
+   "R1_change_ms": 17.4,
+   "SF_change_ms": 16.6,
+   "F_change_ms": 14.4
+  },
+  "wch2022_faster_start_types": {
+   "value": 2,
+   "desc": "EXPLORATORY (not pre-registered): start types (home straight, 200 m) whose athlete-adjusted median RT rose from WCH2022 to WCH2023 with a CI excluding 0, i.e. WCH2022 faster",
+   "unit": "",
+   "n_start_types": 2,
+   "straight_median_change_ms": 18.8,
+   "200m_median_change_ms": 16.5
+  },
+  "wch2022_days_faster_than_every_2023_day": {
+   "value": 8,
+   "desc": "EXPLORATORY (not pre-registered): WCH2022 competition days whose athlete-adjusted mean RT is below that of every WCH2023 day",
+   "unit": "",
+   "n_days": 8,
+   "max_2022_day_ms": 144.3,
+   "min_2023_day_ms": 154.1
+  },
+  "same_athletes_2022_to_2023_change_ms": {
+   "value": 15.4,
+   "desc": "EXPLORATORY (not pre-registered): mean change in RT of the same athletes from WCH2022 to WCH2023 (athletes with valid starts at all three recent World Championships)",
+   "unit": "ms",
+   "ci95": [
+    12.3,
+    18.5
+   ],
+   "n_athletes": 68,
+   "median_ms": 14.0,
+   "share_slower": 0.88
+  },
+  "same_athletes_2023_to_2025_change_ms": {
+   "value": 16.7,
+   "desc": "EXPLORATORY (not pre-registered): mean change in RT of the same athletes from WCH2023 to WCH2025 (athletes with valid starts at all three recent World Championships)",
+   "unit": "ms",
+   "ci95": [
+    11.6,
+    21.6
+   ],
+   "n_athletes": 68,
+   "median_ms": 16.6,
+   "share_slower": 0.79
+  }
+ },
+ "extra": {
+  "status": "EXPLORATORY (not pre-registered)",
+  "probe_status": "EXPLORATORY (not pre-registered; not for the Oct 1 abstract)",
+  "abstract_use": "authorised by the author on 2026-09-30, labelled EXPLORATORY",
+  "probe_json": {
+   "path": "analysis/outputs/recent_probe.json",
+   "sha256_12": "e9ec224e4527"
+  }
+ }
+}

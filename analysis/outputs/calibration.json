@@ -1,0 +1,332 @@
+{
+ "name": "calibration",
+ "mock": false,
+ "seed": 20260928,
+ "inputs": [
+  {
+   "path": "analysis/measure/manual_annotations.csv",
+   "exists": true,
+   "sha256_12": "fe3736ebbb0f",
+   "rows": 36
+  },
+  {
+   "path": "data/derived/rt_waveform.csv",
+   "exists": true,
+   "sha256_12": "3711f9b56ca6",
+   "rows": 277
+  },
+  {
+   "path": "analysis/outputs/fp_models.json",
+   "exists": true,
+   "sha256_12": "96b67e27b527"
+  },
+  {
+   "path": "data/derived/rt_athletes.csv",
+   "exists": true,
+   "sha256_12": "af44975b3e1a",
+   "rows": 4904
+  },
+  {
+   "path": "data/derived/races.csv",
+   "exists": true,
+   "sha256_12": "4f0f5097c6dc",
+   "rows": 625
+  }
+ ],
+ "numbers": {
+  "n_pairs": {
+   "value": 22,
+   "desc": "races with a clean manual broadcast foreperiod and a Seiko Ready Time for the same attempt",
+   "unit": ""
+  },
+  "offset_mean_s": {
+   "value": 0.5232,
+   "desc": "mean (audio set-onset foreperiod - Ready Time)",
+   "unit": "s"
+  },
+  "offset_sd_within_comp_s": {
+   "value": 0.1121,
+   "desc": "within-championship SD of (audio foreperiod - Ready Time)",
+   "unit": "s"
+  },
+  "offset_mean_WCH2022_s": {
+   "value": 0.2743,
+   "desc": "mean (audio foreperiod - Ready Time), WCH2022",
+   "unit": "s",
+   "n": 3
+  },
+  "offset_mean_WCH2023_s": {
+   "value": 0.3847,
+   "desc": "mean (audio foreperiod - Ready Time), WCH2023",
+   "unit": "s",
+   "n": 4
+  },
+  "offset_mean_WCH2025_s": {
+   "value": 0.6099,
+   "desc": "mean (audio foreperiod - Ready Time), WCH2025",
+   "unit": "s",
+   "n": 15
+  },
+  "corr_ready_audio": {
+   "value": 0.7448,
+   "desc": "Pearson r between Ready Time and audio foreperiod (pooled over championships)",
+   "unit": ""
+  },
+  "calib_slope_b": {
+   "value": 0.8156,
+   "desc": "within-championship slope of audio foreperiod on Ready Time (regression calibration factor; 1 = no attenuation); stratified bootstrap CI",
+   "unit": "",
+   "ci95": [
+    0.5931,
+    1.0527
+   ],
+   "se_ols": 0.116,
+   "n_boot": 5000,
+   "share_boot_below_0_2": 0.0
+  },
+  "calib_slope_b_voice_end": {
+   "value": 0.8847,
+   "desc": "calibration slope using the end of voicing of 'Set' instead of its onset (sensitivity)",
+   "unit": "",
+   "se_ols": 0.1081
+  },
+  "slope_corrected_ms_per_100ms": {
+   "value": 0.397,
+   "desc": "Ready-Time slope divided by the calibration factor b (Monte Carlo over the slope's sampling error and bootstrap b)",
+   "unit": "ms per 100 ms of foreperiod",
+   "ci95": [
+    -0.174,
+    1.018
+   ],
+   "share_draws_used": 1.0
+  },
+  "r_corrected": {
+   "value": 0.0392,
+   "desc": "r-equivalent on the foreperiod scale (r(Ready) / sqrt(b), classical error)",
+   "unit": "",
+   "ci95": [
+    -0.0183,
+    0.0984
+   ]
+  },
+  "corrected_excludes_haugen": {
+   "value": true,
+   "desc": "corrected r interval excludes |r| = 0.16 in both directions",
+   "unit": ""
+  },
+  "r_ci_high_at_b_low": {
+   "value": 0.113,
+   "desc": "upper 95% bound of the r-equivalent if b sits at its lower 2.5% bound (conservative)",
+   "unit": ""
+  },
+  "r_ci_low_at_b_low": {
+   "value": -0.021,
+   "desc": "lower 95% bound of the r-equivalent if b sits at its lower 2.5% bound (conservative)",
+   "unit": ""
+  },
+  "direct_audio_slope_ms_per_100ms": {
+   "value": 1.019,
+   "desc": "RT on broadcast-audio foreperiod directly (small sample)",
+   "unit": "ms per 100 ms of foreperiod",
+   "ci95": [
+    -0.392,
+    2.43
+   ],
+   "n_races": 22,
+   "n_rts": 174
+  }
+ },
+ "tables": {
+  "pairs": [
+   {
+    "race_id": "WCH2025-100m-M-R1-H2",
+    "comp_year": "WCH2025",
+    "attempt": 1.0,
+    "fp_onset_s": 1.982,
+    "fp_voice_end_s": 1.662,
+    "wf_ready_time_s": 1.46
+   },
+   {
+    "race_id": "WCH2025-100m-M-R1-H4",
+    "comp_year": "WCH2025",
+    "attempt": 1.0,
+    "fp_onset_s": 2.28,
+    "fp_voice_end_s": 1.97,
+    "wf_ready_time_s": 1.837
+   },
+   {
+    "race_id": "WCH2025-100m-M-R1-H5",
+    "comp_year": "WCH2025",
+    "attempt": 1.0,
+    "fp_onset_s": 2.172,
+    "fp_voice_end_s": 1.829,
+    "wf_ready_time_s": 1.601
+   },
+   {
+    "race_id": "WCH2025-100m-M-R1-H6",
+    "comp_year": "WCH2025",
+    "attempt": 2.0,
+    "fp_onset_s": 2.441,
+    "fp_voice_end_s": 2.095,
+    "wf_ready_time_s": 1.82
+   },
+   {
+    "race_id": "WCH2025-100m-M-SF-H1",
+    "comp_year": "WCH2025",
+    "attempt": 1.0,
+    "fp_onset_s": 2.112,
+    "fp_voice_end_s": 1.682,
+    "wf_ready_time_s": 1.343
+   },
+   {
+    "race_id": "WCH2025-100m-M-SF-H2",
+    "comp_year": "WCH2025",
+    "attempt": 1.0,
+    "fp_onset_s": 2.117,
+    "fp_voice_end_s": 1.697,
+    "wf_ready_time_s": 1.504
+   },
+   {
+    "race_id": "WCH2025-100m-M-SF-H3",
+    "comp_year": "WCH2025",
+    "attempt": 2.0,
+    "fp_onset_s": 2.697,
+    "fp_voice_end_s": 2.357,
+    "wf_ready_time_s": 1.952
+   },
+   {
+    "race_id": "WCH2025-100m-M-F-H1",
+    "comp_year": "WCH2025",
+    "attempt": 2.0,
+    "fp_onset_s": 2.4,
+    "fp_voice_end_s": 2.045,
+    "wf_ready_time_s": 1.81
+   },
+   {
+    "race_id": "WCH2023-100m-W-F-H1",
+    "comp_year": "WCH2023",
+    "attempt": 1.0,
+    "fp_onset_s": 2.129,
+    "fp_voice_end_s": 1.746,
+    "wf_ready_time_s": 1.838
+   },
+   {
+    "race_id": "WCH2023-100m-M-F-H1",
+    "comp_year": "WCH2023",
+    "attempt": 1.0,
+    "fp_onset_s": 1.971,
+    "fp_voice_end_s": 1.545,
+    "wf_ready_time_s": 1.476
+   },
+   {
+    "race_id": "WCH2023-100mH-W-F-H1",
+    "comp_year": "WCH2023",
+    "attempt": 1.0,
+    "fp_onset_s": 1.985,
+    "fp_voice_end_s": 1.635,
+    "wf_ready_time_s": 1.558
+   },
+   {
+    "race_id": "WCH2023-110mH-M-F-H1",
+    "comp_year": "WCH2023",
+    "attempt": 1.0,
+    "fp_onset_s": 2.183,
+    "fp_voice_end_s": 1.837,
+    "wf_ready_time_s": 1.857
+   },
+   {
+    "race_id": "WCH2022-100m-W-F-H1",
+    "comp_year": "WCH2022",
+    "attempt": 1.0,
+    "fp_onset_s": 1.733,
+    "fp_voice_end_s": 1.403,
+    "wf_ready_time_s": 1.5
+   },
+   {
+    "race_id": "WCH2022-100mH-W-F-H1",
+    "comp_year": "WCH2022",
+    "attempt": 1.0,
+    "fp_onset_s": 1.623,
+    "fp_voice_end_s": 1.327,
+    "wf_ready_time_s": 1.235
+   },
+   {
+    "race_id": "WCH2022-110mH-M-F-H1",
+    "comp_year": "WCH2022",
+    "attempt": 2.0,
+    "fp_onset_s": 2.056,
+    "fp_voice_end_s": 1.696,
+    "wf_ready_time_s": 1.854
+   },
+   {
+    "race_id": "WCH2025-100m-W-F-H1",
+    "comp_year": "WCH2025",
+    "attempt": 1.0,
+    "fp_onset_s": 2.34,
+    "fp_voice_end_s": 2.005,
+    "wf_ready_time_s": 1.62
+   },
+   {
+    "race_id": "WCH2025-100m-W-R1-H2",
+    "comp_year": "WCH2025",
+    "attempt": 1.0,
+    "fp_onset_s": 2.189,
+    "fp_voice_end_s": 1.874,
+    "wf_ready_time_s": 1.76
+   },
+   {
+    "race_id": "WCH2025-100mH-W-R1-H2",
+    "comp_year": "WCH2025",
+    "attempt": 1.0,
+    "fp_onset_s": 2.571,
+    "fp_voice_end_s": 2.246,
+    "wf_ready_time_s": 1.9
+   },
+   {
+    "race_id": "WCH2025-100mH-W-R1-H6",
+    "comp_year": "WCH2025",
+    "attempt": 1.0,
+    "fp_onset_s": 2.174,
+    "fp_voice_end_s": 1.742,
+    "wf_ready_time_s": 1.661
+   },
+   {
+    "race_id": "WCH2025-100mH-W-SF-H1",
+    "comp_year": "WCH2025",
+    "attempt": 2.0,
+    "fp_onset_s": 2.162,
+    "fp_voice_end_s": 1.847,
+    "wf_ready_time_s": 1.668
+   },
+   {
+    "race_id": "WCH2025-100mH-W-SF-H2",
+    "comp_year": "WCH2025",
+    "attempt": 1.0,
+    "fp_onset_s": 1.906,
+    "fp_voice_end_s": 1.516,
+    "wf_ready_time_s": 1.266
+   },
+   {
+    "race_id": "WCH2025-110mH-M-R1-H5",
+    "comp_year": "WCH2025",
+    "attempt": 1.0,
+    "fp_onset_s": 2.429,
+    "fp_voice_end_s": 1.962,
+    "wf_ready_time_s": 1.621
+   }
+  ]
+ },
+ "extra": {
+  "b_boot_quantiles": {
+   "1": 0.559782,
+   "2.5": 0.593092,
+   "5": 0.632989,
+   "25": 0.750413,
+   "50": 0.827279,
+   "75": 0.904533,
+   "95": 1.01273,
+   "97.5": 1.05272,
+   "99": 1.09948
+  }
+ }
+}
